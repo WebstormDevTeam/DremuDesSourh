@@ -13,6 +13,7 @@ namespace Dremu.Gameplay.Object {
         [SerializeField] SpriteRenderer Renderer;
         
         [System.Serializable]
+        //引导线上的节点
         public struct GuideNode {
             public float To, Time;
             public GuideNode( float To, float Time ) {
@@ -32,48 +33,70 @@ namespace Dremu.Gameplay.Object {
             float position = this.position;
 
             //实时更新形状
+            
+            //points：所有点的集合
             var points = new List<Vector2>();
+            //初始化起点（零点）和终点
             float start = this.position;
             float time = ArrivalTime;
             Vector2 StartPoint = Vector2.zero;
+
+            //对于当前引导线：
             for (int i = 0; i < GuideLineNodes.Count; i++) {
                 GuideNode Holding = GuideLineNodes[i];
-
+                //选取当前引导线的分曲线，计为pointsPerHolding（按起点与终点选取）
                 var pointsPerHolding = JudgmentLine.CurrentCurve.SubCurveByStartAndEnd(start, Holding.To);
+                //计算每一帧下落的距离（点数）
                 float devide = 1f * (Holding.To - start) / pointsPerHolding.Count;
+                //相对于起点，终点每下落一帧的位置
                 float PerDirection = JudgmentLine.Speed.GetPosition(time, Holding.Time) / pointsPerHolding.Count;
 
+                //如果pointsPerHolding还有剩余的点，移除首个（i.e.下落操作）
                 if (points.Count > 0)
                     pointsPerHolding.RemoveAt(0);
 
+                //对于pointsPerHolding内每一个点：
                 for (int j = 0; j < pointsPerHolding.Count; j++) {
+                    //取得当前点下落后的法线
                     KeyValuePair<Vector2, Vector2> normalPerPoint = JudgmentLine.CurrentCurve.GetNormal(start + devide * (j + 1));
+                    //计算当前点将要下落的位置，并将当前点更新到那个位置
                     pointsPerHolding[j] = 
                         StartPoint + 
                         PositionHelper.RelativeCoordToAbsoluteCoord(pointsPerHolding[j], Camera.main) + 
                         (j + 1) * PerDirection * normalPerPoint.Value;
                 }
 
+                //更新points，(p.s. points就是要渲染的点组)
+                //如果当前时间在当前分段内：
                 if (CurrentTime > time && CurrentTime <= time + Holding.Time) {
+                    //当前引导线相对起始时间的行进进度（百分率）（i.e.下落进度）
                     float progress = (CurrentTime - time) / Holding.Time;
+                    //index是当前将要进入被渲染的点组内的点的下标
                     int index = Mathf.FloorToInt(progress * (pointsPerHolding.Count - 1));
+                    //计算小数部分
                     float progress_digit = progress * (pointsPerHolding.Count - 1) - index;
                     if (pointsPerHolding.Count - 1 > index)
                         pointsPerHolding[index] += (pointsPerHolding[index + 1] - pointsPerHolding[index]) * progress_digit;
                     position = start + (Holding.To - start) * progress;
+                    //将从index到总长-index的点组添加到points中
                     points.AddRange(pointsPerHolding.GetRange(index, pointsPerHolding.Count - index));
-                }
+                }//i.e.更新
+                //如果当前时间在当前分段起始时间之前：
                 else if (CurrentTime <= time) {
+                    //如果pointsPerHolding的第一个点与points的最后一个点位置相同，则移除pointsPerHolding的第一个点(i.e.连接应相连的引导线)
                     if (points.Count > 0 && points[^1] == pointsPerHolding[0])
                         pointsPerHolding.RemoveAt(0);
+                    //将pointsPerHolding直接添加到points中
                     points.AddRange(pointsPerHolding);
                 }
 
+                //更新起点与终点时间
                 start = Holding.To;
                 time += Holding.Time;
+                //将起始点设置为当前分曲线的最后一个点
                 StartPoint = pointsPerHolding[^1];
             }
-
+            
             if (points.Count > 0) Line.transform.localPosition = -points[0];
             Line.positionCount = points.Count;
             Line.SetPositions(Functions.Vec2ListToVec3List(points).ToArray());
