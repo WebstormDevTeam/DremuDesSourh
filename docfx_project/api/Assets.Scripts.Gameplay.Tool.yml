@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Assets.Scripts.Gameplay.Tool
+  commentId: N:Assets.Scripts.Gameplay.Tool
+  id: Assets.Scripts.Gameplay.Tool
+  children:
+  - Assets.Scripts.Gameplay.Tool.ScoreManager
+  langs:
+  - csharp
+  - vb
+  name: Assets.Scripts.Gameplay.Tool
+  nameWithType: Assets.Scripts.Gameplay.Tool
+  fullName: Assets.Scripts.Gameplay.Tool
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: Assets.Scripts.Gameplay.Tool.ScoreManager
+  commentId: T:Assets.Scripts.Gameplay.Tool.ScoreManager
+  href: Assets.Scripts.Gameplay.Tool.ScoreManager.html
+  name: ScoreManager
+  nameWithType: ScoreManager
+  fullName: Assets.Scripts.Gameplay.Tool.ScoreManager

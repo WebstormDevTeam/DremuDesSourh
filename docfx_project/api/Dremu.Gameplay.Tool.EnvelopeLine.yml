@@ -1,0 +1,870 @@
+### YamlMime:ManagedReference
+items:
+- uid: Dremu.Gameplay.Tool.EnvelopeLine
+  commentId: T:Dremu.Gameplay.Tool.EnvelopeLine
+  id: EnvelopeLine
+  parent: Dremu.Gameplay.Tool
+  children:
+  - Dremu.Gameplay.Tool.EnvelopeLine.#ctor(System.Collections.Generic.List{Dremu.Gameplay.Tool.ControlNode})
+  - Dremu.Gameplay.Tool.EnvelopeLine.#ctor(System.Collections.Generic.List{System.Single[]})
+  - Dremu.Gameplay.Tool.EnvelopeLine.Controllers
+  - Dremu.Gameplay.Tool.EnvelopeLine.GetBeatFromSecond(System.Single)
+  - Dremu.Gameplay.Tool.EnvelopeLine.GetControlerIndex(System.Collections.Generic.List{Dremu.Gameplay.Tool.ControlNode},System.Single,System.Int32,System.Int32)
+  - Dremu.Gameplay.Tool.EnvelopeLine.GetPosition(System.Single,System.Single)
+  - Dremu.Gameplay.Tool.EnvelopeLine.GetSecondFromBeat(System.Single)
+  - Dremu.Gameplay.Tool.EnvelopeLine.GetSingle(Dremu.Gameplay.Tool.ControlNode,Dremu.Gameplay.Tool.ControlNode,System.Single)
+  - Dremu.Gameplay.Tool.EnvelopeLine.GetValue(System.Single)
+  langs:
+  - csharp
+  - vb
+  name: EnvelopeLine
+  nameWithType: EnvelopeLine
+  fullName: Dremu.Gameplay.Tool.EnvelopeLine
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/Tool/Envelope.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: EnvelopeLine
+    path: ../Assets/Scripts/Gameplay/Tool/Envelope.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Tool
+  syntax:
+    content: public sealed class EnvelopeLine
+    content.vb: Public NotInheritable Class EnvelopeLine
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Dremu.Gameplay.Tool.EnvelopeLine.Controllers
+  commentId: F:Dremu.Gameplay.Tool.EnvelopeLine.Controllers
+  id: Controllers
+  parent: Dremu.Gameplay.Tool.EnvelopeLine
+  langs:
+  - csharp
+  - vb
+  name: Controllers
+  nameWithType: EnvelopeLine.Controllers
+  fullName: Dremu.Gameplay.Tool.EnvelopeLine.Controllers
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/Tool/Envelope.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: Controllers
+    path: ../Assets/Scripts/Gameplay/Tool/Envelope.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Tool
+  syntax:
+    content: public List<ControlNode> Controllers
+    return:
+      type: System.Collections.Generic.List{Dremu.Gameplay.Tool.ControlNode}
+    content.vb: Public Controllers As List(Of ControlNode)
+- uid: Dremu.Gameplay.Tool.EnvelopeLine.#ctor(System.Collections.Generic.List{System.Single[]})
+  commentId: M:Dremu.Gameplay.Tool.EnvelopeLine.#ctor(System.Collections.Generic.List{System.Single[]})
+  id: '#ctor(System.Collections.Generic.List{System.Single[]})'
+  parent: Dremu.Gameplay.Tool.EnvelopeLine
+  langs:
+  - csharp
+  - vb
+  name: EnvelopeLine(List<float[]>)
+  nameWithType: EnvelopeLine.EnvelopeLine(List<float[]>)
+  fullName: Dremu.Gameplay.Tool.EnvelopeLine.EnvelopeLine(System.Collections.Generic.List<float[]>)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/Tool/Envelope.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: .ctor
+    path: ../Assets/Scripts/Gameplay/Tool/Envelope.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Tool
+  syntax:
+    content: >-
+      [Obsolete]
+
+      public EnvelopeLine(List<float[]> Points)
+    parameters:
+    - id: Points
+      type: System.Collections.Generic.List{System.Single[]}
+    content.vb: >-
+      <Obsolete>
+
+      Public Sub New(Points As List(Of Single()))
+  overload: Dremu.Gameplay.Tool.EnvelopeLine.#ctor*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor
+    arguments: []
+  nameWithType.vb: EnvelopeLine.New(List(Of Single()))
+  fullName.vb: Dremu.Gameplay.Tool.EnvelopeLine.New(System.Collections.Generic.List(Of Single()))
+  name.vb: New(List(Of Single()))
+- uid: Dremu.Gameplay.Tool.EnvelopeLine.#ctor(System.Collections.Generic.List{Dremu.Gameplay.Tool.ControlNode})
+  commentId: M:Dremu.Gameplay.Tool.EnvelopeLine.#ctor(System.Collections.Generic.List{Dremu.Gameplay.Tool.ControlNode})
+  id: '#ctor(System.Collections.Generic.List{Dremu.Gameplay.Tool.ControlNode})'
+  parent: Dremu.Gameplay.Tool.EnvelopeLine
+  langs:
+  - csharp
+  - vb
+  name: EnvelopeLine(List<ControlNode>)
+  nameWithType: EnvelopeLine.EnvelopeLine(List<ControlNode>)
+  fullName: Dremu.Gameplay.Tool.EnvelopeLine.EnvelopeLine(System.Collections.Generic.List<Dremu.Gameplay.Tool.ControlNode>)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/Tool/Envelope.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: .ctor
+    path: ../Assets/Scripts/Gameplay/Tool/Envelope.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Tool
+  syntax:
+    content: public EnvelopeLine(List<ControlNode> Controllers)
+    parameters:
+    - id: Controllers
+      type: System.Collections.Generic.List{Dremu.Gameplay.Tool.ControlNode}
+    content.vb: Public Sub New(Controllers As List(Of ControlNode))
+  overload: Dremu.Gameplay.Tool.EnvelopeLine.#ctor*
+  nameWithType.vb: EnvelopeLine.New(List(Of ControlNode))
+  fullName.vb: Dremu.Gameplay.Tool.EnvelopeLine.New(System.Collections.Generic.List(Of Dremu.Gameplay.Tool.ControlNode))
+  name.vb: New(List(Of ControlNode))
+- uid: Dremu.Gameplay.Tool.EnvelopeLine.GetValue(System.Single)
+  commentId: M:Dremu.Gameplay.Tool.EnvelopeLine.GetValue(System.Single)
+  id: GetValue(System.Single)
+  parent: Dremu.Gameplay.Tool.EnvelopeLine
+  langs:
+  - csharp
+  - vb
+  name: GetValue(float)
+  nameWithType: EnvelopeLine.GetValue(float)
+  fullName: Dremu.Gameplay.Tool.EnvelopeLine.GetValue(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/Tool/Envelope.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: GetValue
+    path: ../Assets/Scripts/Gameplay/Tool/Envelope.cs
+    startLine: 36
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Tool
+  summary: 返回包络线在Time处的值.
+  example: []
+  syntax:
+    content: public float GetValue(float Time)
+    parameters:
+    - id: Time
+      type: System.Single
+      description: ''
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Function GetValue(Time As Single) As Single
+  overload: Dremu.Gameplay.Tool.EnvelopeLine.GetValue*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: 正常的数据不会抛出, 当Controllers处于非法状态 (如在某个时间处没有定义) 时才会
+  nameWithType.vb: EnvelopeLine.GetValue(Single)
+  fullName.vb: Dremu.Gameplay.Tool.EnvelopeLine.GetValue(Single)
+  name.vb: GetValue(Single)
+- uid: Dremu.Gameplay.Tool.EnvelopeLine.GetSingle(Dremu.Gameplay.Tool.ControlNode,Dremu.Gameplay.Tool.ControlNode,System.Single)
+  commentId: M:Dremu.Gameplay.Tool.EnvelopeLine.GetSingle(Dremu.Gameplay.Tool.ControlNode,Dremu.Gameplay.Tool.ControlNode,System.Single)
+  id: GetSingle(Dremu.Gameplay.Tool.ControlNode,Dremu.Gameplay.Tool.ControlNode,System.Single)
+  parent: Dremu.Gameplay.Tool.EnvelopeLine
+  langs:
+  - csharp
+  - vb
+  name: GetSingle(ControlNode, ControlNode, float)
+  nameWithType: EnvelopeLine.GetSingle(ControlNode, ControlNode, float)
+  fullName: Dremu.Gameplay.Tool.EnvelopeLine.GetSingle(Dremu.Gameplay.Tool.ControlNode, Dremu.Gameplay.Tool.ControlNode, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/Tool/Envelope.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: GetSingle
+    path: ../Assets/Scripts/Gameplay/Tool/Envelope.cs
+    startLine: 64
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Tool
+  summary: 由某个Node和下一个Node得到此Node在Time时的值
+  example: []
+  syntax:
+    content: public float GetSingle(ControlNode Start, ControlNode End, float Time)
+    parameters:
+    - id: Start
+      type: Dremu.Gameplay.Tool.ControlNode
+      description: ''
+    - id: End
+      type: Dremu.Gameplay.Tool.ControlNode
+      description: ''
+    - id: Time
+      type: System.Single
+      description: ''
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Function GetSingle(Start As ControlNode, [End] As ControlNode, Time As Single) As Single
+  overload: Dremu.Gameplay.Tool.EnvelopeLine.GetSingle*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: ''
+  nameWithType.vb: EnvelopeLine.GetSingle(ControlNode, ControlNode, Single)
+  fullName.vb: Dremu.Gameplay.Tool.EnvelopeLine.GetSingle(Dremu.Gameplay.Tool.ControlNode, Dremu.Gameplay.Tool.ControlNode, Single)
+  name.vb: GetSingle(ControlNode, ControlNode, Single)
+- uid: Dremu.Gameplay.Tool.EnvelopeLine.GetControlerIndex(System.Collections.Generic.List{Dremu.Gameplay.Tool.ControlNode},System.Single,System.Int32,System.Int32)
+  commentId: M:Dremu.Gameplay.Tool.EnvelopeLine.GetControlerIndex(System.Collections.Generic.List{Dremu.Gameplay.Tool.ControlNode},System.Single,System.Int32,System.Int32)
+  id: GetControlerIndex(System.Collections.Generic.List{Dremu.Gameplay.Tool.ControlNode},System.Single,System.Int32,System.Int32)
+  parent: Dremu.Gameplay.Tool.EnvelopeLine
+  langs:
+  - csharp
+  - vb
+  name: GetControlerIndex(List<ControlNode>, float, int, int)
+  nameWithType: EnvelopeLine.GetControlerIndex(List<ControlNode>, float, int, int)
+  fullName: Dremu.Gameplay.Tool.EnvelopeLine.GetControlerIndex(System.Collections.Generic.List<Dremu.Gameplay.Tool.ControlNode>, float, int, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/Tool/Envelope.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: GetControlerIndex
+    path: ../Assets/Scripts/Gameplay/Tool/Envelope.cs
+    startLine: 96
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Tool
+  summary: >-
+    找到在某时间处的Node
+
+    二分搜索实现
+  example: []
+  syntax:
+    content: public static int GetControlerIndex(List<ControlNode> controlerList, float Time, int Low = 0, int High = -1)
+    parameters:
+    - id: controlerList
+      type: System.Collections.Generic.List{Dremu.Gameplay.Tool.ControlNode}
+      description: ''
+    - id: Time
+      type: System.Single
+      description: ''
+    - id: Low
+      type: System.Int32
+      description: ''
+    - id: High
+      type: System.Int32
+      description: ''
+    return:
+      type: System.Int32
+      description: 找到的位置, 未找到返回-1
+    content.vb: Public Shared Function GetControlerIndex(controlerList As List(Of ControlNode), Time As Single, Low As Integer = 0, High As Integer = -1) As Integer
+  overload: Dremu.Gameplay.Tool.EnvelopeLine.GetControlerIndex*
+  nameWithType.vb: EnvelopeLine.GetControlerIndex(List(Of ControlNode), Single, Integer, Integer)
+  fullName.vb: Dremu.Gameplay.Tool.EnvelopeLine.GetControlerIndex(System.Collections.Generic.List(Of Dremu.Gameplay.Tool.ControlNode), Single, Integer, Integer)
+  name.vb: GetControlerIndex(List(Of ControlNode), Single, Integer, Integer)
+- uid: Dremu.Gameplay.Tool.EnvelopeLine.GetPosition(System.Single,System.Single)
+  commentId: M:Dremu.Gameplay.Tool.EnvelopeLine.GetPosition(System.Single,System.Single)
+  id: GetPosition(System.Single,System.Single)
+  parent: Dremu.Gameplay.Tool.EnvelopeLine
+  langs:
+  - csharp
+  - vb
+  name: GetPosition(float, float)
+  nameWithType: EnvelopeLine.GetPosition(float, float)
+  fullName: Dremu.Gameplay.Tool.EnvelopeLine.GetPosition(float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/Tool/Envelope.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: GetPosition
+    path: ../Assets/Scripts/Gameplay/Tool/Envelope.cs
+    startLine: 129
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Tool
+  summary: 当存储的数据为速度时, 获取位置
+  example: []
+  syntax:
+    content: public float GetPosition(float StartTime, float Duration)
+    parameters:
+    - id: StartTime
+      type: System.Single
+      description: 起始时间
+    - id: Duration
+      type: System.Single
+      description: 持续时间
+    return:
+      type: System.Single
+      description: ''
+    content.vb: Public Function GetPosition(StartTime As Single, Duration As Single) As Single
+  overload: Dremu.Gameplay.Tool.EnvelopeLine.GetPosition*
+  nameWithType.vb: EnvelopeLine.GetPosition(Single, Single)
+  fullName.vb: Dremu.Gameplay.Tool.EnvelopeLine.GetPosition(Single, Single)
+  name.vb: GetPosition(Single, Single)
+- uid: Dremu.Gameplay.Tool.EnvelopeLine.GetBeatFromSecond(System.Single)
+  commentId: M:Dremu.Gameplay.Tool.EnvelopeLine.GetBeatFromSecond(System.Single)
+  id: GetBeatFromSecond(System.Single)
+  parent: Dremu.Gameplay.Tool.EnvelopeLine
+  langs:
+  - csharp
+  - vb
+  name: GetBeatFromSecond(float)
+  nameWithType: EnvelopeLine.GetBeatFromSecond(float)
+  fullName: Dremu.Gameplay.Tool.EnvelopeLine.GetBeatFromSecond(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/Tool/Envelope.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: GetBeatFromSecond
+    path: ../Assets/Scripts/Gameplay/Tool/Envelope.cs
+    startLine: 161
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Tool
+  summary: >-
+    当存储数据为bpm时, 获取秒数时间
+
+    此时线中数据的time都以秒为单位
+  example: []
+  syntax:
+    content: public float GetBeatFromSecond(float second)
+    parameters:
+    - id: second
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Function GetBeatFromSecond(second As Single) As Single
+  overload: Dremu.Gameplay.Tool.EnvelopeLine.GetBeatFromSecond*
+  nameWithType.vb: EnvelopeLine.GetBeatFromSecond(Single)
+  fullName.vb: Dremu.Gameplay.Tool.EnvelopeLine.GetBeatFromSecond(Single)
+  name.vb: GetBeatFromSecond(Single)
+- uid: Dremu.Gameplay.Tool.EnvelopeLine.GetSecondFromBeat(System.Single)
+  commentId: M:Dremu.Gameplay.Tool.EnvelopeLine.GetSecondFromBeat(System.Single)
+  id: GetSecondFromBeat(System.Single)
+  parent: Dremu.Gameplay.Tool.EnvelopeLine
+  langs:
+  - csharp
+  - vb
+  name: GetSecondFromBeat(float)
+  nameWithType: EnvelopeLine.GetSecondFromBeat(float)
+  fullName: Dremu.Gameplay.Tool.EnvelopeLine.GetSecondFromBeat(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/Tool/Envelope.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: GetSecondFromBeat
+    path: ../Assets/Scripts/Gameplay/Tool/Envelope.cs
+    startLine: 182
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Tool
+  syntax:
+    content: public float GetSecondFromBeat(float beat)
+    parameters:
+    - id: beat
+      type: System.Single
+    return:
+      type: System.Single
+    content.vb: Public Function GetSecondFromBeat(beat As Single) As Single
+  overload: Dremu.Gameplay.Tool.EnvelopeLine.GetSecondFromBeat*
+  nameWithType.vb: EnvelopeLine.GetSecondFromBeat(Single)
+  fullName.vb: Dremu.Gameplay.Tool.EnvelopeLine.GetSecondFromBeat(Single)
+  name.vb: GetSecondFromBeat(Single)
+references:
+- uid: Dremu.Gameplay.Tool
+  commentId: N:Dremu.Gameplay.Tool
+  href: Dremu.html
+  name: Dremu.Gameplay.Tool
+  nameWithType: Dremu.Gameplay.Tool
+  fullName: Dremu.Gameplay.Tool
+  spec.csharp:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.Gameplay
+    name: Gameplay
+    href: Dremu.Gameplay.html
+  - name: .
+  - uid: Dremu.Gameplay.Tool
+    name: Tool
+    href: Dremu.Gameplay.Tool.html
+  spec.vb:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.Gameplay
+    name: Gameplay
+    href: Dremu.Gameplay.html
+  - name: .
+  - uid: Dremu.Gameplay.Tool
+    name: Tool
+    href: Dremu.Gameplay.Tool.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.List{Dremu.Gameplay.Tool.ControlNode}
+  commentId: T:System.Collections.Generic.List{Dremu.Gameplay.Tool.ControlNode}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<ControlNode>
+  nameWithType: List<ControlNode>
+  fullName: System.Collections.Generic.List<Dremu.Gameplay.Tool.ControlNode>
+  nameWithType.vb: List(Of ControlNode)
+  fullName.vb: System.Collections.Generic.List(Of Dremu.Gameplay.Tool.ControlNode)
+  name.vb: List(Of ControlNode)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Dremu.Gameplay.Tool.ControlNode
+    name: ControlNode
+    href: Dremu.Gameplay.Tool.ControlNode.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Dremu.Gameplay.Tool.ControlNode
+    name: ControlNode
+    href: Dremu.Gameplay.Tool.ControlNode.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Dremu.Gameplay.Tool.EnvelopeLine.#ctor*
+  commentId: Overload:Dremu.Gameplay.Tool.EnvelopeLine.#ctor
+  href: Dremu.Gameplay.Tool.EnvelopeLine.html#Dremu_Gameplay_Tool_EnvelopeLine__ctor_System_Collections_Generic_List_System_Single____
+  name: EnvelopeLine
+  nameWithType: EnvelopeLine.EnvelopeLine
+  fullName: Dremu.Gameplay.Tool.EnvelopeLine.EnvelopeLine
+  nameWithType.vb: EnvelopeLine.New
+  fullName.vb: Dremu.Gameplay.Tool.EnvelopeLine.New
+  name.vb: New
+- uid: System.Collections.Generic.List{System.Single[]}
+  commentId: T:System.Collections.Generic.List{System.Single[]}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<float[]>
+  nameWithType: List<float[]>
+  fullName: System.Collections.Generic.List<float[]>
+  nameWithType.vb: List(Of Single())
+  fullName.vb: System.Collections.Generic.List(Of Single())
+  name.vb: List(Of Single())
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '['
+  - name: ']'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Exception
+  commentId: T:System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Dremu.Gameplay.Tool.EnvelopeLine.GetValue*
+  commentId: Overload:Dremu.Gameplay.Tool.EnvelopeLine.GetValue
+  href: Dremu.Gameplay.Tool.EnvelopeLine.html#Dremu_Gameplay_Tool_EnvelopeLine_GetValue_System_Single_
+  name: GetValue
+  nameWithType: EnvelopeLine.GetValue
+  fullName: Dremu.Gameplay.Tool.EnvelopeLine.GetValue
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: Dremu.Gameplay.Tool.EnvelopeLine.GetSingle*
+  commentId: Overload:Dremu.Gameplay.Tool.EnvelopeLine.GetSingle
+  href: Dremu.Gameplay.Tool.EnvelopeLine.html#Dremu_Gameplay_Tool_EnvelopeLine_GetSingle_Dremu_Gameplay_Tool_ControlNode_Dremu_Gameplay_Tool_ControlNode_System_Single_
+  name: GetSingle
+  nameWithType: EnvelopeLine.GetSingle
+  fullName: Dremu.Gameplay.Tool.EnvelopeLine.GetSingle
+- uid: Dremu.Gameplay.Tool.ControlNode
+  commentId: T:Dremu.Gameplay.Tool.ControlNode
+  parent: Dremu.Gameplay.Tool
+  href: Dremu.Gameplay.Tool.ControlNode.html
+  name: ControlNode
+  nameWithType: ControlNode
+  fullName: Dremu.Gameplay.Tool.ControlNode
+- uid: Dremu.Gameplay.Tool.EnvelopeLine.GetControlerIndex*
+  commentId: Overload:Dremu.Gameplay.Tool.EnvelopeLine.GetControlerIndex
+  href: Dremu.Gameplay.Tool.EnvelopeLine.html#Dremu_Gameplay_Tool_EnvelopeLine_GetControlerIndex_System_Collections_Generic_List_Dremu_Gameplay_Tool_ControlNode__System_Single_System_Int32_System_Int32_
+  name: GetControlerIndex
+  nameWithType: EnvelopeLine.GetControlerIndex
+  fullName: Dremu.Gameplay.Tool.EnvelopeLine.GetControlerIndex
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Dremu.Gameplay.Tool.EnvelopeLine.GetPosition*
+  commentId: Overload:Dremu.Gameplay.Tool.EnvelopeLine.GetPosition
+  href: Dremu.Gameplay.Tool.EnvelopeLine.html#Dremu_Gameplay_Tool_EnvelopeLine_GetPosition_System_Single_System_Single_
+  name: GetPosition
+  nameWithType: EnvelopeLine.GetPosition
+  fullName: Dremu.Gameplay.Tool.EnvelopeLine.GetPosition
+- uid: Dremu.Gameplay.Tool.EnvelopeLine.GetBeatFromSecond*
+  commentId: Overload:Dremu.Gameplay.Tool.EnvelopeLine.GetBeatFromSecond
+  href: Dremu.Gameplay.Tool.EnvelopeLine.html#Dremu_Gameplay_Tool_EnvelopeLine_GetBeatFromSecond_System_Single_
+  name: GetBeatFromSecond
+  nameWithType: EnvelopeLine.GetBeatFromSecond
+  fullName: Dremu.Gameplay.Tool.EnvelopeLine.GetBeatFromSecond
+- uid: Dremu.Gameplay.Tool.EnvelopeLine.GetSecondFromBeat*
+  commentId: Overload:Dremu.Gameplay.Tool.EnvelopeLine.GetSecondFromBeat
+  href: Dremu.Gameplay.Tool.EnvelopeLine.html#Dremu_Gameplay_Tool_EnvelopeLine_GetSecondFromBeat_System_Single_
+  name: GetSecondFromBeat
+  nameWithType: EnvelopeLine.GetSecondFromBeat
+  fullName: Dremu.Gameplay.Tool.EnvelopeLine.GetSecondFromBeat

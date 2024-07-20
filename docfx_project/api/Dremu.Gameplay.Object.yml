@@ -1,0 +1,445 @@
+### YamlMime:ManagedReference
+items:
+- uid: Dremu.Gameplay.Object
+  commentId: N:Dremu.Gameplay.Object
+  id: Dremu.Gameplay.Object
+  children:
+  - Dremu.Gameplay.Object.ChartData
+  - Dremu.Gameplay.Object.ChartData.EnvelopeLineData
+  - Dremu.Gameplay.Object.ChartData.EnvelopeLineData.EnvelopeNodeData
+  - Dremu.Gameplay.Object.ChartData.JudgmentLineData
+  - Dremu.Gameplay.Object.ChartData.JudgmentLineData.Curve
+  - Dremu.Gameplay.Object.ChartData.JudgmentLineData.Curve.CurveNode
+  - Dremu.Gameplay.Object.ChartData.JudgmentLineData.CurveAction
+  - Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData
+  - Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType
+  - Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.PerHoldingData
+  - Dremu.Gameplay.Object.Drag
+  - Dremu.Gameplay.Object.Drag.DragNode
+  - Dremu.Gameplay.Object.Hold
+  - Dremu.Gameplay.Object.Hold.HoldNode
+  - Dremu.Gameplay.Object.JudgmentLine
+  - Dremu.Gameplay.Object.NoteBase
+  - Dremu.Gameplay.Object.NoteEffect
+  - Dremu.Gameplay.Object.Slide
+  - Dremu.Gameplay.Object.Tap
+  langs:
+  - csharp
+  - vb
+  name: Dremu.Gameplay.Object
+  nameWithType: Dremu.Gameplay.Object
+  fullName: Dremu.Gameplay.Object
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: Dremu.Gameplay.Object.Slide
+  commentId: T:Dremu.Gameplay.Object.Slide
+  parent: Dremu.Gameplay.Object
+  href: Dremu.Gameplay.Object.Slide.html
+  name: Slide
+  nameWithType: Slide
+  fullName: Dremu.Gameplay.Object.Slide
+- uid: Dremu.Gameplay.Object.Drag
+  commentId: T:Dremu.Gameplay.Object.Drag
+  parent: Dremu.Gameplay.Object
+  href: Dremu.Gameplay.Object.Drag.html
+  name: Drag
+  nameWithType: Drag
+  fullName: Dremu.Gameplay.Object.Drag
+- uid: Dremu.Gameplay.Object.Drag.DragNode
+  commentId: T:Dremu.Gameplay.Object.Drag.DragNode
+  href: Dremu.Gameplay.Object.Drag.html
+  name: Drag.DragNode
+  nameWithType: Drag.DragNode
+  fullName: Dremu.Gameplay.Object.Drag.DragNode
+  spec.csharp:
+  - uid: Dremu.Gameplay.Object.Drag
+    name: Drag
+    href: Dremu.Gameplay.Object.Drag.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.Drag.DragNode
+    name: DragNode
+    href: Dremu.Gameplay.Object.Drag.DragNode.html
+  spec.vb:
+  - uid: Dremu.Gameplay.Object.Drag
+    name: Drag
+    href: Dremu.Gameplay.Object.Drag.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.Drag.DragNode
+    name: DragNode
+    href: Dremu.Gameplay.Object.Drag.DragNode.html
+- uid: Dremu.Gameplay.Object.NoteBase
+  commentId: T:Dremu.Gameplay.Object.NoteBase
+  parent: Dremu.Gameplay.Object
+  href: Dremu.Gameplay.Object.NoteBase.html
+  name: NoteBase
+  nameWithType: NoteBase
+  fullName: Dremu.Gameplay.Object.NoteBase
+- uid: Dremu.Gameplay.Object.JudgmentLine
+  commentId: T:Dremu.Gameplay.Object.JudgmentLine
+  parent: Dremu.Gameplay.Object
+  href: Dremu.Gameplay.Object.JudgmentLine.html
+  name: JudgmentLine
+  nameWithType: JudgmentLine
+  fullName: Dremu.Gameplay.Object.JudgmentLine
+- uid: Dremu.Gameplay.Object.Hold
+  commentId: T:Dremu.Gameplay.Object.Hold
+  parent: Dremu.Gameplay.Object
+  href: Dremu.Gameplay.Object.Hold.html
+  name: Hold
+  nameWithType: Hold
+  fullName: Dremu.Gameplay.Object.Hold
+- uid: Dremu.Gameplay.Object.Hold.HoldNode
+  commentId: T:Dremu.Gameplay.Object.Hold.HoldNode
+  href: Dremu.Gameplay.Object.Hold.html
+  name: Hold.HoldNode
+  nameWithType: Hold.HoldNode
+  fullName: Dremu.Gameplay.Object.Hold.HoldNode
+  spec.csharp:
+  - uid: Dremu.Gameplay.Object.Hold
+    name: Hold
+    href: Dremu.Gameplay.Object.Hold.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.Hold.HoldNode
+    name: HoldNode
+    href: Dremu.Gameplay.Object.Hold.HoldNode.html
+  spec.vb:
+  - uid: Dremu.Gameplay.Object.Hold
+    name: Hold
+    href: Dremu.Gameplay.Object.Hold.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.Hold.HoldNode
+    name: HoldNode
+    href: Dremu.Gameplay.Object.Hold.HoldNode.html
+- uid: Dremu.Gameplay.Object.ChartData
+  commentId: T:Dremu.Gameplay.Object.ChartData
+  href: Dremu.Gameplay.Object.ChartData.html
+  name: ChartData
+  nameWithType: ChartData
+  fullName: Dremu.Gameplay.Object.ChartData
+- uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData
+  commentId: T:Dremu.Gameplay.Object.ChartData.JudgmentLineData
+  href: Dremu.Gameplay.Object.ChartData.html
+  name: ChartData.JudgmentLineData
+  nameWithType: ChartData.JudgmentLineData
+  fullName: Dremu.Gameplay.Object.ChartData.JudgmentLineData
+  spec.csharp:
+  - uid: Dremu.Gameplay.Object.ChartData
+    name: ChartData
+    href: Dremu.Gameplay.Object.ChartData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData
+    name: JudgmentLineData
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.html
+  spec.vb:
+  - uid: Dremu.Gameplay.Object.ChartData
+    name: ChartData
+    href: Dremu.Gameplay.Object.ChartData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData
+    name: JudgmentLineData
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.html
+- uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.Curve
+  commentId: T:Dremu.Gameplay.Object.ChartData.JudgmentLineData.Curve
+  href: Dremu.Gameplay.Object.ChartData.html
+  name: ChartData.JudgmentLineData.Curve
+  nameWithType: ChartData.JudgmentLineData.Curve
+  fullName: Dremu.Gameplay.Object.ChartData.JudgmentLineData.Curve
+  spec.csharp:
+  - uid: Dremu.Gameplay.Object.ChartData
+    name: ChartData
+    href: Dremu.Gameplay.Object.ChartData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData
+    name: JudgmentLineData
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.Curve
+    name: Curve
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.Curve.html
+  spec.vb:
+  - uid: Dremu.Gameplay.Object.ChartData
+    name: ChartData
+    href: Dremu.Gameplay.Object.ChartData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData
+    name: JudgmentLineData
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.Curve
+    name: Curve
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.Curve.html
+- uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.Curve.CurveNode
+  commentId: T:Dremu.Gameplay.Object.ChartData.JudgmentLineData.Curve.CurveNode
+  href: Dremu.Gameplay.Object.ChartData.html
+  name: ChartData.JudgmentLineData.Curve.CurveNode
+  nameWithType: ChartData.JudgmentLineData.Curve.CurveNode
+  fullName: Dremu.Gameplay.Object.ChartData.JudgmentLineData.Curve.CurveNode
+  spec.csharp:
+  - uid: Dremu.Gameplay.Object.ChartData
+    name: ChartData
+    href: Dremu.Gameplay.Object.ChartData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData
+    name: JudgmentLineData
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.Curve
+    name: Curve
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.Curve.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.Curve.CurveNode
+    name: CurveNode
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.Curve.CurveNode.html
+  spec.vb:
+  - uid: Dremu.Gameplay.Object.ChartData
+    name: ChartData
+    href: Dremu.Gameplay.Object.ChartData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData
+    name: JudgmentLineData
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.Curve
+    name: Curve
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.Curve.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.Curve.CurveNode
+    name: CurveNode
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.Curve.CurveNode.html
+- uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.CurveAction
+  commentId: T:Dremu.Gameplay.Object.ChartData.JudgmentLineData.CurveAction
+  parent: Dremu.Gameplay.Object
+  href: Dremu.Gameplay.Object.ChartData.html
+  name: ChartData.JudgmentLineData.CurveAction
+  nameWithType: ChartData.JudgmentLineData.CurveAction
+  fullName: Dremu.Gameplay.Object.ChartData.JudgmentLineData.CurveAction
+  spec.csharp:
+  - uid: Dremu.Gameplay.Object.ChartData
+    name: ChartData
+    href: Dremu.Gameplay.Object.ChartData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData
+    name: JudgmentLineData
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.CurveAction
+    name: CurveAction
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.CurveAction.html
+  spec.vb:
+  - uid: Dremu.Gameplay.Object.ChartData
+    name: ChartData
+    href: Dremu.Gameplay.Object.ChartData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData
+    name: JudgmentLineData
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.CurveAction
+    name: CurveAction
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.CurveAction.html
+- uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData
+  commentId: T:Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData
+  href: Dremu.Gameplay.Object.ChartData.html
+  name: ChartData.JudgmentLineData.NoteData
+  nameWithType: ChartData.JudgmentLineData.NoteData
+  fullName: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData
+  spec.csharp:
+  - uid: Dremu.Gameplay.Object.ChartData
+    name: ChartData
+    href: Dremu.Gameplay.Object.ChartData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData
+    name: JudgmentLineData
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData
+    name: NoteData
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.html
+  spec.vb:
+  - uid: Dremu.Gameplay.Object.ChartData
+    name: ChartData
+    href: Dremu.Gameplay.Object.ChartData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData
+    name: JudgmentLineData
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData
+    name: NoteData
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.html
+- uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType
+  commentId: T:Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType
+  parent: Dremu.Gameplay.Object
+  href: Dremu.Gameplay.Object.ChartData.html
+  name: ChartData.JudgmentLineData.NoteData.NoteType
+  nameWithType: ChartData.JudgmentLineData.NoteData.NoteType
+  fullName: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType
+  spec.csharp:
+  - uid: Dremu.Gameplay.Object.ChartData
+    name: ChartData
+    href: Dremu.Gameplay.Object.ChartData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData
+    name: JudgmentLineData
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData
+    name: NoteData
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType
+    name: NoteType
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType.html
+  spec.vb:
+  - uid: Dremu.Gameplay.Object.ChartData
+    name: ChartData
+    href: Dremu.Gameplay.Object.ChartData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData
+    name: JudgmentLineData
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData
+    name: NoteData
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType
+    name: NoteType
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType.html
+- uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.PerHoldingData
+  commentId: T:Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.PerHoldingData
+  href: Dremu.Gameplay.Object.ChartData.html
+  name: ChartData.JudgmentLineData.NoteData.PerHoldingData
+  nameWithType: ChartData.JudgmentLineData.NoteData.PerHoldingData
+  fullName: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.PerHoldingData
+  spec.csharp:
+  - uid: Dremu.Gameplay.Object.ChartData
+    name: ChartData
+    href: Dremu.Gameplay.Object.ChartData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData
+    name: JudgmentLineData
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData
+    name: NoteData
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.PerHoldingData
+    name: PerHoldingData
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.PerHoldingData.html
+  spec.vb:
+  - uid: Dremu.Gameplay.Object.ChartData
+    name: ChartData
+    href: Dremu.Gameplay.Object.ChartData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData
+    name: JudgmentLineData
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData
+    name: NoteData
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.PerHoldingData
+    name: PerHoldingData
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.PerHoldingData.html
+- uid: Dremu.Gameplay.Object.ChartData.EnvelopeLineData
+  commentId: T:Dremu.Gameplay.Object.ChartData.EnvelopeLineData
+  parent: Dremu.Gameplay.Object
+  href: Dremu.Gameplay.Object.ChartData.html
+  name: ChartData.EnvelopeLineData
+  nameWithType: ChartData.EnvelopeLineData
+  fullName: Dremu.Gameplay.Object.ChartData.EnvelopeLineData
+  spec.csharp:
+  - uid: Dremu.Gameplay.Object.ChartData
+    name: ChartData
+    href: Dremu.Gameplay.Object.ChartData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.EnvelopeLineData
+    name: EnvelopeLineData
+    href: Dremu.Gameplay.Object.ChartData.EnvelopeLineData.html
+  spec.vb:
+  - uid: Dremu.Gameplay.Object.ChartData
+    name: ChartData
+    href: Dremu.Gameplay.Object.ChartData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.EnvelopeLineData
+    name: EnvelopeLineData
+    href: Dremu.Gameplay.Object.ChartData.EnvelopeLineData.html
+- uid: Dremu.Gameplay.Object.ChartData.EnvelopeLineData.EnvelopeNodeData
+  commentId: T:Dremu.Gameplay.Object.ChartData.EnvelopeLineData.EnvelopeNodeData
+  href: Dremu.Gameplay.Object.ChartData.html
+  name: ChartData.EnvelopeLineData.EnvelopeNodeData
+  nameWithType: ChartData.EnvelopeLineData.EnvelopeNodeData
+  fullName: Dremu.Gameplay.Object.ChartData.EnvelopeLineData.EnvelopeNodeData
+  spec.csharp:
+  - uid: Dremu.Gameplay.Object.ChartData
+    name: ChartData
+    href: Dremu.Gameplay.Object.ChartData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.EnvelopeLineData
+    name: EnvelopeLineData
+    href: Dremu.Gameplay.Object.ChartData.EnvelopeLineData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.EnvelopeLineData.EnvelopeNodeData
+    name: EnvelopeNodeData
+    href: Dremu.Gameplay.Object.ChartData.EnvelopeLineData.EnvelopeNodeData.html
+  spec.vb:
+  - uid: Dremu.Gameplay.Object.ChartData
+    name: ChartData
+    href: Dremu.Gameplay.Object.ChartData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.EnvelopeLineData
+    name: EnvelopeLineData
+    href: Dremu.Gameplay.Object.ChartData.EnvelopeLineData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.EnvelopeLineData.EnvelopeNodeData
+    name: EnvelopeNodeData
+    href: Dremu.Gameplay.Object.ChartData.EnvelopeLineData.EnvelopeNodeData.html
+- uid: Dremu.Gameplay.Object.Tap
+  commentId: T:Dremu.Gameplay.Object.Tap
+  parent: Dremu.Gameplay.Object
+  href: Dremu.Gameplay.Object.Tap.html
+  name: Tap
+  nameWithType: Tap
+  fullName: Dremu.Gameplay.Object.Tap
+- uid: Dremu.Gameplay.Object.NoteEffect
+  commentId: T:Dremu.Gameplay.Object.NoteEffect
+  parent: Dremu.Gameplay.Object
+  href: Dremu.Gameplay.Object.NoteEffect.html
+  name: NoteEffect
+  nameWithType: NoteEffect
+  fullName: Dremu.Gameplay.Object.NoteEffect
+- uid: Dremu.Gameplay.Object
+  commentId: N:Dremu.Gameplay.Object
+  href: Dremu.html
+  name: Dremu.Gameplay.Object
+  nameWithType: Dremu.Gameplay.Object
+  fullName: Dremu.Gameplay.Object
+  spec.csharp:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.Gameplay
+    name: Gameplay
+    href: Dremu.Gameplay.html
+  - name: .
+  - uid: Dremu.Gameplay.Object
+    name: Object
+    href: Dremu.Gameplay.Object.html
+  spec.vb:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.Gameplay
+    name: Gameplay
+    href: Dremu.Gameplay.html
+  - name: .
+  - uid: Dremu.Gameplay.Object
+    name: Object
+    href: Dremu.Gameplay.Object.html

@@ -1,0 +1,129 @@
+### YamlMime:ManagedReference
+items:
+- uid: Dremu.Gameplay.Tool.RecyclableObject
+  commentId: T:Dremu.Gameplay.Tool.RecyclableObject
+  id: RecyclableObject
+  parent: Dremu.Gameplay.Tool
+  children:
+  - Dremu.Gameplay.Tool.RecyclableObject.OnInitialize
+  - Dremu.Gameplay.Tool.RecyclableObject.OnRecycle
+  langs:
+  - csharp
+  - vb
+  name: RecyclableObject
+  nameWithType: RecyclableObject
+  fullName: Dremu.Gameplay.Tool.RecyclableObject
+  type: Interface
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/Tool/StandardObjectPool.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: RecyclableObject
+    path: ../Assets/Scripts/Gameplay/Tool/StandardObjectPool.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Tool
+  syntax:
+    content: public interface RecyclableObject
+    content.vb: Public Interface RecyclableObject
+- uid: Dremu.Gameplay.Tool.RecyclableObject.OnInitialize
+  commentId: M:Dremu.Gameplay.Tool.RecyclableObject.OnInitialize
+  id: OnInitialize
+  parent: Dremu.Gameplay.Tool.RecyclableObject
+  langs:
+  - csharp
+  - vb
+  name: OnInitialize()
+  nameWithType: RecyclableObject.OnInitialize()
+  fullName: Dremu.Gameplay.Tool.RecyclableObject.OnInitialize()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/Tool/StandardObjectPool.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: OnInitialize
+    path: ../Assets/Scripts/Gameplay/Tool/StandardObjectPool.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Tool
+  summary: 在物体从对象池中取出时会自动调用，用于初始化物体。
+  example: []
+  syntax:
+    content: void OnInitialize()
+    content.vb: Sub OnInitialize()
+  overload: Dremu.Gameplay.Tool.RecyclableObject.OnInitialize*
+- uid: Dremu.Gameplay.Tool.RecyclableObject.OnRecycle
+  commentId: M:Dremu.Gameplay.Tool.RecyclableObject.OnRecycle
+  id: OnRecycle
+  parent: Dremu.Gameplay.Tool.RecyclableObject
+  langs:
+  - csharp
+  - vb
+  name: OnRecycle()
+  nameWithType: RecyclableObject.OnRecycle()
+  fullName: Dremu.Gameplay.Tool.RecyclableObject.OnRecycle()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/Tool/StandardObjectPool.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: OnRecycle
+    path: ../Assets/Scripts/Gameplay/Tool/StandardObjectPool.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Tool
+  summary: 在物体放回对象池时会自动调用。
+  example: []
+  syntax:
+    content: void OnRecycle()
+    content.vb: Sub OnRecycle()
+  overload: Dremu.Gameplay.Tool.RecyclableObject.OnRecycle*
+references:
+- uid: Dremu.Gameplay.Tool
+  commentId: N:Dremu.Gameplay.Tool
+  href: Dremu.html
+  name: Dremu.Gameplay.Tool
+  nameWithType: Dremu.Gameplay.Tool
+  fullName: Dremu.Gameplay.Tool
+  spec.csharp:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.Gameplay
+    name: Gameplay
+    href: Dremu.Gameplay.html
+  - name: .
+  - uid: Dremu.Gameplay.Tool
+    name: Tool
+    href: Dremu.Gameplay.Tool.html
+  spec.vb:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.Gameplay
+    name: Gameplay
+    href: Dremu.Gameplay.html
+  - name: .
+  - uid: Dremu.Gameplay.Tool
+    name: Tool
+    href: Dremu.Gameplay.Tool.html
+- uid: Dremu.Gameplay.Tool.RecyclableObject.OnInitialize*
+  commentId: Overload:Dremu.Gameplay.Tool.RecyclableObject.OnInitialize
+  href: Dremu.Gameplay.Tool.RecyclableObject.html#Dremu_Gameplay_Tool_RecyclableObject_OnInitialize
+  name: OnInitialize
+  nameWithType: RecyclableObject.OnInitialize
+  fullName: Dremu.Gameplay.Tool.RecyclableObject.OnInitialize
+- uid: Dremu.Gameplay.Tool.RecyclableObject.OnRecycle*
+  commentId: Overload:Dremu.Gameplay.Tool.RecyclableObject.OnRecycle
+  href: Dremu.Gameplay.Tool.RecyclableObject.html#Dremu_Gameplay_Tool_RecyclableObject_OnRecycle
+  name: OnRecycle
+  nameWithType: RecyclableObject.OnRecycle
+  fullName: Dremu.Gameplay.Tool.RecyclableObject.OnRecycle

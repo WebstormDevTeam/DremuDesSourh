@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: GameUI.Global.ColorSet
+  commentId: N:GameUI.Global.ColorSet
+  id: GameUI.Global.ColorSet
+  children:
+  - GameUI.Global.ColorSet.ColorSetManager
+  - GameUI.Global.ColorSet.ColorSetRegister
+  langs:
+  - csharp
+  - vb
+  name: GameUI.Global.ColorSet
+  nameWithType: GameUI.Global.ColorSet
+  fullName: GameUI.Global.ColorSet
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: GameUI.Global.ColorSet.ColorSetManager
+  commentId: T:GameUI.Global.ColorSet.ColorSetManager
+  href: GameUI.Global.ColorSet.ColorSetManager.html
+  name: ColorSetManager
+  nameWithType: ColorSetManager
+  fullName: GameUI.Global.ColorSet.ColorSetManager
+- uid: GameUI.Global.ColorSet.ColorSetRegister
+  commentId: T:GameUI.Global.ColorSet.ColorSetRegister
+  href: GameUI.Global.ColorSet.ColorSetRegister.html
+  name: ColorSetRegister
+  nameWithType: ColorSetRegister
+  fullName: GameUI.Global.ColorSet.ColorSetRegister

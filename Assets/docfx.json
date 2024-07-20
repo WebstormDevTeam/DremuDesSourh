@@ -1,0 +1,36 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": "Assets/Scripts",
+          "files": ["**/*.cs"],
+          "exclude": ["**/Editor/**", "**/Plugins/**", "**/Standard Assets/**", "**/Prototyping/**"]
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": ["**/*.md"],
+        "exclude": ["**/Editor/**", "**/Plugins/**", "**/Standard Assets/**", "**/Prototyping/**"]
+      }
+    ],
+    "artifacts": {
+      "include": [
+        "**/*.yml",
+        "**/*.xml",
+        "**/*.md"
+      ]
+    },
+    "fileSets": [
+      {
+        "id": "default",
+        "title": "Default",
+        "fileSetRef": "default"
+      }
+    ]
+  }
+}

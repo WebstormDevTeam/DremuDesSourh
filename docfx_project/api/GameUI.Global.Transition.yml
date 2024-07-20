@@ -1,0 +1,68 @@
+### YamlMime:ManagedReference
+items:
+- uid: GameUI.Global.Transition
+  commentId: N:GameUI.Global.Transition
+  id: GameUI.Global.Transition
+  children:
+  - GameUI.Global.Transition.TransitionHelper
+  - GameUI.Global.Transition.TransitionManager
+  - GameUI.Global.Transition.TransitionType
+  langs:
+  - csharp
+  - vb
+  name: GameUI.Global.Transition
+  nameWithType: GameUI.Global.Transition
+  fullName: GameUI.Global.Transition
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: GameUI.Global.Transition.TransitionManager
+  commentId: T:GameUI.Global.Transition.TransitionManager
+  href: GameUI.Global.Transition.TransitionManager.html
+  name: TransitionManager
+  nameWithType: TransitionManager
+  fullName: GameUI.Global.Transition.TransitionManager
+- uid: GameUI.Global.Transition.TransitionType
+  commentId: T:GameUI.Global.Transition.TransitionType
+  parent: GameUI.Global.Transition
+  href: GameUI.Global.Transition.TransitionType.html
+  name: TransitionType
+  nameWithType: TransitionType
+  fullName: GameUI.Global.Transition.TransitionType
+- uid: GameUI.Global.Transition.TransitionHelper
+  commentId: T:GameUI.Global.Transition.TransitionHelper
+  href: GameUI.Global.Transition.TransitionHelper.html
+  name: TransitionHelper
+  nameWithType: TransitionHelper
+  fullName: GameUI.Global.Transition.TransitionHelper
+- uid: GameUI.Global.Transition
+  commentId: N:GameUI.Global.Transition
+  href: GameUI.html
+  name: GameUI.Global.Transition
+  nameWithType: GameUI.Global.Transition
+  fullName: GameUI.Global.Transition
+  spec.csharp:
+  - uid: GameUI
+    name: GameUI
+    href: GameUI.html
+  - name: .
+  - uid: GameUI.Global
+    name: Global
+    href: GameUI.Global.html
+  - name: .
+  - uid: GameUI.Global.Transition
+    name: Transition
+    href: GameUI.Global.Transition.html
+  spec.vb:
+  - uid: GameUI
+    name: GameUI
+    href: GameUI.html
+  - name: .
+  - uid: GameUI.Global
+    name: Global
+    href: GameUI.Global.html
+  - name: .
+  - uid: GameUI.Global.Transition
+    name: Transition
+    href: GameUI.Global.Transition.html

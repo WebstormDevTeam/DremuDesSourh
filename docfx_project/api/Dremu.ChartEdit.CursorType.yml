@@ -1,0 +1,139 @@
+### YamlMime:ManagedReference
+items:
+- uid: Dremu.ChartEdit.CursorType
+  commentId: T:Dremu.ChartEdit.CursorType
+  id: CursorType
+  parent: Dremu.ChartEdit
+  children:
+  - Dremu.ChartEdit.CursorType.Move
+  - Dremu.ChartEdit.CursorType.Normal
+  - Dremu.ChartEdit.CursorType.UpDown
+  langs:
+  - csharp
+  - vb
+  name: CursorType
+  nameWithType: CursorType
+  fullName: Dremu.ChartEdit.CursorType
+  type: Enum
+  source:
+    remote:
+      path: Assets/Scripts/ChartEditor/UIManager.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: CursorType
+    path: ../Assets/Scripts/ChartEditor/UIManager.cs
+    startLine: 146
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.ChartEdit
+  syntax:
+    content: public enum CursorType
+    content.vb: Public Enum CursorType
+- uid: Dremu.ChartEdit.CursorType.Normal
+  commentId: F:Dremu.ChartEdit.CursorType.Normal
+  id: Normal
+  parent: Dremu.ChartEdit.CursorType
+  langs:
+  - csharp
+  - vb
+  name: Normal
+  nameWithType: CursorType.Normal
+  fullName: Dremu.ChartEdit.CursorType.Normal
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/ChartEditor/UIManager.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: Normal
+    path: ../Assets/Scripts/ChartEditor/UIManager.cs
+    startLine: 148
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.ChartEdit
+  syntax:
+    content: Normal = 0
+    return:
+      type: Dremu.ChartEdit.CursorType
+- uid: Dremu.ChartEdit.CursorType.Move
+  commentId: F:Dremu.ChartEdit.CursorType.Move
+  id: Move
+  parent: Dremu.ChartEdit.CursorType
+  langs:
+  - csharp
+  - vb
+  name: Move
+  nameWithType: CursorType.Move
+  fullName: Dremu.ChartEdit.CursorType.Move
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/ChartEditor/UIManager.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: Move
+    path: ../Assets/Scripts/ChartEditor/UIManager.cs
+    startLine: 149
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.ChartEdit
+  syntax:
+    content: Move = 1
+    return:
+      type: Dremu.ChartEdit.CursorType
+- uid: Dremu.ChartEdit.CursorType.UpDown
+  commentId: F:Dremu.ChartEdit.CursorType.UpDown
+  id: UpDown
+  parent: Dremu.ChartEdit.CursorType
+  langs:
+  - csharp
+  - vb
+  name: UpDown
+  nameWithType: CursorType.UpDown
+  fullName: Dremu.ChartEdit.CursorType.UpDown
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/ChartEditor/UIManager.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: UpDown
+    path: ../Assets/Scripts/ChartEditor/UIManager.cs
+    startLine: 150
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.ChartEdit
+  syntax:
+    content: UpDown = 2
+    return:
+      type: Dremu.ChartEdit.CursorType
+references:
+- uid: Dremu.ChartEdit
+  commentId: N:Dremu.ChartEdit
+  href: Dremu.html
+  name: Dremu.ChartEdit
+  nameWithType: Dremu.ChartEdit
+  fullName: Dremu.ChartEdit
+  spec.csharp:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.ChartEdit
+    name: ChartEdit
+    href: Dremu.ChartEdit.html
+  spec.vb:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.ChartEdit
+    name: ChartEdit
+    href: Dremu.ChartEdit.html
+- uid: Dremu.ChartEdit.CursorType
+  commentId: T:Dremu.ChartEdit.CursorType
+  parent: Dremu.ChartEdit
+  href: Dremu.ChartEdit.CursorType.html
+  name: CursorType
+  nameWithType: CursorType
+  fullName: Dremu.ChartEdit.CursorType

@@ -1,0 +1,164 @@
+### YamlMime:ManagedReference
+items:
+- uid: TMPro
+  commentId: N:TMPro
+  id: TMPro
+  children:
+  - TMPro.TMP_DigitValidator
+  - TMPro.TMP_PhoneNumberValidator
+  - TMPro.TMP_TextEventHandler
+  - TMPro.TMP_TextEventHandler.CharacterSelectionEvent
+  - TMPro.TMP_TextEventHandler.LineSelectionEvent
+  - TMPro.TMP_TextEventHandler.LinkSelectionEvent
+  - TMPro.TMP_TextEventHandler.SpriteSelectionEvent
+  - TMPro.TMP_TextEventHandler.WordSelectionEvent
+  langs:
+  - csharp
+  - vb
+  name: TMPro
+  nameWithType: TMPro
+  fullName: TMPro
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: TMPro.TMP_TextEventHandler
+  commentId: T:TMPro.TMP_TextEventHandler
+  parent: TMPro
+  href: TMPro.TMP_TextEventHandler.html
+  name: TMP_TextEventHandler
+  nameWithType: TMP_TextEventHandler
+  fullName: TMPro.TMP_TextEventHandler
+- uid: TMPro.TMP_TextEventHandler.CharacterSelectionEvent
+  commentId: T:TMPro.TMP_TextEventHandler.CharacterSelectionEvent
+  parent: TMPro
+  href: TMPro.TMP_TextEventHandler.html
+  name: TMP_TextEventHandler.CharacterSelectionEvent
+  nameWithType: TMP_TextEventHandler.CharacterSelectionEvent
+  fullName: TMPro.TMP_TextEventHandler.CharacterSelectionEvent
+  spec.csharp:
+  - uid: TMPro.TMP_TextEventHandler
+    name: TMP_TextEventHandler
+    href: TMPro.TMP_TextEventHandler.html
+  - name: .
+  - uid: TMPro.TMP_TextEventHandler.CharacterSelectionEvent
+    name: CharacterSelectionEvent
+    href: TMPro.TMP_TextEventHandler.CharacterSelectionEvent.html
+  spec.vb:
+  - uid: TMPro.TMP_TextEventHandler
+    name: TMP_TextEventHandler
+    href: TMPro.TMP_TextEventHandler.html
+  - name: .
+  - uid: TMPro.TMP_TextEventHandler.CharacterSelectionEvent
+    name: CharacterSelectionEvent
+    href: TMPro.TMP_TextEventHandler.CharacterSelectionEvent.html
+- uid: TMPro.TMP_TextEventHandler.SpriteSelectionEvent
+  commentId: T:TMPro.TMP_TextEventHandler.SpriteSelectionEvent
+  parent: TMPro
+  href: TMPro.TMP_TextEventHandler.html
+  name: TMP_TextEventHandler.SpriteSelectionEvent
+  nameWithType: TMP_TextEventHandler.SpriteSelectionEvent
+  fullName: TMPro.TMP_TextEventHandler.SpriteSelectionEvent
+  spec.csharp:
+  - uid: TMPro.TMP_TextEventHandler
+    name: TMP_TextEventHandler
+    href: TMPro.TMP_TextEventHandler.html
+  - name: .
+  - uid: TMPro.TMP_TextEventHandler.SpriteSelectionEvent
+    name: SpriteSelectionEvent
+    href: TMPro.TMP_TextEventHandler.SpriteSelectionEvent.html
+  spec.vb:
+  - uid: TMPro.TMP_TextEventHandler
+    name: TMP_TextEventHandler
+    href: TMPro.TMP_TextEventHandler.html
+  - name: .
+  - uid: TMPro.TMP_TextEventHandler.SpriteSelectionEvent
+    name: SpriteSelectionEvent
+    href: TMPro.TMP_TextEventHandler.SpriteSelectionEvent.html
+- uid: TMPro.TMP_TextEventHandler.WordSelectionEvent
+  commentId: T:TMPro.TMP_TextEventHandler.WordSelectionEvent
+  parent: TMPro
+  href: TMPro.TMP_TextEventHandler.html
+  name: TMP_TextEventHandler.WordSelectionEvent
+  nameWithType: TMP_TextEventHandler.WordSelectionEvent
+  fullName: TMPro.TMP_TextEventHandler.WordSelectionEvent
+  spec.csharp:
+  - uid: TMPro.TMP_TextEventHandler
+    name: TMP_TextEventHandler
+    href: TMPro.TMP_TextEventHandler.html
+  - name: .
+  - uid: TMPro.TMP_TextEventHandler.WordSelectionEvent
+    name: WordSelectionEvent
+    href: TMPro.TMP_TextEventHandler.WordSelectionEvent.html
+  spec.vb:
+  - uid: TMPro.TMP_TextEventHandler
+    name: TMP_TextEventHandler
+    href: TMPro.TMP_TextEventHandler.html
+  - name: .
+  - uid: TMPro.TMP_TextEventHandler.WordSelectionEvent
+    name: WordSelectionEvent
+    href: TMPro.TMP_TextEventHandler.WordSelectionEvent.html
+- uid: TMPro.TMP_TextEventHandler.LineSelectionEvent
+  commentId: T:TMPro.TMP_TextEventHandler.LineSelectionEvent
+  parent: TMPro
+  href: TMPro.TMP_TextEventHandler.html
+  name: TMP_TextEventHandler.LineSelectionEvent
+  nameWithType: TMP_TextEventHandler.LineSelectionEvent
+  fullName: TMPro.TMP_TextEventHandler.LineSelectionEvent
+  spec.csharp:
+  - uid: TMPro.TMP_TextEventHandler
+    name: TMP_TextEventHandler
+    href: TMPro.TMP_TextEventHandler.html
+  - name: .
+  - uid: TMPro.TMP_TextEventHandler.LineSelectionEvent
+    name: LineSelectionEvent
+    href: TMPro.TMP_TextEventHandler.LineSelectionEvent.html
+  spec.vb:
+  - uid: TMPro.TMP_TextEventHandler
+    name: TMP_TextEventHandler
+    href: TMPro.TMP_TextEventHandler.html
+  - name: .
+  - uid: TMPro.TMP_TextEventHandler.LineSelectionEvent
+    name: LineSelectionEvent
+    href: TMPro.TMP_TextEventHandler.LineSelectionEvent.html
+- uid: TMPro.TMP_TextEventHandler.LinkSelectionEvent
+  commentId: T:TMPro.TMP_TextEventHandler.LinkSelectionEvent
+  parent: TMPro
+  href: TMPro.TMP_TextEventHandler.html
+  name: TMP_TextEventHandler.LinkSelectionEvent
+  nameWithType: TMP_TextEventHandler.LinkSelectionEvent
+  fullName: TMPro.TMP_TextEventHandler.LinkSelectionEvent
+  spec.csharp:
+  - uid: TMPro.TMP_TextEventHandler
+    name: TMP_TextEventHandler
+    href: TMPro.TMP_TextEventHandler.html
+  - name: .
+  - uid: TMPro.TMP_TextEventHandler.LinkSelectionEvent
+    name: LinkSelectionEvent
+    href: TMPro.TMP_TextEventHandler.LinkSelectionEvent.html
+  spec.vb:
+  - uid: TMPro.TMP_TextEventHandler
+    name: TMP_TextEventHandler
+    href: TMPro.TMP_TextEventHandler.html
+  - name: .
+  - uid: TMPro.TMP_TextEventHandler.LinkSelectionEvent
+    name: LinkSelectionEvent
+    href: TMPro.TMP_TextEventHandler.LinkSelectionEvent.html
+- uid: TMPro.TMP_PhoneNumberValidator
+  commentId: T:TMPro.TMP_PhoneNumberValidator
+  href: TMPro.TMP_PhoneNumberValidator.html
+  name: TMP_PhoneNumberValidator
+  nameWithType: TMP_PhoneNumberValidator
+  fullName: TMPro.TMP_PhoneNumberValidator
+- uid: TMPro.TMP_DigitValidator
+  commentId: T:TMPro.TMP_DigitValidator
+  href: TMPro.TMP_DigitValidator.html
+  name: TMP_DigitValidator
+  nameWithType: TMP_DigitValidator
+  fullName: TMPro.TMP_DigitValidator
+- uid: TMPro
+  commentId: N:TMPro
+  href: TMPro.html
+  name: TMPro
+  nameWithType: TMPro
+  fullName: TMPro

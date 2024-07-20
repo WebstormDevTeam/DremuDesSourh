@@ -1,0 +1,60 @@
+### YamlMime:ManagedReference
+items:
+- uid: GameUI.Global
+  commentId: N:GameUI.Global
+  id: GameUI.Global
+  children:
+  - GameUI.Global.AutoChangeScale
+  - GameUI.Global.PlayerBar
+  - GameUI.Global.UIOutline
+  langs:
+  - csharp
+  - vb
+  name: GameUI.Global
+  nameWithType: GameUI.Global
+  fullName: GameUI.Global
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: GameUI.Global.UIOutline
+  commentId: T:GameUI.Global.UIOutline
+  parent: GameUI.Global
+  href: GameUI.Global.UIOutline.html
+  name: UIOutline
+  nameWithType: UIOutline
+  fullName: GameUI.Global.UIOutline
+- uid: GameUI.Global.PlayerBar
+  commentId: T:GameUI.Global.PlayerBar
+  href: GameUI.Global.PlayerBar.html
+  name: PlayerBar
+  nameWithType: PlayerBar
+  fullName: GameUI.Global.PlayerBar
+- uid: GameUI.Global.AutoChangeScale
+  commentId: T:GameUI.Global.AutoChangeScale
+  href: GameUI.Global.AutoChangeScale.html
+  name: AutoChangeScale
+  nameWithType: AutoChangeScale
+  fullName: GameUI.Global.AutoChangeScale
+- uid: GameUI.Global
+  commentId: N:GameUI.Global
+  href: GameUI.html
+  name: GameUI.Global
+  nameWithType: GameUI.Global
+  fullName: GameUI.Global
+  spec.csharp:
+  - uid: GameUI
+    name: GameUI
+    href: GameUI.html
+  - name: .
+  - uid: GameUI.Global
+    name: Global
+    href: GameUI.Global.html
+  spec.vb:
+  - uid: GameUI
+    name: GameUI
+    href: GameUI.html
+  - name: .
+  - uid: GameUI.Global
+    name: Global
+    href: GameUI.Global.html

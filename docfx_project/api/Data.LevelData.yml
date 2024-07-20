@@ -1,0 +1,887 @@
+### YamlMime:ManagedReference
+items:
+- uid: Data.LevelData
+  commentId: T:Data.LevelData
+  id: LevelData
+  parent: Data
+  children:
+  - Data.LevelData.PathFather
+  - Data.LevelData.UsingIllustration
+  - Data.LevelData.UsingLevelHarder
+  - Data.LevelData.UsingMusicClip
+  - Data.LevelData.charterName
+  - Data.LevelData.composerName
+  - Data.LevelData.identifier
+  - Data.LevelData.illustratorName
+  - Data.LevelData.levelDifficulty
+  - Data.LevelData.levelHarder
+  - Data.LevelData.musicName
+  - Data.LevelData.previewTime
+  langs:
+  - csharp
+  - vb
+  name: LevelData
+  nameWithType: LevelData
+  fullName: Data.LevelData
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Data/LevelData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: LevelData
+    path: ../Assets/Scripts/Data/LevelData.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Data
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class LevelData
+    content.vb: >-
+      <Serializable>
+
+      Public Class LevelData
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Data.LevelData.identifier
+  commentId: F:Data.LevelData.identifier
+  id: identifier
+  parent: Data.LevelData
+  langs:
+  - csharp
+  - vb
+  name: identifier
+  nameWithType: LevelData.identifier
+  fullName: Data.LevelData.identifier
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data/LevelData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: identifier
+    path: ../Assets/Scripts/Data/LevelData.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Data
+  syntax:
+    content: >-
+      [Title("单项数据", null, TitleAlignments.Left, true, true)]
+
+      [LabelText("关卡ID (资源文件夹名)")]
+
+      public string identifier
+    return:
+      type: System.String
+    content.vb: >-
+      <Title("单项数据", Nothing, TitleAlignments.Left, True, True)>
+
+      <LabelText("关卡ID (资源文件夹名)")>
+
+      Public identifier As String
+  attributes:
+  - type: Sirenix.OdinInspector.TitleAttribute
+    ctor: Sirenix.OdinInspector.TitleAttribute.#ctor(System.String,System.String,Sirenix.OdinInspector.TitleAlignments,System.Boolean,System.Boolean)
+    arguments:
+    - type: System.String
+      value: 单项数据
+    - type: System.String
+    - type: Sirenix.OdinInspector.TitleAlignments
+      value: 0
+    - type: System.Boolean
+      value: true
+    - type: System.Boolean
+      value: true
+  - type: Sirenix.OdinInspector.LabelTextAttribute
+    ctor: Sirenix.OdinInspector.LabelTextAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 关卡ID (资源文件夹名)
+- uid: Data.LevelData.musicName
+  commentId: F:Data.LevelData.musicName
+  id: musicName
+  parent: Data.LevelData
+  langs:
+  - csharp
+  - vb
+  name: musicName
+  nameWithType: LevelData.musicName
+  fullName: Data.LevelData.musicName
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data/LevelData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: musicName
+    path: ../Assets/Scripts/Data/LevelData.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Data
+  syntax:
+    content: >-
+      [LabelText("关卡名")]
+
+      public string musicName
+    return:
+      type: System.String
+    content.vb: >-
+      <LabelText("关卡名")>
+
+      Public musicName As String
+  attributes:
+  - type: Sirenix.OdinInspector.LabelTextAttribute
+    ctor: Sirenix.OdinInspector.LabelTextAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 关卡名
+- uid: Data.LevelData.composerName
+  commentId: F:Data.LevelData.composerName
+  id: composerName
+  parent: Data.LevelData
+  langs:
+  - csharp
+  - vb
+  name: composerName
+  nameWithType: LevelData.composerName
+  fullName: Data.LevelData.composerName
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data/LevelData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: composerName
+    path: ../Assets/Scripts/Data/LevelData.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Data
+  syntax:
+    content: >-
+      [LabelText("曲师名")]
+
+      public string composerName
+    return:
+      type: System.String
+    content.vb: >-
+      <LabelText("曲师名")>
+
+      Public composerName As String
+  attributes:
+  - type: Sirenix.OdinInspector.LabelTextAttribute
+    ctor: Sirenix.OdinInspector.LabelTextAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 曲师名
+- uid: Data.LevelData.illustratorName
+  commentId: F:Data.LevelData.illustratorName
+  id: illustratorName
+  parent: Data.LevelData
+  langs:
+  - csharp
+  - vb
+  name: illustratorName
+  nameWithType: LevelData.illustratorName
+  fullName: Data.LevelData.illustratorName
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data/LevelData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: illustratorName
+    path: ../Assets/Scripts/Data/LevelData.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Data
+  syntax:
+    content: >-
+      [LabelText("画师名")]
+
+      public string illustratorName
+    return:
+      type: System.String
+    content.vb: >-
+      <LabelText("画师名")>
+
+      Public illustratorName As String
+  attributes:
+  - type: Sirenix.OdinInspector.LabelTextAttribute
+    ctor: Sirenix.OdinInspector.LabelTextAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 画师名
+- uid: Data.LevelData.previewTime
+  commentId: F:Data.LevelData.previewTime
+  id: previewTime
+  parent: Data.LevelData
+  langs:
+  - csharp
+  - vb
+  name: previewTime
+  nameWithType: LevelData.previewTime
+  fullName: Data.LevelData.previewTime
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data/LevelData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: previewTime
+    path: ../Assets/Scripts/Data/LevelData.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Data
+  syntax:
+    content: >-
+      [LabelText("音频预览时间 (开始和结束/s)")]
+
+      public Vector2 previewTime
+    return:
+      type: UnityEngine.Vector2
+    content.vb: >-
+      <LabelText("音频预览时间 (开始和结束/s)")>
+
+      Public previewTime As Vector2
+  attributes:
+  - type: Sirenix.OdinInspector.LabelTextAttribute
+    ctor: Sirenix.OdinInspector.LabelTextAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 音频预览时间 (开始和结束/s)
+- uid: Data.LevelData.levelHarder
+  commentId: F:Data.LevelData.levelHarder
+  id: levelHarder
+  parent: Data.LevelData
+  langs:
+  - csharp
+  - vb
+  name: levelHarder
+  nameWithType: LevelData.levelHarder
+  fullName: Data.LevelData.levelHarder
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data/LevelData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: levelHarder
+    path: ../Assets/Scripts/Data/LevelData.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: Data
+  syntax:
+    content: >-
+      [Title("多项数据", null, TitleAlignments.Left, true, true)]
+
+      [LabelText("关卡拥有的难度")]
+
+      public LevelHarder levelHarder
+    return:
+      type: Data.LevelHarder
+    content.vb: >-
+      <Title("多项数据", Nothing, TitleAlignments.Left, True, True)>
+
+      <LabelText("关卡拥有的难度")>
+
+      Public levelHarder As LevelHarder
+  attributes:
+  - type: Sirenix.OdinInspector.TitleAttribute
+    ctor: Sirenix.OdinInspector.TitleAttribute.#ctor(System.String,System.String,Sirenix.OdinInspector.TitleAlignments,System.Boolean,System.Boolean)
+    arguments:
+    - type: System.String
+      value: 多项数据
+    - type: System.String
+    - type: Sirenix.OdinInspector.TitleAlignments
+      value: 0
+    - type: System.Boolean
+      value: true
+    - type: System.Boolean
+      value: true
+  - type: Sirenix.OdinInspector.LabelTextAttribute
+    ctor: Sirenix.OdinInspector.LabelTextAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 关卡拥有的难度
+- uid: Data.LevelData.charterName
+  commentId: F:Data.LevelData.charterName
+  id: charterName
+  parent: Data.LevelData
+  langs:
+  - csharp
+  - vb
+  name: charterName
+  nameWithType: LevelData.charterName
+  fullName: Data.LevelData.charterName
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data/LevelData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: charterName
+    path: ../Assets/Scripts/Data/LevelData.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: Data
+  syntax:
+    content: >-
+      [LabelText("谱师列表")]
+
+      public string[] charterName
+    return:
+      type: System.String[]
+    content.vb: >-
+      <LabelText("谱师列表")>
+
+      Public charterName As String()
+  attributes:
+  - type: Sirenix.OdinInspector.LabelTextAttribute
+    ctor: Sirenix.OdinInspector.LabelTextAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 谱师列表
+- uid: Data.LevelData.levelDifficulty
+  commentId: F:Data.LevelData.levelDifficulty
+  id: levelDifficulty
+  parent: Data.LevelData
+  langs:
+  - csharp
+  - vb
+  name: levelDifficulty
+  nameWithType: LevelData.levelDifficulty
+  fullName: Data.LevelData.levelDifficulty
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data/LevelData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: levelDifficulty
+    path: ../Assets/Scripts/Data/LevelData.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: Data
+  syntax:
+    content: >-
+      [LabelText("定数列表 (没有完成填0.修改次数) (?填-1)")]
+
+      public float[] levelDifficulty
+    return:
+      type: System.Single[]
+    content.vb: >-
+      <LabelText("定数列表 (没有完成填0.修改次数) (?填-1)")>
+
+      Public levelDifficulty As Single()
+  attributes:
+  - type: Sirenix.OdinInspector.LabelTextAttribute
+    ctor: Sirenix.OdinInspector.LabelTextAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 定数列表 (没有完成填0.修改次数) (?填-1)
+- uid: Data.LevelData.UsingMusicClip
+  commentId: F:Data.LevelData.UsingMusicClip
+  id: UsingMusicClip
+  parent: Data.LevelData
+  langs:
+  - csharp
+  - vb
+  name: UsingMusicClip
+  nameWithType: LevelData.UsingMusicClip
+  fullName: Data.LevelData.UsingMusicClip
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data/LevelData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: UsingMusicClip
+    path: ../Assets/Scripts/Data/LevelData.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: Data
+  syntax:
+    content: >-
+      [NonSerialized]
+
+      public AudioClip UsingMusicClip
+    return:
+      type: UnityEngine.AudioClip
+    content.vb: >-
+      <NonSerialized>
+
+      Public UsingMusicClip As AudioClip
+  attributes:
+  - type: System.NonSerializedAttribute
+    ctor: System.NonSerializedAttribute.#ctor
+    arguments: []
+- uid: Data.LevelData.UsingIllustration
+  commentId: F:Data.LevelData.UsingIllustration
+  id: UsingIllustration
+  parent: Data.LevelData
+  langs:
+  - csharp
+  - vb
+  name: UsingIllustration
+  nameWithType: LevelData.UsingIllustration
+  fullName: Data.LevelData.UsingIllustration
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data/LevelData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: UsingIllustration
+    path: ../Assets/Scripts/Data/LevelData.cs
+    startLine: 24
+  assemblies:
+  - Assembly-CSharp
+  namespace: Data
+  syntax:
+    content: >-
+      [NonSerialized]
+
+      public Sprite UsingIllustration
+    return:
+      type: UnityEngine.Sprite
+    content.vb: >-
+      <NonSerialized>
+
+      Public UsingIllustration As Sprite
+  attributes:
+  - type: System.NonSerializedAttribute
+    ctor: System.NonSerializedAttribute.#ctor
+    arguments: []
+- uid: Data.LevelData.UsingLevelHarder
+  commentId: F:Data.LevelData.UsingLevelHarder
+  id: UsingLevelHarder
+  parent: Data.LevelData
+  langs:
+  - csharp
+  - vb
+  name: UsingLevelHarder
+  nameWithType: LevelData.UsingLevelHarder
+  fullName: Data.LevelData.UsingLevelHarder
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data/LevelData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: UsingLevelHarder
+    path: ../Assets/Scripts/Data/LevelData.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: Data
+  syntax:
+    content: >-
+      [NonSerialized]
+
+      public LevelHarder UsingLevelHarder
+    return:
+      type: Data.LevelHarder
+    content.vb: >-
+      <NonSerialized>
+
+      Public UsingLevelHarder As LevelHarder
+  attributes:
+  - type: System.NonSerializedAttribute
+    ctor: System.NonSerializedAttribute.#ctor
+    arguments: []
+- uid: Data.LevelData.PathFather
+  commentId: F:Data.LevelData.PathFather
+  id: PathFather
+  parent: Data.LevelData
+  langs:
+  - csharp
+  - vb
+  name: PathFather
+  nameWithType: LevelData.PathFather
+  fullName: Data.LevelData.PathFather
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data/LevelData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: PathFather
+    path: ../Assets/Scripts/Data/LevelData.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: Data
+  syntax:
+    content: >-
+      [NonSerialized]
+
+      public string PathFather
+    return:
+      type: System.String
+    content.vb: >-
+      <NonSerialized>
+
+      Public PathFather As String
+  attributes:
+  - type: System.NonSerializedAttribute
+    ctor: System.NonSerializedAttribute.#ctor
+    arguments: []
+references:
+- uid: Data
+  commentId: N:Data
+  href: Data.html
+  name: Data
+  nameWithType: Data
+  fullName: Data
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Data.LevelHarder
+  commentId: T:Data.LevelHarder
+  parent: Data
+  href: Data.LevelHarder.html
+  name: LevelHarder
+  nameWithType: LevelHarder
+  fullName: Data.LevelHarder
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: System.Single[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float[]
+  nameWithType: float[]
+  fullName: float[]
+  nameWithType.vb: Single()
+  fullName.vb: Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: (
+  - name: )
+- uid: UnityEngine.AudioClip
+  commentId: T:UnityEngine.AudioClip
+  parent: UnityEngine
+  isExternal: true
+  name: AudioClip
+  nameWithType: AudioClip
+  fullName: UnityEngine.AudioClip
+- uid: UnityEngine.Sprite
+  commentId: T:UnityEngine.Sprite
+  parent: UnityEngine
+  isExternal: true
+  name: Sprite
+  nameWithType: Sprite
+  fullName: UnityEngine.Sprite

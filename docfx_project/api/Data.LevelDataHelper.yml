@@ -1,0 +1,571 @@
+### YamlMime:ManagedReference
+items:
+- uid: Data.LevelDataHelper
+  commentId: T:Data.LevelDataHelper
+  id: LevelDataHelper
+  parent: Data
+  children:
+  - Data.LevelDataHelper.Abbr(Data.LevelHarder)
+  - Data.LevelDataHelper.GetDifficultyName(System.Single)
+  - Data.LevelDataHelper.Index(Data.LevelHarder)
+  - Data.LevelDataHelper.Max(Data.LevelHarder)
+  - Data.LevelDataHelper.Min(Data.LevelHarder)
+  - Data.LevelDataHelper.SignColor(Data.LevelHarder)
+  langs:
+  - csharp
+  - vb
+  name: LevelDataHelper
+  nameWithType: LevelDataHelper
+  fullName: Data.LevelDataHelper
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Data/LevelData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: LevelDataHelper
+    path: ../Assets/Scripts/Data/LevelData.cs
+    startLine: 41
+  assemblies:
+  - Assembly-CSharp
+  namespace: Data
+  syntax:
+    content: public static class LevelDataHelper
+    content.vb: Public Module LevelDataHelper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Data.LevelDataHelper.Index(Data.LevelHarder)
+  commentId: M:Data.LevelDataHelper.Index(Data.LevelHarder)
+  id: Index(Data.LevelHarder)
+  isExtensionMethod: true
+  parent: Data.LevelDataHelper
+  langs:
+  - csharp
+  - vb
+  name: Index(LevelHarder)
+  nameWithType: LevelDataHelper.Index(LevelHarder)
+  fullName: Data.LevelDataHelper.Index(Data.LevelHarder)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Data/LevelData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: Index
+    path: ../Assets/Scripts/Data/LevelData.cs
+    startLine: 43
+  assemblies:
+  - Assembly-CSharp
+  namespace: Data
+  syntax:
+    content: public static int Index(this LevelHarder harder)
+    parameters:
+    - id: harder
+      type: Data.LevelHarder
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Index(harder As LevelHarder) As Integer
+  overload: Data.LevelDataHelper.Index*
+- uid: Data.LevelDataHelper.Abbr(Data.LevelHarder)
+  commentId: M:Data.LevelDataHelper.Abbr(Data.LevelHarder)
+  id: Abbr(Data.LevelHarder)
+  isExtensionMethod: true
+  parent: Data.LevelDataHelper
+  langs:
+  - csharp
+  - vb
+  name: Abbr(LevelHarder)
+  nameWithType: LevelDataHelper.Abbr(LevelHarder)
+  fullName: Data.LevelDataHelper.Abbr(Data.LevelHarder)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Data/LevelData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: Abbr
+    path: ../Assets/Scripts/Data/LevelData.cs
+    startLine: 58
+  assemblies:
+  - Assembly-CSharp
+  namespace: Data
+  syntax:
+    content: public static string Abbr(this LevelHarder harder)
+    parameters:
+    - id: harder
+      type: Data.LevelHarder
+    return:
+      type: System.String
+    content.vb: Public Shared Function Abbr(harder As LevelHarder) As String
+  overload: Data.LevelDataHelper.Abbr*
+- uid: Data.LevelDataHelper.Max(Data.LevelHarder)
+  commentId: M:Data.LevelDataHelper.Max(Data.LevelHarder)
+  id: Max(Data.LevelHarder)
+  isExtensionMethod: true
+  parent: Data.LevelDataHelper
+  langs:
+  - csharp
+  - vb
+  name: Max(LevelHarder)
+  nameWithType: LevelDataHelper.Max(LevelHarder)
+  fullName: Data.LevelDataHelper.Max(Data.LevelHarder)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Data/LevelData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: Max
+    path: ../Assets/Scripts/Data/LevelData.cs
+    startLine: 73
+  assemblies:
+  - Assembly-CSharp
+  namespace: Data
+  syntax:
+    content: public static LevelHarder Max(this LevelHarder harder)
+    parameters:
+    - id: harder
+      type: Data.LevelHarder
+    return:
+      type: Data.LevelHarder
+    content.vb: Public Shared Function Max(harder As LevelHarder) As LevelHarder
+  overload: Data.LevelDataHelper.Max*
+- uid: Data.LevelDataHelper.Min(Data.LevelHarder)
+  commentId: M:Data.LevelDataHelper.Min(Data.LevelHarder)
+  id: Min(Data.LevelHarder)
+  isExtensionMethod: true
+  parent: Data.LevelDataHelper
+  langs:
+  - csharp
+  - vb
+  name: Min(LevelHarder)
+  nameWithType: LevelDataHelper.Min(LevelHarder)
+  fullName: Data.LevelDataHelper.Min(Data.LevelHarder)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Data/LevelData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: Min
+    path: ../Assets/Scripts/Data/LevelData.cs
+    startLine: 82
+  assemblies:
+  - Assembly-CSharp
+  namespace: Data
+  syntax:
+    content: public static LevelHarder Min(this LevelHarder harder)
+    parameters:
+    - id: harder
+      type: Data.LevelHarder
+    return:
+      type: Data.LevelHarder
+    content.vb: Public Shared Function Min(harder As LevelHarder) As LevelHarder
+  overload: Data.LevelDataHelper.Min*
+- uid: Data.LevelDataHelper.SignColor(Data.LevelHarder)
+  commentId: M:Data.LevelDataHelper.SignColor(Data.LevelHarder)
+  id: SignColor(Data.LevelHarder)
+  isExtensionMethod: true
+  parent: Data.LevelDataHelper
+  langs:
+  - csharp
+  - vb
+  name: SignColor(LevelHarder)
+  nameWithType: LevelDataHelper.SignColor(LevelHarder)
+  fullName: Data.LevelDataHelper.SignColor(Data.LevelHarder)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Data/LevelData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: SignColor
+    path: ../Assets/Scripts/Data/LevelData.cs
+    startLine: 91
+  assemblies:
+  - Assembly-CSharp
+  namespace: Data
+  syntax:
+    content: public static Color SignColor(this LevelHarder harder)
+    parameters:
+    - id: harder
+      type: Data.LevelHarder
+    return:
+      type: UnityEngine.Color
+    content.vb: Public Shared Function SignColor(harder As LevelHarder) As Color
+  overload: Data.LevelDataHelper.SignColor*
+- uid: Data.LevelDataHelper.GetDifficultyName(System.Single)
+  commentId: M:Data.LevelDataHelper.GetDifficultyName(System.Single)
+  id: GetDifficultyName(System.Single)
+  parent: Data.LevelDataHelper
+  langs:
+  - csharp
+  - vb
+  name: GetDifficultyName(float)
+  nameWithType: LevelDataHelper.GetDifficultyName(float)
+  fullName: Data.LevelDataHelper.GetDifficultyName(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Data/LevelData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: GetDifficultyName
+    path: ../Assets/Scripts/Data/LevelData.cs
+    startLine: 100
+  assemblies:
+  - Assembly-CSharp
+  namespace: Data
+  syntax:
+    content: public static string GetDifficultyName(float diff)
+    parameters:
+    - id: diff
+      type: System.Single
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetDifficultyName(diff As Single) As String
+  overload: Data.LevelDataHelper.GetDifficultyName*
+  nameWithType.vb: LevelDataHelper.GetDifficultyName(Single)
+  fullName.vb: Data.LevelDataHelper.GetDifficultyName(Single)
+  name.vb: GetDifficultyName(Single)
+references:
+- uid: Data
+  commentId: N:Data
+  href: Data.html
+  name: Data
+  nameWithType: Data
+  fullName: Data
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Data.LevelDataHelper.Index*
+  commentId: Overload:Data.LevelDataHelper.Index
+  href: Data.LevelDataHelper.html#Data_LevelDataHelper_Index_Data_LevelHarder_
+  name: Index
+  nameWithType: LevelDataHelper.Index
+  fullName: Data.LevelDataHelper.Index
+- uid: Data.LevelHarder
+  commentId: T:Data.LevelHarder
+  parent: Data
+  href: Data.LevelHarder.html
+  name: LevelHarder
+  nameWithType: LevelHarder
+  fullName: Data.LevelHarder
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Data.LevelDataHelper.Abbr*
+  commentId: Overload:Data.LevelDataHelper.Abbr
+  href: Data.LevelDataHelper.html#Data_LevelDataHelper_Abbr_Data_LevelHarder_
+  name: Abbr
+  nameWithType: LevelDataHelper.Abbr
+  fullName: Data.LevelDataHelper.Abbr
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Data.LevelDataHelper.Max*
+  commentId: Overload:Data.LevelDataHelper.Max
+  href: Data.LevelDataHelper.html#Data_LevelDataHelper_Max_Data_LevelHarder_
+  name: Max
+  nameWithType: LevelDataHelper.Max
+  fullName: Data.LevelDataHelper.Max
+- uid: Data.LevelDataHelper.Min*
+  commentId: Overload:Data.LevelDataHelper.Min
+  href: Data.LevelDataHelper.html#Data_LevelDataHelper_Min_Data_LevelHarder_
+  name: Min
+  nameWithType: LevelDataHelper.Min
+  fullName: Data.LevelDataHelper.Min
+- uid: Data.LevelDataHelper.SignColor*
+  commentId: Overload:Data.LevelDataHelper.SignColor
+  href: Data.LevelDataHelper.html#Data_LevelDataHelper_SignColor_Data_LevelHarder_
+  name: SignColor
+  nameWithType: LevelDataHelper.SignColor
+  fullName: Data.LevelDataHelper.SignColor
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Data.LevelDataHelper.GetDifficultyName*
+  commentId: Overload:Data.LevelDataHelper.GetDifficultyName
+  href: Data.LevelDataHelper.html#Data_LevelDataHelper_GetDifficultyName_System_Single_
+  name: GetDifficultyName
+  nameWithType: LevelDataHelper.GetDifficultyName
+  fullName: Data.LevelDataHelper.GetDifficultyName
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single

@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Utils
+  commentId: N:Utils
+  id: Utils
+  children:
+  - Utils.Utility
+  langs:
+  - csharp
+  - vb
+  name: Utils
+  nameWithType: Utils
+  fullName: Utils
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: Utils.Utility
+  commentId: T:Utils.Utility
+  href: Utils.Utility.html
+  name: Utility
+  nameWithType: Utility
+  fullName: Utils.Utility

@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: GameUI.Setting
+  commentId: N:GameUI.Setting
+  id: GameUI.Setting
+  children:
+  - GameUI.Setting.SettingManager
+  - GameUI.Setting.SettingShow
+  langs:
+  - csharp
+  - vb
+  name: GameUI.Setting
+  nameWithType: GameUI.Setting
+  fullName: GameUI.Setting
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: GameUI.Setting.SettingManager
+  commentId: T:GameUI.Setting.SettingManager
+  href: GameUI.Setting.SettingManager.html
+  name: SettingManager
+  nameWithType: SettingManager
+  fullName: GameUI.Setting.SettingManager
+- uid: GameUI.Setting.SettingShow
+  commentId: T:GameUI.Setting.SettingShow
+  href: GameUI.Setting.SettingShow.html
+  name: SettingShow
+  nameWithType: SettingShow
+  fullName: GameUI.Setting.SettingShow

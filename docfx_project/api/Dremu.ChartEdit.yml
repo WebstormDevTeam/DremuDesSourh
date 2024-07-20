@@ -1,0 +1,95 @@
+### YamlMime:ManagedReference
+items:
+- uid: Dremu.ChartEdit
+  commentId: N:Dremu.ChartEdit
+  id: Dremu.ChartEdit
+  children:
+  - Dremu.ChartEdit.BetterRangeSlider
+  - Dremu.ChartEdit.ContextMenu
+  - Dremu.ChartEdit.ContextMenuItem
+  - Dremu.ChartEdit.CursorType
+  - Dremu.ChartEdit.DropDownMenu
+  - Dremu.ChartEdit.EditPanel
+  - Dremu.ChartEdit.RangeView
+  - Dremu.ChartEdit.UIManager
+  langs:
+  - csharp
+  - vb
+  name: Dremu.ChartEdit
+  nameWithType: Dremu.ChartEdit
+  fullName: Dremu.ChartEdit
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: Dremu.ChartEdit.UIManager
+  commentId: T:Dremu.ChartEdit.UIManager
+  href: Dremu.ChartEdit.UIManager.html
+  name: UIManager
+  nameWithType: UIManager
+  fullName: Dremu.ChartEdit.UIManager
+- uid: Dremu.ChartEdit.CursorType
+  commentId: T:Dremu.ChartEdit.CursorType
+  parent: Dremu.ChartEdit
+  href: Dremu.ChartEdit.CursorType.html
+  name: CursorType
+  nameWithType: CursorType
+  fullName: Dremu.ChartEdit.CursorType
+- uid: Dremu.ChartEdit.BetterRangeSlider
+  commentId: T:Dremu.ChartEdit.BetterRangeSlider
+  href: Dremu.ChartEdit.BetterRangeSlider.html
+  name: BetterRangeSlider
+  nameWithType: BetterRangeSlider
+  fullName: Dremu.ChartEdit.BetterRangeSlider
+- uid: Dremu.ChartEdit.ContextMenu
+  commentId: T:Dremu.ChartEdit.ContextMenu
+  href: Dremu.ChartEdit.ContextMenu.html
+  name: ContextMenu
+  nameWithType: ContextMenu
+  fullName: Dremu.ChartEdit.ContextMenu
+- uid: Dremu.ChartEdit.ContextMenuItem
+  commentId: T:Dremu.ChartEdit.ContextMenuItem
+  href: Dremu.ChartEdit.ContextMenuItem.html
+  name: ContextMenuItem
+  nameWithType: ContextMenuItem
+  fullName: Dremu.ChartEdit.ContextMenuItem
+- uid: Dremu.ChartEdit.RangeView
+  commentId: T:Dremu.ChartEdit.RangeView
+  href: Dremu.ChartEdit.RangeView.html
+  name: RangeView
+  nameWithType: RangeView
+  fullName: Dremu.ChartEdit.RangeView
+- uid: Dremu.ChartEdit.DropDownMenu
+  commentId: T:Dremu.ChartEdit.DropDownMenu
+  href: Dremu.ChartEdit.DropDownMenu.html
+  name: DropDownMenu
+  nameWithType: DropDownMenu
+  fullName: Dremu.ChartEdit.DropDownMenu
+- uid: Dremu.ChartEdit.EditPanel
+  commentId: T:Dremu.ChartEdit.EditPanel
+  href: Dremu.ChartEdit.EditPanel.html
+  name: EditPanel
+  nameWithType: EditPanel
+  fullName: Dremu.ChartEdit.EditPanel
+- uid: Dremu.ChartEdit
+  commentId: N:Dremu.ChartEdit
+  href: Dremu.html
+  name: Dremu.ChartEdit
+  nameWithType: Dremu.ChartEdit
+  fullName: Dremu.ChartEdit
+  spec.csharp:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.ChartEdit
+    name: ChartEdit
+    href: Dremu.ChartEdit.html
+  spec.vb:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.ChartEdit
+    name: ChartEdit
+    href: Dremu.ChartEdit.html

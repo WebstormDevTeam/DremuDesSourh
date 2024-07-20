@@ -1,0 +1,1145 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class EnvelopeTrack </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class EnvelopeTrack ">
+    
+    <meta name="description" content="一条用来编辑一个包络线的轨道. 注: 所有的Unchecked最后都要改成private">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Dremu.ChartEdit.Envelope.EnvelopeTrack">
+
+
+
+  <h1 id="Dremu_ChartEdit_Envelope_EnvelopeTrack" data-uid="Dremu.ChartEdit.Envelope.EnvelopeTrack" class="text-break">Class EnvelopeTrack</h1>
+  <div class="markdown level0 summary"><p>一条用来编辑一个包络线的轨道.
+注: 所有的Unchecked最后都要改成private</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">Object</span></div>
+    <div class="level2"><span class="xref">Component</span></div>
+    <div class="level3"><span class="xref">Behaviour</span></div>
+    <div class="level4"><span class="xref">MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">EnvelopeTrack</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">IDragHandler</span></div>
+    <div><span class="xref">IEndDragHandler</span></div>
+    <div><span class="xref">IBeginDragHandler</span></div>
+    <div><span class="xref">IPointerClickHandler</span></div>
+    <div><span class="xref">IPointerMoveHandler</span></div>
+    <div><span class="xref">IPointerExitHandler</span></div>
+    <div><span class="xref">IEventSystemHandler</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">MonoBehaviour.IsInvoking()</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.CancelInvoke()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.Invoke(string, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.InvokeRepeating(string, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.CancelInvoke(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.IsInvoking(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StartCoroutine(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StartCoroutine(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StartCoroutine(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StartCoroutine_Auto(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StopCoroutine(IEnumerator)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StopCoroutine(Coroutine)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StopCoroutine(string)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StopAllCoroutines()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">MonoBehaviour.print(object)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.destroyCancellationToken</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.useGUILayout</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.runInEditMode</span>
+    </div>
+    <div>
+      <span class="xref">Behaviour.enabled</span>
+    </div>
+    <div>
+      <span class="xref">Behaviour.isActiveAndEnabled</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponent(Type)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.TryGetComponent(Type, out Component)</a>
+    </div>
+    <div>
+      <span class="xref">Component.TryGetComponent&lt;T&gt;(out T)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.GetComponent(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInChildren(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInChildren(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentInChildren&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInChildren(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInChildren(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInChildren&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInChildren&lt;T&gt;(bool, List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">Component.GetComponentsInChildren&lt;T&gt;(List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInParent(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInParent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentInParent&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInParent(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInParent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInParent&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInParent&lt;T&gt;(bool, List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponents(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponents(Type, List&lt;Component&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">Component.GetComponents&lt;T&gt;(List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponents&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.CompareTag(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <span class="xref">Component.transform</span>
+    </div>
+    <div>
+      <span class="xref">Component.gameObject</span>
+    </div>
+    <div>
+      <span class="xref">Component.tag</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetInstanceID()</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetHashCode()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Vector3, Quaternion, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Transform)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.Instantiate(Object, Transform, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Transform)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.Instantiate&lt;T&gt;(T, Transform, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Object.Destroy(Object, float)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Destroy(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.DestroyImmediate(Object, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyImmediate(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsByType(Type, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsByType(Type, FindObjectsInactive, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DontDestroyOnLoad(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Object.DestroyObject(Object, float)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyObject(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindSceneObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfTypeIncludingAssets(Type)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsByType&lt;T&gt;(FindObjectsSortMode)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.FindObjectsOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsByType&lt;T&gt;(FindObjectsInactive, FindObjectsSortMode)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.FindObjectOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindFirstObjectByType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindAnyObjectByType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindFirstObjectByType&lt;T&gt;(FindObjectsInactive)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindAnyObjectByType&lt;T&gt;(FindObjectsInactive)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfTypeAll(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindFirstObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindAnyObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindFirstObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindAnyObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <span class="xref">Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">Object.name</span>
+    </div>
+    <div>
+      <span class="xref">Object.hideFlags</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Dremu.html">Dremu</a>.<a class="xref" href="Dremu.ChartEdit.html">ChartEdit</a>.<a class="xref" href="Dremu.ChartEdit.Envelope.html">Envelope</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="Dremu_ChartEdit_Envelope_EnvelopeTrack_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EnvelopeTrack : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDragHandler, IPointerClickHandler, IPointerMoveHandler, IPointerExitHandler, IEventSystemHandler</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/new/main/apiSpec/new?filename=Dremu_ChartEdit_Envelope_EnvelopeTrack_Line.md&amp;value=---%0Auid%3A%20Dremu.ChartEdit.Envelope.EnvelopeTrack.Line%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/blob/main/Assets/Scripts/ChartEditor/Envelope/EnvelopeTrack.cs/#L16">View Source</a>
+  </span>
+  <h4 id="Dremu_ChartEdit_Envelope_EnvelopeTrack_Line" data-uid="Dremu.ChartEdit.Envelope.EnvelopeTrack.Line">Line</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EnvelopeLine Line</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dremu.Gameplay.Tool.EnvelopeLine.html">EnvelopeLine</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/new/main/apiSpec/new?filename=Dremu_ChartEdit_Envelope_EnvelopeTrack_SelectMe.md&amp;value=---%0Auid%3A%20Dremu.ChartEdit.Envelope.EnvelopeTrack.SelectMe%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/blob/main/Assets/Scripts/ChartEditor/Envelope/EnvelopeTrack.cs/#L24">View Source</a>
+  </span>
+  <h4 id="Dremu_ChartEdit_Envelope_EnvelopeTrack_SelectMe" data-uid="Dremu.ChartEdit.Envelope.EnvelopeTrack.SelectMe">SelectMe</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public UnityAction SelectMe</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityAction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/new/main/apiSpec/new?filename=Dremu_ChartEdit_Envelope_EnvelopeTrack_ViewingParent.md&amp;value=---%0Auid%3A%20Dremu.ChartEdit.Envelope.EnvelopeTrack.ViewingParent%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/blob/main/Assets/Scripts/ChartEditor/Envelope/EnvelopeTrack.cs/#L25">View Source</a>
+  </span>
+  <h4 id="Dremu_ChartEdit_Envelope_EnvelopeTrack_ViewingParent" data-uid="Dremu.ChartEdit.Envelope.EnvelopeTrack.ViewingParent">ViewingParent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectTransform ViewingParent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RectTransform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/new/main/apiSpec/new?filename=Dremu_ChartEdit_Envelope_EnvelopeTrack_containers.md&amp;value=---%0Auid%3A%20Dremu.ChartEdit.Envelope.EnvelopeTrack.containers%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/blob/main/Assets/Scripts/ChartEditor/Envelope/EnvelopeTrack.cs/#L20">View Source</a>
+  </span>
+  <h4 id="Dremu_ChartEdit_Envelope_EnvelopeTrack_containers" data-uid="Dremu.ChartEdit.Envelope.EnvelopeTrack.containers">containers</h4>
+  <div class="markdown level1 summary"><p>这个List中的物体顺序与子物体顺序相同</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+public List&lt;LineContainer&gt; containers</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Dremu.ChartEdit.Envelope.LineContainer.html">LineContainer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/new/main/apiSpec/new?filename=Dremu_ChartEdit_Envelope_EnvelopeTrack_lineContainerPrefab.md&amp;value=---%0Auid%3A%20Dremu.ChartEdit.Envelope.EnvelopeTrack.lineContainerPrefab%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/blob/main/Assets/Scripts/ChartEditor/Envelope/EnvelopeTrack.cs/#L21">View Source</a>
+  </span>
+  <h4 id="Dremu_ChartEdit_Envelope_EnvelopeTrack_lineContainerPrefab" data-uid="Dremu.ChartEdit.Envelope.EnvelopeTrack.lineContainerPrefab">lineContainerPrefab</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+public LineContainer lineContainerPrefab</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dremu.ChartEdit.Envelope.LineContainer.html">LineContainer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/new/main/apiSpec/new?filename=Dremu_ChartEdit_Envelope_EnvelopeTrack_realParent.md&amp;value=---%0Auid%3A%20Dremu.ChartEdit.Envelope.EnvelopeTrack.realParent%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/blob/main/Assets/Scripts/ChartEditor/Envelope/EnvelopeTrack.cs/#L26">View Source</a>
+  </span>
+  <h4 id="Dremu_ChartEdit_Envelope_EnvelopeTrack_realParent" data-uid="Dremu.ChartEdit.Envelope.EnvelopeTrack.realParent">realParent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+public VerticalTrackView realParent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dremu.ChartEdit.Envelope.VerticalTrackView.html">VerticalTrackView</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/new/main/apiSpec/new?filename=Dremu_ChartEdit_Envelope_EnvelopeTrack_BeatX.md&amp;value=---%0Auid%3A%20Dremu.ChartEdit.Envelope.EnvelopeTrack.BeatX%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/blob/main/Assets/Scripts/ChartEditor/Envelope/EnvelopeTrack.cs/#L36">View Source</a>
+  </span>
+  <a id="Dremu_ChartEdit_Envelope_EnvelopeTrack_BeatX_" data-uid="Dremu.ChartEdit.Envelope.EnvelopeTrack.BeatX*"></a>
+  <h4 id="Dremu_ChartEdit_Envelope_EnvelopeTrack_BeatX" data-uid="Dremu.ChartEdit.Envelope.EnvelopeTrack.BeatX">BeatX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float BeatX { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/new/main/apiSpec/new?filename=Dremu_ChartEdit_Envelope_EnvelopeTrack_AddNewNode_System_Int32_System_Int32_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20Dremu.ChartEdit.Envelope.EnvelopeTrack.AddNewNode(System.Int32%2CSystem.Int32%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/blob/main/Assets/Scripts/ChartEditor/Envelope/EnvelopeTrack.cs/#L163">View Source</a>
+  </span>
+  <a id="Dremu_ChartEdit_Envelope_EnvelopeTrack_AddNewNode_" data-uid="Dremu.ChartEdit.Envelope.EnvelopeTrack.AddNewNode*"></a>
+  <h4 id="Dremu_ChartEdit_Envelope_EnvelopeTrack_AddNewNode_System_Int32_System_Int32_System_Single_System_Single_" data-uid="Dremu.ChartEdit.Envelope.EnvelopeTrack.AddNewNode(System.Int32,System.Int32,System.Single,System.Single)">AddNewNode(int, int, float, float)</h4>
+  <div class="markdown level1 summary"><p>添加一个新Node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddNewNode(int ContainerIndex, int previousNodeIndex, float time, float value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">ContainerIndex</span></td>
+        <td><p>新Node应该属于的Container</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">previousNodeIndex</span></td>
+        <td><p>它上一个Node的下标 (全局)</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">time</span></td>
+        <td><p>Node的时间</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Node的值</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/new/main/apiSpec/new?filename=Dremu_ChartEdit_Envelope_EnvelopeTrack_MergeContainerWithRightUnchecked_System_Int32_.md&amp;value=---%0Auid%3A%20Dremu.ChartEdit.Envelope.EnvelopeTrack.MergeContainerWithRightUnchecked(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/blob/main/Assets/Scripts/ChartEditor/Envelope/EnvelopeTrack.cs/#L143">View Source</a>
+  </span>
+  <a id="Dremu_ChartEdit_Envelope_EnvelopeTrack_MergeContainerWithRightUnchecked_" data-uid="Dremu.ChartEdit.Envelope.EnvelopeTrack.MergeContainerWithRightUnchecked*"></a>
+  <h4 id="Dremu_ChartEdit_Envelope_EnvelopeTrack_MergeContainerWithRightUnchecked_System_Int32_" data-uid="Dremu.ChartEdit.Envelope.EnvelopeTrack.MergeContainerWithRightUnchecked(System.Int32)">MergeContainerWithRightUnchecked(int)</h4>
+  <div class="markdown level1 summary"><p>将在这个位置的Container与下一个合并.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MergeContainerWithRightUnchecked(int ContainerIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">ContainerIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/new/main/apiSpec/new?filename=Dremu_ChartEdit_Envelope_EnvelopeTrack_OnBeginDrag_UnityEngine_EventSystems_PointerEventData_.md&amp;value=---%0Auid%3A%20Dremu.ChartEdit.Envelope.EnvelopeTrack.OnBeginDrag(UnityEngine.EventSystems.PointerEventData)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/blob/main/Assets/Scripts/ChartEditor/Envelope/EnvelopeTrack.cs/#L227">View Source</a>
+  </span>
+  <a id="Dremu_ChartEdit_Envelope_EnvelopeTrack_OnBeginDrag_" data-uid="Dremu.ChartEdit.Envelope.EnvelopeTrack.OnBeginDrag*"></a>
+  <h4 id="Dremu_ChartEdit_Envelope_EnvelopeTrack_OnBeginDrag_UnityEngine_EventSystems_PointerEventData_" data-uid="Dremu.ChartEdit.Envelope.EnvelopeTrack.OnBeginDrag(UnityEngine.EventSystems.PointerEventData)">OnBeginDrag(PointerEventData)</h4>
+  <div class="markdown level1 summary"><p>开始拖动的handler</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnBeginDrag(PointerEventData data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PointerEventData</span></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/new/main/apiSpec/new?filename=Dremu_ChartEdit_Envelope_EnvelopeTrack_OnDrag_UnityEngine_EventSystems_PointerEventData_.md&amp;value=---%0Auid%3A%20Dremu.ChartEdit.Envelope.EnvelopeTrack.OnDrag(UnityEngine.EventSystems.PointerEventData)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/blob/main/Assets/Scripts/ChartEditor/Envelope/EnvelopeTrack.cs/#L241">View Source</a>
+  </span>
+  <a id="Dremu_ChartEdit_Envelope_EnvelopeTrack_OnDrag_" data-uid="Dremu.ChartEdit.Envelope.EnvelopeTrack.OnDrag*"></a>
+  <h4 id="Dremu_ChartEdit_Envelope_EnvelopeTrack_OnDrag_UnityEngine_EventSystems_PointerEventData_" data-uid="Dremu.ChartEdit.Envelope.EnvelopeTrack.OnDrag(UnityEngine.EventSystems.PointerEventData)">OnDrag(PointerEventData)</h4>
+  <div class="markdown level1 summary"><p>When dragging is occurring this will be called every time the cursor is moved.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnDrag(PointerEventData data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PointerEventData</span></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/new/main/apiSpec/new?filename=Dremu_ChartEdit_Envelope_EnvelopeTrack_OnEndDrag_UnityEngine_EventSystems_PointerEventData_.md&amp;value=---%0Auid%3A%20Dremu.ChartEdit.Envelope.EnvelopeTrack.OnEndDrag(UnityEngine.EventSystems.PointerEventData)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/blob/main/Assets/Scripts/ChartEditor/Envelope/EnvelopeTrack.cs/#L235">View Source</a>
+  </span>
+  <a id="Dremu_ChartEdit_Envelope_EnvelopeTrack_OnEndDrag_" data-uid="Dremu.ChartEdit.Envelope.EnvelopeTrack.OnEndDrag*"></a>
+  <h4 id="Dremu_ChartEdit_Envelope_EnvelopeTrack_OnEndDrag_UnityEngine_EventSystems_PointerEventData_" data-uid="Dremu.ChartEdit.Envelope.EnvelopeTrack.OnEndDrag(UnityEngine.EventSystems.PointerEventData)">OnEndDrag(PointerEventData)</h4>
+  <div class="markdown level1 summary"><p>Called by a BaseInputModule when a drag is ended.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnEndDrag(PointerEventData data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PointerEventData</span></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/new/main/apiSpec/new?filename=Dremu_ChartEdit_Envelope_EnvelopeTrack_OnPointerClick_UnityEngine_EventSystems_PointerEventData_.md&amp;value=---%0Auid%3A%20Dremu.ChartEdit.Envelope.EnvelopeTrack.OnPointerClick(UnityEngine.EventSystems.PointerEventData)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/blob/main/Assets/Scripts/ChartEditor/Envelope/EnvelopeTrack.cs/#L252">View Source</a>
+  </span>
+  <a id="Dremu_ChartEdit_Envelope_EnvelopeTrack_OnPointerClick_" data-uid="Dremu.ChartEdit.Envelope.EnvelopeTrack.OnPointerClick*"></a>
+  <h4 id="Dremu_ChartEdit_Envelope_EnvelopeTrack_OnPointerClick_UnityEngine_EventSystems_PointerEventData_" data-uid="Dremu.ChartEdit.Envelope.EnvelopeTrack.OnPointerClick(UnityEngine.EventSystems.PointerEventData)">OnPointerClick(PointerEventData)</h4>
+  <div class="markdown level1 summary"><p>点击时弹出菜单 (以后可能会改)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPointerClick(PointerEventData data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PointerEventData</span></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/new/main/apiSpec/new?filename=Dremu_ChartEdit_Envelope_EnvelopeTrack_OnPointerExit_UnityEngine_EventSystems_PointerEventData_.md&amp;value=---%0Auid%3A%20Dremu.ChartEdit.Envelope.EnvelopeTrack.OnPointerExit(UnityEngine.EventSystems.PointerEventData)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/blob/main/Assets/Scripts/ChartEditor/Envelope/EnvelopeTrack.cs/#L313">View Source</a>
+  </span>
+  <a id="Dremu_ChartEdit_Envelope_EnvelopeTrack_OnPointerExit_" data-uid="Dremu.ChartEdit.Envelope.EnvelopeTrack.OnPointerExit*"></a>
+  <h4 id="Dremu_ChartEdit_Envelope_EnvelopeTrack_OnPointerExit_UnityEngine_EventSystems_PointerEventData_" data-uid="Dremu.ChartEdit.Envelope.EnvelopeTrack.OnPointerExit(UnityEngine.EventSystems.PointerEventData)">OnPointerExit(PointerEventData)</h4>
+  <div class="markdown level1 summary"><p>Use this callback to detect pointer exit events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPointerExit(PointerEventData data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PointerEventData</span></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/new/main/apiSpec/new?filename=Dremu_ChartEdit_Envelope_EnvelopeTrack_OnPointerMove_UnityEngine_EventSystems_PointerEventData_.md&amp;value=---%0Auid%3A%20Dremu.ChartEdit.Envelope.EnvelopeTrack.OnPointerMove(UnityEngine.EventSystems.PointerEventData)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/blob/main/Assets/Scripts/ChartEditor/Envelope/EnvelopeTrack.cs/#L300">View Source</a>
+  </span>
+  <a id="Dremu_ChartEdit_Envelope_EnvelopeTrack_OnPointerMove_" data-uid="Dremu.ChartEdit.Envelope.EnvelopeTrack.OnPointerMove*"></a>
+  <h4 id="Dremu_ChartEdit_Envelope_EnvelopeTrack_OnPointerMove_UnityEngine_EventSystems_PointerEventData_" data-uid="Dremu.ChartEdit.Envelope.EnvelopeTrack.OnPointerMove(UnityEngine.EventSystems.PointerEventData)">OnPointerMove(PointerEventData)</h4>
+  <div class="markdown level1 summary"><p>Use this callback to detect pointer move events</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPointerMove(PointerEventData data)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PointerEventData</span></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/new/main/apiSpec/new?filename=Dremu_ChartEdit_Envelope_EnvelopeTrack_SetAllDirty.md&amp;value=---%0Auid%3A%20Dremu.ChartEdit.Envelope.EnvelopeTrack.SetAllDirty%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/blob/main/Assets/Scripts/ChartEditor/Envelope/EnvelopeTrack.cs/#L54">View Source</a>
+  </span>
+  <a id="Dremu_ChartEdit_Envelope_EnvelopeTrack_SetAllDirty_" data-uid="Dremu.ChartEdit.Envelope.EnvelopeTrack.SetAllDirty*"></a>
+  <h4 id="Dremu_ChartEdit_Envelope_EnvelopeTrack_SetAllDirty" data-uid="Dremu.ChartEdit.Envelope.EnvelopeTrack.SetAllDirty">SetAllDirty()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAllDirty()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/new/main/apiSpec/new?filename=Dremu_ChartEdit_Envelope_EnvelopeTrack_SetEnvelopeLine_Dremu_Gameplay_Tool_EnvelopeLine_.md&amp;value=---%0Auid%3A%20Dremu.ChartEdit.Envelope.EnvelopeTrack.SetEnvelopeLine(Dremu.Gameplay.Tool.EnvelopeLine)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/blob/main/Assets/Scripts/ChartEditor/Envelope/EnvelopeTrack.cs/#L62">View Source</a>
+  </span>
+  <a id="Dremu_ChartEdit_Envelope_EnvelopeTrack_SetEnvelopeLine_" data-uid="Dremu.ChartEdit.Envelope.EnvelopeTrack.SetEnvelopeLine*"></a>
+  <h4 id="Dremu_ChartEdit_Envelope_EnvelopeTrack_SetEnvelopeLine_Dremu_Gameplay_Tool_EnvelopeLine_" data-uid="Dremu.ChartEdit.Envelope.EnvelopeTrack.SetEnvelopeLine(Dremu.Gameplay.Tool.EnvelopeLine)">SetEnvelopeLine(EnvelopeLine)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetEnvelopeLine(EnvelopeLine envelopeLine)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dremu.Gameplay.Tool.EnvelopeLine.html">EnvelopeLine</a></td>
+        <td><span class="parametername">envelopeLine</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/new/main/apiSpec/new?filename=Dremu_ChartEdit_Envelope_EnvelopeTrack_SetSelected_System_Boolean_.md&amp;value=---%0Auid%3A%20Dremu.ChartEdit.Envelope.EnvelopeTrack.SetSelected(System.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/blob/main/Assets/Scripts/ChartEditor/Envelope/EnvelopeTrack.cs/#L71">View Source</a>
+  </span>
+  <a id="Dremu_ChartEdit_Envelope_EnvelopeTrack_SetSelected_" data-uid="Dremu.ChartEdit.Envelope.EnvelopeTrack.SetSelected*"></a>
+  <h4 id="Dremu_ChartEdit_Envelope_EnvelopeTrack_SetSelected_System_Boolean_" data-uid="Dremu.ChartEdit.Envelope.EnvelopeTrack.SetSelected(System.Boolean)">SetSelected(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSelected(bool value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/new/main/apiSpec/new?filename=Dremu_ChartEdit_Envelope_EnvelopeTrack_SplitContainerUnchecked_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Dremu.ChartEdit.Envelope.EnvelopeTrack.SplitContainerUnchecked(System.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/blob/main/Assets/Scripts/ChartEditor/Envelope/EnvelopeTrack.cs/#L117">View Source</a>
+  </span>
+  <a id="Dremu_ChartEdit_Envelope_EnvelopeTrack_SplitContainerUnchecked_" data-uid="Dremu.ChartEdit.Envelope.EnvelopeTrack.SplitContainerUnchecked*"></a>
+  <h4 id="Dremu_ChartEdit_Envelope_EnvelopeTrack_SplitContainerUnchecked_System_Int32_System_Int32_" data-uid="Dremu.ChartEdit.Envelope.EnvelopeTrack.SplitContainerUnchecked(System.Int32,System.Int32)">SplitContainerUnchecked(int, int)</h4>
+  <div class="markdown level1 summary"><p>在NodeIndex处的node开头切分这个Container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SplitContainerUnchecked(int ContainerIndex, int NodeIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">ContainerIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">NodeIndex</span></td>
+        <td><p>切分的地方, 事全局下标; Node不能在它开头或包络线结尾 (就这么定了!(()
+其实在包络线结尾不是不行, 但FitMinMax时会和前面对不上.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/new/main/apiSpec/new?filename=Dremu_ChartEdit_Envelope_EnvelopeTrack_Update.md&amp;value=---%0Auid%3A%20Dremu.ChartEdit.Envelope.EnvelopeTrack.Update%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/blob/main/Assets/Scripts/ChartEditor/Envelope/EnvelopeTrack.cs/#L98">View Source</a>
+  </span>
+  <a id="Dremu_ChartEdit_Envelope_EnvelopeTrack_Update_" data-uid="Dremu.ChartEdit.Envelope.EnvelopeTrack.Update*"></a>
+  <h4 id="Dremu_ChartEdit_Envelope_EnvelopeTrack_Update" data-uid="Dremu.ChartEdit.Envelope.EnvelopeTrack.Update">Update()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Update()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">UnityEngine.EventSystems.IDragHandler</span>
+  </div>
+  <div>
+      <span class="xref">UnityEngine.EventSystems.IEndDragHandler</span>
+  </div>
+  <div>
+      <span class="xref">UnityEngine.EventSystems.IBeginDragHandler</span>
+  </div>
+  <div>
+      <span class="xref">UnityEngine.EventSystems.IPointerClickHandler</span>
+  </div>
+  <div>
+      <span class="xref">UnityEngine.EventSystems.IPointerMoveHandler</span>
+  </div>
+  <div>
+      <span class="xref">UnityEngine.EventSystems.IPointerExitHandler</span>
+  </div>
+  <div>
+      <span class="xref">UnityEngine.EventSystems.IEventSystemHandler</span>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/new/main/apiSpec/new?filename=Dremu_ChartEdit_Envelope_EnvelopeTrack.md&amp;value=---%0Auid%3A%20Dremu.ChartEdit.Envelope.EnvelopeTrack%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/WebstormDevTeam/DremuUnityVersion/blob/main/Assets/Scripts/ChartEditor/Envelope/EnvelopeTrack.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

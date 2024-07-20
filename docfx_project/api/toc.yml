@@ -1,0 +1,323 @@
+### YamlMime:TableOfContent
+items:
+- uid: Assets.Scripts.Gameplay.Tool
+  name: Assets.Scripts.Gameplay.Tool
+  items:
+  - uid: Assets.Scripts.Gameplay.Tool.ScoreManager
+    name: ScoreManager
+- uid: Data
+  name: Data
+  items:
+  - uid: Data.ChapterData
+    name: ChapterData
+  - uid: Data.LevelData
+    name: LevelData
+  - uid: Data.LevelDataHelper
+    name: LevelDataHelper
+  - uid: Data.LevelHarder
+    name: LevelHarder
+- uid: Data.ScriptableObject
+  name: Data.ScriptableObject
+  items:
+  - uid: Data.ScriptableObject.ChapterDataObject
+    name: ChapterDataObject
+  - uid: Data.ScriptableObject.LevelDataObject
+    name: LevelDataObject
+- uid: Dremu.ChartEdit
+  name: Dremu.ChartEdit
+  items:
+  - uid: Dremu.ChartEdit.BetterRangeSlider
+    name: BetterRangeSlider
+  - uid: Dremu.ChartEdit.ContextMenu
+    name: ContextMenu
+  - uid: Dremu.ChartEdit.ContextMenuItem
+    name: ContextMenuItem
+  - uid: Dremu.ChartEdit.CursorType
+    name: CursorType
+  - uid: Dremu.ChartEdit.DropDownMenu
+    name: DropDownMenu
+  - uid: Dremu.ChartEdit.EditPanel
+    name: EditPanel
+  - uid: Dremu.ChartEdit.RangeView
+    name: RangeView
+  - uid: Dremu.ChartEdit.UIManager
+    name: UIManager
+- uid: Dremu.ChartEdit.Envelope
+  name: Dremu.ChartEdit.Envelope
+  items:
+  - uid: Dremu.ChartEdit.Envelope.CurveTypeContextHelper
+    name: CurveTypeContextHelper
+  - uid: Dremu.ChartEdit.Envelope.DummyTrack
+    name: DummyTrack
+  - uid: Dremu.ChartEdit.Envelope.EditingBase`1
+    name: EditingBase<T>
+  - uid: Dremu.ChartEdit.Envelope.EditingEntry
+    name: EditingEntry
+  - uid: Dremu.ChartEdit.Envelope.EnvelopeTrack
+    name: EnvelopeTrack
+  - uid: Dremu.ChartEdit.Envelope.EnvelopeTrackHelper
+    name: EnvelopeTrackHelper
+  - uid: Dremu.ChartEdit.Envelope.IDragEdit
+    name: IDragEdit
+  - uid: Dremu.ChartEdit.Envelope.LineContainer
+    name: LineContainer
+  - uid: Dremu.ChartEdit.Envelope.NodeDragEdit
+    name: NodeDragEdit
+  - uid: Dremu.ChartEdit.Envelope.SnipHelper
+    name: SnipHelper
+  - uid: Dremu.ChartEdit.Envelope.TensionEdit
+    name: TensionEdit
+  - uid: Dremu.ChartEdit.Envelope.UILine
+    name: UILine
+  - uid: Dremu.ChartEdit.Envelope.VerticalTrackView
+    name: VerticalTrackView
+- uid: Dremu.Gameplay.Manager
+  name: Dremu.Gameplay.Manager
+  items:
+  - uid: Dremu.Gameplay.Manager.AudioManager
+    name: AudioManager
+  - uid: Dremu.Gameplay.Manager.JudgmentLineManager
+    name: JudgmentLineManager
+  - uid: Dremu.Gameplay.Manager.MainController
+    name: MainController
+  - uid: Dremu.Gameplay.Manager.NoteEffectManager
+    name: NoteEffectManager
+  - uid: Dremu.Gameplay.Manager.NoteManager
+    name: NoteManager
+- uid: Dremu.Gameplay.Object
+  name: Dremu.Gameplay.Object
+  items:
+  - uid: Dremu.Gameplay.Object.ChartData
+    name: ChartData
+  - uid: Dremu.Gameplay.Object.ChartData.EnvelopeLineData
+    name: ChartData.EnvelopeLineData
+  - uid: Dremu.Gameplay.Object.ChartData.EnvelopeLineData.EnvelopeNodeData
+    name: ChartData.EnvelopeLineData.EnvelopeNodeData
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData
+    name: ChartData.JudgmentLineData
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.Curve
+    name: ChartData.JudgmentLineData.Curve
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.Curve.CurveNode
+    name: ChartData.JudgmentLineData.Curve.CurveNode
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.CurveAction
+    name: ChartData.JudgmentLineData.CurveAction
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData
+    name: ChartData.JudgmentLineData.NoteData
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType
+    name: ChartData.JudgmentLineData.NoteData.NoteType
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.PerHoldingData
+    name: ChartData.JudgmentLineData.NoteData.PerHoldingData
+  - uid: Dremu.Gameplay.Object.Drag
+    name: Drag
+  - uid: Dremu.Gameplay.Object.Drag.DragNode
+    name: Drag.DragNode
+  - uid: Dremu.Gameplay.Object.Hold
+    name: Hold
+  - uid: Dremu.Gameplay.Object.Hold.HoldNode
+    name: Hold.HoldNode
+  - uid: Dremu.Gameplay.Object.JudgmentLine
+    name: JudgmentLine
+  - uid: Dremu.Gameplay.Object.NoteBase
+    name: NoteBase
+  - uid: Dremu.Gameplay.Object.NoteEffect
+    name: NoteEffect
+  - uid: Dremu.Gameplay.Object.Slide
+    name: Slide
+  - uid: Dremu.Gameplay.Object.Tap
+    name: Tap
+- uid: Dremu.Gameplay.Tool
+  name: Dremu.Gameplay.Tool
+  items:
+  - uid: Dremu.Gameplay.Tool.ControlNode
+    name: ControlNode
+  - uid: Dremu.Gameplay.Tool.Curve
+    name: Curve
+  - uid: Dremu.Gameplay.Tool.CurveType
+    name: CurveType
+  - uid: Dremu.Gameplay.Tool.EnvelopeLine
+    name: EnvelopeLine
+  - uid: Dremu.Gameplay.Tool.Functions
+    name: Functions
+  - uid: Dremu.Gameplay.Tool.PositionHelper
+    name: PositionHelper
+  - uid: Dremu.Gameplay.Tool.RecyclableObject
+    name: RecyclableObject
+  - uid: Dremu.Gameplay.Tool.StandardObjectPool`1
+    name: StandardObjectPool<T>
+- uid: Dremu.Network.LinkPlay
+  name: Dremu.Network.LinkPlay
+  items:
+  - uid: Dremu.Network.LinkPlay.Server
+    name: Server
+- uid: GameUI.ChapterSelect
+  name: GameUI.ChapterSelect
+  items:
+  - uid: GameUI.ChapterSelect.ChapterSelectManager
+    name: ChapterSelectManager
+  - uid: GameUI.ChapterSelect.ChapterShow
+    name: ChapterShow
+- uid: GameUI.Global
+  name: GameUI.Global
+  items:
+  - uid: GameUI.Global.AutoChangeScale
+    name: AutoChangeScale
+  - uid: GameUI.Global.PlayerBar
+    name: PlayerBar
+  - uid: GameUI.Global.UIOutline
+    name: UIOutline
+- uid: GameUI.Global.ColorSet
+  name: GameUI.Global.ColorSet
+  items:
+  - uid: GameUI.Global.ColorSet.ColorSetManager
+    name: ColorSetManager
+  - uid: GameUI.Global.ColorSet.ColorSetRegister
+    name: ColorSetRegister
+- uid: GameUI.Global.Sound
+  name: GameUI.Global.Sound
+  items:
+  - uid: GameUI.Global.Sound.UISoundManager
+    name: UISoundManager
+- uid: GameUI.Global.Transition
+  name: GameUI.Global.Transition
+  items:
+  - uid: GameUI.Global.Transition.TransitionHelper
+    name: TransitionHelper
+  - uid: GameUI.Global.Transition.TransitionManager
+    name: TransitionManager
+  - uid: GameUI.Global.Transition.TransitionType
+    name: TransitionType
+- uid: GameUI.LevelSelect
+  name: GameUI.LevelSelect
+  items:
+  - uid: GameUI.LevelSelect.LevelSelectHarder
+    name: LevelSelectHarder
+  - uid: GameUI.LevelSelect.LevelSelectManager
+    name: LevelSelectManager
+  - uid: GameUI.LevelSelect.LevelShow
+    name: LevelShow
+- uid: GameUI.MainUI
+  name: GameUI.MainUI
+  items:
+  - uid: GameUI.MainUI.MainUIManager
+    name: MainUIManager
+- uid: GameUI.Setting
+  name: GameUI.Setting
+  items:
+  - uid: GameUI.Setting.SettingManager
+    name: SettingManager
+  - uid: GameUI.Setting.SettingShow
+    name: SettingShow
+- uid: TMPro
+  name: TMPro
+  items:
+  - uid: TMPro.TMP_DigitValidator
+    name: TMP_DigitValidator
+  - uid: TMPro.TMP_PhoneNumberValidator
+    name: TMP_PhoneNumberValidator
+  - uid: TMPro.TMP_TextEventHandler
+    name: TMP_TextEventHandler
+  - uid: TMPro.TMP_TextEventHandler.CharacterSelectionEvent
+    name: TMP_TextEventHandler.CharacterSelectionEvent
+  - uid: TMPro.TMP_TextEventHandler.LineSelectionEvent
+    name: TMP_TextEventHandler.LineSelectionEvent
+  - uid: TMPro.TMP_TextEventHandler.LinkSelectionEvent
+    name: TMP_TextEventHandler.LinkSelectionEvent
+  - uid: TMPro.TMP_TextEventHandler.SpriteSelectionEvent
+    name: TMP_TextEventHandler.SpriteSelectionEvent
+  - uid: TMPro.TMP_TextEventHandler.WordSelectionEvent
+    name: TMP_TextEventHandler.WordSelectionEvent
+- uid: TMPro.Examples
+  name: TMPro.Examples
+  items:
+  - uid: TMPro.Examples.Benchmark01
+    name: Benchmark01
+  - uid: TMPro.Examples.Benchmark01_UGUI
+    name: Benchmark01_UGUI
+  - uid: TMPro.Examples.Benchmark02
+    name: Benchmark02
+  - uid: TMPro.Examples.Benchmark03
+    name: Benchmark03
+  - uid: TMPro.Examples.Benchmark03.BenchmarkType
+    name: Benchmark03.BenchmarkType
+  - uid: TMPro.Examples.Benchmark04
+    name: Benchmark04
+  - uid: TMPro.Examples.CameraController
+    name: CameraController
+  - uid: TMPro.Examples.CameraController.CameraModes
+    name: CameraController.CameraModes
+  - uid: TMPro.Examples.ObjectSpin
+    name: ObjectSpin
+  - uid: TMPro.Examples.ObjectSpin.MotionType
+    name: ObjectSpin.MotionType
+  - uid: TMPro.Examples.ShaderPropAnimator
+    name: ShaderPropAnimator
+  - uid: TMPro.Examples.SimpleScript
+    name: SimpleScript
+  - uid: TMPro.Examples.SkewTextExample
+    name: SkewTextExample
+  - uid: TMPro.Examples.TMP_ExampleScript_01
+    name: TMP_ExampleScript_01
+  - uid: TMPro.Examples.TMP_ExampleScript_01.objectType
+    name: TMP_ExampleScript_01.objectType
+  - uid: TMPro.Examples.TMP_FrameRateCounter
+    name: TMP_FrameRateCounter
+  - uid: TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions
+    name: TMP_FrameRateCounter.FpsCounterAnchorPositions
+  - uid: TMPro.Examples.TMP_TextEventCheck
+    name: TMP_TextEventCheck
+  - uid: TMPro.Examples.TMP_TextInfoDebugTool
+    name: TMP_TextInfoDebugTool
+  - uid: TMPro.Examples.TMP_TextSelector_A
+    name: TMP_TextSelector_A
+  - uid: TMPro.Examples.TMP_TextSelector_B
+    name: TMP_TextSelector_B
+  - uid: TMPro.Examples.TMP_UiFrameRateCounter
+    name: TMP_UiFrameRateCounter
+  - uid: TMPro.Examples.TMP_UiFrameRateCounter.FpsCounterAnchorPositions
+    name: TMP_UiFrameRateCounter.FpsCounterAnchorPositions
+  - uid: TMPro.Examples.TMPro_InstructionOverlay
+    name: TMPro_InstructionOverlay
+  - uid: TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions
+    name: TMPro_InstructionOverlay.FpsCounterAnchorPositions
+  - uid: TMPro.Examples.TeleType
+    name: TeleType
+  - uid: TMPro.Examples.TextConsoleSimulator
+    name: TextConsoleSimulator
+  - uid: TMPro.Examples.TextMeshProFloatingText
+    name: TextMeshProFloatingText
+  - uid: TMPro.Examples.TextMeshSpawner
+    name: TextMeshSpawner
+  - uid: TMPro.Examples.VertexColorCycler
+    name: VertexColorCycler
+  - uid: TMPro.Examples.VertexJitter
+    name: VertexJitter
+  - uid: TMPro.Examples.VertexShakeA
+    name: VertexShakeA
+  - uid: TMPro.Examples.VertexShakeB
+    name: VertexShakeB
+  - uid: TMPro.Examples.VertexZoom
+    name: VertexZoom
+  - uid: TMPro.Examples.WarpTextExample
+    name: WarpTextExample
+- uid: Utils
+  name: Utils
+  items:
+  - uid: Utils.Utility
+    name: Utility
+- uid: Utils.Helper
+  name: Utils.Helper
+  items:
+  - uid: Utils.Helper.DoTweenHelper
+    name: DoTweenHelper
+  - uid: Utils.Helper.UGUIHelper
+    name: UGUIHelper
+  - uid: Utils.Helper.UnityHelper
+    name: UnityHelper
+- uid: Utils.Singleton
+  name: Utils.Singleton
+  items:
+  - uid: Utils.Singleton.DontDestroySelf
+    name: DontDestroySelf
+  - uid: Utils.Singleton.MonoBehaviourSingleton`1
+    name: MonoBehaviourSingleton<T>
+memberLayout: SamePage

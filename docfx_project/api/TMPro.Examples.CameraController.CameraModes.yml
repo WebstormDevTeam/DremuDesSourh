@@ -1,0 +1,155 @@
+### YamlMime:ManagedReference
+items:
+- uid: TMPro.Examples.CameraController.CameraModes
+  commentId: T:TMPro.Examples.CameraController.CameraModes
+  id: CameraController.CameraModes
+  parent: TMPro.Examples
+  children:
+  - TMPro.Examples.CameraController.CameraModes.Follow
+  - TMPro.Examples.CameraController.CameraModes.Free
+  - TMPro.Examples.CameraController.CameraModes.Isometric
+  langs:
+  - csharp
+  - vb
+  name: CameraController.CameraModes
+  nameWithType: CameraController.CameraModes
+  fullName: TMPro.Examples.CameraController.CameraModes
+  type: Enum
+  source:
+    remote:
+      path: Assets/TextMesh Pro/Examples & Extras/Scripts/CameraController.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: CameraModes
+    path: ../Assets/TextMesh Pro/Examples & Extras/Scripts/CameraController.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: TMPro.Examples
+  syntax:
+    content: public enum CameraController.CameraModes
+    content.vb: Public Enum CameraController.CameraModes
+- uid: TMPro.Examples.CameraController.CameraModes.Follow
+  commentId: F:TMPro.Examples.CameraController.CameraModes.Follow
+  id: Follow
+  parent: TMPro.Examples.CameraController.CameraModes
+  langs:
+  - csharp
+  - vb
+  name: Follow
+  nameWithType: CameraController.CameraModes.Follow
+  fullName: TMPro.Examples.CameraController.CameraModes.Follow
+  type: Field
+  source:
+    remote:
+      path: Assets/TextMesh Pro/Examples & Extras/Scripts/CameraController.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: Follow
+    path: ../Assets/TextMesh Pro/Examples & Extras/Scripts/CameraController.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: TMPro.Examples
+  syntax:
+    content: Follow = 0
+    return:
+      type: TMPro.Examples.CameraController.CameraModes
+- uid: TMPro.Examples.CameraController.CameraModes.Isometric
+  commentId: F:TMPro.Examples.CameraController.CameraModes.Isometric
+  id: Isometric
+  parent: TMPro.Examples.CameraController.CameraModes
+  langs:
+  - csharp
+  - vb
+  name: Isometric
+  nameWithType: CameraController.CameraModes.Isometric
+  fullName: TMPro.Examples.CameraController.CameraModes.Isometric
+  type: Field
+  source:
+    remote:
+      path: Assets/TextMesh Pro/Examples & Extras/Scripts/CameraController.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: Isometric
+    path: ../Assets/TextMesh Pro/Examples & Extras/Scripts/CameraController.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: TMPro.Examples
+  syntax:
+    content: Isometric = 1
+    return:
+      type: TMPro.Examples.CameraController.CameraModes
+- uid: TMPro.Examples.CameraController.CameraModes.Free
+  commentId: F:TMPro.Examples.CameraController.CameraModes.Free
+  id: Free
+  parent: TMPro.Examples.CameraController.CameraModes
+  langs:
+  - csharp
+  - vb
+  name: Free
+  nameWithType: CameraController.CameraModes.Free
+  fullName: TMPro.Examples.CameraController.CameraModes.Free
+  type: Field
+  source:
+    remote:
+      path: Assets/TextMesh Pro/Examples & Extras/Scripts/CameraController.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: Free
+    path: ../Assets/TextMesh Pro/Examples & Extras/Scripts/CameraController.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: TMPro.Examples
+  syntax:
+    content: Free = 2
+    return:
+      type: TMPro.Examples.CameraController.CameraModes
+references:
+- uid: TMPro.Examples
+  commentId: N:TMPro.Examples
+  href: TMPro.html
+  name: TMPro.Examples
+  nameWithType: TMPro.Examples
+  fullName: TMPro.Examples
+  spec.csharp:
+  - uid: TMPro
+    name: TMPro
+    href: TMPro.html
+  - name: .
+  - uid: TMPro.Examples
+    name: Examples
+    href: TMPro.Examples.html
+  spec.vb:
+  - uid: TMPro
+    name: TMPro
+    href: TMPro.html
+  - name: .
+  - uid: TMPro.Examples
+    name: Examples
+    href: TMPro.Examples.html
+- uid: TMPro.Examples.CameraController.CameraModes
+  commentId: T:TMPro.Examples.CameraController.CameraModes
+  parent: TMPro.Examples
+  href: TMPro.Examples.CameraController.html
+  name: CameraController.CameraModes
+  nameWithType: CameraController.CameraModes
+  fullName: TMPro.Examples.CameraController.CameraModes
+  spec.csharp:
+  - uid: TMPro.Examples.CameraController
+    name: CameraController
+    href: TMPro.Examples.CameraController.html
+  - name: .
+  - uid: TMPro.Examples.CameraController.CameraModes
+    name: CameraModes
+    href: TMPro.Examples.CameraController.CameraModes.html
+  spec.vb:
+  - uid: TMPro.Examples.CameraController
+    name: CameraController
+    href: TMPro.Examples.CameraController.html
+  - name: .
+  - uid: TMPro.Examples.CameraController.CameraModes
+    name: CameraModes
+    href: TMPro.Examples.CameraController.CameraModes.html

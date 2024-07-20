@@ -1,0 +1,209 @@
+### YamlMime:ManagedReference
+items:
+- uid: TMPro.Examples.Benchmark03.BenchmarkType
+  commentId: T:TMPro.Examples.Benchmark03.BenchmarkType
+  id: Benchmark03.BenchmarkType
+  parent: TMPro.Examples
+  children:
+  - TMPro.Examples.Benchmark03.BenchmarkType.TEXTMESH_BITMAP
+  - TMPro.Examples.Benchmark03.BenchmarkType.TMP_BITMAP_MOBILE
+  - TMPro.Examples.Benchmark03.BenchmarkType.TMP_SDF
+  - TMPro.Examples.Benchmark03.BenchmarkType.TMP_SDF_MOBILE
+  - TMPro.Examples.Benchmark03.BenchmarkType.TMP_SDF__MOBILE_SSD
+  langs:
+  - csharp
+  - vb
+  name: Benchmark03.BenchmarkType
+  nameWithType: Benchmark03.BenchmarkType
+  fullName: TMPro.Examples.Benchmark03.BenchmarkType
+  type: Enum
+  source:
+    remote:
+      path: Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark03.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: BenchmarkType
+    path: ../Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark03.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: TMPro.Examples
+  syntax:
+    content: public enum Benchmark03.BenchmarkType
+    content.vb: Public Enum Benchmark03.BenchmarkType
+- uid: TMPro.Examples.Benchmark03.BenchmarkType.TMP_SDF_MOBILE
+  commentId: F:TMPro.Examples.Benchmark03.BenchmarkType.TMP_SDF_MOBILE
+  id: TMP_SDF_MOBILE
+  parent: TMPro.Examples.Benchmark03.BenchmarkType
+  langs:
+  - csharp
+  - vb
+  name: TMP_SDF_MOBILE
+  nameWithType: Benchmark03.BenchmarkType.TMP_SDF_MOBILE
+  fullName: TMPro.Examples.Benchmark03.BenchmarkType.TMP_SDF_MOBILE
+  type: Field
+  source:
+    remote:
+      path: Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark03.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: TMP_SDF_MOBILE
+    path: ../Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark03.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: TMPro.Examples
+  syntax:
+    content: TMP_SDF_MOBILE = 0
+    return:
+      type: TMPro.Examples.Benchmark03.BenchmarkType
+- uid: TMPro.Examples.Benchmark03.BenchmarkType.TMP_SDF__MOBILE_SSD
+  commentId: F:TMPro.Examples.Benchmark03.BenchmarkType.TMP_SDF__MOBILE_SSD
+  id: TMP_SDF__MOBILE_SSD
+  parent: TMPro.Examples.Benchmark03.BenchmarkType
+  langs:
+  - csharp
+  - vb
+  name: TMP_SDF__MOBILE_SSD
+  nameWithType: Benchmark03.BenchmarkType.TMP_SDF__MOBILE_SSD
+  fullName: TMPro.Examples.Benchmark03.BenchmarkType.TMP_SDF__MOBILE_SSD
+  type: Field
+  source:
+    remote:
+      path: Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark03.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: TMP_SDF__MOBILE_SSD
+    path: ../Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark03.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: TMPro.Examples
+  syntax:
+    content: TMP_SDF__MOBILE_SSD = 1
+    return:
+      type: TMPro.Examples.Benchmark03.BenchmarkType
+- uid: TMPro.Examples.Benchmark03.BenchmarkType.TMP_SDF
+  commentId: F:TMPro.Examples.Benchmark03.BenchmarkType.TMP_SDF
+  id: TMP_SDF
+  parent: TMPro.Examples.Benchmark03.BenchmarkType
+  langs:
+  - csharp
+  - vb
+  name: TMP_SDF
+  nameWithType: Benchmark03.BenchmarkType.TMP_SDF
+  fullName: TMPro.Examples.Benchmark03.BenchmarkType.TMP_SDF
+  type: Field
+  source:
+    remote:
+      path: Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark03.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: TMP_SDF
+    path: ../Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark03.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: TMPro.Examples
+  syntax:
+    content: TMP_SDF = 2
+    return:
+      type: TMPro.Examples.Benchmark03.BenchmarkType
+- uid: TMPro.Examples.Benchmark03.BenchmarkType.TMP_BITMAP_MOBILE
+  commentId: F:TMPro.Examples.Benchmark03.BenchmarkType.TMP_BITMAP_MOBILE
+  id: TMP_BITMAP_MOBILE
+  parent: TMPro.Examples.Benchmark03.BenchmarkType
+  langs:
+  - csharp
+  - vb
+  name: TMP_BITMAP_MOBILE
+  nameWithType: Benchmark03.BenchmarkType.TMP_BITMAP_MOBILE
+  fullName: TMPro.Examples.Benchmark03.BenchmarkType.TMP_BITMAP_MOBILE
+  type: Field
+  source:
+    remote:
+      path: Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark03.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: TMP_BITMAP_MOBILE
+    path: ../Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark03.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: TMPro.Examples
+  syntax:
+    content: TMP_BITMAP_MOBILE = 3
+    return:
+      type: TMPro.Examples.Benchmark03.BenchmarkType
+- uid: TMPro.Examples.Benchmark03.BenchmarkType.TEXTMESH_BITMAP
+  commentId: F:TMPro.Examples.Benchmark03.BenchmarkType.TEXTMESH_BITMAP
+  id: TEXTMESH_BITMAP
+  parent: TMPro.Examples.Benchmark03.BenchmarkType
+  langs:
+  - csharp
+  - vb
+  name: TEXTMESH_BITMAP
+  nameWithType: Benchmark03.BenchmarkType.TEXTMESH_BITMAP
+  fullName: TMPro.Examples.Benchmark03.BenchmarkType.TEXTMESH_BITMAP
+  type: Field
+  source:
+    remote:
+      path: Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark03.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: TEXTMESH_BITMAP
+    path: ../Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark03.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: TMPro.Examples
+  syntax:
+    content: TEXTMESH_BITMAP = 4
+    return:
+      type: TMPro.Examples.Benchmark03.BenchmarkType
+references:
+- uid: TMPro.Examples
+  commentId: N:TMPro.Examples
+  href: TMPro.html
+  name: TMPro.Examples
+  nameWithType: TMPro.Examples
+  fullName: TMPro.Examples
+  spec.csharp:
+  - uid: TMPro
+    name: TMPro
+    href: TMPro.html
+  - name: .
+  - uid: TMPro.Examples
+    name: Examples
+    href: TMPro.Examples.html
+  spec.vb:
+  - uid: TMPro
+    name: TMPro
+    href: TMPro.html
+  - name: .
+  - uid: TMPro.Examples
+    name: Examples
+    href: TMPro.Examples.html
+- uid: TMPro.Examples.Benchmark03.BenchmarkType
+  commentId: T:TMPro.Examples.Benchmark03.BenchmarkType
+  parent: TMPro.Examples
+  href: TMPro.Examples.Benchmark03.html
+  name: Benchmark03.BenchmarkType
+  nameWithType: Benchmark03.BenchmarkType
+  fullName: TMPro.Examples.Benchmark03.BenchmarkType
+  spec.csharp:
+  - uid: TMPro.Examples.Benchmark03
+    name: Benchmark03
+    href: TMPro.Examples.Benchmark03.html
+  - name: .
+  - uid: TMPro.Examples.Benchmark03.BenchmarkType
+    name: BenchmarkType
+    href: TMPro.Examples.Benchmark03.BenchmarkType.html
+  spec.vb:
+  - uid: TMPro.Examples.Benchmark03
+    name: Benchmark03
+    href: TMPro.Examples.Benchmark03.html
+  - name: .
+  - uid: TMPro.Examples.Benchmark03.BenchmarkType
+    name: BenchmarkType
+    href: TMPro.Examples.Benchmark03.BenchmarkType.html

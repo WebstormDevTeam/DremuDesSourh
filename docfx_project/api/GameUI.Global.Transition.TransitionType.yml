@@ -1,0 +1,147 @@
+### YamlMime:ManagedReference
+items:
+- uid: GameUI.Global.Transition.TransitionType
+  commentId: T:GameUI.Global.Transition.TransitionType
+  id: TransitionType
+  parent: GameUI.Global.Transition
+  children:
+  - GameUI.Global.Transition.TransitionType.DefaultBlack
+  - GameUI.Global.Transition.TransitionType.DefaultWhite
+  - GameUI.Global.Transition.TransitionType.Gameplay
+  langs:
+  - csharp
+  - vb
+  name: TransitionType
+  nameWithType: TransitionType
+  fullName: GameUI.Global.Transition.TransitionType
+  type: Enum
+  source:
+    remote:
+      path: Assets/Scripts/GameUI/Global/Transition/TransitionManager.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: TransitionType
+    path: ../Assets/Scripts/GameUI/Global/Transition/TransitionManager.cs
+    startLine: 85
+  assemblies:
+  - Assembly-CSharp
+  namespace: GameUI.Global.Transition
+  syntax:
+    content: public enum TransitionType
+    content.vb: Public Enum TransitionType
+- uid: GameUI.Global.Transition.TransitionType.DefaultBlack
+  commentId: F:GameUI.Global.Transition.TransitionType.DefaultBlack
+  id: DefaultBlack
+  parent: GameUI.Global.Transition.TransitionType
+  langs:
+  - csharp
+  - vb
+  name: DefaultBlack
+  nameWithType: TransitionType.DefaultBlack
+  fullName: GameUI.Global.Transition.TransitionType.DefaultBlack
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GameUI/Global/Transition/TransitionManager.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: DefaultBlack
+    path: ../Assets/Scripts/GameUI/Global/Transition/TransitionManager.cs
+    startLine: 87
+  assemblies:
+  - Assembly-CSharp
+  namespace: GameUI.Global.Transition
+  syntax:
+    content: DefaultBlack = 0
+    return:
+      type: GameUI.Global.Transition.TransitionType
+- uid: GameUI.Global.Transition.TransitionType.DefaultWhite
+  commentId: F:GameUI.Global.Transition.TransitionType.DefaultWhite
+  id: DefaultWhite
+  parent: GameUI.Global.Transition.TransitionType
+  langs:
+  - csharp
+  - vb
+  name: DefaultWhite
+  nameWithType: TransitionType.DefaultWhite
+  fullName: GameUI.Global.Transition.TransitionType.DefaultWhite
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GameUI/Global/Transition/TransitionManager.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: DefaultWhite
+    path: ../Assets/Scripts/GameUI/Global/Transition/TransitionManager.cs
+    startLine: 87
+  assemblies:
+  - Assembly-CSharp
+  namespace: GameUI.Global.Transition
+  syntax:
+    content: DefaultWhite = 1
+    return:
+      type: GameUI.Global.Transition.TransitionType
+- uid: GameUI.Global.Transition.TransitionType.Gameplay
+  commentId: F:GameUI.Global.Transition.TransitionType.Gameplay
+  id: Gameplay
+  parent: GameUI.Global.Transition.TransitionType
+  langs:
+  - csharp
+  - vb
+  name: Gameplay
+  nameWithType: TransitionType.Gameplay
+  fullName: GameUI.Global.Transition.TransitionType.Gameplay
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/GameUI/Global/Transition/TransitionManager.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: Gameplay
+    path: ../Assets/Scripts/GameUI/Global/Transition/TransitionManager.cs
+    startLine: 87
+  assemblies:
+  - Assembly-CSharp
+  namespace: GameUI.Global.Transition
+  syntax:
+    content: Gameplay = 3
+    return:
+      type: GameUI.Global.Transition.TransitionType
+references:
+- uid: GameUI.Global.Transition
+  commentId: N:GameUI.Global.Transition
+  href: GameUI.html
+  name: GameUI.Global.Transition
+  nameWithType: GameUI.Global.Transition
+  fullName: GameUI.Global.Transition
+  spec.csharp:
+  - uid: GameUI
+    name: GameUI
+    href: GameUI.html
+  - name: .
+  - uid: GameUI.Global
+    name: Global
+    href: GameUI.Global.html
+  - name: .
+  - uid: GameUI.Global.Transition
+    name: Transition
+    href: GameUI.Global.Transition.html
+  spec.vb:
+  - uid: GameUI
+    name: GameUI
+    href: GameUI.html
+  - name: .
+  - uid: GameUI.Global
+    name: Global
+    href: GameUI.Global.html
+  - name: .
+  - uid: GameUI.Global.Transition
+    name: Transition
+    href: GameUI.Global.Transition.html
+- uid: GameUI.Global.Transition.TransitionType
+  commentId: T:GameUI.Global.Transition.TransitionType
+  parent: GameUI.Global.Transition
+  href: GameUI.Global.Transition.TransitionType.html
+  name: TransitionType
+  nameWithType: TransitionType
+  fullName: GameUI.Global.Transition.TransitionType

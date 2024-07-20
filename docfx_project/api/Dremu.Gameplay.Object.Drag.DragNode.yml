@@ -1,0 +1,404 @@
+### YamlMime:ManagedReference
+items:
+- uid: Dremu.Gameplay.Object.Drag.DragNode
+  commentId: T:Dremu.Gameplay.Object.Drag.DragNode
+  id: Drag.DragNode
+  parent: Dremu.Gameplay.Object
+  children:
+  - Dremu.Gameplay.Object.Drag.DragNode.#ctor(System.Single,System.Single)
+  - Dremu.Gameplay.Object.Drag.DragNode.Time
+  - Dremu.Gameplay.Object.Drag.DragNode.To
+  langs:
+  - csharp
+  - vb
+  name: Drag.DragNode
+  nameWithType: Drag.DragNode
+  fullName: Dremu.Gameplay.Object.Drag.DragNode
+  type: Struct
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/Objects/Note/Drag.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: DragNode
+    path: ../Assets/Scripts/Gameplay/Objects/Note/Drag.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Object
+  syntax:
+    content: >-
+      [Serializable]
+
+      public struct Drag.DragNode
+    content.vb: >-
+      <Serializable>
+
+      Public Structure Drag.DragNode
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Dremu.Gameplay.Object.Drag.DragNode.To
+  commentId: F:Dremu.Gameplay.Object.Drag.DragNode.To
+  id: To
+  parent: Dremu.Gameplay.Object.Drag.DragNode
+  langs:
+  - csharp
+  - vb
+  name: To
+  nameWithType: Drag.DragNode.To
+  fullName: Dremu.Gameplay.Object.Drag.DragNode.To
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/Objects/Note/Drag.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: To
+    path: ../Assets/Scripts/Gameplay/Objects/Note/Drag.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Object
+  syntax:
+    content: public float To
+    return:
+      type: System.Single
+    content.vb: Public [To] As Single
+- uid: Dremu.Gameplay.Object.Drag.DragNode.Time
+  commentId: F:Dremu.Gameplay.Object.Drag.DragNode.Time
+  id: Time
+  parent: Dremu.Gameplay.Object.Drag.DragNode
+  langs:
+  - csharp
+  - vb
+  name: Time
+  nameWithType: Drag.DragNode.Time
+  fullName: Dremu.Gameplay.Object.Drag.DragNode.Time
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/Objects/Note/Drag.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: Time
+    path: ../Assets/Scripts/Gameplay/Objects/Note/Drag.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Object
+  syntax:
+    content: public float Time
+    return:
+      type: System.Single
+    content.vb: Public Time As Single
+- uid: Dremu.Gameplay.Object.Drag.DragNode.#ctor(System.Single,System.Single)
+  commentId: M:Dremu.Gameplay.Object.Drag.DragNode.#ctor(System.Single,System.Single)
+  id: '#ctor(System.Single,System.Single)'
+  parent: Dremu.Gameplay.Object.Drag.DragNode
+  langs:
+  - csharp
+  - vb
+  name: DragNode(float, float)
+  nameWithType: Drag.DragNode.DragNode(float, float)
+  fullName: Dremu.Gameplay.Object.Drag.DragNode.DragNode(float, float)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/Objects/Note/Drag.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: .ctor
+    path: ../Assets/Scripts/Gameplay/Objects/Note/Drag.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Object
+  syntax:
+    content: public DragNode(float To, float Time)
+    parameters:
+    - id: To
+      type: System.Single
+    - id: Time
+      type: System.Single
+    content.vb: Public Sub New([To] As Single, Time As Single)
+  overload: Dremu.Gameplay.Object.Drag.DragNode.#ctor*
+  nameWithType.vb: Drag.DragNode.New(Single, Single)
+  fullName.vb: Dremu.Gameplay.Object.Drag.DragNode.New(Single, Single)
+  name.vb: New(Single, Single)
+references:
+- uid: Dremu.Gameplay.Object
+  commentId: N:Dremu.Gameplay.Object
+  href: Dremu.html
+  name: Dremu.Gameplay.Object
+  nameWithType: Dremu.Gameplay.Object
+  fullName: Dremu.Gameplay.Object
+  spec.csharp:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.Gameplay
+    name: Gameplay
+    href: Dremu.Gameplay.html
+  - name: .
+  - uid: Dremu.Gameplay.Object
+    name: Object
+    href: Dremu.Gameplay.Object.html
+  spec.vb:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.Gameplay
+    name: Gameplay
+    href: Dremu.Gameplay.html
+  - name: .
+  - uid: Dremu.Gameplay.Object
+    name: Object
+    href: Dremu.Gameplay.Object.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Dremu.Gameplay.Object.Drag.DragNode.#ctor*
+  commentId: Overload:Dremu.Gameplay.Object.Drag.DragNode.#ctor
+  href: Dremu.Gameplay.Object.Drag.DragNode.html#Dremu_Gameplay_Object_Drag_DragNode__ctor_System_Single_System_Single_
+  name: DragNode
+  nameWithType: Drag.DragNode.DragNode
+  fullName: Dremu.Gameplay.Object.Drag.DragNode.DragNode
+  nameWithType.vb: Drag.DragNode.New
+  fullName.vb: Dremu.Gameplay.Object.Drag.DragNode.New
+  name.vb: New

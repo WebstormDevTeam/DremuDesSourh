@@ -1,0 +1,37 @@
+### YamlMime:ManagedReference
+items:
+- uid: GameUI.LevelSelect
+  commentId: N:GameUI.LevelSelect
+  id: GameUI.LevelSelect
+  children:
+  - GameUI.LevelSelect.LevelSelectHarder
+  - GameUI.LevelSelect.LevelSelectManager
+  - GameUI.LevelSelect.LevelShow
+  langs:
+  - csharp
+  - vb
+  name: GameUI.LevelSelect
+  nameWithType: GameUI.LevelSelect
+  fullName: GameUI.LevelSelect
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: GameUI.LevelSelect.LevelShow
+  commentId: T:GameUI.LevelSelect.LevelShow
+  href: GameUI.LevelSelect.LevelShow.html
+  name: LevelShow
+  nameWithType: LevelShow
+  fullName: GameUI.LevelSelect.LevelShow
+- uid: GameUI.LevelSelect.LevelSelectManager
+  commentId: T:GameUI.LevelSelect.LevelSelectManager
+  href: GameUI.LevelSelect.LevelSelectManager.html
+  name: LevelSelectManager
+  nameWithType: LevelSelectManager
+  fullName: GameUI.LevelSelect.LevelSelectManager
+- uid: GameUI.LevelSelect.LevelSelectHarder
+  commentId: T:GameUI.LevelSelect.LevelSelectHarder
+  href: GameUI.LevelSelect.LevelSelectHarder.html
+  name: LevelSelectHarder
+  nameWithType: LevelSelectHarder
+  fullName: GameUI.LevelSelect.LevelSelectHarder

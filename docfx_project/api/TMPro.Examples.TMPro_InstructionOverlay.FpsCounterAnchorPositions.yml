@@ -1,0 +1,182 @@
+### YamlMime:ManagedReference
+items:
+- uid: TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions
+  commentId: T:TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions
+  id: TMPro_InstructionOverlay.FpsCounterAnchorPositions
+  parent: TMPro.Examples
+  children:
+  - TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions.BottomLeft
+  - TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions.BottomRight
+  - TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions.TopLeft
+  - TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions.TopRight
+  langs:
+  - csharp
+  - vb
+  name: TMPro_InstructionOverlay.FpsCounterAnchorPositions
+  nameWithType: TMPro_InstructionOverlay.FpsCounterAnchorPositions
+  fullName: TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions
+  type: Enum
+  source:
+    remote:
+      path: Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: FpsCounterAnchorPositions
+    path: ../Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: TMPro.Examples
+  syntax:
+    content: public enum TMPro_InstructionOverlay.FpsCounterAnchorPositions
+    content.vb: Public Enum TMPro_InstructionOverlay.FpsCounterAnchorPositions
+- uid: TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions.TopLeft
+  commentId: F:TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions.TopLeft
+  id: TopLeft
+  parent: TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions
+  langs:
+  - csharp
+  - vb
+  name: TopLeft
+  nameWithType: TMPro_InstructionOverlay.FpsCounterAnchorPositions.TopLeft
+  fullName: TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions.TopLeft
+  type: Field
+  source:
+    remote:
+      path: Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: TopLeft
+    path: ../Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: TMPro.Examples
+  syntax:
+    content: TopLeft = 0
+    return:
+      type: TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions
+- uid: TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions.BottomLeft
+  commentId: F:TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions.BottomLeft
+  id: BottomLeft
+  parent: TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions
+  langs:
+  - csharp
+  - vb
+  name: BottomLeft
+  nameWithType: TMPro_InstructionOverlay.FpsCounterAnchorPositions.BottomLeft
+  fullName: TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions.BottomLeft
+  type: Field
+  source:
+    remote:
+      path: Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: BottomLeft
+    path: ../Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: TMPro.Examples
+  syntax:
+    content: BottomLeft = 1
+    return:
+      type: TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions
+- uid: TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions.TopRight
+  commentId: F:TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions.TopRight
+  id: TopRight
+  parent: TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions
+  langs:
+  - csharp
+  - vb
+  name: TopRight
+  nameWithType: TMPro_InstructionOverlay.FpsCounterAnchorPositions.TopRight
+  fullName: TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions.TopRight
+  type: Field
+  source:
+    remote:
+      path: Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: TopRight
+    path: ../Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: TMPro.Examples
+  syntax:
+    content: TopRight = 2
+    return:
+      type: TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions
+- uid: TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions.BottomRight
+  commentId: F:TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions.BottomRight
+  id: BottomRight
+  parent: TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions
+  langs:
+  - csharp
+  - vb
+  name: BottomRight
+  nameWithType: TMPro_InstructionOverlay.FpsCounterAnchorPositions.BottomRight
+  fullName: TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions.BottomRight
+  type: Field
+  source:
+    remote:
+      path: Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: BottomRight
+    path: ../Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: TMPro.Examples
+  syntax:
+    content: BottomRight = 3
+    return:
+      type: TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions
+references:
+- uid: TMPro.Examples
+  commentId: N:TMPro.Examples
+  href: TMPro.html
+  name: TMPro.Examples
+  nameWithType: TMPro.Examples
+  fullName: TMPro.Examples
+  spec.csharp:
+  - uid: TMPro
+    name: TMPro
+    href: TMPro.html
+  - name: .
+  - uid: TMPro.Examples
+    name: Examples
+    href: TMPro.Examples.html
+  spec.vb:
+  - uid: TMPro
+    name: TMPro
+    href: TMPro.html
+  - name: .
+  - uid: TMPro.Examples
+    name: Examples
+    href: TMPro.Examples.html
+- uid: TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions
+  commentId: T:TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions
+  parent: TMPro.Examples
+  href: TMPro.Examples.TMPro_InstructionOverlay.html
+  name: TMPro_InstructionOverlay.FpsCounterAnchorPositions
+  nameWithType: TMPro_InstructionOverlay.FpsCounterAnchorPositions
+  fullName: TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions
+  spec.csharp:
+  - uid: TMPro.Examples.TMPro_InstructionOverlay
+    name: TMPro_InstructionOverlay
+    href: TMPro.Examples.TMPro_InstructionOverlay.html
+  - name: .
+  - uid: TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions
+    name: FpsCounterAnchorPositions
+    href: TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions.html
+  spec.vb:
+  - uid: TMPro.Examples.TMPro_InstructionOverlay
+    name: TMPro_InstructionOverlay
+    href: TMPro.Examples.TMPro_InstructionOverlay.html
+  - name: .
+  - uid: TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions
+    name: FpsCounterAnchorPositions
+    href: TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions.html

@@ -1,0 +1,740 @@
+### YamlMime:ManagedReference
+items:
+- uid: Utils.Helper.DoTweenHelper
+  commentId: T:Utils.Helper.DoTweenHelper
+  id: DoTweenHelper
+  parent: Utils.Helper
+  children:
+  - Utils.Helper.DoTweenHelper.DoColor(GameUI.Global.UIOutline,UnityEngine.Color,System.Single)
+  - Utils.Helper.DoTweenHelper.DoColor(UnityEngine.UI.Graphic,UnityEngine.Color,System.Single)
+  - Utils.Helper.DoTweenHelper.DoFade(UnityEngine.CanvasGroup,System.Single,System.Single)
+  - Utils.Helper.DoTweenHelper.DoFade(UnityEngine.UI.Graphic,System.Single,System.Single)
+  - Utils.Helper.DoTweenHelper.DoFill(UnityEngine.UI.Image,System.Single,System.Single)
+  - Utils.Helper.DoTweenHelper.DoSize(UnityEngine.UI.Image,UnityEngine.Vector2,System.Single)
+  - Utils.Helper.DoTweenHelper.DoVolume(UnityEngine.AudioSource,System.Single,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: DoTweenHelper
+  nameWithType: DoTweenHelper
+  fullName: Utils.Helper.DoTweenHelper
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Utils/Helper/DoTweenHelper.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: DoTweenHelper
+    path: ../Assets/Scripts/Utils/Helper/DoTweenHelper.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Utils.Helper
+  syntax:
+    content: public static class DoTweenHelper
+    content.vb: Public Module DoTweenHelper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Utils.Helper.DoTweenHelper.DoColor(GameUI.Global.UIOutline,UnityEngine.Color,System.Single)
+  commentId: M:Utils.Helper.DoTweenHelper.DoColor(GameUI.Global.UIOutline,UnityEngine.Color,System.Single)
+  id: DoColor(GameUI.Global.UIOutline,UnityEngine.Color,System.Single)
+  isExtensionMethod: true
+  parent: Utils.Helper.DoTweenHelper
+  langs:
+  - csharp
+  - vb
+  name: DoColor(UIOutline, Color, float)
+  nameWithType: DoTweenHelper.DoColor(UIOutline, Color, float)
+  fullName: Utils.Helper.DoTweenHelper.DoColor(GameUI.Global.UIOutline, UnityEngine.Color, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Utils/Helper/DoTweenHelper.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: DoColor
+    path: ../Assets/Scripts/Utils/Helper/DoTweenHelper.cs
+    startLine: 9
+  assemblies:
+  - Assembly-CSharp
+  namespace: Utils.Helper
+  syntax:
+    content: public static Tween DoColor(this UIOutline outline, Color color, float duration)
+    parameters:
+    - id: outline
+      type: GameUI.Global.UIOutline
+    - id: color
+      type: UnityEngine.Color
+    - id: duration
+      type: System.Single
+    return:
+      type: DG.Tweening.Tween
+    content.vb: Public Shared Function DoColor(outline As UIOutline, color As Color, duration As Single) As Tween
+  overload: Utils.Helper.DoTweenHelper.DoColor*
+  nameWithType.vb: DoTweenHelper.DoColor(UIOutline, Color, Single)
+  fullName.vb: Utils.Helper.DoTweenHelper.DoColor(GameUI.Global.UIOutline, UnityEngine.Color, Single)
+  name.vb: DoColor(UIOutline, Color, Single)
+- uid: Utils.Helper.DoTweenHelper.DoColor(UnityEngine.UI.Graphic,UnityEngine.Color,System.Single)
+  commentId: M:Utils.Helper.DoTweenHelper.DoColor(UnityEngine.UI.Graphic,UnityEngine.Color,System.Single)
+  id: DoColor(UnityEngine.UI.Graphic,UnityEngine.Color,System.Single)
+  isExtensionMethod: true
+  parent: Utils.Helper.DoTweenHelper
+  langs:
+  - csharp
+  - vb
+  name: DoColor(Graphic, Color, float)
+  nameWithType: DoTweenHelper.DoColor(Graphic, Color, float)
+  fullName: Utils.Helper.DoTweenHelper.DoColor(UnityEngine.UI.Graphic, UnityEngine.Color, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Utils/Helper/DoTweenHelper.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: DoColor
+    path: ../Assets/Scripts/Utils/Helper/DoTweenHelper.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Utils.Helper
+  syntax:
+    content: public static Tween DoColor(this Graphic graphic, Color color, float duration)
+    parameters:
+    - id: graphic
+      type: UnityEngine.UI.Graphic
+    - id: color
+      type: UnityEngine.Color
+    - id: duration
+      type: System.Single
+    return:
+      type: DG.Tweening.Tween
+    content.vb: Public Shared Function DoColor(graphic As Graphic, color As Color, duration As Single) As Tween
+  overload: Utils.Helper.DoTweenHelper.DoColor*
+  nameWithType.vb: DoTweenHelper.DoColor(Graphic, Color, Single)
+  fullName.vb: Utils.Helper.DoTweenHelper.DoColor(UnityEngine.UI.Graphic, UnityEngine.Color, Single)
+  name.vb: DoColor(Graphic, Color, Single)
+- uid: Utils.Helper.DoTweenHelper.DoFade(UnityEngine.UI.Graphic,System.Single,System.Single)
+  commentId: M:Utils.Helper.DoTweenHelper.DoFade(UnityEngine.UI.Graphic,System.Single,System.Single)
+  id: DoFade(UnityEngine.UI.Graphic,System.Single,System.Single)
+  isExtensionMethod: true
+  parent: Utils.Helper.DoTweenHelper
+  langs:
+  - csharp
+  - vb
+  name: DoFade(Graphic, float, float)
+  nameWithType: DoTweenHelper.DoFade(Graphic, float, float)
+  fullName: Utils.Helper.DoTweenHelper.DoFade(UnityEngine.UI.Graphic, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Utils/Helper/DoTweenHelper.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: DoFade
+    path: ../Assets/Scripts/Utils/Helper/DoTweenHelper.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: Utils.Helper
+  syntax:
+    content: public static Tween DoFade(this Graphic graphic, float alpha, float duration)
+    parameters:
+    - id: graphic
+      type: UnityEngine.UI.Graphic
+    - id: alpha
+      type: System.Single
+    - id: duration
+      type: System.Single
+    return:
+      type: DG.Tweening.Tween
+    content.vb: Public Shared Function DoFade(graphic As Graphic, alpha As Single, duration As Single) As Tween
+  overload: Utils.Helper.DoTweenHelper.DoFade*
+  nameWithType.vb: DoTweenHelper.DoFade(Graphic, Single, Single)
+  fullName.vb: Utils.Helper.DoTweenHelper.DoFade(UnityEngine.UI.Graphic, Single, Single)
+  name.vb: DoFade(Graphic, Single, Single)
+- uid: Utils.Helper.DoTweenHelper.DoFade(UnityEngine.CanvasGroup,System.Single,System.Single)
+  commentId: M:Utils.Helper.DoTweenHelper.DoFade(UnityEngine.CanvasGroup,System.Single,System.Single)
+  id: DoFade(UnityEngine.CanvasGroup,System.Single,System.Single)
+  isExtensionMethod: true
+  parent: Utils.Helper.DoTweenHelper
+  langs:
+  - csharp
+  - vb
+  name: DoFade(CanvasGroup, float, float)
+  nameWithType: DoTweenHelper.DoFade(CanvasGroup, float, float)
+  fullName: Utils.Helper.DoTweenHelper.DoFade(UnityEngine.CanvasGroup, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Utils/Helper/DoTweenHelper.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: DoFade
+    path: ../Assets/Scripts/Utils/Helper/DoTweenHelper.cs
+    startLine: 25
+  assemblies:
+  - Assembly-CSharp
+  namespace: Utils.Helper
+  syntax:
+    content: public static Tween DoFade(this CanvasGroup group, float alpha, float duration)
+    parameters:
+    - id: group
+      type: UnityEngine.CanvasGroup
+    - id: alpha
+      type: System.Single
+    - id: duration
+      type: System.Single
+    return:
+      type: DG.Tweening.Tween
+    content.vb: Public Shared Function DoFade(group As CanvasGroup, alpha As Single, duration As Single) As Tween
+  overload: Utils.Helper.DoTweenHelper.DoFade*
+  nameWithType.vb: DoTweenHelper.DoFade(CanvasGroup, Single, Single)
+  fullName.vb: Utils.Helper.DoTweenHelper.DoFade(UnityEngine.CanvasGroup, Single, Single)
+  name.vb: DoFade(CanvasGroup, Single, Single)
+- uid: Utils.Helper.DoTweenHelper.DoVolume(UnityEngine.AudioSource,System.Single,System.Single)
+  commentId: M:Utils.Helper.DoTweenHelper.DoVolume(UnityEngine.AudioSource,System.Single,System.Single)
+  id: DoVolume(UnityEngine.AudioSource,System.Single,System.Single)
+  isExtensionMethod: true
+  parent: Utils.Helper.DoTweenHelper
+  langs:
+  - csharp
+  - vb
+  name: DoVolume(AudioSource, float, float)
+  nameWithType: DoTweenHelper.DoVolume(AudioSource, float, float)
+  fullName: Utils.Helper.DoTweenHelper.DoVolume(UnityEngine.AudioSource, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Utils/Helper/DoTweenHelper.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: DoVolume
+    path: ../Assets/Scripts/Utils/Helper/DoTweenHelper.cs
+    startLine: 30
+  assemblies:
+  - Assembly-CSharp
+  namespace: Utils.Helper
+  syntax:
+    content: public static Tween DoVolume(this AudioSource source, float volume, float duration)
+    parameters:
+    - id: source
+      type: UnityEngine.AudioSource
+    - id: volume
+      type: System.Single
+    - id: duration
+      type: System.Single
+    return:
+      type: DG.Tweening.Tween
+    content.vb: Public Shared Function DoVolume(source As AudioSource, volume As Single, duration As Single) As Tween
+  overload: Utils.Helper.DoTweenHelper.DoVolume*
+  nameWithType.vb: DoTweenHelper.DoVolume(AudioSource, Single, Single)
+  fullName.vb: Utils.Helper.DoTweenHelper.DoVolume(UnityEngine.AudioSource, Single, Single)
+  name.vb: DoVolume(AudioSource, Single, Single)
+- uid: Utils.Helper.DoTweenHelper.DoFill(UnityEngine.UI.Image,System.Single,System.Single)
+  commentId: M:Utils.Helper.DoTweenHelper.DoFill(UnityEngine.UI.Image,System.Single,System.Single)
+  id: DoFill(UnityEngine.UI.Image,System.Single,System.Single)
+  isExtensionMethod: true
+  parent: Utils.Helper.DoTweenHelper
+  langs:
+  - csharp
+  - vb
+  name: DoFill(Image, float, float)
+  nameWithType: DoTweenHelper.DoFill(Image, float, float)
+  fullName: Utils.Helper.DoTweenHelper.DoFill(UnityEngine.UI.Image, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Utils/Helper/DoTweenHelper.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: DoFill
+    path: ../Assets/Scripts/Utils/Helper/DoTweenHelper.cs
+    startLine: 35
+  assemblies:
+  - Assembly-CSharp
+  namespace: Utils.Helper
+  syntax:
+    content: public static Tween DoFill(this Image image, float fill, float duration)
+    parameters:
+    - id: image
+      type: UnityEngine.UI.Image
+    - id: fill
+      type: System.Single
+    - id: duration
+      type: System.Single
+    return:
+      type: DG.Tweening.Tween
+    content.vb: Public Shared Function DoFill(image As Image, fill As Single, duration As Single) As Tween
+  overload: Utils.Helper.DoTweenHelper.DoFill*
+  nameWithType.vb: DoTweenHelper.DoFill(Image, Single, Single)
+  fullName.vb: Utils.Helper.DoTweenHelper.DoFill(UnityEngine.UI.Image, Single, Single)
+  name.vb: DoFill(Image, Single, Single)
+- uid: Utils.Helper.DoTweenHelper.DoSize(UnityEngine.UI.Image,UnityEngine.Vector2,System.Single)
+  commentId: M:Utils.Helper.DoTweenHelper.DoSize(UnityEngine.UI.Image,UnityEngine.Vector2,System.Single)
+  id: DoSize(UnityEngine.UI.Image,UnityEngine.Vector2,System.Single)
+  isExtensionMethod: true
+  parent: Utils.Helper.DoTweenHelper
+  langs:
+  - csharp
+  - vb
+  name: DoSize(Image, Vector2, float)
+  nameWithType: DoTweenHelper.DoSize(Image, Vector2, float)
+  fullName: Utils.Helper.DoTweenHelper.DoSize(UnityEngine.UI.Image, UnityEngine.Vector2, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Utils/Helper/DoTweenHelper.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: DoSize
+    path: ../Assets/Scripts/Utils/Helper/DoTweenHelper.cs
+    startLine: 40
+  assemblies:
+  - Assembly-CSharp
+  namespace: Utils.Helper
+  syntax:
+    content: public static Tween DoSize(this Image image, Vector2 size, float duration)
+    parameters:
+    - id: image
+      type: UnityEngine.UI.Image
+    - id: size
+      type: UnityEngine.Vector2
+    - id: duration
+      type: System.Single
+    return:
+      type: DG.Tweening.Tween
+    content.vb: Public Shared Function DoSize(image As Image, size As Vector2, duration As Single) As Tween
+  overload: Utils.Helper.DoTweenHelper.DoSize*
+  nameWithType.vb: DoTweenHelper.DoSize(Image, Vector2, Single)
+  fullName.vb: Utils.Helper.DoTweenHelper.DoSize(UnityEngine.UI.Image, UnityEngine.Vector2, Single)
+  name.vb: DoSize(Image, Vector2, Single)
+references:
+- uid: Utils.Helper
+  commentId: N:Utils.Helper
+  href: Utils.html
+  name: Utils.Helper
+  nameWithType: Utils.Helper
+  fullName: Utils.Helper
+  spec.csharp:
+  - uid: Utils
+    name: Utils
+    href: Utils.html
+  - name: .
+  - uid: Utils.Helper
+    name: Helper
+    href: Utils.Helper.html
+  spec.vb:
+  - uid: Utils
+    name: Utils
+    href: Utils.html
+  - name: .
+  - uid: Utils.Helper
+    name: Helper
+    href: Utils.Helper.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Utils.Helper.DoTweenHelper.DoColor*
+  commentId: Overload:Utils.Helper.DoTweenHelper.DoColor
+  href: Utils.Helper.DoTweenHelper.html#Utils_Helper_DoTweenHelper_DoColor_GameUI_Global_UIOutline_UnityEngine_Color_System_Single_
+  name: DoColor
+  nameWithType: DoTweenHelper.DoColor
+  fullName: Utils.Helper.DoTweenHelper.DoColor
+- uid: GameUI.Global.UIOutline
+  commentId: T:GameUI.Global.UIOutline
+  parent: GameUI.Global
+  href: GameUI.Global.UIOutline.html
+  name: UIOutline
+  nameWithType: UIOutline
+  fullName: GameUI.Global.UIOutline
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: DG.Tweening.Tween
+  commentId: T:DG.Tweening.Tween
+  parent: DG.Tweening
+  isExternal: true
+  name: Tween
+  nameWithType: Tween
+  fullName: DG.Tweening.Tween
+- uid: GameUI.Global
+  commentId: N:GameUI.Global
+  href: GameUI.html
+  name: GameUI.Global
+  nameWithType: GameUI.Global
+  fullName: GameUI.Global
+  spec.csharp:
+  - uid: GameUI
+    name: GameUI
+    href: GameUI.html
+  - name: .
+  - uid: GameUI.Global
+    name: Global
+    href: GameUI.Global.html
+  spec.vb:
+  - uid: GameUI
+    name: GameUI
+    href: GameUI.html
+  - name: .
+  - uid: GameUI.Global
+    name: Global
+    href: GameUI.Global.html
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: DG.Tweening
+  commentId: N:DG.Tweening
+  isExternal: true
+  name: DG.Tweening
+  nameWithType: DG.Tweening
+  fullName: DG.Tweening
+  spec.csharp:
+  - uid: DG
+    name: DG
+    isExternal: true
+  - name: .
+  - uid: DG.Tweening
+    name: Tweening
+    isExternal: true
+  spec.vb:
+  - uid: DG
+    name: DG
+    isExternal: true
+  - name: .
+  - uid: DG.Tweening
+    name: Tweening
+    isExternal: true
+- uid: UnityEngine.UI.Graphic
+  commentId: T:UnityEngine.UI.Graphic
+  parent: UnityEngine.UI
+  name: Graphic
+  nameWithType: Graphic
+  fullName: UnityEngine.UI.Graphic
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+- uid: Utils.Helper.DoTweenHelper.DoFade*
+  commentId: Overload:Utils.Helper.DoTweenHelper.DoFade
+  href: Utils.Helper.DoTweenHelper.html#Utils_Helper_DoTweenHelper_DoFade_UnityEngine_UI_Graphic_System_Single_System_Single_
+  name: DoFade
+  nameWithType: DoTweenHelper.DoFade
+  fullName: Utils.Helper.DoTweenHelper.DoFade
+- uid: UnityEngine.CanvasGroup
+  commentId: T:UnityEngine.CanvasGroup
+  parent: UnityEngine
+  isExternal: true
+  name: CanvasGroup
+  nameWithType: CanvasGroup
+  fullName: UnityEngine.CanvasGroup
+- uid: Utils.Helper.DoTweenHelper.DoVolume*
+  commentId: Overload:Utils.Helper.DoTweenHelper.DoVolume
+  href: Utils.Helper.DoTweenHelper.html#Utils_Helper_DoTweenHelper_DoVolume_UnityEngine_AudioSource_System_Single_System_Single_
+  name: DoVolume
+  nameWithType: DoTweenHelper.DoVolume
+  fullName: Utils.Helper.DoTweenHelper.DoVolume
+- uid: UnityEngine.AudioSource
+  commentId: T:UnityEngine.AudioSource
+  parent: UnityEngine
+  isExternal: true
+  name: AudioSource
+  nameWithType: AudioSource
+  fullName: UnityEngine.AudioSource
+- uid: Utils.Helper.DoTweenHelper.DoFill*
+  commentId: Overload:Utils.Helper.DoTweenHelper.DoFill
+  href: Utils.Helper.DoTweenHelper.html#Utils_Helper_DoTweenHelper_DoFill_UnityEngine_UI_Image_System_Single_System_Single_
+  name: DoFill
+  nameWithType: DoTweenHelper.DoFill
+  fullName: Utils.Helper.DoTweenHelper.DoFill
+- uid: UnityEngine.UI.Image
+  commentId: T:UnityEngine.UI.Image
+  parent: UnityEngine.UI
+  name: Image
+  nameWithType: Image
+  fullName: UnityEngine.UI.Image
+- uid: Utils.Helper.DoTweenHelper.DoSize*
+  commentId: Overload:Utils.Helper.DoTweenHelper.DoSize
+  href: Utils.Helper.DoTweenHelper.html#Utils_Helper_DoTweenHelper_DoSize_UnityEngine_UI_Image_UnityEngine_Vector2_System_Single_
+  name: DoSize
+  nameWithType: DoTweenHelper.DoSize
+  fullName: Utils.Helper.DoTweenHelper.DoSize
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2

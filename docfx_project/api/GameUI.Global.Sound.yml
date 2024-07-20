@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: GameUI.Global.Sound
+  commentId: N:GameUI.Global.Sound
+  id: GameUI.Global.Sound
+  children:
+  - GameUI.Global.Sound.UISoundManager
+  langs:
+  - csharp
+  - vb
+  name: GameUI.Global.Sound
+  nameWithType: GameUI.Global.Sound
+  fullName: GameUI.Global.Sound
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: GameUI.Global.Sound.UISoundManager
+  commentId: T:GameUI.Global.Sound.UISoundManager
+  href: GameUI.Global.Sound.UISoundManager.html
+  name: UISoundManager
+  nameWithType: UISoundManager
+  fullName: GameUI.Global.Sound.UISoundManager

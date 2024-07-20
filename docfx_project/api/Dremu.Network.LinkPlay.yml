@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Dremu.Network.LinkPlay
+  commentId: N:Dremu.Network.LinkPlay
+  id: Dremu.Network.LinkPlay
+  children:
+  - Dremu.Network.LinkPlay.Server
+  langs:
+  - csharp
+  - vb
+  name: Dremu.Network.LinkPlay
+  nameWithType: Dremu.Network.LinkPlay
+  fullName: Dremu.Network.LinkPlay
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: Dremu.Network.LinkPlay.Server
+  commentId: T:Dremu.Network.LinkPlay.Server
+  href: Dremu.Network.LinkPlay.Server.html
+  name: Server
+  nameWithType: Server
+  fullName: Dremu.Network.LinkPlay.Server

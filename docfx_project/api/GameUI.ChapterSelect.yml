@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: GameUI.ChapterSelect
+  commentId: N:GameUI.ChapterSelect
+  id: GameUI.ChapterSelect
+  children:
+  - GameUI.ChapterSelect.ChapterSelectManager
+  - GameUI.ChapterSelect.ChapterShow
+  langs:
+  - csharp
+  - vb
+  name: GameUI.ChapterSelect
+  nameWithType: GameUI.ChapterSelect
+  fullName: GameUI.ChapterSelect
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: GameUI.ChapterSelect.ChapterSelectManager
+  commentId: T:GameUI.ChapterSelect.ChapterSelectManager
+  href: GameUI.ChapterSelect.ChapterSelectManager.html
+  name: ChapterSelectManager
+  nameWithType: ChapterSelectManager
+  fullName: GameUI.ChapterSelect.ChapterSelectManager
+- uid: GameUI.ChapterSelect.ChapterShow
+  commentId: T:GameUI.ChapterSelect.ChapterShow
+  href: GameUI.ChapterSelect.ChapterShow.html
+  name: ChapterShow
+  nameWithType: ChapterShow
+  fullName: GameUI.ChapterSelect.ChapterShow

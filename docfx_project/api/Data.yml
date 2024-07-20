@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: Data
+  commentId: N:Data
+  id: Data
+  children:
+  - Data.ChapterData
+  - Data.LevelData
+  - Data.LevelDataHelper
+  - Data.LevelHarder
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: Data
+  fullName: Data
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: Data.LevelData
+  commentId: T:Data.LevelData
+  parent: Data
+  href: Data.LevelData.html
+  name: LevelData
+  nameWithType: LevelData
+  fullName: Data.LevelData
+- uid: Data.LevelHarder
+  commentId: T:Data.LevelHarder
+  parent: Data
+  href: Data.LevelHarder.html
+  name: LevelHarder
+  nameWithType: LevelHarder
+  fullName: Data.LevelHarder
+- uid: Data.LevelDataHelper
+  commentId: T:Data.LevelDataHelper
+  parent: Data
+  href: Data.LevelDataHelper.html
+  name: LevelDataHelper
+  nameWithType: LevelDataHelper
+  fullName: Data.LevelDataHelper
+- uid: Data.ChapterData
+  commentId: T:Data.ChapterData
+  parent: Data
+  href: Data.ChapterData.html
+  name: ChapterData
+  nameWithType: ChapterData
+  fullName: Data.ChapterData
+- uid: Data
+  commentId: N:Data
+  href: Data.html
+  name: Data
+  nameWithType: Data
+  fullName: Data

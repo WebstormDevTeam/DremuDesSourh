@@ -1,0 +1,628 @@
+### YamlMime:ManagedReference
+items:
+- uid: Utils.Helper.UnityHelper
+  commentId: T:Utils.Helper.UnityHelper
+  id: UnityHelper
+  parent: Utils.Helper
+  children:
+  - Utils.Helper.UnityHelper.SetX(UnityEngine.Vector2,System.Single)
+  - Utils.Helper.UnityHelper.SetX(UnityEngine.Vector3,System.Single)
+  - Utils.Helper.UnityHelper.SetY(UnityEngine.Vector2,System.Single)
+  - Utils.Helper.UnityHelper.SetY(UnityEngine.Vector3,System.Single)
+  - Utils.Helper.UnityHelper.SetZ(UnityEngine.Vector3,System.Single)
+  - Utils.Helper.UnityHelper.ToTask(UnityEngine.AsyncOperation)
+  langs:
+  - csharp
+  - vb
+  name: UnityHelper
+  nameWithType: UnityHelper
+  fullName: Utils.Helper.UnityHelper
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Utils/Helper/UnityHelper.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: UnityHelper
+    path: ../Assets/Scripts/Utils/Helper/UnityHelper.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: Utils.Helper
+  syntax:
+    content: public static class UnityHelper
+    content.vb: Public Module UnityHelper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Utils.Helper.UnityHelper.SetX(UnityEngine.Vector2,System.Single)
+  commentId: M:Utils.Helper.UnityHelper.SetX(UnityEngine.Vector2,System.Single)
+  id: SetX(UnityEngine.Vector2,System.Single)
+  isExtensionMethod: true
+  parent: Utils.Helper.UnityHelper
+  langs:
+  - csharp
+  - vb
+  name: SetX(Vector2, float)
+  nameWithType: UnityHelper.SetX(Vector2, float)
+  fullName: Utils.Helper.UnityHelper.SetX(UnityEngine.Vector2, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Utils/Helper/UnityHelper.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: SetX
+    path: ../Assets/Scripts/Utils/Helper/UnityHelper.cs
+    startLine: 7
+  assemblies:
+  - Assembly-CSharp
+  namespace: Utils.Helper
+  syntax:
+    content: public static Vector2 SetX(this Vector2 vector, float x)
+    parameters:
+    - id: vector
+      type: UnityEngine.Vector2
+    - id: x
+      type: System.Single
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public Shared Function SetX(vector As Vector2, x As Single) As Vector2
+  overload: Utils.Helper.UnityHelper.SetX*
+  nameWithType.vb: UnityHelper.SetX(Vector2, Single)
+  fullName.vb: Utils.Helper.UnityHelper.SetX(UnityEngine.Vector2, Single)
+  name.vb: SetX(Vector2, Single)
+- uid: Utils.Helper.UnityHelper.SetY(UnityEngine.Vector2,System.Single)
+  commentId: M:Utils.Helper.UnityHelper.SetY(UnityEngine.Vector2,System.Single)
+  id: SetY(UnityEngine.Vector2,System.Single)
+  isExtensionMethod: true
+  parent: Utils.Helper.UnityHelper
+  langs:
+  - csharp
+  - vb
+  name: SetY(Vector2, float)
+  nameWithType: UnityHelper.SetY(Vector2, float)
+  fullName: Utils.Helper.UnityHelper.SetY(UnityEngine.Vector2, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Utils/Helper/UnityHelper.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: SetY
+    path: ../Assets/Scripts/Utils/Helper/UnityHelper.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Utils.Helper
+  syntax:
+    content: public static Vector2 SetY(this Vector2 vector, float y)
+    parameters:
+    - id: vector
+      type: UnityEngine.Vector2
+    - id: y
+      type: System.Single
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public Shared Function SetY(vector As Vector2, y As Single) As Vector2
+  overload: Utils.Helper.UnityHelper.SetY*
+  nameWithType.vb: UnityHelper.SetY(Vector2, Single)
+  fullName.vb: Utils.Helper.UnityHelper.SetY(UnityEngine.Vector2, Single)
+  name.vb: SetY(Vector2, Single)
+- uid: Utils.Helper.UnityHelper.SetX(UnityEngine.Vector3,System.Single)
+  commentId: M:Utils.Helper.UnityHelper.SetX(UnityEngine.Vector3,System.Single)
+  id: SetX(UnityEngine.Vector3,System.Single)
+  isExtensionMethod: true
+  parent: Utils.Helper.UnityHelper
+  langs:
+  - csharp
+  - vb
+  name: SetX(Vector3, float)
+  nameWithType: UnityHelper.SetX(Vector3, float)
+  fullName: Utils.Helper.UnityHelper.SetX(UnityEngine.Vector3, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Utils/Helper/UnityHelper.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: SetX
+    path: ../Assets/Scripts/Utils/Helper/UnityHelper.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Utils.Helper
+  syntax:
+    content: public static Vector3 SetX(this Vector3 vector, float x)
+    parameters:
+    - id: vector
+      type: UnityEngine.Vector3
+    - id: x
+      type: System.Single
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public Shared Function SetX(vector As Vector3, x As Single) As Vector3
+  overload: Utils.Helper.UnityHelper.SetX*
+  nameWithType.vb: UnityHelper.SetX(Vector3, Single)
+  fullName.vb: Utils.Helper.UnityHelper.SetX(UnityEngine.Vector3, Single)
+  name.vb: SetX(Vector3, Single)
+- uid: Utils.Helper.UnityHelper.SetY(UnityEngine.Vector3,System.Single)
+  commentId: M:Utils.Helper.UnityHelper.SetY(UnityEngine.Vector3,System.Single)
+  id: SetY(UnityEngine.Vector3,System.Single)
+  isExtensionMethod: true
+  parent: Utils.Helper.UnityHelper
+  langs:
+  - csharp
+  - vb
+  name: SetY(Vector3, float)
+  nameWithType: UnityHelper.SetY(Vector3, float)
+  fullName: Utils.Helper.UnityHelper.SetY(UnityEngine.Vector3, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Utils/Helper/UnityHelper.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: SetY
+    path: ../Assets/Scripts/Utils/Helper/UnityHelper.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: Utils.Helper
+  syntax:
+    content: public static Vector3 SetY(this Vector3 vector, float y)
+    parameters:
+    - id: vector
+      type: UnityEngine.Vector3
+    - id: y
+      type: System.Single
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public Shared Function SetY(vector As Vector3, y As Single) As Vector3
+  overload: Utils.Helper.UnityHelper.SetY*
+  nameWithType.vb: UnityHelper.SetY(Vector3, Single)
+  fullName.vb: Utils.Helper.UnityHelper.SetY(UnityEngine.Vector3, Single)
+  name.vb: SetY(Vector3, Single)
+- uid: Utils.Helper.UnityHelper.SetZ(UnityEngine.Vector3,System.Single)
+  commentId: M:Utils.Helper.UnityHelper.SetZ(UnityEngine.Vector3,System.Single)
+  id: SetZ(UnityEngine.Vector3,System.Single)
+  isExtensionMethod: true
+  parent: Utils.Helper.UnityHelper
+  langs:
+  - csharp
+  - vb
+  name: SetZ(Vector3, float)
+  nameWithType: UnityHelper.SetZ(Vector3, float)
+  fullName: Utils.Helper.UnityHelper.SetZ(UnityEngine.Vector3, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Utils/Helper/UnityHelper.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: SetZ
+    path: ../Assets/Scripts/Utils/Helper/UnityHelper.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp
+  namespace: Utils.Helper
+  syntax:
+    content: public static Vector3 SetZ(this Vector3 vector, float z)
+    parameters:
+    - id: vector
+      type: UnityEngine.Vector3
+    - id: z
+      type: System.Single
+    return:
+      type: UnityEngine.Vector3
+    content.vb: Public Shared Function SetZ(vector As Vector3, z As Single) As Vector3
+  overload: Utils.Helper.UnityHelper.SetZ*
+  nameWithType.vb: UnityHelper.SetZ(Vector3, Single)
+  fullName.vb: Utils.Helper.UnityHelper.SetZ(UnityEngine.Vector3, Single)
+  name.vb: SetZ(Vector3, Single)
+- uid: Utils.Helper.UnityHelper.ToTask(UnityEngine.AsyncOperation)
+  commentId: M:Utils.Helper.UnityHelper.ToTask(UnityEngine.AsyncOperation)
+  id: ToTask(UnityEngine.AsyncOperation)
+  isExtensionMethod: true
+  parent: Utils.Helper.UnityHelper
+  langs:
+  - csharp
+  - vb
+  name: ToTask(AsyncOperation)
+  nameWithType: UnityHelper.ToTask(AsyncOperation)
+  fullName: Utils.Helper.UnityHelper.ToTask(UnityEngine.AsyncOperation)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Utils/Helper/UnityHelper.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: ToTask
+    path: ../Assets/Scripts/Utils/Helper/UnityHelper.cs
+    startLine: 32
+  assemblies:
+  - Assembly-CSharp
+  namespace: Utils.Helper
+  syntax:
+    content: public static Task ToTask(this AsyncOperation operation)
+    parameters:
+    - id: operation
+      type: UnityEngine.AsyncOperation
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Shared Function ToTask(operation As AsyncOperation) As Task
+  overload: Utils.Helper.UnityHelper.ToTask*
+references:
+- uid: Utils.Helper
+  commentId: N:Utils.Helper
+  href: Utils.html
+  name: Utils.Helper
+  nameWithType: Utils.Helper
+  fullName: Utils.Helper
+  spec.csharp:
+  - uid: Utils
+    name: Utils
+    href: Utils.html
+  - name: .
+  - uid: Utils.Helper
+    name: Helper
+    href: Utils.Helper.html
+  spec.vb:
+  - uid: Utils
+    name: Utils
+    href: Utils.html
+  - name: .
+  - uid: Utils.Helper
+    name: Helper
+    href: Utils.Helper.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Utils.Helper.UnityHelper.SetX*
+  commentId: Overload:Utils.Helper.UnityHelper.SetX
+  href: Utils.Helper.UnityHelper.html#Utils_Helper_UnityHelper_SetX_UnityEngine_Vector2_System_Single_
+  name: SetX
+  nameWithType: UnityHelper.SetX
+  fullName: Utils.Helper.UnityHelper.SetX
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Utils.Helper.UnityHelper.SetY*
+  commentId: Overload:Utils.Helper.UnityHelper.SetY
+  href: Utils.Helper.UnityHelper.html#Utils_Helper_UnityHelper_SetY_UnityEngine_Vector2_System_Single_
+  name: SetY
+  nameWithType: UnityHelper.SetY
+  fullName: Utils.Helper.UnityHelper.SetY
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: Utils.Helper.UnityHelper.SetZ*
+  commentId: Overload:Utils.Helper.UnityHelper.SetZ
+  href: Utils.Helper.UnityHelper.html#Utils_Helper_UnityHelper_SetZ_UnityEngine_Vector3_System_Single_
+  name: SetZ
+  nameWithType: UnityHelper.SetZ
+  fullName: Utils.Helper.UnityHelper.SetZ
+- uid: Utils.Helper.UnityHelper.ToTask*
+  commentId: Overload:Utils.Helper.UnityHelper.ToTask
+  href: Utils.Helper.UnityHelper.html#Utils_Helper_UnityHelper_ToTask_UnityEngine_AsyncOperation_
+  name: ToTask
+  nameWithType: UnityHelper.ToTask
+  fullName: Utils.Helper.UnityHelper.ToTask
+- uid: UnityEngine.AsyncOperation
+  commentId: T:UnityEngine.AsyncOperation
+  parent: UnityEngine
+  isExternal: true
+  name: AsyncOperation
+  nameWithType: AsyncOperation
+  fullName: UnityEngine.AsyncOperation
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

@@ -1,0 +1,126 @@
+### YamlMime:ManagedReference
+items:
+- uid: Dremu.Gameplay.Tool
+  commentId: N:Dremu.Gameplay.Tool
+  id: Dremu.Gameplay.Tool
+  children:
+  - Dremu.Gameplay.Tool.ControlNode
+  - Dremu.Gameplay.Tool.Curve
+  - Dremu.Gameplay.Tool.CurveType
+  - Dremu.Gameplay.Tool.EnvelopeLine
+  - Dremu.Gameplay.Tool.Functions
+  - Dremu.Gameplay.Tool.PositionHelper
+  - Dremu.Gameplay.Tool.RecyclableObject
+  - Dremu.Gameplay.Tool.StandardObjectPool`1
+  langs:
+  - csharp
+  - vb
+  name: Dremu.Gameplay.Tool
+  nameWithType: Dremu.Gameplay.Tool
+  fullName: Dremu.Gameplay.Tool
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: Dremu.Gameplay.Tool.Curve
+  commentId: T:Dremu.Gameplay.Tool.Curve
+  parent: Dremu.Gameplay.Tool
+  href: Dremu.Gameplay.Tool.Curve.html
+  name: Curve
+  nameWithType: Curve
+  fullName: Dremu.Gameplay.Tool.Curve
+- uid: Dremu.Gameplay.Tool.PositionHelper
+  commentId: T:Dremu.Gameplay.Tool.PositionHelper
+  href: Dremu.Gameplay.Tool.PositionHelper.html
+  name: PositionHelper
+  nameWithType: PositionHelper
+  fullName: Dremu.Gameplay.Tool.PositionHelper
+- uid: Dremu.Gameplay.Tool.EnvelopeLine
+  commentId: T:Dremu.Gameplay.Tool.EnvelopeLine
+  parent: Dremu.Gameplay.Tool
+  href: Dremu.Gameplay.Tool.EnvelopeLine.html
+  name: EnvelopeLine
+  nameWithType: EnvelopeLine
+  fullName: Dremu.Gameplay.Tool.EnvelopeLine
+- uid: Dremu.Gameplay.Tool.ControlNode
+  commentId: T:Dremu.Gameplay.Tool.ControlNode
+  parent: Dremu.Gameplay.Tool
+  href: Dremu.Gameplay.Tool.ControlNode.html
+  name: ControlNode
+  nameWithType: ControlNode
+  fullName: Dremu.Gameplay.Tool.ControlNode
+- uid: Dremu.Gameplay.Tool.CurveType
+  commentId: T:Dremu.Gameplay.Tool.CurveType
+  parent: Dremu.Gameplay.Tool
+  href: Dremu.Gameplay.Tool.CurveType.html
+  name: CurveType
+  nameWithType: CurveType
+  fullName: Dremu.Gameplay.Tool.CurveType
+- uid: Dremu.Gameplay.Tool.Functions
+  commentId: T:Dremu.Gameplay.Tool.Functions
+  href: Dremu.Gameplay.Tool.Functions.html
+  name: Functions
+  nameWithType: Functions
+  fullName: Dremu.Gameplay.Tool.Functions
+- uid: Dremu.Gameplay.Tool.RecyclableObject
+  commentId: T:Dremu.Gameplay.Tool.RecyclableObject
+  parent: Dremu.Gameplay.Tool
+  href: Dremu.Gameplay.Tool.RecyclableObject.html
+  name: RecyclableObject
+  nameWithType: RecyclableObject
+  fullName: Dremu.Gameplay.Tool.RecyclableObject
+- uid: Dremu.Gameplay.Tool.StandardObjectPool`1
+  commentId: T:Dremu.Gameplay.Tool.StandardObjectPool`1
+  href: Dremu.Gameplay.Tool.StandardObjectPool-1.html
+  name: StandardObjectPool<T>
+  nameWithType: StandardObjectPool<T>
+  fullName: Dremu.Gameplay.Tool.StandardObjectPool<T>
+  nameWithType.vb: StandardObjectPool(Of T)
+  fullName.vb: Dremu.Gameplay.Tool.StandardObjectPool(Of T)
+  name.vb: StandardObjectPool(Of T)
+  spec.csharp:
+  - uid: Dremu.Gameplay.Tool.StandardObjectPool`1
+    name: StandardObjectPool
+    href: Dremu.Gameplay.Tool.StandardObjectPool-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Dremu.Gameplay.Tool.StandardObjectPool`1
+    name: StandardObjectPool
+    href: Dremu.Gameplay.Tool.StandardObjectPool-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Dremu.Gameplay.Tool
+  commentId: N:Dremu.Gameplay.Tool
+  href: Dremu.html
+  name: Dremu.Gameplay.Tool
+  nameWithType: Dremu.Gameplay.Tool
+  fullName: Dremu.Gameplay.Tool
+  spec.csharp:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.Gameplay
+    name: Gameplay
+    href: Dremu.Gameplay.html
+  - name: .
+  - uid: Dremu.Gameplay.Tool
+    name: Tool
+    href: Dremu.Gameplay.Tool.html
+  spec.vb:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.Gameplay
+    name: Gameplay
+    href: Dremu.Gameplay.html
+  - name: .
+  - uid: Dremu.Gameplay.Tool
+    name: Tool
+    href: Dremu.Gameplay.Tool.html

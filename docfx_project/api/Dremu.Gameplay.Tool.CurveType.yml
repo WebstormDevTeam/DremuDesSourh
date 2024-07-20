@@ -1,0 +1,226 @@
+### YamlMime:ManagedReference
+items:
+- uid: Dremu.Gameplay.Tool.CurveType
+  commentId: T:Dremu.Gameplay.Tool.CurveType
+  id: CurveType
+  parent: Dremu.Gameplay.Tool
+  children:
+  - Dremu.Gameplay.Tool.CurveType.Const
+  - Dremu.Gameplay.Tool.CurveType.Expo
+  - Dremu.Gameplay.Tool.CurveType.Linear
+  - Dremu.Gameplay.Tool.CurveType.Sine
+  langs:
+  - csharp
+  - vb
+  name: CurveType
+  nameWithType: CurveType
+  fullName: Dremu.Gameplay.Tool.CurveType
+  type: Enum
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/Tool/Envelope.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: CurveType
+    path: ../Assets/Scripts/Gameplay/Tool/Envelope.cs
+    startLine: 321
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Tool
+  syntax:
+    content: public enum CurveType
+    content.vb: Public Enum CurveType
+- uid: Dremu.Gameplay.Tool.CurveType.Const
+  commentId: F:Dremu.Gameplay.Tool.CurveType.Const
+  id: Const
+  parent: Dremu.Gameplay.Tool.CurveType
+  langs:
+  - csharp
+  - vb
+  name: Const
+  nameWithType: CurveType.Const
+  fullName: Dremu.Gameplay.Tool.CurveType.Const
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/Tool/Envelope.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: Const
+    path: ../Assets/Scripts/Gameplay/Tool/Envelope.cs
+    startLine: 323
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Tool
+  syntax:
+    content: >-
+      [LabelText("常量")]
+
+      Const = 0
+    return:
+      type: Dremu.Gameplay.Tool.CurveType
+    content.vb: >-
+      <LabelText("常量")>
+
+      Const = 0
+  attributes:
+  - type: Sirenix.OdinInspector.LabelTextAttribute
+    ctor: Sirenix.OdinInspector.LabelTextAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 常量
+- uid: Dremu.Gameplay.Tool.CurveType.Linear
+  commentId: F:Dremu.Gameplay.Tool.CurveType.Linear
+  id: Linear
+  parent: Dremu.Gameplay.Tool.CurveType
+  langs:
+  - csharp
+  - vb
+  name: Linear
+  nameWithType: CurveType.Linear
+  fullName: Dremu.Gameplay.Tool.CurveType.Linear
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/Tool/Envelope.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: Linear
+    path: ../Assets/Scripts/Gameplay/Tool/Envelope.cs
+    startLine: 324
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Tool
+  syntax:
+    content: >-
+      [LabelText("线性")]
+
+      Linear = 1
+    return:
+      type: Dremu.Gameplay.Tool.CurveType
+    content.vb: >-
+      <LabelText("线性")>
+
+      Linear = 1
+  attributes:
+  - type: Sirenix.OdinInspector.LabelTextAttribute
+    ctor: Sirenix.OdinInspector.LabelTextAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 线性
+- uid: Dremu.Gameplay.Tool.CurveType.Expo
+  commentId: F:Dremu.Gameplay.Tool.CurveType.Expo
+  id: Expo
+  parent: Dremu.Gameplay.Tool.CurveType
+  langs:
+  - csharp
+  - vb
+  name: Expo
+  nameWithType: CurveType.Expo
+  fullName: Dremu.Gameplay.Tool.CurveType.Expo
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/Tool/Envelope.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: Expo
+    path: ../Assets/Scripts/Gameplay/Tool/Envelope.cs
+    startLine: 325
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Tool
+  syntax:
+    content: >-
+      [LabelText("指数")]
+
+      Expo = 2
+    return:
+      type: Dremu.Gameplay.Tool.CurveType
+    content.vb: >-
+      <LabelText("指数")>
+
+      Expo = 2
+  attributes:
+  - type: Sirenix.OdinInspector.LabelTextAttribute
+    ctor: Sirenix.OdinInspector.LabelTextAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 指数
+- uid: Dremu.Gameplay.Tool.CurveType.Sine
+  commentId: F:Dremu.Gameplay.Tool.CurveType.Sine
+  id: Sine
+  parent: Dremu.Gameplay.Tool.CurveType
+  langs:
+  - csharp
+  - vb
+  name: Sine
+  nameWithType: CurveType.Sine
+  fullName: Dremu.Gameplay.Tool.CurveType.Sine
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/Tool/Envelope.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: Sine
+    path: ../Assets/Scripts/Gameplay/Tool/Envelope.cs
+    startLine: 326
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Tool
+  syntax:
+    content: >-
+      [LabelText("正弦")]
+
+      Sine = 3
+    return:
+      type: Dremu.Gameplay.Tool.CurveType
+    content.vb: >-
+      <LabelText("正弦")>
+
+      Sine = 3
+  attributes:
+  - type: Sirenix.OdinInspector.LabelTextAttribute
+    ctor: Sirenix.OdinInspector.LabelTextAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 正弦
+references:
+- uid: Dremu.Gameplay.Tool
+  commentId: N:Dremu.Gameplay.Tool
+  href: Dremu.html
+  name: Dremu.Gameplay.Tool
+  nameWithType: Dremu.Gameplay.Tool
+  fullName: Dremu.Gameplay.Tool
+  spec.csharp:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.Gameplay
+    name: Gameplay
+    href: Dremu.Gameplay.html
+  - name: .
+  - uid: Dremu.Gameplay.Tool
+    name: Tool
+    href: Dremu.Gameplay.Tool.html
+  spec.vb:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.Gameplay
+    name: Gameplay
+    href: Dremu.Gameplay.html
+  - name: .
+  - uid: Dremu.Gameplay.Tool
+    name: Tool
+    href: Dremu.Gameplay.Tool.html
+- uid: Dremu.Gameplay.Tool.CurveType
+  commentId: T:Dremu.Gameplay.Tool.CurveType
+  parent: Dremu.Gameplay.Tool
+  href: Dremu.Gameplay.Tool.CurveType.html
+  name: CurveType
+  nameWithType: CurveType
+  fullName: Dremu.Gameplay.Tool.CurveType

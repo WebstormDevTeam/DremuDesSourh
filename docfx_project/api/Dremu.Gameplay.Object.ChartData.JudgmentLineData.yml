@@ -1,0 +1,761 @@
+### YamlMime:ManagedReference
+items:
+- uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData
+  commentId: T:Dremu.Gameplay.Object.ChartData.JudgmentLineData
+  id: ChartData.JudgmentLineData
+  parent: Dremu.Gameplay.Object
+  children:
+  - Dremu.Gameplay.Object.ChartData.JudgmentLineData.MoveXEnvelope
+  - Dremu.Gameplay.Object.ChartData.JudgmentLineData.MoveYEnvelope
+  - Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteWidth
+  - Dremu.Gameplay.Object.ChartData.JudgmentLineData.Notes
+  - Dremu.Gameplay.Object.ChartData.JudgmentLineData.RotateEnvelope
+  - Dremu.Gameplay.Object.ChartData.JudgmentLineData.SpeedEnvelope
+  - Dremu.Gameplay.Object.ChartData.JudgmentLineData._CurveAction
+  langs:
+  - csharp
+  - vb
+  name: ChartData.JudgmentLineData
+  nameWithType: ChartData.JudgmentLineData
+  fullName: Dremu.Gameplay.Object.ChartData.JudgmentLineData
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Data/ScriptableObject/ChartData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: JudgmentLineData
+    path: ../Assets/Scripts/Data/ScriptableObject/ChartData.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Object
+  syntax:
+    content: >-
+      [Serializable]
+
+      public sealed class ChartData.JudgmentLineData
+    content.vb: >-
+      <Serializable>
+
+      Public NotInheritable Class ChartData.JudgmentLineData
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteWidth
+  commentId: F:Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteWidth
+  id: NoteWidth
+  parent: Dremu.Gameplay.Object.ChartData.JudgmentLineData
+  langs:
+  - csharp
+  - vb
+  name: NoteWidth
+  nameWithType: ChartData.JudgmentLineData.NoteWidth
+  fullName: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteWidth
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data/ScriptableObject/ChartData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: NoteWidth
+    path: ../Assets/Scripts/Data/ScriptableObject/ChartData.cs
+    startLine: 69
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Object
+  syntax:
+    content: >-
+      [LabelText("音符宽度")]
+
+      [Range(0, 1)]
+
+      public float NoteWidth
+    return:
+      type: System.Single
+    content.vb: >-
+      <LabelText("音符宽度")>
+
+      <Range(0, 1)>
+
+      Public NoteWidth As Single
+  attributes:
+  - type: Sirenix.OdinInspector.LabelTextAttribute
+    ctor: Sirenix.OdinInspector.LabelTextAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 音符宽度
+  - type: UnityEngine.RangeAttribute
+    ctor: UnityEngine.RangeAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: 0
+    - type: System.Single
+      value: 1
+- uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.SpeedEnvelope
+  commentId: F:Dremu.Gameplay.Object.ChartData.JudgmentLineData.SpeedEnvelope
+  id: SpeedEnvelope
+  parent: Dremu.Gameplay.Object.ChartData.JudgmentLineData
+  langs:
+  - csharp
+  - vb
+  name: SpeedEnvelope
+  nameWithType: ChartData.JudgmentLineData.SpeedEnvelope
+  fullName: Dremu.Gameplay.Object.ChartData.JudgmentLineData.SpeedEnvelope
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data/ScriptableObject/ChartData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: SpeedEnvelope
+    path: ../Assets/Scripts/Data/ScriptableObject/ChartData.cs
+    startLine: 71
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Object
+  syntax:
+    content: >-
+      [LabelText("流速包络")]
+
+      public ChartData.EnvelopeLineData SpeedEnvelope
+    return:
+      type: Dremu.Gameplay.Object.ChartData.EnvelopeLineData
+    content.vb: >-
+      <LabelText("流速包络")>
+
+      Public SpeedEnvelope As ChartData.EnvelopeLineData
+  attributes:
+  - type: Sirenix.OdinInspector.LabelTextAttribute
+    ctor: Sirenix.OdinInspector.LabelTextAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 流速包络
+- uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.RotateEnvelope
+  commentId: F:Dremu.Gameplay.Object.ChartData.JudgmentLineData.RotateEnvelope
+  id: RotateEnvelope
+  parent: Dremu.Gameplay.Object.ChartData.JudgmentLineData
+  langs:
+  - csharp
+  - vb
+  name: RotateEnvelope
+  nameWithType: ChartData.JudgmentLineData.RotateEnvelope
+  fullName: Dremu.Gameplay.Object.ChartData.JudgmentLineData.RotateEnvelope
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data/ScriptableObject/ChartData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: RotateEnvelope
+    path: ../Assets/Scripts/Data/ScriptableObject/ChartData.cs
+    startLine: 72
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Object
+  syntax:
+    content: >-
+      [LabelText("角度包络")]
+
+      public ChartData.EnvelopeLineData RotateEnvelope
+    return:
+      type: Dremu.Gameplay.Object.ChartData.EnvelopeLineData
+    content.vb: >-
+      <LabelText("角度包络")>
+
+      Public RotateEnvelope As ChartData.EnvelopeLineData
+  attributes:
+  - type: Sirenix.OdinInspector.LabelTextAttribute
+    ctor: Sirenix.OdinInspector.LabelTextAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 角度包络
+- uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.MoveXEnvelope
+  commentId: F:Dremu.Gameplay.Object.ChartData.JudgmentLineData.MoveXEnvelope
+  id: MoveXEnvelope
+  parent: Dremu.Gameplay.Object.ChartData.JudgmentLineData
+  langs:
+  - csharp
+  - vb
+  name: MoveXEnvelope
+  nameWithType: ChartData.JudgmentLineData.MoveXEnvelope
+  fullName: Dremu.Gameplay.Object.ChartData.JudgmentLineData.MoveXEnvelope
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data/ScriptableObject/ChartData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: MoveXEnvelope
+    path: ../Assets/Scripts/Data/ScriptableObject/ChartData.cs
+    startLine: 73
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Object
+  syntax:
+    content: >-
+      [LabelText("X包络")]
+
+      public ChartData.EnvelopeLineData MoveXEnvelope
+    return:
+      type: Dremu.Gameplay.Object.ChartData.EnvelopeLineData
+    content.vb: >-
+      <LabelText("X包络")>
+
+      Public MoveXEnvelope As ChartData.EnvelopeLineData
+  attributes:
+  - type: Sirenix.OdinInspector.LabelTextAttribute
+    ctor: Sirenix.OdinInspector.LabelTextAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: X包络
+- uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.MoveYEnvelope
+  commentId: F:Dremu.Gameplay.Object.ChartData.JudgmentLineData.MoveYEnvelope
+  id: MoveYEnvelope
+  parent: Dremu.Gameplay.Object.ChartData.JudgmentLineData
+  langs:
+  - csharp
+  - vb
+  name: MoveYEnvelope
+  nameWithType: ChartData.JudgmentLineData.MoveYEnvelope
+  fullName: Dremu.Gameplay.Object.ChartData.JudgmentLineData.MoveYEnvelope
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data/ScriptableObject/ChartData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: MoveYEnvelope
+    path: ../Assets/Scripts/Data/ScriptableObject/ChartData.cs
+    startLine: 74
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Object
+  syntax:
+    content: >-
+      [LabelText("Y包络")]
+
+      public ChartData.EnvelopeLineData MoveYEnvelope
+    return:
+      type: Dremu.Gameplay.Object.ChartData.EnvelopeLineData
+    content.vb: >-
+      <LabelText("Y包络")>
+
+      Public MoveYEnvelope As ChartData.EnvelopeLineData
+  attributes:
+  - type: Sirenix.OdinInspector.LabelTextAttribute
+    ctor: Sirenix.OdinInspector.LabelTextAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Y包络
+- uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData._CurveAction
+  commentId: F:Dremu.Gameplay.Object.ChartData.JudgmentLineData._CurveAction
+  id: _CurveAction
+  parent: Dremu.Gameplay.Object.ChartData.JudgmentLineData
+  langs:
+  - csharp
+  - vb
+  name: _CurveAction
+  nameWithType: ChartData.JudgmentLineData._CurveAction
+  fullName: Dremu.Gameplay.Object.ChartData.JudgmentLineData._CurveAction
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data/ScriptableObject/ChartData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: _CurveAction
+    path: ../Assets/Scripts/Data/ScriptableObject/ChartData.cs
+    startLine: 76
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Object
+  syntax:
+    content: >-
+      [LabelText("曲线事件")]
+
+      public ChartData.JudgmentLineData.CurveAction _CurveAction
+    return:
+      type: Dremu.Gameplay.Object.ChartData.JudgmentLineData.CurveAction
+    content.vb: >-
+      <LabelText("曲线事件")>
+
+      Public _CurveAction As ChartData.JudgmentLineData.CurveAction
+  attributes:
+  - type: Sirenix.OdinInspector.LabelTextAttribute
+    ctor: Sirenix.OdinInspector.LabelTextAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 曲线事件
+- uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.Notes
+  commentId: F:Dremu.Gameplay.Object.ChartData.JudgmentLineData.Notes
+  id: Notes
+  parent: Dremu.Gameplay.Object.ChartData.JudgmentLineData
+  langs:
+  - csharp
+  - vb
+  name: Notes
+  nameWithType: ChartData.JudgmentLineData.Notes
+  fullName: Dremu.Gameplay.Object.ChartData.JudgmentLineData.Notes
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data/ScriptableObject/ChartData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: Notes
+    path: ../Assets/Scripts/Data/ScriptableObject/ChartData.cs
+    startLine: 78
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Object
+  syntax:
+    content: >-
+      [LabelText("音符")]
+
+      public List<ChartData.JudgmentLineData.NoteData> Notes
+    return:
+      type: System.Collections.Generic.List{Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData}
+    content.vb: >-
+      <LabelText("音符")>
+
+      Public Notes As List(Of ChartData.JudgmentLineData.NoteData)
+  attributes:
+  - type: Sirenix.OdinInspector.LabelTextAttribute
+    ctor: Sirenix.OdinInspector.LabelTextAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 音符
+references:
+- uid: Dremu.Gameplay.Object
+  commentId: N:Dremu.Gameplay.Object
+  href: Dremu.html
+  name: Dremu.Gameplay.Object
+  nameWithType: Dremu.Gameplay.Object
+  fullName: Dremu.Gameplay.Object
+  spec.csharp:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.Gameplay
+    name: Gameplay
+    href: Dremu.Gameplay.html
+  - name: .
+  - uid: Dremu.Gameplay.Object
+    name: Object
+    href: Dremu.Gameplay.Object.html
+  spec.vb:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.Gameplay
+    name: Gameplay
+    href: Dremu.Gameplay.html
+  - name: .
+  - uid: Dremu.Gameplay.Object
+    name: Object
+    href: Dremu.Gameplay.Object.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Dremu.Gameplay.Object.ChartData.EnvelopeLineData
+  commentId: T:Dremu.Gameplay.Object.ChartData.EnvelopeLineData
+  parent: Dremu.Gameplay.Object
+  href: Dremu.Gameplay.Object.ChartData.html
+  name: ChartData.EnvelopeLineData
+  nameWithType: ChartData.EnvelopeLineData
+  fullName: Dremu.Gameplay.Object.ChartData.EnvelopeLineData
+  spec.csharp:
+  - uid: Dremu.Gameplay.Object.ChartData
+    name: ChartData
+    href: Dremu.Gameplay.Object.ChartData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.EnvelopeLineData
+    name: EnvelopeLineData
+    href: Dremu.Gameplay.Object.ChartData.EnvelopeLineData.html
+  spec.vb:
+  - uid: Dremu.Gameplay.Object.ChartData
+    name: ChartData
+    href: Dremu.Gameplay.Object.ChartData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.EnvelopeLineData
+    name: EnvelopeLineData
+    href: Dremu.Gameplay.Object.ChartData.EnvelopeLineData.html
+- uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.CurveAction
+  commentId: T:Dremu.Gameplay.Object.ChartData.JudgmentLineData.CurveAction
+  parent: Dremu.Gameplay.Object
+  href: Dremu.Gameplay.Object.ChartData.html
+  name: ChartData.JudgmentLineData.CurveAction
+  nameWithType: ChartData.JudgmentLineData.CurveAction
+  fullName: Dremu.Gameplay.Object.ChartData.JudgmentLineData.CurveAction
+  spec.csharp:
+  - uid: Dremu.Gameplay.Object.ChartData
+    name: ChartData
+    href: Dremu.Gameplay.Object.ChartData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData
+    name: JudgmentLineData
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.CurveAction
+    name: CurveAction
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.CurveAction.html
+  spec.vb:
+  - uid: Dremu.Gameplay.Object.ChartData
+    name: ChartData
+    href: Dremu.Gameplay.Object.ChartData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData
+    name: JudgmentLineData
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.CurveAction
+    name: CurveAction
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.CurveAction.html
+- uid: System.Collections.Generic.List{Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData}
+  commentId: T:System.Collections.Generic.List{Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<ChartData.JudgmentLineData.NoteData>
+  nameWithType: List<ChartData.JudgmentLineData.NoteData>
+  fullName: System.Collections.Generic.List<Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData>
+  nameWithType.vb: List(Of ChartData.JudgmentLineData.NoteData)
+  fullName.vb: System.Collections.Generic.List(Of Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData)
+  name.vb: List(Of ChartData.JudgmentLineData.NoteData)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Dremu.Gameplay.Object.ChartData
+    name: ChartData
+    href: Dremu.Gameplay.Object.ChartData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData
+    name: JudgmentLineData
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData
+    name: NoteData
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Dremu.Gameplay.Object.ChartData
+    name: ChartData
+    href: Dremu.Gameplay.Object.ChartData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData
+    name: JudgmentLineData
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData
+    name: NoteData
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

@@ -1,0 +1,147 @@
+### YamlMime:ManagedReference
+items:
+- uid: Dremu.ChartEdit.Envelope.EditingEntry
+  commentId: T:Dremu.ChartEdit.Envelope.EditingEntry
+  id: EditingEntry
+  parent: Dremu.ChartEdit.Envelope
+  children:
+  - Dremu.ChartEdit.Envelope.EditingEntry.Node
+  - Dremu.ChartEdit.Envelope.EditingEntry.None
+  - Dremu.ChartEdit.Envelope.EditingEntry.Tension
+  langs:
+  - csharp
+  - vb
+  name: EditingEntry
+  nameWithType: EditingEntry
+  fullName: Dremu.ChartEdit.Envelope.EditingEntry
+  type: Enum
+  source:
+    remote:
+      path: Assets/Scripts/ChartEditor/Envelope/EnvelopeTrack.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: EditingEntry
+    path: ../Assets/Scripts/ChartEditor/Envelope/EnvelopeTrack.cs
+    startLine: 321
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.ChartEdit.Envelope
+  syntax:
+    content: public enum EditingEntry
+    content.vb: Public Enum EditingEntry
+- uid: Dremu.ChartEdit.Envelope.EditingEntry.Tension
+  commentId: F:Dremu.ChartEdit.Envelope.EditingEntry.Tension
+  id: Tension
+  parent: Dremu.ChartEdit.Envelope.EditingEntry
+  langs:
+  - csharp
+  - vb
+  name: Tension
+  nameWithType: EditingEntry.Tension
+  fullName: Dremu.ChartEdit.Envelope.EditingEntry.Tension
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/ChartEditor/Envelope/EnvelopeTrack.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: Tension
+    path: ../Assets/Scripts/ChartEditor/Envelope/EnvelopeTrack.cs
+    startLine: 323
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.ChartEdit.Envelope
+  syntax:
+    content: Tension = 0
+    return:
+      type: Dremu.ChartEdit.Envelope.EditingEntry
+- uid: Dremu.ChartEdit.Envelope.EditingEntry.Node
+  commentId: F:Dremu.ChartEdit.Envelope.EditingEntry.Node
+  id: Node
+  parent: Dremu.ChartEdit.Envelope.EditingEntry
+  langs:
+  - csharp
+  - vb
+  name: Node
+  nameWithType: EditingEntry.Node
+  fullName: Dremu.ChartEdit.Envelope.EditingEntry.Node
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/ChartEditor/Envelope/EnvelopeTrack.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: Node
+    path: ../Assets/Scripts/ChartEditor/Envelope/EnvelopeTrack.cs
+    startLine: 324
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.ChartEdit.Envelope
+  syntax:
+    content: Node = 1
+    return:
+      type: Dremu.ChartEdit.Envelope.EditingEntry
+- uid: Dremu.ChartEdit.Envelope.EditingEntry.None
+  commentId: F:Dremu.ChartEdit.Envelope.EditingEntry.None
+  id: None
+  parent: Dremu.ChartEdit.Envelope.EditingEntry
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: EditingEntry.None
+  fullName: Dremu.ChartEdit.Envelope.EditingEntry.None
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/ChartEditor/Envelope/EnvelopeTrack.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: None
+    path: ../Assets/Scripts/ChartEditor/Envelope/EnvelopeTrack.cs
+    startLine: 325
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.ChartEdit.Envelope
+  syntax:
+    content: None = 2
+    return:
+      type: Dremu.ChartEdit.Envelope.EditingEntry
+references:
+- uid: Dremu.ChartEdit.Envelope
+  commentId: N:Dremu.ChartEdit.Envelope
+  href: Dremu.html
+  name: Dremu.ChartEdit.Envelope
+  nameWithType: Dremu.ChartEdit.Envelope
+  fullName: Dremu.ChartEdit.Envelope
+  spec.csharp:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.ChartEdit
+    name: ChartEdit
+    href: Dremu.ChartEdit.html
+  - name: .
+  - uid: Dremu.ChartEdit.Envelope
+    name: Envelope
+    href: Dremu.ChartEdit.Envelope.html
+  spec.vb:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.ChartEdit
+    name: ChartEdit
+    href: Dremu.ChartEdit.html
+  - name: .
+  - uid: Dremu.ChartEdit.Envelope
+    name: Envelope
+    href: Dremu.ChartEdit.Envelope.html
+- uid: Dremu.ChartEdit.Envelope.EditingEntry
+  commentId: T:Dremu.ChartEdit.Envelope.EditingEntry
+  parent: Dremu.ChartEdit.Envelope
+  href: Dremu.ChartEdit.Envelope.EditingEntry.html
+  name: EditingEntry
+  nameWithType: EditingEntry
+  fullName: Dremu.ChartEdit.Envelope.EditingEntry

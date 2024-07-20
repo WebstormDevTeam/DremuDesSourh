@@ -1,0 +1,49 @@
+### YamlMime:ManagedReference
+items:
+- uid: Utils.Singleton
+  commentId: N:Utils.Singleton
+  id: Utils.Singleton
+  children:
+  - Utils.Singleton.DontDestroySelf
+  - Utils.Singleton.MonoBehaviourSingleton`1
+  langs:
+  - csharp
+  - vb
+  name: Utils.Singleton
+  nameWithType: Utils.Singleton
+  fullName: Utils.Singleton
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: Utils.Singleton.DontDestroySelf
+  commentId: T:Utils.Singleton.DontDestroySelf
+  href: Utils.Singleton.DontDestroySelf.html
+  name: DontDestroySelf
+  nameWithType: DontDestroySelf
+  fullName: Utils.Singleton.DontDestroySelf
+- uid: Utils.Singleton.MonoBehaviourSingleton`1
+  commentId: T:Utils.Singleton.MonoBehaviourSingleton`1
+  href: Utils.Singleton.MonoBehaviourSingleton-1.html
+  name: MonoBehaviourSingleton<T>
+  nameWithType: MonoBehaviourSingleton<T>
+  fullName: Utils.Singleton.MonoBehaviourSingleton<T>
+  nameWithType.vb: MonoBehaviourSingleton(Of T)
+  fullName.vb: Utils.Singleton.MonoBehaviourSingleton(Of T)
+  name.vb: MonoBehaviourSingleton(Of T)
+  spec.csharp:
+  - uid: Utils.Singleton.MonoBehaviourSingleton`1
+    name: MonoBehaviourSingleton
+    href: Utils.Singleton.MonoBehaviourSingleton-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Utils.Singleton.MonoBehaviourSingleton`1
+    name: MonoBehaviourSingleton
+    href: Utils.Singleton.MonoBehaviourSingleton-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

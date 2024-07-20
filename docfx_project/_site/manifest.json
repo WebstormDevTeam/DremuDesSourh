@@ -1,0 +1,1514 @@
+{
+  "source_base_path": "/Users/daxingyi/UnityProject/Dremu/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Assets.Scripts.Gameplay.Tool.ScoreManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Assets.Scripts.Gameplay.Tool.ScoreManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Assets.Scripts.Gameplay.Tool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Assets.Scripts.Gameplay.Tool.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Data.ChapterData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Data.ChapterData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Data.LevelData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Data.LevelData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Data.LevelDataHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Data.LevelDataHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Data.LevelHarder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Data.LevelHarder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Data.ScriptableObject.ChapterDataObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Data.ScriptableObject.ChapterDataObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Data.ScriptableObject.LevelDataObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Data.ScriptableObject.LevelDataObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Data.ScriptableObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Data.ScriptableObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Data.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.ChartEdit.BetterRangeSlider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.ChartEdit.BetterRangeSlider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.ChartEdit.ContextMenu.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.ChartEdit.ContextMenu.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.ChartEdit.ContextMenuItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.ChartEdit.ContextMenuItem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.ChartEdit.CursorType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.ChartEdit.CursorType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.ChartEdit.DropDownMenu.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.ChartEdit.DropDownMenu.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.ChartEdit.EditPanel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.ChartEdit.EditPanel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.ChartEdit.Envelope.CurveTypeContextHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.ChartEdit.Envelope.CurveTypeContextHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.ChartEdit.Envelope.DummyTrack.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.ChartEdit.Envelope.DummyTrack.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.ChartEdit.Envelope.EditingBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.ChartEdit.Envelope.EditingBase-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.ChartEdit.Envelope.EditingEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.ChartEdit.Envelope.EditingEntry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.ChartEdit.Envelope.EnvelopeTrack.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.ChartEdit.Envelope.EnvelopeTrack.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.ChartEdit.Envelope.EnvelopeTrackHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.ChartEdit.Envelope.EnvelopeTrackHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.ChartEdit.Envelope.IDragEdit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.ChartEdit.Envelope.IDragEdit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.ChartEdit.Envelope.LineContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.ChartEdit.Envelope.LineContainer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.ChartEdit.Envelope.NodeDragEdit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.ChartEdit.Envelope.NodeDragEdit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.ChartEdit.Envelope.SnipHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.ChartEdit.Envelope.SnipHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.ChartEdit.Envelope.TensionEdit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.ChartEdit.Envelope.TensionEdit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.ChartEdit.Envelope.UILine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.ChartEdit.Envelope.UILine.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.ChartEdit.Envelope.VerticalTrackView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.ChartEdit.Envelope.VerticalTrackView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.ChartEdit.Envelope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.ChartEdit.Envelope.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.ChartEdit.RangeView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.ChartEdit.RangeView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.ChartEdit.UIManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.ChartEdit.UIManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.ChartEdit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.ChartEdit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Gameplay.Manager.AudioManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Gameplay.Manager.AudioManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Gameplay.Manager.JudgmentLineManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Gameplay.Manager.JudgmentLineManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Gameplay.Manager.MainController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Gameplay.Manager.MainController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Gameplay.Manager.NoteEffectManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Gameplay.Manager.NoteEffectManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Gameplay.Manager.NoteManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Gameplay.Manager.NoteManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Gameplay.Manager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Gameplay.Manager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Gameplay.Object.ChartData.EnvelopeLineData.EnvelopeNodeData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Gameplay.Object.ChartData.EnvelopeLineData.EnvelopeNodeData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Gameplay.Object.ChartData.EnvelopeLineData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Gameplay.Object.ChartData.EnvelopeLineData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Gameplay.Object.ChartData.JudgmentLineData.Curve.CurveNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Gameplay.Object.ChartData.JudgmentLineData.Curve.CurveNode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Gameplay.Object.ChartData.JudgmentLineData.Curve.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Gameplay.Object.ChartData.JudgmentLineData.Curve.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Gameplay.Object.ChartData.JudgmentLineData.CurveAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Gameplay.Object.ChartData.JudgmentLineData.CurveAction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.PerHoldingData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.PerHoldingData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Gameplay.Object.ChartData.JudgmentLineData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Gameplay.Object.ChartData.JudgmentLineData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Gameplay.Object.ChartData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Gameplay.Object.ChartData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Gameplay.Object.Drag.DragNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Gameplay.Object.Drag.DragNode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Gameplay.Object.Drag.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Gameplay.Object.Drag.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Gameplay.Object.Hold.HoldNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Gameplay.Object.Hold.HoldNode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Gameplay.Object.Hold.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Gameplay.Object.Hold.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Gameplay.Object.JudgmentLine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Gameplay.Object.JudgmentLine.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Gameplay.Object.NoteBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Gameplay.Object.NoteBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Gameplay.Object.NoteEffect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Gameplay.Object.NoteEffect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Gameplay.Object.Slide.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Gameplay.Object.Slide.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Gameplay.Object.Tap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Gameplay.Object.Tap.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Gameplay.Object.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Gameplay.Object.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Gameplay.Tool.ControlNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Gameplay.Tool.ControlNode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Gameplay.Tool.Curve.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Gameplay.Tool.Curve.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Gameplay.Tool.CurveType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Gameplay.Tool.CurveType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Gameplay.Tool.EnvelopeLine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Gameplay.Tool.EnvelopeLine.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Gameplay.Tool.Functions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Gameplay.Tool.Functions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Gameplay.Tool.PositionHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Gameplay.Tool.PositionHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Gameplay.Tool.RecyclableObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Gameplay.Tool.RecyclableObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Gameplay.Tool.StandardObjectPool-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Gameplay.Tool.StandardObjectPool-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Gameplay.Tool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Gameplay.Tool.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Network.LinkPlay.Server.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Network.LinkPlay.Server.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dremu.Network.LinkPlay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dremu.Network.LinkPlay.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameUI.ChapterSelect.ChapterSelectManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameUI.ChapterSelect.ChapterSelectManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameUI.ChapterSelect.ChapterShow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameUI.ChapterSelect.ChapterShow.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameUI.ChapterSelect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameUI.ChapterSelect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameUI.Global.AutoChangeScale.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameUI.Global.AutoChangeScale.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameUI.Global.ColorSet.ColorSetManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameUI.Global.ColorSet.ColorSetManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameUI.Global.ColorSet.ColorSetRegister.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameUI.Global.ColorSet.ColorSetRegister.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameUI.Global.ColorSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameUI.Global.ColorSet.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameUI.Global.PlayerBar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameUI.Global.PlayerBar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameUI.Global.Sound.UISoundManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameUI.Global.Sound.UISoundManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameUI.Global.Sound.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameUI.Global.Sound.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameUI.Global.Transition.TransitionHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameUI.Global.Transition.TransitionHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameUI.Global.Transition.TransitionManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameUI.Global.Transition.TransitionManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameUI.Global.Transition.TransitionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameUI.Global.Transition.TransitionType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameUI.Global.Transition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameUI.Global.Transition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameUI.Global.UIOutline.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameUI.Global.UIOutline.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameUI.Global.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameUI.Global.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameUI.LevelSelect.LevelSelectHarder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameUI.LevelSelect.LevelSelectHarder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameUI.LevelSelect.LevelSelectManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameUI.LevelSelect.LevelSelectManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameUI.LevelSelect.LevelShow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameUI.LevelSelect.LevelShow.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameUI.LevelSelect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameUI.LevelSelect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameUI.MainUI.MainUIManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameUI.MainUI.MainUIManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameUI.MainUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameUI.MainUI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameUI.Setting.SettingManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameUI.Setting.SettingManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameUI.Setting.SettingShow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameUI.Setting.SettingShow.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GameUI.Setting.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GameUI.Setting.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.Examples.Benchmark01.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.Examples.Benchmark01.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.Examples.Benchmark01_UGUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.Examples.Benchmark01_UGUI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.Examples.Benchmark02.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.Examples.Benchmark02.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.Examples.Benchmark03.BenchmarkType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.Examples.Benchmark03.BenchmarkType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.Examples.Benchmark03.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.Examples.Benchmark03.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.Examples.Benchmark04.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.Examples.Benchmark04.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.Examples.CameraController.CameraModes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.Examples.CameraController.CameraModes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.Examples.CameraController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.Examples.CameraController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.Examples.ObjectSpin.MotionType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.Examples.ObjectSpin.MotionType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.Examples.ObjectSpin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.Examples.ObjectSpin.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.Examples.ShaderPropAnimator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.Examples.ShaderPropAnimator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.Examples.SimpleScript.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.Examples.SimpleScript.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.Examples.SkewTextExample.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.Examples.SkewTextExample.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.Examples.TMP_ExampleScript_01.objectType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.Examples.TMP_ExampleScript_01.objectType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.Examples.TMP_ExampleScript_01.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.Examples.TMP_ExampleScript_01.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.Examples.TMP_FrameRateCounter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.Examples.TMP_FrameRateCounter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.Examples.TMP_TextEventCheck.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.Examples.TMP_TextEventCheck.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.Examples.TMP_TextInfoDebugTool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.Examples.TMP_TextInfoDebugTool.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.Examples.TMP_TextSelector_A.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.Examples.TMP_TextSelector_A.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.Examples.TMP_TextSelector_B.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.Examples.TMP_TextSelector_B.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.Examples.TMP_UiFrameRateCounter.FpsCounterAnchorPositions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.Examples.TMP_UiFrameRateCounter.FpsCounterAnchorPositions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.Examples.TMP_UiFrameRateCounter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.Examples.TMP_UiFrameRateCounter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.Examples.TMPro_InstructionOverlay.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.Examples.TMPro_InstructionOverlay.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.Examples.TeleType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.Examples.TeleType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.Examples.TextConsoleSimulator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.Examples.TextConsoleSimulator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.Examples.TextMeshProFloatingText.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.Examples.TextMeshProFloatingText.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.Examples.TextMeshSpawner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.Examples.TextMeshSpawner.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.Examples.VertexColorCycler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.Examples.VertexColorCycler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.Examples.VertexJitter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.Examples.VertexJitter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.Examples.VertexShakeA.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.Examples.VertexShakeA.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.Examples.VertexShakeB.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.Examples.VertexShakeB.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.Examples.VertexZoom.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.Examples.VertexZoom.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.Examples.WarpTextExample.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.Examples.WarpTextExample.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.Examples.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.Examples.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.TMP_DigitValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.TMP_DigitValidator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.TMP_PhoneNumberValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.TMP_PhoneNumberValidator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.TMP_TextEventHandler.CharacterSelectionEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.TMP_TextEventHandler.CharacterSelectionEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.TMP_TextEventHandler.LineSelectionEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.TMP_TextEventHandler.LineSelectionEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.TMP_TextEventHandler.LinkSelectionEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.TMP_TextEventHandler.LinkSelectionEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.TMP_TextEventHandler.SpriteSelectionEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.TMP_TextEventHandler.SpriteSelectionEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.TMP_TextEventHandler.WordSelectionEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.TMP_TextEventHandler.WordSelectionEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.TMP_TextEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.TMP_TextEventHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TMPro.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TMPro.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Utils.Helper.DoTweenHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Utils.Helper.DoTweenHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Utils.Helper.UGUIHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Utils.Helper.UGUIHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Utils.Helper.UnityHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Utils.Helper.UnityHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Utils.Helper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Utils.Helper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Utils.Singleton.DontDestroySelf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Utils.Singleton.DontDestroySelf.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Utils.Singleton.MonoBehaviourSingleton-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Utils.Singleton.MonoBehaviourSingleton-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Utils.Singleton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Utils.Singleton.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Utils.Utility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Utils.Utility.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Utils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Utils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

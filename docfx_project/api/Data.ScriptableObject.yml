@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Data.ScriptableObject
+  commentId: N:Data.ScriptableObject
+  id: Data.ScriptableObject
+  children:
+  - Data.ScriptableObject.ChapterDataObject
+  - Data.ScriptableObject.LevelDataObject
+  langs:
+  - csharp
+  - vb
+  name: Data.ScriptableObject
+  nameWithType: Data.ScriptableObject
+  fullName: Data.ScriptableObject
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: Data.ScriptableObject.LevelDataObject
+  commentId: T:Data.ScriptableObject.LevelDataObject
+  href: Data.ScriptableObject.LevelDataObject.html
+  name: LevelDataObject
+  nameWithType: LevelDataObject
+  fullName: Data.ScriptableObject.LevelDataObject
+- uid: Data.ScriptableObject.ChapterDataObject
+  commentId: T:Data.ScriptableObject.ChapterDataObject
+  href: Data.ScriptableObject.ChapterDataObject.html
+  name: ChapterDataObject
+  nameWithType: ChapterDataObject
+  fullName: Data.ScriptableObject.ChapterDataObject

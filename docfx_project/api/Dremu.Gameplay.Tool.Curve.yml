@@ -1,0 +1,890 @@
+### YamlMime:ManagedReference
+items:
+- uid: Dremu.Gameplay.Tool.Curve
+  commentId: T:Dremu.Gameplay.Tool.Curve
+  id: Curve
+  parent: Dremu.Gameplay.Tool
+  children:
+  - Dremu.Gameplay.Tool.Curve.#ctor(System.Collections.Generic.List{UnityEngine.Vector2})
+  - Dremu.Gameplay.Tool.Curve.#ctor(System.Collections.Generic.List{UnityEngine.Vector2},System.Collections.Generic.List{System.Collections.Generic.List{UnityEngine.Vector2}})
+  - Dremu.Gameplay.Tool.Curve.GetNormal(System.Single)
+  - Dremu.Gameplay.Tool.Curve.GetPoint(System.Single)
+  - Dremu.Gameplay.Tool.Curve.GetPoints
+  - Dremu.Gameplay.Tool.Curve.Lerp(Dremu.Gameplay.Tool.Curve,Dremu.Gameplay.Tool.Curve,System.Single)
+  - Dremu.Gameplay.Tool.Curve.SubCurveByMidAndLength(System.Single,System.Single)
+  - Dremu.Gameplay.Tool.Curve.SubCurveByStartAndEnd(System.Single,System.Single)
+  langs:
+  - csharp
+  - vb
+  name: Curve
+  nameWithType: Curve
+  fullName: Dremu.Gameplay.Tool.Curve
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/Tool/Curve.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: Curve
+    path: ../Assets/Scripts/Gameplay/Tool/Curve.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Tool
+  syntax:
+    content: public sealed class Curve
+    content.vb: Public NotInheritable Class Curve
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Dremu.Gameplay.Tool.Curve.#ctor(System.Collections.Generic.List{UnityEngine.Vector2},System.Collections.Generic.List{System.Collections.Generic.List{UnityEngine.Vector2}})
+  commentId: M:Dremu.Gameplay.Tool.Curve.#ctor(System.Collections.Generic.List{UnityEngine.Vector2},System.Collections.Generic.List{System.Collections.Generic.List{UnityEngine.Vector2}})
+  id: '#ctor(System.Collections.Generic.List{UnityEngine.Vector2},System.Collections.Generic.List{System.Collections.Generic.List{UnityEngine.Vector2}})'
+  parent: Dremu.Gameplay.Tool.Curve
+  langs:
+  - csharp
+  - vb
+  name: Curve(List<Vector2>, List<List<Vector2>>)
+  nameWithType: Curve.Curve(List<Vector2>, List<List<Vector2>>)
+  fullName: Dremu.Gameplay.Tool.Curve.Curve(System.Collections.Generic.List<UnityEngine.Vector2>, System.Collections.Generic.List<System.Collections.Generic.List<UnityEngine.Vector2>>)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/Tool/Curve.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: .ctor
+    path: ../Assets/Scripts/Gameplay/Tool/Curve.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Tool
+  summary: 初始化曲线
+  example: []
+  syntax:
+    content: public Curve(List<Vector2> Points, List<List<Vector2>> Nodes)
+    parameters:
+    - id: Points
+      type: System.Collections.Generic.List{UnityEngine.Vector2}
+      description: 端点，数量应为贝塞尔曲线数量+1
+    - id: Nodes
+      type: System.Collections.Generic.List{System.Collections.Generic.List{UnityEngine.Vector2}}
+      description: 各条贝塞尔曲线的节点（非常，非常，非常建议每条贝塞尔曲线的阶数都不要超过10，要不计算能干死你）
+    content.vb: Public Sub New(Points As List(Of Vector2), Nodes As List(Of List(Of Vector2)))
+  overload: Dremu.Gameplay.Tool.Curve.#ctor*
+  nameWithType.vb: Curve.New(List(Of Vector2), List(Of List(Of Vector2)))
+  fullName.vb: Dremu.Gameplay.Tool.Curve.New(System.Collections.Generic.List(Of UnityEngine.Vector2), System.Collections.Generic.List(Of System.Collections.Generic.List(Of UnityEngine.Vector2)))
+  name.vb: New(List(Of Vector2), List(Of List(Of Vector2)))
+- uid: Dremu.Gameplay.Tool.Curve.#ctor(System.Collections.Generic.List{UnityEngine.Vector2})
+  commentId: M:Dremu.Gameplay.Tool.Curve.#ctor(System.Collections.Generic.List{UnityEngine.Vector2})
+  id: '#ctor(System.Collections.Generic.List{UnityEngine.Vector2})'
+  parent: Dremu.Gameplay.Tool.Curve
+  langs:
+  - csharp
+  - vb
+  name: Curve(List<Vector2>)
+  nameWithType: Curve.Curve(List<Vector2>)
+  fullName: Dremu.Gameplay.Tool.Curve.Curve(System.Collections.Generic.List<UnityEngine.Vector2>)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/Tool/Curve.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: .ctor
+    path: ../Assets/Scripts/Gameplay/Tool/Curve.cs
+    startLine: 59
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Tool
+  syntax:
+    content: public Curve(List<Vector2> points)
+    parameters:
+    - id: points
+      type: System.Collections.Generic.List{UnityEngine.Vector2}
+    content.vb: Public Sub New(points As List(Of Vector2))
+  overload: Dremu.Gameplay.Tool.Curve.#ctor*
+  nameWithType.vb: Curve.New(List(Of Vector2))
+  fullName.vb: Dremu.Gameplay.Tool.Curve.New(System.Collections.Generic.List(Of UnityEngine.Vector2))
+  name.vb: New(List(Of Vector2))
+- uid: Dremu.Gameplay.Tool.Curve.GetPoints
+  commentId: M:Dremu.Gameplay.Tool.Curve.GetPoints
+  id: GetPoints
+  parent: Dremu.Gameplay.Tool.Curve
+  langs:
+  - csharp
+  - vb
+  name: GetPoints()
+  nameWithType: Curve.GetPoints()
+  fullName: Dremu.Gameplay.Tool.Curve.GetPoints()
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/Tool/Curve.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: GetPoints
+    path: ../Assets/Scripts/Gameplay/Tool/Curve.cs
+    startLine: 70
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Tool
+  summary: 获取曲线的近似微分点组
+  example: []
+  syntax:
+    content: public List<Vector2> GetPoints()
+    return:
+      type: System.Collections.Generic.List{UnityEngine.Vector2}
+      description: 点组
+    content.vb: Public Function GetPoints() As List(Of Vector2)
+  overload: Dremu.Gameplay.Tool.Curve.GetPoints*
+- uid: Dremu.Gameplay.Tool.Curve.SubCurveByStartAndEnd(System.Single,System.Single)
+  commentId: M:Dremu.Gameplay.Tool.Curve.SubCurveByStartAndEnd(System.Single,System.Single)
+  id: SubCurveByStartAndEnd(System.Single,System.Single)
+  parent: Dremu.Gameplay.Tool.Curve
+  langs:
+  - csharp
+  - vb
+  name: SubCurveByStartAndEnd(float, float)
+  nameWithType: Curve.SubCurveByStartAndEnd(float, float)
+  fullName: Dremu.Gameplay.Tool.Curve.SubCurveByStartAndEnd(float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/Tool/Curve.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: SubCurveByStartAndEnd
+    path: ../Assets/Scripts/Gameplay/Tool/Curve.cs
+    startLine: 81
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Tool
+  summary: 获取子曲线
+  example: []
+  syntax:
+    content: public List<Vector2> SubCurveByStartAndEnd(float start, float end)
+    parameters:
+    - id: start
+      type: System.Single
+      description: 起始点（0~1）
+    - id: end
+      type: System.Single
+      description: 终止点（0~1）
+    return:
+      type: System.Collections.Generic.List{UnityEngine.Vector2}
+      description: 点组
+    content.vb: Public Function SubCurveByStartAndEnd(start As Single, [end] As Single) As List(Of Vector2)
+  overload: Dremu.Gameplay.Tool.Curve.SubCurveByStartAndEnd*
+  nameWithType.vb: Curve.SubCurveByStartAndEnd(Single, Single)
+  fullName.vb: Dremu.Gameplay.Tool.Curve.SubCurveByStartAndEnd(Single, Single)
+  name.vb: SubCurveByStartAndEnd(Single, Single)
+- uid: Dremu.Gameplay.Tool.Curve.SubCurveByMidAndLength(System.Single,System.Single)
+  commentId: M:Dremu.Gameplay.Tool.Curve.SubCurveByMidAndLength(System.Single,System.Single)
+  id: SubCurveByMidAndLength(System.Single,System.Single)
+  parent: Dremu.Gameplay.Tool.Curve
+  langs:
+  - csharp
+  - vb
+  name: SubCurveByMidAndLength(float, float)
+  nameWithType: Curve.SubCurveByMidAndLength(float, float)
+  fullName: Dremu.Gameplay.Tool.Curve.SubCurveByMidAndLength(float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/Tool/Curve.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: SubCurveByMidAndLength
+    path: ../Assets/Scripts/Gameplay/Tool/Curve.cs
+    startLine: 98
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Tool
+  summary: 获取子曲线
+  example: []
+  syntax:
+    content: public List<Vector2> SubCurveByMidAndLength(float mid, float length)
+    parameters:
+    - id: mid
+      type: System.Single
+      description: 中点（0~1）
+    - id: length
+      type: System.Single
+      description: 长度（0~1）
+    return:
+      type: System.Collections.Generic.List{UnityEngine.Vector2}
+      description: 点组
+    content.vb: Public Function SubCurveByMidAndLength(mid As Single, length As Single) As List(Of Vector2)
+  overload: Dremu.Gameplay.Tool.Curve.SubCurveByMidAndLength*
+  nameWithType.vb: Curve.SubCurveByMidAndLength(Single, Single)
+  fullName.vb: Dremu.Gameplay.Tool.Curve.SubCurveByMidAndLength(Single, Single)
+  name.vb: SubCurveByMidAndLength(Single, Single)
+- uid: Dremu.Gameplay.Tool.Curve.GetPoint(System.Single)
+  commentId: M:Dremu.Gameplay.Tool.Curve.GetPoint(System.Single)
+  id: GetPoint(System.Single)
+  parent: Dremu.Gameplay.Tool.Curve
+  langs:
+  - csharp
+  - vb
+  name: GetPoint(float)
+  nameWithType: Curve.GetPoint(float)
+  fullName: Dremu.Gameplay.Tool.Curve.GetPoint(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/Tool/Curve.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: GetPoint
+    path: ../Assets/Scripts/Gameplay/Tool/Curve.cs
+    startLine: 116
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Tool
+  summary: 获取点
+  example: []
+  syntax:
+    content: public Vector2 GetPoint(float at)
+    parameters:
+    - id: at
+      type: System.Single
+      description: 位置
+    return:
+      type: UnityEngine.Vector2
+      description: 点
+    content.vb: Public Function GetPoint(at As Single) As Vector2
+  overload: Dremu.Gameplay.Tool.Curve.GetPoint*
+  nameWithType.vb: Curve.GetPoint(Single)
+  fullName.vb: Dremu.Gameplay.Tool.Curve.GetPoint(Single)
+  name.vb: GetPoint(Single)
+- uid: Dremu.Gameplay.Tool.Curve.GetNormal(System.Single)
+  commentId: M:Dremu.Gameplay.Tool.Curve.GetNormal(System.Single)
+  id: GetNormal(System.Single)
+  parent: Dremu.Gameplay.Tool.Curve
+  langs:
+  - csharp
+  - vb
+  name: GetNormal(float)
+  nameWithType: Curve.GetNormal(float)
+  fullName: Dremu.Gameplay.Tool.Curve.GetNormal(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/Tool/Curve.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: GetNormal
+    path: ../Assets/Scripts/Gameplay/Tool/Curve.cs
+    startLine: 140
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Tool
+  summary: 获取法线
+  example: []
+  syntax:
+    content: public KeyValuePair<Vector2, Vector2> GetNormal(float at)
+    parameters:
+    - id: at
+      type: System.Single
+      description: 位置
+    return:
+      type: System.Collections.Generic.KeyValuePair{UnityEngine.Vector2,UnityEngine.Vector2}
+      description: 法线（key为原点，value为方向）
+    content.vb: Public Function GetNormal(at As Single) As KeyValuePair(Of Vector2, Vector2)
+  overload: Dremu.Gameplay.Tool.Curve.GetNormal*
+  nameWithType.vb: Curve.GetNormal(Single)
+  fullName.vb: Dremu.Gameplay.Tool.Curve.GetNormal(Single)
+  name.vb: GetNormal(Single)
+- uid: Dremu.Gameplay.Tool.Curve.Lerp(Dremu.Gameplay.Tool.Curve,Dremu.Gameplay.Tool.Curve,System.Single)
+  commentId: M:Dremu.Gameplay.Tool.Curve.Lerp(Dremu.Gameplay.Tool.Curve,Dremu.Gameplay.Tool.Curve,System.Single)
+  id: Lerp(Dremu.Gameplay.Tool.Curve,Dremu.Gameplay.Tool.Curve,System.Single)
+  parent: Dremu.Gameplay.Tool.Curve
+  langs:
+  - csharp
+  - vb
+  name: Lerp(Curve, Curve, float)
+  nameWithType: Curve.Lerp(Curve, Curve, float)
+  fullName: Dremu.Gameplay.Tool.Curve.Lerp(Dremu.Gameplay.Tool.Curve, Dremu.Gameplay.Tool.Curve, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/Tool/Curve.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: Lerp
+    path: ../Assets/Scripts/Gameplay/Tool/Curve.cs
+    startLine: 167
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Tool
+  summary: 取两条曲线的线性插值
+  example: []
+  syntax:
+    content: public static Curve Lerp(Curve start, Curve end, float t)
+    parameters:
+    - id: start
+      type: Dremu.Gameplay.Tool.Curve
+      description: 起始曲线
+    - id: end
+      type: Dremu.Gameplay.Tool.Curve
+      description: 结束曲线
+    - id: t
+      type: System.Single
+      description: ''
+    return:
+      type: Dremu.Gameplay.Tool.Curve
+      description: 插值
+    content.vb: Public Shared Function Lerp(start As Curve, [end] As Curve, t As Single) As Curve
+  overload: Dremu.Gameplay.Tool.Curve.Lerp*
+  nameWithType.vb: Curve.Lerp(Curve, Curve, Single)
+  fullName.vb: Dremu.Gameplay.Tool.Curve.Lerp(Dremu.Gameplay.Tool.Curve, Dremu.Gameplay.Tool.Curve, Single)
+  name.vb: Lerp(Curve, Curve, Single)
+references:
+- uid: Dremu.Gameplay.Tool
+  commentId: N:Dremu.Gameplay.Tool
+  href: Dremu.html
+  name: Dremu.Gameplay.Tool
+  nameWithType: Dremu.Gameplay.Tool
+  fullName: Dremu.Gameplay.Tool
+  spec.csharp:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.Gameplay
+    name: Gameplay
+    href: Dremu.Gameplay.html
+  - name: .
+  - uid: Dremu.Gameplay.Tool
+    name: Tool
+    href: Dremu.Gameplay.Tool.html
+  spec.vb:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.Gameplay
+    name: Gameplay
+    href: Dremu.Gameplay.html
+  - name: .
+  - uid: Dremu.Gameplay.Tool
+    name: Tool
+    href: Dremu.Gameplay.Tool.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Dremu.Gameplay.Tool.Curve.#ctor*
+  commentId: Overload:Dremu.Gameplay.Tool.Curve.#ctor
+  href: Dremu.Gameplay.Tool.Curve.html#Dremu_Gameplay_Tool_Curve__ctor_System_Collections_Generic_List_UnityEngine_Vector2__System_Collections_Generic_List_System_Collections_Generic_List_UnityEngine_Vector2___
+  name: Curve
+  nameWithType: Curve.Curve
+  fullName: Dremu.Gameplay.Tool.Curve.Curve
+  nameWithType.vb: Curve.New
+  fullName.vb: Dremu.Gameplay.Tool.Curve.New
+  name.vb: New
+- uid: System.Collections.Generic.List{UnityEngine.Vector2}
+  commentId: T:System.Collections.Generic.List{UnityEngine.Vector2}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Vector2>
+  nameWithType: List<Vector2>
+  fullName: System.Collections.Generic.List<UnityEngine.Vector2>
+  nameWithType.vb: List(Of Vector2)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.Vector2)
+  name.vb: List(Of Vector2)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List{System.Collections.Generic.List{UnityEngine.Vector2}}
+  commentId: T:System.Collections.Generic.List{System.Collections.Generic.List{UnityEngine.Vector2}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<List<Vector2>>
+  nameWithType: List<List<Vector2>>
+  fullName: System.Collections.Generic.List<System.Collections.Generic.List<UnityEngine.Vector2>>
+  nameWithType.vb: List(Of List(Of Vector2))
+  fullName.vb: System.Collections.Generic.List(Of System.Collections.Generic.List(Of UnityEngine.Vector2))
+  name.vb: List(Of List(Of Vector2))
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Dremu.Gameplay.Tool.Curve.GetPoints*
+  commentId: Overload:Dremu.Gameplay.Tool.Curve.GetPoints
+  href: Dremu.Gameplay.Tool.Curve.html#Dremu_Gameplay_Tool_Curve_GetPoints
+  name: GetPoints
+  nameWithType: Curve.GetPoints
+  fullName: Dremu.Gameplay.Tool.Curve.GetPoints
+- uid: Dremu.Gameplay.Tool.Curve.SubCurveByStartAndEnd*
+  commentId: Overload:Dremu.Gameplay.Tool.Curve.SubCurveByStartAndEnd
+  href: Dremu.Gameplay.Tool.Curve.html#Dremu_Gameplay_Tool_Curve_SubCurveByStartAndEnd_System_Single_System_Single_
+  name: SubCurveByStartAndEnd
+  nameWithType: Curve.SubCurveByStartAndEnd
+  fullName: Dremu.Gameplay.Tool.Curve.SubCurveByStartAndEnd
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Dremu.Gameplay.Tool.Curve.SubCurveByMidAndLength*
+  commentId: Overload:Dremu.Gameplay.Tool.Curve.SubCurveByMidAndLength
+  href: Dremu.Gameplay.Tool.Curve.html#Dremu_Gameplay_Tool_Curve_SubCurveByMidAndLength_System_Single_System_Single_
+  name: SubCurveByMidAndLength
+  nameWithType: Curve.SubCurveByMidAndLength
+  fullName: Dremu.Gameplay.Tool.Curve.SubCurveByMidAndLength
+- uid: Dremu.Gameplay.Tool.Curve.GetPoint*
+  commentId: Overload:Dremu.Gameplay.Tool.Curve.GetPoint
+  href: Dremu.Gameplay.Tool.Curve.html#Dremu_Gameplay_Tool_Curve_GetPoint_System_Single_
+  name: GetPoint
+  nameWithType: Curve.GetPoint
+  fullName: Dremu.Gameplay.Tool.Curve.GetPoint
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Dremu.Gameplay.Tool.Curve.GetNormal*
+  commentId: Overload:Dremu.Gameplay.Tool.Curve.GetNormal
+  href: Dremu.Gameplay.Tool.Curve.html#Dremu_Gameplay_Tool_Curve_GetNormal_System_Single_
+  name: GetNormal
+  nameWithType: Curve.GetNormal
+  fullName: Dremu.Gameplay.Tool.Curve.GetNormal
+- uid: System.Collections.Generic.KeyValuePair{UnityEngine.Vector2,UnityEngine.Vector2}
+  commentId: T:System.Collections.Generic.KeyValuePair{UnityEngine.Vector2,UnityEngine.Vector2}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.KeyValuePair`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  name: KeyValuePair<Vector2, Vector2>
+  nameWithType: KeyValuePair<Vector2, Vector2>
+  fullName: System.Collections.Generic.KeyValuePair<UnityEngine.Vector2, UnityEngine.Vector2>
+  nameWithType.vb: KeyValuePair(Of Vector2, Vector2)
+  fullName.vb: System.Collections.Generic.KeyValuePair(Of UnityEngine.Vector2, UnityEngine.Vector2)
+  name.vb: KeyValuePair(Of Vector2, Vector2)
+  spec.csharp:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.KeyValuePair`2
+  commentId: T:System.Collections.Generic.KeyValuePair`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  name: KeyValuePair<TKey, TValue>
+  nameWithType: KeyValuePair<TKey, TValue>
+  fullName: System.Collections.Generic.KeyValuePair<TKey, TValue>
+  nameWithType.vb: KeyValuePair(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.KeyValuePair(Of TKey, TValue)
+  name.vb: KeyValuePair(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Dremu.Gameplay.Tool.Curve.Lerp*
+  commentId: Overload:Dremu.Gameplay.Tool.Curve.Lerp
+  href: Dremu.Gameplay.Tool.Curve.html#Dremu_Gameplay_Tool_Curve_Lerp_Dremu_Gameplay_Tool_Curve_Dremu_Gameplay_Tool_Curve_System_Single_
+  name: Lerp
+  nameWithType: Curve.Lerp
+  fullName: Dremu.Gameplay.Tool.Curve.Lerp
+- uid: Dremu.Gameplay.Tool.Curve
+  commentId: T:Dremu.Gameplay.Tool.Curve
+  parent: Dremu.Gameplay.Tool
+  href: Dremu.Gameplay.Tool.Curve.html
+  name: Curve
+  nameWithType: Curve
+  fullName: Dremu.Gameplay.Tool.Curve

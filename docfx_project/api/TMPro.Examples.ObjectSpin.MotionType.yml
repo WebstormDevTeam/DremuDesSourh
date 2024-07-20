@@ -1,0 +1,155 @@
+### YamlMime:ManagedReference
+items:
+- uid: TMPro.Examples.ObjectSpin.MotionType
+  commentId: T:TMPro.Examples.ObjectSpin.MotionType
+  id: ObjectSpin.MotionType
+  parent: TMPro.Examples
+  children:
+  - TMPro.Examples.ObjectSpin.MotionType.BackAndForth
+  - TMPro.Examples.ObjectSpin.MotionType.Rotation
+  - TMPro.Examples.ObjectSpin.MotionType.Translation
+  langs:
+  - csharp
+  - vb
+  name: ObjectSpin.MotionType
+  nameWithType: ObjectSpin.MotionType
+  fullName: TMPro.Examples.ObjectSpin.MotionType
+  type: Enum
+  source:
+    remote:
+      path: Assets/TextMesh Pro/Examples & Extras/Scripts/ObjectSpin.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: MotionType
+    path: ../Assets/TextMesh Pro/Examples & Extras/Scripts/ObjectSpin.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: TMPro.Examples
+  syntax:
+    content: public enum ObjectSpin.MotionType
+    content.vb: Public Enum ObjectSpin.MotionType
+- uid: TMPro.Examples.ObjectSpin.MotionType.Rotation
+  commentId: F:TMPro.Examples.ObjectSpin.MotionType.Rotation
+  id: Rotation
+  parent: TMPro.Examples.ObjectSpin.MotionType
+  langs:
+  - csharp
+  - vb
+  name: Rotation
+  nameWithType: ObjectSpin.MotionType.Rotation
+  fullName: TMPro.Examples.ObjectSpin.MotionType.Rotation
+  type: Field
+  source:
+    remote:
+      path: Assets/TextMesh Pro/Examples & Extras/Scripts/ObjectSpin.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: Rotation
+    path: ../Assets/TextMesh Pro/Examples & Extras/Scripts/ObjectSpin.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: TMPro.Examples
+  syntax:
+    content: Rotation = 0
+    return:
+      type: TMPro.Examples.ObjectSpin.MotionType
+- uid: TMPro.Examples.ObjectSpin.MotionType.BackAndForth
+  commentId: F:TMPro.Examples.ObjectSpin.MotionType.BackAndForth
+  id: BackAndForth
+  parent: TMPro.Examples.ObjectSpin.MotionType
+  langs:
+  - csharp
+  - vb
+  name: BackAndForth
+  nameWithType: ObjectSpin.MotionType.BackAndForth
+  fullName: TMPro.Examples.ObjectSpin.MotionType.BackAndForth
+  type: Field
+  source:
+    remote:
+      path: Assets/TextMesh Pro/Examples & Extras/Scripts/ObjectSpin.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: BackAndForth
+    path: ../Assets/TextMesh Pro/Examples & Extras/Scripts/ObjectSpin.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: TMPro.Examples
+  syntax:
+    content: BackAndForth = 1
+    return:
+      type: TMPro.Examples.ObjectSpin.MotionType
+- uid: TMPro.Examples.ObjectSpin.MotionType.Translation
+  commentId: F:TMPro.Examples.ObjectSpin.MotionType.Translation
+  id: Translation
+  parent: TMPro.Examples.ObjectSpin.MotionType
+  langs:
+  - csharp
+  - vb
+  name: Translation
+  nameWithType: ObjectSpin.MotionType.Translation
+  fullName: TMPro.Examples.ObjectSpin.MotionType.Translation
+  type: Field
+  source:
+    remote:
+      path: Assets/TextMesh Pro/Examples & Extras/Scripts/ObjectSpin.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: Translation
+    path: ../Assets/TextMesh Pro/Examples & Extras/Scripts/ObjectSpin.cs
+    startLine: 23
+  assemblies:
+  - Assembly-CSharp
+  namespace: TMPro.Examples
+  syntax:
+    content: Translation = 2
+    return:
+      type: TMPro.Examples.ObjectSpin.MotionType
+references:
+- uid: TMPro.Examples
+  commentId: N:TMPro.Examples
+  href: TMPro.html
+  name: TMPro.Examples
+  nameWithType: TMPro.Examples
+  fullName: TMPro.Examples
+  spec.csharp:
+  - uid: TMPro
+    name: TMPro
+    href: TMPro.html
+  - name: .
+  - uid: TMPro.Examples
+    name: Examples
+    href: TMPro.Examples.html
+  spec.vb:
+  - uid: TMPro
+    name: TMPro
+    href: TMPro.html
+  - name: .
+  - uid: TMPro.Examples
+    name: Examples
+    href: TMPro.Examples.html
+- uid: TMPro.Examples.ObjectSpin.MotionType
+  commentId: T:TMPro.Examples.ObjectSpin.MotionType
+  parent: TMPro.Examples
+  href: TMPro.Examples.ObjectSpin.html
+  name: ObjectSpin.MotionType
+  nameWithType: ObjectSpin.MotionType
+  fullName: TMPro.Examples.ObjectSpin.MotionType
+  spec.csharp:
+  - uid: TMPro.Examples.ObjectSpin
+    name: ObjectSpin
+    href: TMPro.Examples.ObjectSpin.html
+  - name: .
+  - uid: TMPro.Examples.ObjectSpin.MotionType
+    name: MotionType
+    href: TMPro.Examples.ObjectSpin.MotionType.html
+  spec.vb:
+  - uid: TMPro.Examples.ObjectSpin
+    name: ObjectSpin
+    href: TMPro.Examples.ObjectSpin.html
+  - name: .
+  - uid: TMPro.Examples.ObjectSpin.MotionType
+    name: MotionType
+    href: TMPro.Examples.ObjectSpin.MotionType.html

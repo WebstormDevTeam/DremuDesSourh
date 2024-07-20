@@ -1,0 +1,352 @@
+### YamlMime:ManagedReference
+items:
+- uid: Dremu.ChartEdit.Envelope.IDragEdit
+  commentId: T:Dremu.ChartEdit.Envelope.IDragEdit
+  id: IDragEdit
+  parent: Dremu.ChartEdit.Envelope
+  children:
+  - Dremu.ChartEdit.Envelope.IDragEdit.CheckCanEdit(UnityEngine.Vector2)
+  - Dremu.ChartEdit.Envelope.IDragEdit.SetHelper(Dremu.ChartEdit.Envelope.EnvelopeTrackHelper)
+  - Dremu.ChartEdit.Envelope.IDragEdit.SetLine(Dremu.Gameplay.Tool.EnvelopeLine)
+  - Dremu.ChartEdit.Envelope.IDragEdit.StartEdit(UnityEngine.Vector2)
+  - Dremu.ChartEdit.Envelope.IDragEdit.StopEdit(UnityEngine.Vector2)
+  - Dremu.ChartEdit.Envelope.IDragEdit.UpdateEdit(UnityEngine.Vector2)
+  langs:
+  - csharp
+  - vb
+  name: IDragEdit
+  nameWithType: IDragEdit
+  fullName: Dremu.ChartEdit.Envelope.IDragEdit
+  type: Interface
+  source:
+    remote:
+      path: Assets/Scripts/ChartEditor/Envelope/RealTimeEditing.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: IDragEdit
+    path: ../Assets/Scripts/ChartEditor/Envelope/RealTimeEditing.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.ChartEdit.Envelope
+  syntax:
+    content: public interface IDragEdit
+    content.vb: Public Interface IDragEdit
+- uid: Dremu.ChartEdit.Envelope.IDragEdit.SetLine(Dremu.Gameplay.Tool.EnvelopeLine)
+  commentId: M:Dremu.ChartEdit.Envelope.IDragEdit.SetLine(Dremu.Gameplay.Tool.EnvelopeLine)
+  id: SetLine(Dremu.Gameplay.Tool.EnvelopeLine)
+  parent: Dremu.ChartEdit.Envelope.IDragEdit
+  langs:
+  - csharp
+  - vb
+  name: SetLine(EnvelopeLine)
+  nameWithType: IDragEdit.SetLine(EnvelopeLine)
+  fullName: Dremu.ChartEdit.Envelope.IDragEdit.SetLine(Dremu.Gameplay.Tool.EnvelopeLine)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/ChartEditor/Envelope/RealTimeEditing.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: SetLine
+    path: ../Assets/Scripts/ChartEditor/Envelope/RealTimeEditing.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.ChartEdit.Envelope
+  syntax:
+    content: void SetLine(EnvelopeLine line)
+    parameters:
+    - id: line
+      type: Dremu.Gameplay.Tool.EnvelopeLine
+    content.vb: Sub SetLine(line As EnvelopeLine)
+  overload: Dremu.ChartEdit.Envelope.IDragEdit.SetLine*
+- uid: Dremu.ChartEdit.Envelope.IDragEdit.SetHelper(Dremu.ChartEdit.Envelope.EnvelopeTrackHelper)
+  commentId: M:Dremu.ChartEdit.Envelope.IDragEdit.SetHelper(Dremu.ChartEdit.Envelope.EnvelopeTrackHelper)
+  id: SetHelper(Dremu.ChartEdit.Envelope.EnvelopeTrackHelper)
+  parent: Dremu.ChartEdit.Envelope.IDragEdit
+  langs:
+  - csharp
+  - vb
+  name: SetHelper(EnvelopeTrackHelper)
+  nameWithType: IDragEdit.SetHelper(EnvelopeTrackHelper)
+  fullName: Dremu.ChartEdit.Envelope.IDragEdit.SetHelper(Dremu.ChartEdit.Envelope.EnvelopeTrackHelper)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/ChartEditor/Envelope/RealTimeEditing.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: SetHelper
+    path: ../Assets/Scripts/ChartEditor/Envelope/RealTimeEditing.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.ChartEdit.Envelope
+  syntax:
+    content: void SetHelper(EnvelopeTrackHelper helper)
+    parameters:
+    - id: helper
+      type: Dremu.ChartEdit.Envelope.EnvelopeTrackHelper
+    content.vb: Sub SetHelper(helper As EnvelopeTrackHelper)
+  overload: Dremu.ChartEdit.Envelope.IDragEdit.SetHelper*
+- uid: Dremu.ChartEdit.Envelope.IDragEdit.StartEdit(UnityEngine.Vector2)
+  commentId: M:Dremu.ChartEdit.Envelope.IDragEdit.StartEdit(UnityEngine.Vector2)
+  id: StartEdit(UnityEngine.Vector2)
+  parent: Dremu.ChartEdit.Envelope.IDragEdit
+  langs:
+  - csharp
+  - vb
+  name: StartEdit(Vector2)
+  nameWithType: IDragEdit.StartEdit(Vector2)
+  fullName: Dremu.ChartEdit.Envelope.IDragEdit.StartEdit(UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/ChartEditor/Envelope/RealTimeEditing.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: StartEdit
+    path: ../Assets/Scripts/ChartEditor/Envelope/RealTimeEditing.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.ChartEdit.Envelope
+  syntax:
+    content: void StartEdit(Vector2 localPos)
+    parameters:
+    - id: localPos
+      type: UnityEngine.Vector2
+    content.vb: Sub StartEdit(localPos As Vector2)
+  overload: Dremu.ChartEdit.Envelope.IDragEdit.StartEdit*
+- uid: Dremu.ChartEdit.Envelope.IDragEdit.StopEdit(UnityEngine.Vector2)
+  commentId: M:Dremu.ChartEdit.Envelope.IDragEdit.StopEdit(UnityEngine.Vector2)
+  id: StopEdit(UnityEngine.Vector2)
+  parent: Dremu.ChartEdit.Envelope.IDragEdit
+  langs:
+  - csharp
+  - vb
+  name: StopEdit(Vector2)
+  nameWithType: IDragEdit.StopEdit(Vector2)
+  fullName: Dremu.ChartEdit.Envelope.IDragEdit.StopEdit(UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/ChartEditor/Envelope/RealTimeEditing.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: StopEdit
+    path: ../Assets/Scripts/ChartEditor/Envelope/RealTimeEditing.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.ChartEdit.Envelope
+  syntax:
+    content: void StopEdit(Vector2 localPos)
+    parameters:
+    - id: localPos
+      type: UnityEngine.Vector2
+    content.vb: Sub StopEdit(localPos As Vector2)
+  overload: Dremu.ChartEdit.Envelope.IDragEdit.StopEdit*
+- uid: Dremu.ChartEdit.Envelope.IDragEdit.UpdateEdit(UnityEngine.Vector2)
+  commentId: M:Dremu.ChartEdit.Envelope.IDragEdit.UpdateEdit(UnityEngine.Vector2)
+  id: UpdateEdit(UnityEngine.Vector2)
+  parent: Dremu.ChartEdit.Envelope.IDragEdit
+  langs:
+  - csharp
+  - vb
+  name: UpdateEdit(Vector2)
+  nameWithType: IDragEdit.UpdateEdit(Vector2)
+  fullName: Dremu.ChartEdit.Envelope.IDragEdit.UpdateEdit(UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/ChartEditor/Envelope/RealTimeEditing.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: UpdateEdit
+    path: ../Assets/Scripts/ChartEditor/Envelope/RealTimeEditing.cs
+    startLine: 14
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.ChartEdit.Envelope
+  syntax:
+    content: void UpdateEdit(Vector2 localPos)
+    parameters:
+    - id: localPos
+      type: UnityEngine.Vector2
+    content.vb: Sub UpdateEdit(localPos As Vector2)
+  overload: Dremu.ChartEdit.Envelope.IDragEdit.UpdateEdit*
+- uid: Dremu.ChartEdit.Envelope.IDragEdit.CheckCanEdit(UnityEngine.Vector2)
+  commentId: M:Dremu.ChartEdit.Envelope.IDragEdit.CheckCanEdit(UnityEngine.Vector2)
+  id: CheckCanEdit(UnityEngine.Vector2)
+  parent: Dremu.ChartEdit.Envelope.IDragEdit
+  langs:
+  - csharp
+  - vb
+  name: CheckCanEdit(Vector2)
+  nameWithType: IDragEdit.CheckCanEdit(Vector2)
+  fullName: Dremu.ChartEdit.Envelope.IDragEdit.CheckCanEdit(UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/ChartEditor/Envelope/RealTimeEditing.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: CheckCanEdit
+    path: ../Assets/Scripts/ChartEditor/Envelope/RealTimeEditing.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.ChartEdit.Envelope
+  syntax:
+    content: bool CheckCanEdit(Vector2 localPos)
+    parameters:
+    - id: localPos
+      type: UnityEngine.Vector2
+    return:
+      type: System.Boolean
+    content.vb: Function CheckCanEdit(localPos As Vector2) As Boolean
+  overload: Dremu.ChartEdit.Envelope.IDragEdit.CheckCanEdit*
+references:
+- uid: Dremu.ChartEdit.Envelope
+  commentId: N:Dremu.ChartEdit.Envelope
+  href: Dremu.html
+  name: Dremu.ChartEdit.Envelope
+  nameWithType: Dremu.ChartEdit.Envelope
+  fullName: Dremu.ChartEdit.Envelope
+  spec.csharp:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.ChartEdit
+    name: ChartEdit
+    href: Dremu.ChartEdit.html
+  - name: .
+  - uid: Dremu.ChartEdit.Envelope
+    name: Envelope
+    href: Dremu.ChartEdit.Envelope.html
+  spec.vb:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.ChartEdit
+    name: ChartEdit
+    href: Dremu.ChartEdit.html
+  - name: .
+  - uid: Dremu.ChartEdit.Envelope
+    name: Envelope
+    href: Dremu.ChartEdit.Envelope.html
+- uid: Dremu.ChartEdit.Envelope.IDragEdit.SetLine*
+  commentId: Overload:Dremu.ChartEdit.Envelope.IDragEdit.SetLine
+  href: Dremu.ChartEdit.Envelope.IDragEdit.html#Dremu_ChartEdit_Envelope_IDragEdit_SetLine_Dremu_Gameplay_Tool_EnvelopeLine_
+  name: SetLine
+  nameWithType: IDragEdit.SetLine
+  fullName: Dremu.ChartEdit.Envelope.IDragEdit.SetLine
+- uid: Dremu.Gameplay.Tool.EnvelopeLine
+  commentId: T:Dremu.Gameplay.Tool.EnvelopeLine
+  parent: Dremu.Gameplay.Tool
+  href: Dremu.Gameplay.Tool.EnvelopeLine.html
+  name: EnvelopeLine
+  nameWithType: EnvelopeLine
+  fullName: Dremu.Gameplay.Tool.EnvelopeLine
+- uid: Dremu.Gameplay.Tool
+  commentId: N:Dremu.Gameplay.Tool
+  href: Dremu.html
+  name: Dremu.Gameplay.Tool
+  nameWithType: Dremu.Gameplay.Tool
+  fullName: Dremu.Gameplay.Tool
+  spec.csharp:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.Gameplay
+    name: Gameplay
+    href: Dremu.Gameplay.html
+  - name: .
+  - uid: Dremu.Gameplay.Tool
+    name: Tool
+    href: Dremu.Gameplay.Tool.html
+  spec.vb:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.Gameplay
+    name: Gameplay
+    href: Dremu.Gameplay.html
+  - name: .
+  - uid: Dremu.Gameplay.Tool
+    name: Tool
+    href: Dremu.Gameplay.Tool.html
+- uid: Dremu.ChartEdit.Envelope.IDragEdit.SetHelper*
+  commentId: Overload:Dremu.ChartEdit.Envelope.IDragEdit.SetHelper
+  href: Dremu.ChartEdit.Envelope.IDragEdit.html#Dremu_ChartEdit_Envelope_IDragEdit_SetHelper_Dremu_ChartEdit_Envelope_EnvelopeTrackHelper_
+  name: SetHelper
+  nameWithType: IDragEdit.SetHelper
+  fullName: Dremu.ChartEdit.Envelope.IDragEdit.SetHelper
+- uid: Dremu.ChartEdit.Envelope.EnvelopeTrackHelper
+  commentId: T:Dremu.ChartEdit.Envelope.EnvelopeTrackHelper
+  parent: Dremu.ChartEdit.Envelope
+  href: Dremu.ChartEdit.Envelope.EnvelopeTrackHelper.html
+  name: EnvelopeTrackHelper
+  nameWithType: EnvelopeTrackHelper
+  fullName: Dremu.ChartEdit.Envelope.EnvelopeTrackHelper
+- uid: Dremu.ChartEdit.Envelope.IDragEdit.StartEdit*
+  commentId: Overload:Dremu.ChartEdit.Envelope.IDragEdit.StartEdit
+  href: Dremu.ChartEdit.Envelope.IDragEdit.html#Dremu_ChartEdit_Envelope_IDragEdit_StartEdit_UnityEngine_Vector2_
+  name: StartEdit
+  nameWithType: IDragEdit.StartEdit
+  fullName: Dremu.ChartEdit.Envelope.IDragEdit.StartEdit
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Dremu.ChartEdit.Envelope.IDragEdit.StopEdit*
+  commentId: Overload:Dremu.ChartEdit.Envelope.IDragEdit.StopEdit
+  href: Dremu.ChartEdit.Envelope.IDragEdit.html#Dremu_ChartEdit_Envelope_IDragEdit_StopEdit_UnityEngine_Vector2_
+  name: StopEdit
+  nameWithType: IDragEdit.StopEdit
+  fullName: Dremu.ChartEdit.Envelope.IDragEdit.StopEdit
+- uid: Dremu.ChartEdit.Envelope.IDragEdit.UpdateEdit*
+  commentId: Overload:Dremu.ChartEdit.Envelope.IDragEdit.UpdateEdit
+  href: Dremu.ChartEdit.Envelope.IDragEdit.html#Dremu_ChartEdit_Envelope_IDragEdit_UpdateEdit_UnityEngine_Vector2_
+  name: UpdateEdit
+  nameWithType: IDragEdit.UpdateEdit
+  fullName: Dremu.ChartEdit.Envelope.IDragEdit.UpdateEdit
+- uid: Dremu.ChartEdit.Envelope.IDragEdit.CheckCanEdit*
+  commentId: Overload:Dremu.ChartEdit.Envelope.IDragEdit.CheckCanEdit
+  href: Dremu.ChartEdit.Envelope.IDragEdit.html#Dremu_ChartEdit_Envelope_IDragEdit_CheckCanEdit_UnityEngine_Vector2_
+  name: CheckCanEdit
+  nameWithType: IDragEdit.CheckCanEdit
+  fullName: Dremu.ChartEdit.Envelope.IDragEdit.CheckCanEdit
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

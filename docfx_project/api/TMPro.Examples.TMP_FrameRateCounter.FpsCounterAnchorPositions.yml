@@ -1,0 +1,182 @@
+### YamlMime:ManagedReference
+items:
+- uid: TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions
+  commentId: T:TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions
+  id: TMP_FrameRateCounter.FpsCounterAnchorPositions
+  parent: TMPro.Examples
+  children:
+  - TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions.BottomLeft
+  - TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions.BottomRight
+  - TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions.TopLeft
+  - TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions.TopRight
+  langs:
+  - csharp
+  - vb
+  name: TMP_FrameRateCounter.FpsCounterAnchorPositions
+  nameWithType: TMP_FrameRateCounter.FpsCounterAnchorPositions
+  fullName: TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions
+  type: Enum
+  source:
+    remote:
+      path: Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: FpsCounterAnchorPositions
+    path: ../Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: TMPro.Examples
+  syntax:
+    content: public enum TMP_FrameRateCounter.FpsCounterAnchorPositions
+    content.vb: Public Enum TMP_FrameRateCounter.FpsCounterAnchorPositions
+- uid: TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions.TopLeft
+  commentId: F:TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions.TopLeft
+  id: TopLeft
+  parent: TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions
+  langs:
+  - csharp
+  - vb
+  name: TopLeft
+  nameWithType: TMP_FrameRateCounter.FpsCounterAnchorPositions.TopLeft
+  fullName: TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions.TopLeft
+  type: Field
+  source:
+    remote:
+      path: Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: TopLeft
+    path: ../Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: TMPro.Examples
+  syntax:
+    content: TopLeft = 0
+    return:
+      type: TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions
+- uid: TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions.BottomLeft
+  commentId: F:TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions.BottomLeft
+  id: BottomLeft
+  parent: TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions
+  langs:
+  - csharp
+  - vb
+  name: BottomLeft
+  nameWithType: TMP_FrameRateCounter.FpsCounterAnchorPositions.BottomLeft
+  fullName: TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions.BottomLeft
+  type: Field
+  source:
+    remote:
+      path: Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: BottomLeft
+    path: ../Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: TMPro.Examples
+  syntax:
+    content: BottomLeft = 1
+    return:
+      type: TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions
+- uid: TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions.TopRight
+  commentId: F:TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions.TopRight
+  id: TopRight
+  parent: TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions
+  langs:
+  - csharp
+  - vb
+  name: TopRight
+  nameWithType: TMP_FrameRateCounter.FpsCounterAnchorPositions.TopRight
+  fullName: TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions.TopRight
+  type: Field
+  source:
+    remote:
+      path: Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: TopRight
+    path: ../Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: TMPro.Examples
+  syntax:
+    content: TopRight = 2
+    return:
+      type: TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions
+- uid: TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions.BottomRight
+  commentId: F:TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions.BottomRight
+  id: BottomRight
+  parent: TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions
+  langs:
+  - csharp
+  - vb
+  name: BottomRight
+  nameWithType: TMP_FrameRateCounter.FpsCounterAnchorPositions.BottomRight
+  fullName: TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions.BottomRight
+  type: Field
+  source:
+    remote:
+      path: Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: BottomRight
+    path: ../Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: TMPro.Examples
+  syntax:
+    content: BottomRight = 3
+    return:
+      type: TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions
+references:
+- uid: TMPro.Examples
+  commentId: N:TMPro.Examples
+  href: TMPro.html
+  name: TMPro.Examples
+  nameWithType: TMPro.Examples
+  fullName: TMPro.Examples
+  spec.csharp:
+  - uid: TMPro
+    name: TMPro
+    href: TMPro.html
+  - name: .
+  - uid: TMPro.Examples
+    name: Examples
+    href: TMPro.Examples.html
+  spec.vb:
+  - uid: TMPro
+    name: TMPro
+    href: TMPro.html
+  - name: .
+  - uid: TMPro.Examples
+    name: Examples
+    href: TMPro.Examples.html
+- uid: TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions
+  commentId: T:TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions
+  parent: TMPro.Examples
+  href: TMPro.Examples.TMP_FrameRateCounter.html
+  name: TMP_FrameRateCounter.FpsCounterAnchorPositions
+  nameWithType: TMP_FrameRateCounter.FpsCounterAnchorPositions
+  fullName: TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions
+  spec.csharp:
+  - uid: TMPro.Examples.TMP_FrameRateCounter
+    name: TMP_FrameRateCounter
+    href: TMPro.Examples.TMP_FrameRateCounter.html
+  - name: .
+  - uid: TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions
+    name: FpsCounterAnchorPositions
+    href: TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions.html
+  spec.vb:
+  - uid: TMPro.Examples.TMP_FrameRateCounter
+    name: TMP_FrameRateCounter
+    href: TMPro.Examples.TMP_FrameRateCounter.html
+  - name: .
+  - uid: TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions
+    name: FpsCounterAnchorPositions
+    href: TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions.html

@@ -1,0 +1,1101 @@
+### YamlMime:ManagedReference
+items:
+- uid: Dremu.ChartEdit.Envelope.NodeDragEdit
+  commentId: T:Dremu.ChartEdit.Envelope.NodeDragEdit
+  id: NodeDragEdit
+  parent: Dremu.ChartEdit.Envelope
+  children:
+  - Dremu.ChartEdit.Envelope.NodeDragEdit.#ctor(Dremu.Gameplay.Tool.EnvelopeLine,Dremu.ChartEdit.Envelope.EnvelopeTrackHelper)
+  - Dremu.ChartEdit.Envelope.NodeDragEdit.CheckCanEdit(UnityEngine.Vector2)
+  - Dremu.ChartEdit.Envelope.NodeDragEdit.StartEdit(UnityEngine.Vector2)
+  - Dremu.ChartEdit.Envelope.NodeDragEdit.StopEdit(UnityEngine.Vector2)
+  - Dremu.ChartEdit.Envelope.NodeDragEdit.UpdateEdit(UnityEngine.Vector2)
+  langs:
+  - csharp
+  - vb
+  name: NodeDragEdit
+  nameWithType: NodeDragEdit
+  fullName: Dremu.ChartEdit.Envelope.NodeDragEdit
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/ChartEditor/Envelope/RealTimeEditing.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: NodeDragEdit
+    path: ../Assets/Scripts/ChartEditor/Envelope/RealTimeEditing.cs
+    startLine: 53
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.ChartEdit.Envelope
+  syntax:
+    content: 'public class NodeDragEdit : EditingBase<Vector2>, IDragEdit'
+    content.vb: Public Class NodeDragEdit Inherits EditingBase(Of Vector2) Implements IDragEdit
+  inheritance:
+  - System.Object
+  - Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}
+  implements:
+  - Dremu.ChartEdit.Envelope.IDragEdit
+  inheritedMembers:
+  - Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}._storedLastValue
+  - Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}._startDragPos
+  - Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}._editIndex
+  - Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}._containerIndex
+  - Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}._inEditing
+  - Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}._envelopeLine
+  - Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}._helper
+  - Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}.SetLine(Dremu.Gameplay.Tool.EnvelopeLine)
+  - Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}.SetHelper(Dremu.ChartEdit.Envelope.EnvelopeTrackHelper)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Dremu.ChartEdit.Envelope.NodeDragEdit.#ctor(Dremu.Gameplay.Tool.EnvelopeLine,Dremu.ChartEdit.Envelope.EnvelopeTrackHelper)
+  commentId: M:Dremu.ChartEdit.Envelope.NodeDragEdit.#ctor(Dremu.Gameplay.Tool.EnvelopeLine,Dremu.ChartEdit.Envelope.EnvelopeTrackHelper)
+  id: '#ctor(Dremu.Gameplay.Tool.EnvelopeLine,Dremu.ChartEdit.Envelope.EnvelopeTrackHelper)'
+  parent: Dremu.ChartEdit.Envelope.NodeDragEdit
+  langs:
+  - csharp
+  - vb
+  name: NodeDragEdit(EnvelopeLine, EnvelopeTrackHelper)
+  nameWithType: NodeDragEdit.NodeDragEdit(EnvelopeLine, EnvelopeTrackHelper)
+  fullName: Dremu.ChartEdit.Envelope.NodeDragEdit.NodeDragEdit(Dremu.Gameplay.Tool.EnvelopeLine, Dremu.ChartEdit.Envelope.EnvelopeTrackHelper)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Scripts/ChartEditor/Envelope/RealTimeEditing.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: .ctor
+    path: ../Assets/Scripts/ChartEditor/Envelope/RealTimeEditing.cs
+    startLine: 55
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.ChartEdit.Envelope
+  syntax:
+    content: public NodeDragEdit(EnvelopeLine envelope, EnvelopeTrackHelper helper)
+    parameters:
+    - id: envelope
+      type: Dremu.Gameplay.Tool.EnvelopeLine
+    - id: helper
+      type: Dremu.ChartEdit.Envelope.EnvelopeTrackHelper
+    content.vb: Public Sub New(envelope As EnvelopeLine, helper As EnvelopeTrackHelper)
+  overload: Dremu.ChartEdit.Envelope.NodeDragEdit.#ctor*
+  nameWithType.vb: NodeDragEdit.New(EnvelopeLine, EnvelopeTrackHelper)
+  fullName.vb: Dremu.ChartEdit.Envelope.NodeDragEdit.New(Dremu.Gameplay.Tool.EnvelopeLine, Dremu.ChartEdit.Envelope.EnvelopeTrackHelper)
+  name.vb: New(EnvelopeLine, EnvelopeTrackHelper)
+- uid: Dremu.ChartEdit.Envelope.NodeDragEdit.StartEdit(UnityEngine.Vector2)
+  commentId: M:Dremu.ChartEdit.Envelope.NodeDragEdit.StartEdit(UnityEngine.Vector2)
+  id: StartEdit(UnityEngine.Vector2)
+  parent: Dremu.ChartEdit.Envelope.NodeDragEdit
+  langs:
+  - csharp
+  - vb
+  name: StartEdit(Vector2)
+  nameWithType: NodeDragEdit.StartEdit(Vector2)
+  fullName: Dremu.ChartEdit.Envelope.NodeDragEdit.StartEdit(UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/ChartEditor/Envelope/RealTimeEditing.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: StartEdit
+    path: ../Assets/Scripts/ChartEditor/Envelope/RealTimeEditing.cs
+    startLine: 59
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.ChartEdit.Envelope
+  example: []
+  syntax:
+    content: public override void StartEdit(Vector2 localPos)
+    parameters:
+    - id: localPos
+      type: UnityEngine.Vector2
+    content.vb: Public Overrides Sub StartEdit(localPos As Vector2)
+  overridden: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}.StartEdit(UnityEngine.Vector2)
+  overload: Dremu.ChartEdit.Envelope.NodeDragEdit.StartEdit*
+- uid: Dremu.ChartEdit.Envelope.NodeDragEdit.UpdateEdit(UnityEngine.Vector2)
+  commentId: M:Dremu.ChartEdit.Envelope.NodeDragEdit.UpdateEdit(UnityEngine.Vector2)
+  id: UpdateEdit(UnityEngine.Vector2)
+  parent: Dremu.ChartEdit.Envelope.NodeDragEdit
+  langs:
+  - csharp
+  - vb
+  name: UpdateEdit(Vector2)
+  nameWithType: NodeDragEdit.UpdateEdit(Vector2)
+  fullName: Dremu.ChartEdit.Envelope.NodeDragEdit.UpdateEdit(UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/ChartEditor/Envelope/RealTimeEditing.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: UpdateEdit
+    path: ../Assets/Scripts/ChartEditor/Envelope/RealTimeEditing.cs
+    startLine: 71
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.ChartEdit.Envelope
+  example: []
+  syntax:
+    content: public override void UpdateEdit(Vector2 currentPos)
+    parameters:
+    - id: currentPos
+      type: UnityEngine.Vector2
+    content.vb: Public Overrides Sub UpdateEdit(currentPos As Vector2)
+  overridden: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}.UpdateEdit(UnityEngine.Vector2)
+  overload: Dremu.ChartEdit.Envelope.NodeDragEdit.UpdateEdit*
+- uid: Dremu.ChartEdit.Envelope.NodeDragEdit.StopEdit(UnityEngine.Vector2)
+  commentId: M:Dremu.ChartEdit.Envelope.NodeDragEdit.StopEdit(UnityEngine.Vector2)
+  id: StopEdit(UnityEngine.Vector2)
+  parent: Dremu.ChartEdit.Envelope.NodeDragEdit
+  langs:
+  - csharp
+  - vb
+  name: StopEdit(Vector2)
+  nameWithType: NodeDragEdit.StopEdit(Vector2)
+  fullName: Dremu.ChartEdit.Envelope.NodeDragEdit.StopEdit(UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/ChartEditor/Envelope/RealTimeEditing.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: StopEdit
+    path: ../Assets/Scripts/ChartEditor/Envelope/RealTimeEditing.cs
+    startLine: 99
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.ChartEdit.Envelope
+  example: []
+  syntax:
+    content: public override void StopEdit(Vector2 localPos)
+    parameters:
+    - id: localPos
+      type: UnityEngine.Vector2
+    content.vb: Public Overrides Sub StopEdit(localPos As Vector2)
+  overridden: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}.StopEdit(UnityEngine.Vector2)
+  overload: Dremu.ChartEdit.Envelope.NodeDragEdit.StopEdit*
+- uid: Dremu.ChartEdit.Envelope.NodeDragEdit.CheckCanEdit(UnityEngine.Vector2)
+  commentId: M:Dremu.ChartEdit.Envelope.NodeDragEdit.CheckCanEdit(UnityEngine.Vector2)
+  id: CheckCanEdit(UnityEngine.Vector2)
+  parent: Dremu.ChartEdit.Envelope.NodeDragEdit
+  langs:
+  - csharp
+  - vb
+  name: CheckCanEdit(Vector2)
+  nameWithType: NodeDragEdit.CheckCanEdit(Vector2)
+  fullName: Dremu.ChartEdit.Envelope.NodeDragEdit.CheckCanEdit(UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/ChartEditor/Envelope/RealTimeEditing.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: CheckCanEdit
+    path: ../Assets/Scripts/ChartEditor/Envelope/RealTimeEditing.cs
+    startLine: 105
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.ChartEdit.Envelope
+  example: []
+  syntax:
+    content: public override bool CheckCanEdit(Vector2 localPos)
+    parameters:
+    - id: localPos
+      type: UnityEngine.Vector2
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function CheckCanEdit(localPos As Vector2) As Boolean
+  overridden: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}.CheckCanEdit(UnityEngine.Vector2)
+  overload: Dremu.ChartEdit.Envelope.NodeDragEdit.CheckCanEdit*
+references:
+- uid: Dremu.ChartEdit.Envelope
+  commentId: N:Dremu.ChartEdit.Envelope
+  href: Dremu.html
+  name: Dremu.ChartEdit.Envelope
+  nameWithType: Dremu.ChartEdit.Envelope
+  fullName: Dremu.ChartEdit.Envelope
+  spec.csharp:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.ChartEdit
+    name: ChartEdit
+    href: Dremu.ChartEdit.html
+  - name: .
+  - uid: Dremu.ChartEdit.Envelope
+    name: Envelope
+    href: Dremu.ChartEdit.Envelope.html
+  spec.vb:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.ChartEdit
+    name: ChartEdit
+    href: Dremu.ChartEdit.html
+  - name: .
+  - uid: Dremu.ChartEdit.Envelope
+    name: Envelope
+    href: Dremu.ChartEdit.Envelope.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}
+  commentId: T:Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}
+  parent: Dremu.ChartEdit.Envelope
+  definition: Dremu.ChartEdit.Envelope.EditingBase`1
+  href: Dremu.ChartEdit.Envelope.EditingBase-1.html
+  name: EditingBase<Vector2>
+  nameWithType: EditingBase<Vector2>
+  fullName: Dremu.ChartEdit.Envelope.EditingBase<UnityEngine.Vector2>
+  nameWithType.vb: EditingBase(Of Vector2)
+  fullName.vb: Dremu.ChartEdit.Envelope.EditingBase(Of UnityEngine.Vector2)
+  name.vb: EditingBase(Of Vector2)
+  spec.csharp:
+  - uid: Dremu.ChartEdit.Envelope.EditingBase`1
+    name: EditingBase
+    href: Dremu.ChartEdit.Envelope.EditingBase-1.html
+  - name: <
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Dremu.ChartEdit.Envelope.EditingBase`1
+    name: EditingBase
+    href: Dremu.ChartEdit.Envelope.EditingBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Dremu.ChartEdit.Envelope.IDragEdit
+  commentId: T:Dremu.ChartEdit.Envelope.IDragEdit
+  parent: Dremu.ChartEdit.Envelope
+  href: Dremu.ChartEdit.Envelope.IDragEdit.html
+  name: IDragEdit
+  nameWithType: IDragEdit
+  fullName: Dremu.ChartEdit.Envelope.IDragEdit
+- uid: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}._storedLastValue
+  commentId: F:Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}._storedLastValue
+  parent: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}
+  definition: Dremu.ChartEdit.Envelope.EditingBase`1._storedLastValue
+  href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1__storedLastValue
+  name: _storedLastValue
+  nameWithType: EditingBase<Vector2>._storedLastValue
+  fullName: Dremu.ChartEdit.Envelope.EditingBase<UnityEngine.Vector2>._storedLastValue
+  nameWithType.vb: EditingBase(Of Vector2)._storedLastValue
+  fullName.vb: Dremu.ChartEdit.Envelope.EditingBase(Of UnityEngine.Vector2)._storedLastValue
+- uid: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}._startDragPos
+  commentId: F:Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}._startDragPos
+  parent: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}
+  definition: Dremu.ChartEdit.Envelope.EditingBase`1._startDragPos
+  href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1__startDragPos
+  name: _startDragPos
+  nameWithType: EditingBase<Vector2>._startDragPos
+  fullName: Dremu.ChartEdit.Envelope.EditingBase<UnityEngine.Vector2>._startDragPos
+  nameWithType.vb: EditingBase(Of Vector2)._startDragPos
+  fullName.vb: Dremu.ChartEdit.Envelope.EditingBase(Of UnityEngine.Vector2)._startDragPos
+- uid: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}._editIndex
+  commentId: F:Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}._editIndex
+  parent: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}
+  definition: Dremu.ChartEdit.Envelope.EditingBase`1._editIndex
+  href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1__editIndex
+  name: _editIndex
+  nameWithType: EditingBase<Vector2>._editIndex
+  fullName: Dremu.ChartEdit.Envelope.EditingBase<UnityEngine.Vector2>._editIndex
+  nameWithType.vb: EditingBase(Of Vector2)._editIndex
+  fullName.vb: Dremu.ChartEdit.Envelope.EditingBase(Of UnityEngine.Vector2)._editIndex
+- uid: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}._containerIndex
+  commentId: F:Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}._containerIndex
+  parent: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}
+  definition: Dremu.ChartEdit.Envelope.EditingBase`1._containerIndex
+  href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1__containerIndex
+  name: _containerIndex
+  nameWithType: EditingBase<Vector2>._containerIndex
+  fullName: Dremu.ChartEdit.Envelope.EditingBase<UnityEngine.Vector2>._containerIndex
+  nameWithType.vb: EditingBase(Of Vector2)._containerIndex
+  fullName.vb: Dremu.ChartEdit.Envelope.EditingBase(Of UnityEngine.Vector2)._containerIndex
+- uid: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}._inEditing
+  commentId: F:Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}._inEditing
+  parent: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}
+  definition: Dremu.ChartEdit.Envelope.EditingBase`1._inEditing
+  href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1__inEditing
+  name: _inEditing
+  nameWithType: EditingBase<Vector2>._inEditing
+  fullName: Dremu.ChartEdit.Envelope.EditingBase<UnityEngine.Vector2>._inEditing
+  nameWithType.vb: EditingBase(Of Vector2)._inEditing
+  fullName.vb: Dremu.ChartEdit.Envelope.EditingBase(Of UnityEngine.Vector2)._inEditing
+- uid: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}._envelopeLine
+  commentId: F:Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}._envelopeLine
+  parent: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}
+  definition: Dremu.ChartEdit.Envelope.EditingBase`1._envelopeLine
+  href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1__envelopeLine
+  name: _envelopeLine
+  nameWithType: EditingBase<Vector2>._envelopeLine
+  fullName: Dremu.ChartEdit.Envelope.EditingBase<UnityEngine.Vector2>._envelopeLine
+  nameWithType.vb: EditingBase(Of Vector2)._envelopeLine
+  fullName.vb: Dremu.ChartEdit.Envelope.EditingBase(Of UnityEngine.Vector2)._envelopeLine
+- uid: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}._helper
+  commentId: F:Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}._helper
+  parent: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}
+  definition: Dremu.ChartEdit.Envelope.EditingBase`1._helper
+  href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1__helper
+  name: _helper
+  nameWithType: EditingBase<Vector2>._helper
+  fullName: Dremu.ChartEdit.Envelope.EditingBase<UnityEngine.Vector2>._helper
+  nameWithType.vb: EditingBase(Of Vector2)._helper
+  fullName.vb: Dremu.ChartEdit.Envelope.EditingBase(Of UnityEngine.Vector2)._helper
+- uid: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}.SetLine(Dremu.Gameplay.Tool.EnvelopeLine)
+  commentId: M:Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}.SetLine(Dremu.Gameplay.Tool.EnvelopeLine)
+  parent: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}
+  definition: Dremu.ChartEdit.Envelope.EditingBase`1.SetLine(Dremu.Gameplay.Tool.EnvelopeLine)
+  href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1_SetLine_Dremu_Gameplay_Tool_EnvelopeLine_
+  name: SetLine(EnvelopeLine)
+  nameWithType: EditingBase<Vector2>.SetLine(EnvelopeLine)
+  fullName: Dremu.ChartEdit.Envelope.EditingBase<UnityEngine.Vector2>.SetLine(Dremu.Gameplay.Tool.EnvelopeLine)
+  nameWithType.vb: EditingBase(Of Vector2).SetLine(EnvelopeLine)
+  fullName.vb: Dremu.ChartEdit.Envelope.EditingBase(Of UnityEngine.Vector2).SetLine(Dremu.Gameplay.Tool.EnvelopeLine)
+  spec.csharp:
+  - uid: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}.SetLine(Dremu.Gameplay.Tool.EnvelopeLine)
+    name: SetLine
+    href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1_SetLine_Dremu_Gameplay_Tool_EnvelopeLine_
+  - name: (
+  - uid: Dremu.Gameplay.Tool.EnvelopeLine
+    name: EnvelopeLine
+    href: Dremu.Gameplay.Tool.EnvelopeLine.html
+  - name: )
+  spec.vb:
+  - uid: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}.SetLine(Dremu.Gameplay.Tool.EnvelopeLine)
+    name: SetLine
+    href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1_SetLine_Dremu_Gameplay_Tool_EnvelopeLine_
+  - name: (
+  - uid: Dremu.Gameplay.Tool.EnvelopeLine
+    name: EnvelopeLine
+    href: Dremu.Gameplay.Tool.EnvelopeLine.html
+  - name: )
+- uid: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}.SetHelper(Dremu.ChartEdit.Envelope.EnvelopeTrackHelper)
+  commentId: M:Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}.SetHelper(Dremu.ChartEdit.Envelope.EnvelopeTrackHelper)
+  parent: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}
+  definition: Dremu.ChartEdit.Envelope.EditingBase`1.SetHelper(Dremu.ChartEdit.Envelope.EnvelopeTrackHelper)
+  href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1_SetHelper_Dremu_ChartEdit_Envelope_EnvelopeTrackHelper_
+  name: SetHelper(EnvelopeTrackHelper)
+  nameWithType: EditingBase<Vector2>.SetHelper(EnvelopeTrackHelper)
+  fullName: Dremu.ChartEdit.Envelope.EditingBase<UnityEngine.Vector2>.SetHelper(Dremu.ChartEdit.Envelope.EnvelopeTrackHelper)
+  nameWithType.vb: EditingBase(Of Vector2).SetHelper(EnvelopeTrackHelper)
+  fullName.vb: Dremu.ChartEdit.Envelope.EditingBase(Of UnityEngine.Vector2).SetHelper(Dremu.ChartEdit.Envelope.EnvelopeTrackHelper)
+  spec.csharp:
+  - uid: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}.SetHelper(Dremu.ChartEdit.Envelope.EnvelopeTrackHelper)
+    name: SetHelper
+    href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1_SetHelper_Dremu_ChartEdit_Envelope_EnvelopeTrackHelper_
+  - name: (
+  - uid: Dremu.ChartEdit.Envelope.EnvelopeTrackHelper
+    name: EnvelopeTrackHelper
+    href: Dremu.ChartEdit.Envelope.EnvelopeTrackHelper.html
+  - name: )
+  spec.vb:
+  - uid: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}.SetHelper(Dremu.ChartEdit.Envelope.EnvelopeTrackHelper)
+    name: SetHelper
+    href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1_SetHelper_Dremu_ChartEdit_Envelope_EnvelopeTrackHelper_
+  - name: (
+  - uid: Dremu.ChartEdit.Envelope.EnvelopeTrackHelper
+    name: EnvelopeTrackHelper
+    href: Dremu.ChartEdit.Envelope.EnvelopeTrackHelper.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Dremu.ChartEdit.Envelope.EditingBase`1
+  commentId: T:Dremu.ChartEdit.Envelope.EditingBase`1
+  href: Dremu.ChartEdit.Envelope.EditingBase-1.html
+  name: EditingBase<T>
+  nameWithType: EditingBase<T>
+  fullName: Dremu.ChartEdit.Envelope.EditingBase<T>
+  nameWithType.vb: EditingBase(Of T)
+  fullName.vb: Dremu.ChartEdit.Envelope.EditingBase(Of T)
+  name.vb: EditingBase(Of T)
+  spec.csharp:
+  - uid: Dremu.ChartEdit.Envelope.EditingBase`1
+    name: EditingBase
+    href: Dremu.ChartEdit.Envelope.EditingBase-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Dremu.ChartEdit.Envelope.EditingBase`1
+    name: EditingBase
+    href: Dremu.ChartEdit.Envelope.EditingBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Dremu.ChartEdit.Envelope.EditingBase`1._storedLastValue
+  commentId: F:Dremu.ChartEdit.Envelope.EditingBase`1._storedLastValue
+  href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1__storedLastValue
+  name: _storedLastValue
+  nameWithType: EditingBase<T>._storedLastValue
+  fullName: Dremu.ChartEdit.Envelope.EditingBase<T>._storedLastValue
+  nameWithType.vb: EditingBase(Of T)._storedLastValue
+  fullName.vb: Dremu.ChartEdit.Envelope.EditingBase(Of T)._storedLastValue
+- uid: Dremu.ChartEdit.Envelope.EditingBase`1._startDragPos
+  commentId: F:Dremu.ChartEdit.Envelope.EditingBase`1._startDragPos
+  href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1__startDragPos
+  name: _startDragPos
+  nameWithType: EditingBase<T>._startDragPos
+  fullName: Dremu.ChartEdit.Envelope.EditingBase<T>._startDragPos
+  nameWithType.vb: EditingBase(Of T)._startDragPos
+  fullName.vb: Dremu.ChartEdit.Envelope.EditingBase(Of T)._startDragPos
+- uid: Dremu.ChartEdit.Envelope.EditingBase`1._editIndex
+  commentId: F:Dremu.ChartEdit.Envelope.EditingBase`1._editIndex
+  href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1__editIndex
+  name: _editIndex
+  nameWithType: EditingBase<T>._editIndex
+  fullName: Dremu.ChartEdit.Envelope.EditingBase<T>._editIndex
+  nameWithType.vb: EditingBase(Of T)._editIndex
+  fullName.vb: Dremu.ChartEdit.Envelope.EditingBase(Of T)._editIndex
+- uid: Dremu.ChartEdit.Envelope.EditingBase`1._containerIndex
+  commentId: F:Dremu.ChartEdit.Envelope.EditingBase`1._containerIndex
+  href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1__containerIndex
+  name: _containerIndex
+  nameWithType: EditingBase<T>._containerIndex
+  fullName: Dremu.ChartEdit.Envelope.EditingBase<T>._containerIndex
+  nameWithType.vb: EditingBase(Of T)._containerIndex
+  fullName.vb: Dremu.ChartEdit.Envelope.EditingBase(Of T)._containerIndex
+- uid: Dremu.ChartEdit.Envelope.EditingBase`1._inEditing
+  commentId: F:Dremu.ChartEdit.Envelope.EditingBase`1._inEditing
+  href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1__inEditing
+  name: _inEditing
+  nameWithType: EditingBase<T>._inEditing
+  fullName: Dremu.ChartEdit.Envelope.EditingBase<T>._inEditing
+  nameWithType.vb: EditingBase(Of T)._inEditing
+  fullName.vb: Dremu.ChartEdit.Envelope.EditingBase(Of T)._inEditing
+- uid: Dremu.ChartEdit.Envelope.EditingBase`1._envelopeLine
+  commentId: F:Dremu.ChartEdit.Envelope.EditingBase`1._envelopeLine
+  href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1__envelopeLine
+  name: _envelopeLine
+  nameWithType: EditingBase<T>._envelopeLine
+  fullName: Dremu.ChartEdit.Envelope.EditingBase<T>._envelopeLine
+  nameWithType.vb: EditingBase(Of T)._envelopeLine
+  fullName.vb: Dremu.ChartEdit.Envelope.EditingBase(Of T)._envelopeLine
+- uid: Dremu.ChartEdit.Envelope.EditingBase`1._helper
+  commentId: F:Dremu.ChartEdit.Envelope.EditingBase`1._helper
+  href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1__helper
+  name: _helper
+  nameWithType: EditingBase<T>._helper
+  fullName: Dremu.ChartEdit.Envelope.EditingBase<T>._helper
+  nameWithType.vb: EditingBase(Of T)._helper
+  fullName.vb: Dremu.ChartEdit.Envelope.EditingBase(Of T)._helper
+- uid: Dremu.ChartEdit.Envelope.EditingBase`1.SetLine(Dremu.Gameplay.Tool.EnvelopeLine)
+  commentId: M:Dremu.ChartEdit.Envelope.EditingBase`1.SetLine(Dremu.Gameplay.Tool.EnvelopeLine)
+  href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1_SetLine_Dremu_Gameplay_Tool_EnvelopeLine_
+  name: SetLine(EnvelopeLine)
+  nameWithType: EditingBase<T>.SetLine(EnvelopeLine)
+  fullName: Dremu.ChartEdit.Envelope.EditingBase<T>.SetLine(Dremu.Gameplay.Tool.EnvelopeLine)
+  nameWithType.vb: EditingBase(Of T).SetLine(EnvelopeLine)
+  fullName.vb: Dremu.ChartEdit.Envelope.EditingBase(Of T).SetLine(Dremu.Gameplay.Tool.EnvelopeLine)
+  spec.csharp:
+  - uid: Dremu.ChartEdit.Envelope.EditingBase`1.SetLine(Dremu.Gameplay.Tool.EnvelopeLine)
+    name: SetLine
+    href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1_SetLine_Dremu_Gameplay_Tool_EnvelopeLine_
+  - name: (
+  - uid: Dremu.Gameplay.Tool.EnvelopeLine
+    name: EnvelopeLine
+    href: Dremu.Gameplay.Tool.EnvelopeLine.html
+  - name: )
+  spec.vb:
+  - uid: Dremu.ChartEdit.Envelope.EditingBase`1.SetLine(Dremu.Gameplay.Tool.EnvelopeLine)
+    name: SetLine
+    href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1_SetLine_Dremu_Gameplay_Tool_EnvelopeLine_
+  - name: (
+  - uid: Dremu.Gameplay.Tool.EnvelopeLine
+    name: EnvelopeLine
+    href: Dremu.Gameplay.Tool.EnvelopeLine.html
+  - name: )
+- uid: Dremu.ChartEdit.Envelope.EditingBase`1.SetHelper(Dremu.ChartEdit.Envelope.EnvelopeTrackHelper)
+  commentId: M:Dremu.ChartEdit.Envelope.EditingBase`1.SetHelper(Dremu.ChartEdit.Envelope.EnvelopeTrackHelper)
+  href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1_SetHelper_Dremu_ChartEdit_Envelope_EnvelopeTrackHelper_
+  name: SetHelper(EnvelopeTrackHelper)
+  nameWithType: EditingBase<T>.SetHelper(EnvelopeTrackHelper)
+  fullName: Dremu.ChartEdit.Envelope.EditingBase<T>.SetHelper(Dremu.ChartEdit.Envelope.EnvelopeTrackHelper)
+  nameWithType.vb: EditingBase(Of T).SetHelper(EnvelopeTrackHelper)
+  fullName.vb: Dremu.ChartEdit.Envelope.EditingBase(Of T).SetHelper(Dremu.ChartEdit.Envelope.EnvelopeTrackHelper)
+  spec.csharp:
+  - uid: Dremu.ChartEdit.Envelope.EditingBase`1.SetHelper(Dremu.ChartEdit.Envelope.EnvelopeTrackHelper)
+    name: SetHelper
+    href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1_SetHelper_Dremu_ChartEdit_Envelope_EnvelopeTrackHelper_
+  - name: (
+  - uid: Dremu.ChartEdit.Envelope.EnvelopeTrackHelper
+    name: EnvelopeTrackHelper
+    href: Dremu.ChartEdit.Envelope.EnvelopeTrackHelper.html
+  - name: )
+  spec.vb:
+  - uid: Dremu.ChartEdit.Envelope.EditingBase`1.SetHelper(Dremu.ChartEdit.Envelope.EnvelopeTrackHelper)
+    name: SetHelper
+    href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1_SetHelper_Dremu_ChartEdit_Envelope_EnvelopeTrackHelper_
+  - name: (
+  - uid: Dremu.ChartEdit.Envelope.EnvelopeTrackHelper
+    name: EnvelopeTrackHelper
+    href: Dremu.ChartEdit.Envelope.EnvelopeTrackHelper.html
+  - name: )
+- uid: Dremu.ChartEdit.Envelope.NodeDragEdit.#ctor*
+  commentId: Overload:Dremu.ChartEdit.Envelope.NodeDragEdit.#ctor
+  href: Dremu.ChartEdit.Envelope.NodeDragEdit.html#Dremu_ChartEdit_Envelope_NodeDragEdit__ctor_Dremu_Gameplay_Tool_EnvelopeLine_Dremu_ChartEdit_Envelope_EnvelopeTrackHelper_
+  name: NodeDragEdit
+  nameWithType: NodeDragEdit.NodeDragEdit
+  fullName: Dremu.ChartEdit.Envelope.NodeDragEdit.NodeDragEdit
+  nameWithType.vb: NodeDragEdit.New
+  fullName.vb: Dremu.ChartEdit.Envelope.NodeDragEdit.New
+  name.vb: New
+- uid: Dremu.Gameplay.Tool.EnvelopeLine
+  commentId: T:Dremu.Gameplay.Tool.EnvelopeLine
+  parent: Dremu.Gameplay.Tool
+  href: Dremu.Gameplay.Tool.EnvelopeLine.html
+  name: EnvelopeLine
+  nameWithType: EnvelopeLine
+  fullName: Dremu.Gameplay.Tool.EnvelopeLine
+- uid: Dremu.ChartEdit.Envelope.EnvelopeTrackHelper
+  commentId: T:Dremu.ChartEdit.Envelope.EnvelopeTrackHelper
+  parent: Dremu.ChartEdit.Envelope
+  href: Dremu.ChartEdit.Envelope.EnvelopeTrackHelper.html
+  name: EnvelopeTrackHelper
+  nameWithType: EnvelopeTrackHelper
+  fullName: Dremu.ChartEdit.Envelope.EnvelopeTrackHelper
+- uid: Dremu.Gameplay.Tool
+  commentId: N:Dremu.Gameplay.Tool
+  href: Dremu.html
+  name: Dremu.Gameplay.Tool
+  nameWithType: Dremu.Gameplay.Tool
+  fullName: Dremu.Gameplay.Tool
+  spec.csharp:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.Gameplay
+    name: Gameplay
+    href: Dremu.Gameplay.html
+  - name: .
+  - uid: Dremu.Gameplay.Tool
+    name: Tool
+    href: Dremu.Gameplay.Tool.html
+  spec.vb:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.Gameplay
+    name: Gameplay
+    href: Dremu.Gameplay.html
+  - name: .
+  - uid: Dremu.Gameplay.Tool
+    name: Tool
+    href: Dremu.Gameplay.Tool.html
+- uid: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}.StartEdit(UnityEngine.Vector2)
+  commentId: M:Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}.StartEdit(UnityEngine.Vector2)
+  parent: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}
+  definition: Dremu.ChartEdit.Envelope.EditingBase`1.StartEdit(UnityEngine.Vector2)
+  href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1_StartEdit_UnityEngine_Vector2_
+  name: StartEdit(Vector2)
+  nameWithType: EditingBase<Vector2>.StartEdit(Vector2)
+  fullName: Dremu.ChartEdit.Envelope.EditingBase<UnityEngine.Vector2>.StartEdit(UnityEngine.Vector2)
+  nameWithType.vb: EditingBase(Of Vector2).StartEdit(Vector2)
+  fullName.vb: Dremu.ChartEdit.Envelope.EditingBase(Of UnityEngine.Vector2).StartEdit(UnityEngine.Vector2)
+  spec.csharp:
+  - uid: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}.StartEdit(UnityEngine.Vector2)
+    name: StartEdit
+    href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1_StartEdit_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}.StartEdit(UnityEngine.Vector2)
+    name: StartEdit
+    href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1_StartEdit_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Dremu.ChartEdit.Envelope.NodeDragEdit.StartEdit*
+  commentId: Overload:Dremu.ChartEdit.Envelope.NodeDragEdit.StartEdit
+  href: Dremu.ChartEdit.Envelope.NodeDragEdit.html#Dremu_ChartEdit_Envelope_NodeDragEdit_StartEdit_UnityEngine_Vector2_
+  name: StartEdit
+  nameWithType: NodeDragEdit.StartEdit
+  fullName: Dremu.ChartEdit.Envelope.NodeDragEdit.StartEdit
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: Dremu.ChartEdit.Envelope.EditingBase`1.StartEdit(UnityEngine.Vector2)
+  commentId: M:Dremu.ChartEdit.Envelope.EditingBase`1.StartEdit(UnityEngine.Vector2)
+  isExternal: true
+  href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1_StartEdit_UnityEngine_Vector2_
+  name: StartEdit(Vector2)
+  nameWithType: EditingBase<T>.StartEdit(Vector2)
+  fullName: Dremu.ChartEdit.Envelope.EditingBase<T>.StartEdit(UnityEngine.Vector2)
+  nameWithType.vb: EditingBase(Of T).StartEdit(Vector2)
+  fullName.vb: Dremu.ChartEdit.Envelope.EditingBase(Of T).StartEdit(UnityEngine.Vector2)
+  spec.csharp:
+  - uid: Dremu.ChartEdit.Envelope.EditingBase`1.StartEdit(UnityEngine.Vector2)
+    name: StartEdit
+    href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1_StartEdit_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Dremu.ChartEdit.Envelope.EditingBase`1.StartEdit(UnityEngine.Vector2)
+    name: StartEdit
+    href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1_StartEdit_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}.UpdateEdit(UnityEngine.Vector2)
+  commentId: M:Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}.UpdateEdit(UnityEngine.Vector2)
+  parent: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}
+  definition: Dremu.ChartEdit.Envelope.EditingBase`1.UpdateEdit(UnityEngine.Vector2)
+  href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1_UpdateEdit_UnityEngine_Vector2_
+  name: UpdateEdit(Vector2)
+  nameWithType: EditingBase<Vector2>.UpdateEdit(Vector2)
+  fullName: Dremu.ChartEdit.Envelope.EditingBase<UnityEngine.Vector2>.UpdateEdit(UnityEngine.Vector2)
+  nameWithType.vb: EditingBase(Of Vector2).UpdateEdit(Vector2)
+  fullName.vb: Dremu.ChartEdit.Envelope.EditingBase(Of UnityEngine.Vector2).UpdateEdit(UnityEngine.Vector2)
+  spec.csharp:
+  - uid: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}.UpdateEdit(UnityEngine.Vector2)
+    name: UpdateEdit
+    href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1_UpdateEdit_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}.UpdateEdit(UnityEngine.Vector2)
+    name: UpdateEdit
+    href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1_UpdateEdit_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Dremu.ChartEdit.Envelope.NodeDragEdit.UpdateEdit*
+  commentId: Overload:Dremu.ChartEdit.Envelope.NodeDragEdit.UpdateEdit
+  href: Dremu.ChartEdit.Envelope.NodeDragEdit.html#Dremu_ChartEdit_Envelope_NodeDragEdit_UpdateEdit_UnityEngine_Vector2_
+  name: UpdateEdit
+  nameWithType: NodeDragEdit.UpdateEdit
+  fullName: Dremu.ChartEdit.Envelope.NodeDragEdit.UpdateEdit
+- uid: Dremu.ChartEdit.Envelope.EditingBase`1.UpdateEdit(UnityEngine.Vector2)
+  commentId: M:Dremu.ChartEdit.Envelope.EditingBase`1.UpdateEdit(UnityEngine.Vector2)
+  isExternal: true
+  href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1_UpdateEdit_UnityEngine_Vector2_
+  name: UpdateEdit(Vector2)
+  nameWithType: EditingBase<T>.UpdateEdit(Vector2)
+  fullName: Dremu.ChartEdit.Envelope.EditingBase<T>.UpdateEdit(UnityEngine.Vector2)
+  nameWithType.vb: EditingBase(Of T).UpdateEdit(Vector2)
+  fullName.vb: Dremu.ChartEdit.Envelope.EditingBase(Of T).UpdateEdit(UnityEngine.Vector2)
+  spec.csharp:
+  - uid: Dremu.ChartEdit.Envelope.EditingBase`1.UpdateEdit(UnityEngine.Vector2)
+    name: UpdateEdit
+    href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1_UpdateEdit_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Dremu.ChartEdit.Envelope.EditingBase`1.UpdateEdit(UnityEngine.Vector2)
+    name: UpdateEdit
+    href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1_UpdateEdit_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}.StopEdit(UnityEngine.Vector2)
+  commentId: M:Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}.StopEdit(UnityEngine.Vector2)
+  parent: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}
+  definition: Dremu.ChartEdit.Envelope.EditingBase`1.StopEdit(UnityEngine.Vector2)
+  href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1_StopEdit_UnityEngine_Vector2_
+  name: StopEdit(Vector2)
+  nameWithType: EditingBase<Vector2>.StopEdit(Vector2)
+  fullName: Dremu.ChartEdit.Envelope.EditingBase<UnityEngine.Vector2>.StopEdit(UnityEngine.Vector2)
+  nameWithType.vb: EditingBase(Of Vector2).StopEdit(Vector2)
+  fullName.vb: Dremu.ChartEdit.Envelope.EditingBase(Of UnityEngine.Vector2).StopEdit(UnityEngine.Vector2)
+  spec.csharp:
+  - uid: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}.StopEdit(UnityEngine.Vector2)
+    name: StopEdit
+    href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1_StopEdit_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}.StopEdit(UnityEngine.Vector2)
+    name: StopEdit
+    href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1_StopEdit_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Dremu.ChartEdit.Envelope.NodeDragEdit.StopEdit*
+  commentId: Overload:Dremu.ChartEdit.Envelope.NodeDragEdit.StopEdit
+  href: Dremu.ChartEdit.Envelope.NodeDragEdit.html#Dremu_ChartEdit_Envelope_NodeDragEdit_StopEdit_UnityEngine_Vector2_
+  name: StopEdit
+  nameWithType: NodeDragEdit.StopEdit
+  fullName: Dremu.ChartEdit.Envelope.NodeDragEdit.StopEdit
+- uid: Dremu.ChartEdit.Envelope.EditingBase`1.StopEdit(UnityEngine.Vector2)
+  commentId: M:Dremu.ChartEdit.Envelope.EditingBase`1.StopEdit(UnityEngine.Vector2)
+  isExternal: true
+  href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1_StopEdit_UnityEngine_Vector2_
+  name: StopEdit(Vector2)
+  nameWithType: EditingBase<T>.StopEdit(Vector2)
+  fullName: Dremu.ChartEdit.Envelope.EditingBase<T>.StopEdit(UnityEngine.Vector2)
+  nameWithType.vb: EditingBase(Of T).StopEdit(Vector2)
+  fullName.vb: Dremu.ChartEdit.Envelope.EditingBase(Of T).StopEdit(UnityEngine.Vector2)
+  spec.csharp:
+  - uid: Dremu.ChartEdit.Envelope.EditingBase`1.StopEdit(UnityEngine.Vector2)
+    name: StopEdit
+    href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1_StopEdit_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Dremu.ChartEdit.Envelope.EditingBase`1.StopEdit(UnityEngine.Vector2)
+    name: StopEdit
+    href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1_StopEdit_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}.CheckCanEdit(UnityEngine.Vector2)
+  commentId: M:Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}.CheckCanEdit(UnityEngine.Vector2)
+  parent: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}
+  definition: Dremu.ChartEdit.Envelope.EditingBase`1.CheckCanEdit(UnityEngine.Vector2)
+  href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1_CheckCanEdit_UnityEngine_Vector2_
+  name: CheckCanEdit(Vector2)
+  nameWithType: EditingBase<Vector2>.CheckCanEdit(Vector2)
+  fullName: Dremu.ChartEdit.Envelope.EditingBase<UnityEngine.Vector2>.CheckCanEdit(UnityEngine.Vector2)
+  nameWithType.vb: EditingBase(Of Vector2).CheckCanEdit(Vector2)
+  fullName.vb: Dremu.ChartEdit.Envelope.EditingBase(Of UnityEngine.Vector2).CheckCanEdit(UnityEngine.Vector2)
+  spec.csharp:
+  - uid: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}.CheckCanEdit(UnityEngine.Vector2)
+    name: CheckCanEdit
+    href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1_CheckCanEdit_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Dremu.ChartEdit.Envelope.EditingBase{UnityEngine.Vector2}.CheckCanEdit(UnityEngine.Vector2)
+    name: CheckCanEdit
+    href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1_CheckCanEdit_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+- uid: Dremu.ChartEdit.Envelope.NodeDragEdit.CheckCanEdit*
+  commentId: Overload:Dremu.ChartEdit.Envelope.NodeDragEdit.CheckCanEdit
+  href: Dremu.ChartEdit.Envelope.NodeDragEdit.html#Dremu_ChartEdit_Envelope_NodeDragEdit_CheckCanEdit_UnityEngine_Vector2_
+  name: CheckCanEdit
+  nameWithType: NodeDragEdit.CheckCanEdit
+  fullName: Dremu.ChartEdit.Envelope.NodeDragEdit.CheckCanEdit
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Dremu.ChartEdit.Envelope.EditingBase`1.CheckCanEdit(UnityEngine.Vector2)
+  commentId: M:Dremu.ChartEdit.Envelope.EditingBase`1.CheckCanEdit(UnityEngine.Vector2)
+  isExternal: true
+  href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1_CheckCanEdit_UnityEngine_Vector2_
+  name: CheckCanEdit(Vector2)
+  nameWithType: EditingBase<T>.CheckCanEdit(Vector2)
+  fullName: Dremu.ChartEdit.Envelope.EditingBase<T>.CheckCanEdit(UnityEngine.Vector2)
+  nameWithType.vb: EditingBase(Of T).CheckCanEdit(Vector2)
+  fullName.vb: Dremu.ChartEdit.Envelope.EditingBase(Of T).CheckCanEdit(UnityEngine.Vector2)
+  spec.csharp:
+  - uid: Dremu.ChartEdit.Envelope.EditingBase`1.CheckCanEdit(UnityEngine.Vector2)
+    name: CheckCanEdit
+    href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1_CheckCanEdit_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Dremu.ChartEdit.Envelope.EditingBase`1.CheckCanEdit(UnityEngine.Vector2)
+    name: CheckCanEdit
+    href: Dremu.ChartEdit.Envelope.EditingBase-1.html#Dremu_ChartEdit_Envelope_EditingBase_1_CheckCanEdit_UnityEngine_Vector2_
+  - name: (
+  - uid: UnityEngine.Vector2
+    name: Vector2
+    isExternal: true
+  - name: )

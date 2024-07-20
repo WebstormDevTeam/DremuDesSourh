@@ -1,0 +1,477 @@
+### YamlMime:ManagedReference
+items:
+- uid: Data.LevelHarder
+  commentId: T:Data.LevelHarder
+  id: LevelHarder
+  parent: Data
+  children:
+  - Data.LevelHarder.Common
+  - Data.LevelHarder.Complex
+  - Data.LevelHarder.Extra
+  - Data.LevelHarder.Overload
+  - Data.LevelHarder.Simple
+  - Data.LevelHarder.Unknown
+  langs:
+  - csharp
+  - vb
+  name: LevelHarder
+  nameWithType: LevelHarder
+  fullName: Data.LevelHarder
+  type: Enum
+  source:
+    remote:
+      path: Assets/Scripts/Data/LevelData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: LevelHarder
+    path: ../Assets/Scripts/Data/LevelData.cs
+    startLine: 30
+  assemblies:
+  - Assembly-CSharp
+  namespace: Data
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum LevelHarder
+    content.vb: >-
+      <Flags>
+
+      Public Enum LevelHarder
+  extensionMethods:
+  - Data.LevelHarder.Data.LevelDataHelper.Abbr
+  - Data.LevelHarder.Data.LevelDataHelper.Index
+  - Data.LevelHarder.Data.LevelDataHelper.Max
+  - Data.LevelHarder.Data.LevelDataHelper.Min
+  - Data.LevelHarder.Data.LevelDataHelper.SignColor
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+- uid: Data.LevelHarder.Simple
+  commentId: F:Data.LevelHarder.Simple
+  id: Simple
+  parent: Data.LevelHarder
+  langs:
+  - csharp
+  - vb
+  name: Simple
+  nameWithType: LevelHarder.Simple
+  fullName: Data.LevelHarder.Simple
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data/LevelData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: Simple
+    path: ../Assets/Scripts/Data/LevelData.cs
+    startLine: 33
+  assemblies:
+  - Assembly-CSharp
+  namespace: Data
+  syntax:
+    content: Simple = 1
+    return:
+      type: Data.LevelHarder
+- uid: Data.LevelHarder.Common
+  commentId: F:Data.LevelHarder.Common
+  id: Common
+  parent: Data.LevelHarder
+  langs:
+  - csharp
+  - vb
+  name: Common
+  nameWithType: LevelHarder.Common
+  fullName: Data.LevelHarder.Common
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data/LevelData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: Common
+    path: ../Assets/Scripts/Data/LevelData.cs
+    startLine: 34
+  assemblies:
+  - Assembly-CSharp
+  namespace: Data
+  syntax:
+    content: Common = 2
+    return:
+      type: Data.LevelHarder
+- uid: Data.LevelHarder.Complex
+  commentId: F:Data.LevelHarder.Complex
+  id: Complex
+  parent: Data.LevelHarder
+  langs:
+  - csharp
+  - vb
+  name: Complex
+  nameWithType: LevelHarder.Complex
+  fullName: Data.LevelHarder.Complex
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data/LevelData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: Complex
+    path: ../Assets/Scripts/Data/LevelData.cs
+    startLine: 35
+  assemblies:
+  - Assembly-CSharp
+  namespace: Data
+  syntax:
+    content: Complex = 4
+    return:
+      type: Data.LevelHarder
+- uid: Data.LevelHarder.Overload
+  commentId: F:Data.LevelHarder.Overload
+  id: Overload
+  parent: Data.LevelHarder
+  langs:
+  - csharp
+  - vb
+  name: Overload
+  nameWithType: LevelHarder.Overload
+  fullName: Data.LevelHarder.Overload
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data/LevelData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: Overload
+    path: ../Assets/Scripts/Data/LevelData.cs
+    startLine: 36
+  assemblies:
+  - Assembly-CSharp
+  namespace: Data
+  syntax:
+    content: Overload = 8
+    return:
+      type: Data.LevelHarder
+- uid: Data.LevelHarder.Extra
+  commentId: F:Data.LevelHarder.Extra
+  id: Extra
+  parent: Data.LevelHarder
+  langs:
+  - csharp
+  - vb
+  name: Extra
+  nameWithType: LevelHarder.Extra
+  fullName: Data.LevelHarder.Extra
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data/LevelData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: Extra
+    path: ../Assets/Scripts/Data/LevelData.cs
+    startLine: 37
+  assemblies:
+  - Assembly-CSharp
+  namespace: Data
+  syntax:
+    content: Extra = 16
+    return:
+      type: Data.LevelHarder
+- uid: Data.LevelHarder.Unknown
+  commentId: F:Data.LevelHarder.Unknown
+  id: Unknown
+  parent: Data.LevelHarder
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: LevelHarder.Unknown
+  fullName: Data.LevelHarder.Unknown
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data/LevelData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: Unknown
+    path: ../Assets/Scripts/Data/LevelData.cs
+    startLine: 38
+  assemblies:
+  - Assembly-CSharp
+  namespace: Data
+  syntax:
+    content: Unknown = 32
+    return:
+      type: Data.LevelHarder
+references:
+- uid: Data
+  commentId: N:Data
+  href: Data.html
+  name: Data
+  nameWithType: Data
+  fullName: Data
+- uid: Data.LevelHarder.Data.LevelDataHelper.Abbr
+  commentId: M:Data.LevelDataHelper.Abbr(Data.LevelHarder)
+  parent: Data.LevelDataHelper
+  definition: Data.LevelDataHelper.Abbr(Data.LevelHarder)
+  href: Data.LevelDataHelper.html#Data_LevelDataHelper_Abbr_Data_LevelHarder_
+  name: Abbr(LevelHarder)
+  nameWithType: LevelDataHelper.Abbr(LevelHarder)
+  fullName: Data.LevelDataHelper.Abbr(Data.LevelHarder)
+  spec.csharp:
+  - uid: Data.LevelDataHelper.Abbr(Data.LevelHarder)
+    name: Abbr
+    href: Data.LevelDataHelper.html#Data_LevelDataHelper_Abbr_Data_LevelHarder_
+  - name: (
+  - uid: Data.LevelHarder
+    name: LevelHarder
+    href: Data.LevelHarder.html
+  - name: )
+  spec.vb:
+  - uid: Data.LevelDataHelper.Abbr(Data.LevelHarder)
+    name: Abbr
+    href: Data.LevelDataHelper.html#Data_LevelDataHelper_Abbr_Data_LevelHarder_
+  - name: (
+  - uid: Data.LevelHarder
+    name: LevelHarder
+    href: Data.LevelHarder.html
+  - name: )
+- uid: Data.LevelHarder.Data.LevelDataHelper.Index
+  commentId: M:Data.LevelDataHelper.Index(Data.LevelHarder)
+  parent: Data.LevelDataHelper
+  definition: Data.LevelDataHelper.Index(Data.LevelHarder)
+  href: Data.LevelDataHelper.html#Data_LevelDataHelper_Index_Data_LevelHarder_
+  name: Index(LevelHarder)
+  nameWithType: LevelDataHelper.Index(LevelHarder)
+  fullName: Data.LevelDataHelper.Index(Data.LevelHarder)
+  spec.csharp:
+  - uid: Data.LevelDataHelper.Index(Data.LevelHarder)
+    name: Index
+    href: Data.LevelDataHelper.html#Data_LevelDataHelper_Index_Data_LevelHarder_
+  - name: (
+  - uid: Data.LevelHarder
+    name: LevelHarder
+    href: Data.LevelHarder.html
+  - name: )
+  spec.vb:
+  - uid: Data.LevelDataHelper.Index(Data.LevelHarder)
+    name: Index
+    href: Data.LevelDataHelper.html#Data_LevelDataHelper_Index_Data_LevelHarder_
+  - name: (
+  - uid: Data.LevelHarder
+    name: LevelHarder
+    href: Data.LevelHarder.html
+  - name: )
+- uid: Data.LevelHarder.Data.LevelDataHelper.Max
+  commentId: M:Data.LevelDataHelper.Max(Data.LevelHarder)
+  parent: Data.LevelDataHelper
+  definition: Data.LevelDataHelper.Max(Data.LevelHarder)
+  href: Data.LevelDataHelper.html#Data_LevelDataHelper_Max_Data_LevelHarder_
+  name: Max(LevelHarder)
+  nameWithType: LevelDataHelper.Max(LevelHarder)
+  fullName: Data.LevelDataHelper.Max(Data.LevelHarder)
+  spec.csharp:
+  - uid: Data.LevelDataHelper.Max(Data.LevelHarder)
+    name: Max
+    href: Data.LevelDataHelper.html#Data_LevelDataHelper_Max_Data_LevelHarder_
+  - name: (
+  - uid: Data.LevelHarder
+    name: LevelHarder
+    href: Data.LevelHarder.html
+  - name: )
+  spec.vb:
+  - uid: Data.LevelDataHelper.Max(Data.LevelHarder)
+    name: Max
+    href: Data.LevelDataHelper.html#Data_LevelDataHelper_Max_Data_LevelHarder_
+  - name: (
+  - uid: Data.LevelHarder
+    name: LevelHarder
+    href: Data.LevelHarder.html
+  - name: )
+- uid: Data.LevelHarder.Data.LevelDataHelper.Min
+  commentId: M:Data.LevelDataHelper.Min(Data.LevelHarder)
+  parent: Data.LevelDataHelper
+  definition: Data.LevelDataHelper.Min(Data.LevelHarder)
+  href: Data.LevelDataHelper.html#Data_LevelDataHelper_Min_Data_LevelHarder_
+  name: Min(LevelHarder)
+  nameWithType: LevelDataHelper.Min(LevelHarder)
+  fullName: Data.LevelDataHelper.Min(Data.LevelHarder)
+  spec.csharp:
+  - uid: Data.LevelDataHelper.Min(Data.LevelHarder)
+    name: Min
+    href: Data.LevelDataHelper.html#Data_LevelDataHelper_Min_Data_LevelHarder_
+  - name: (
+  - uid: Data.LevelHarder
+    name: LevelHarder
+    href: Data.LevelHarder.html
+  - name: )
+  spec.vb:
+  - uid: Data.LevelDataHelper.Min(Data.LevelHarder)
+    name: Min
+    href: Data.LevelDataHelper.html#Data_LevelDataHelper_Min_Data_LevelHarder_
+  - name: (
+  - uid: Data.LevelHarder
+    name: LevelHarder
+    href: Data.LevelHarder.html
+  - name: )
+- uid: Data.LevelHarder.Data.LevelDataHelper.SignColor
+  commentId: M:Data.LevelDataHelper.SignColor(Data.LevelHarder)
+  parent: Data.LevelDataHelper
+  definition: Data.LevelDataHelper.SignColor(Data.LevelHarder)
+  href: Data.LevelDataHelper.html#Data_LevelDataHelper_SignColor_Data_LevelHarder_
+  name: SignColor(LevelHarder)
+  nameWithType: LevelDataHelper.SignColor(LevelHarder)
+  fullName: Data.LevelDataHelper.SignColor(Data.LevelHarder)
+  spec.csharp:
+  - uid: Data.LevelDataHelper.SignColor(Data.LevelHarder)
+    name: SignColor
+    href: Data.LevelDataHelper.html#Data_LevelDataHelper_SignColor_Data_LevelHarder_
+  - name: (
+  - uid: Data.LevelHarder
+    name: LevelHarder
+    href: Data.LevelHarder.html
+  - name: )
+  spec.vb:
+  - uid: Data.LevelDataHelper.SignColor(Data.LevelHarder)
+    name: SignColor
+    href: Data.LevelDataHelper.html#Data_LevelDataHelper_SignColor_Data_LevelHarder_
+  - name: (
+  - uid: Data.LevelHarder
+    name: LevelHarder
+    href: Data.LevelHarder.html
+  - name: )
+- uid: Data.LevelDataHelper.Abbr(Data.LevelHarder)
+  commentId: M:Data.LevelDataHelper.Abbr(Data.LevelHarder)
+  href: Data.LevelDataHelper.html#Data_LevelDataHelper_Abbr_Data_LevelHarder_
+  name: Abbr(LevelHarder)
+  nameWithType: LevelDataHelper.Abbr(LevelHarder)
+  fullName: Data.LevelDataHelper.Abbr(Data.LevelHarder)
+  spec.csharp:
+  - uid: Data.LevelDataHelper.Abbr(Data.LevelHarder)
+    name: Abbr
+    href: Data.LevelDataHelper.html#Data_LevelDataHelper_Abbr_Data_LevelHarder_
+  - name: (
+  - uid: Data.LevelHarder
+    name: LevelHarder
+    href: Data.LevelHarder.html
+  - name: )
+  spec.vb:
+  - uid: Data.LevelDataHelper.Abbr(Data.LevelHarder)
+    name: Abbr
+    href: Data.LevelDataHelper.html#Data_LevelDataHelper_Abbr_Data_LevelHarder_
+  - name: (
+  - uid: Data.LevelHarder
+    name: LevelHarder
+    href: Data.LevelHarder.html
+  - name: )
+- uid: Data.LevelDataHelper
+  commentId: T:Data.LevelDataHelper
+  parent: Data
+  href: Data.LevelDataHelper.html
+  name: LevelDataHelper
+  nameWithType: LevelDataHelper
+  fullName: Data.LevelDataHelper
+- uid: Data.LevelDataHelper.Index(Data.LevelHarder)
+  commentId: M:Data.LevelDataHelper.Index(Data.LevelHarder)
+  href: Data.LevelDataHelper.html#Data_LevelDataHelper_Index_Data_LevelHarder_
+  name: Index(LevelHarder)
+  nameWithType: LevelDataHelper.Index(LevelHarder)
+  fullName: Data.LevelDataHelper.Index(Data.LevelHarder)
+  spec.csharp:
+  - uid: Data.LevelDataHelper.Index(Data.LevelHarder)
+    name: Index
+    href: Data.LevelDataHelper.html#Data_LevelDataHelper_Index_Data_LevelHarder_
+  - name: (
+  - uid: Data.LevelHarder
+    name: LevelHarder
+    href: Data.LevelHarder.html
+  - name: )
+  spec.vb:
+  - uid: Data.LevelDataHelper.Index(Data.LevelHarder)
+    name: Index
+    href: Data.LevelDataHelper.html#Data_LevelDataHelper_Index_Data_LevelHarder_
+  - name: (
+  - uid: Data.LevelHarder
+    name: LevelHarder
+    href: Data.LevelHarder.html
+  - name: )
+- uid: Data.LevelDataHelper.Max(Data.LevelHarder)
+  commentId: M:Data.LevelDataHelper.Max(Data.LevelHarder)
+  href: Data.LevelDataHelper.html#Data_LevelDataHelper_Max_Data_LevelHarder_
+  name: Max(LevelHarder)
+  nameWithType: LevelDataHelper.Max(LevelHarder)
+  fullName: Data.LevelDataHelper.Max(Data.LevelHarder)
+  spec.csharp:
+  - uid: Data.LevelDataHelper.Max(Data.LevelHarder)
+    name: Max
+    href: Data.LevelDataHelper.html#Data_LevelDataHelper_Max_Data_LevelHarder_
+  - name: (
+  - uid: Data.LevelHarder
+    name: LevelHarder
+    href: Data.LevelHarder.html
+  - name: )
+  spec.vb:
+  - uid: Data.LevelDataHelper.Max(Data.LevelHarder)
+    name: Max
+    href: Data.LevelDataHelper.html#Data_LevelDataHelper_Max_Data_LevelHarder_
+  - name: (
+  - uid: Data.LevelHarder
+    name: LevelHarder
+    href: Data.LevelHarder.html
+  - name: )
+- uid: Data.LevelDataHelper.Min(Data.LevelHarder)
+  commentId: M:Data.LevelDataHelper.Min(Data.LevelHarder)
+  href: Data.LevelDataHelper.html#Data_LevelDataHelper_Min_Data_LevelHarder_
+  name: Min(LevelHarder)
+  nameWithType: LevelDataHelper.Min(LevelHarder)
+  fullName: Data.LevelDataHelper.Min(Data.LevelHarder)
+  spec.csharp:
+  - uid: Data.LevelDataHelper.Min(Data.LevelHarder)
+    name: Min
+    href: Data.LevelDataHelper.html#Data_LevelDataHelper_Min_Data_LevelHarder_
+  - name: (
+  - uid: Data.LevelHarder
+    name: LevelHarder
+    href: Data.LevelHarder.html
+  - name: )
+  spec.vb:
+  - uid: Data.LevelDataHelper.Min(Data.LevelHarder)
+    name: Min
+    href: Data.LevelDataHelper.html#Data_LevelDataHelper_Min_Data_LevelHarder_
+  - name: (
+  - uid: Data.LevelHarder
+    name: LevelHarder
+    href: Data.LevelHarder.html
+  - name: )
+- uid: Data.LevelDataHelper.SignColor(Data.LevelHarder)
+  commentId: M:Data.LevelDataHelper.SignColor(Data.LevelHarder)
+  href: Data.LevelDataHelper.html#Data_LevelDataHelper_SignColor_Data_LevelHarder_
+  name: SignColor(LevelHarder)
+  nameWithType: LevelDataHelper.SignColor(LevelHarder)
+  fullName: Data.LevelDataHelper.SignColor(Data.LevelHarder)
+  spec.csharp:
+  - uid: Data.LevelDataHelper.SignColor(Data.LevelHarder)
+    name: SignColor
+    href: Data.LevelDataHelper.html#Data_LevelDataHelper_SignColor_Data_LevelHarder_
+  - name: (
+  - uid: Data.LevelHarder
+    name: LevelHarder
+    href: Data.LevelHarder.html
+  - name: )
+  spec.vb:
+  - uid: Data.LevelDataHelper.SignColor(Data.LevelHarder)
+    name: SignColor
+    href: Data.LevelDataHelper.html#Data_LevelDataHelper_SignColor_Data_LevelHarder_
+  - name: (
+  - uid: Data.LevelHarder
+    name: LevelHarder
+    href: Data.LevelHarder.html
+  - name: )
+- uid: Data.LevelHarder
+  commentId: T:Data.LevelHarder
+  parent: Data
+  href: Data.LevelHarder.html
+  name: LevelHarder
+  nameWithType: LevelHarder
+  fullName: Data.LevelHarder

@@ -1,0 +1,85 @@
+### YamlMime:ManagedReference
+items:
+- uid: Dremu.Gameplay.Manager
+  commentId: N:Dremu.Gameplay.Manager
+  id: Dremu.Gameplay.Manager
+  children:
+  - Dremu.Gameplay.Manager.AudioManager
+  - Dremu.Gameplay.Manager.JudgmentLineManager
+  - Dremu.Gameplay.Manager.MainController
+  - Dremu.Gameplay.Manager.NoteEffectManager
+  - Dremu.Gameplay.Manager.NoteManager
+  langs:
+  - csharp
+  - vb
+  name: Dremu.Gameplay.Manager
+  nameWithType: Dremu.Gameplay.Manager
+  fullName: Dremu.Gameplay.Manager
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: Dremu.Gameplay.Manager.MainController
+  commentId: T:Dremu.Gameplay.Manager.MainController
+  href: Dremu.Gameplay.Manager.MainController.html
+  name: MainController
+  nameWithType: MainController
+  fullName: Dremu.Gameplay.Manager.MainController
+- uid: Dremu.Gameplay.Manager.JudgmentLineManager
+  commentId: T:Dremu.Gameplay.Manager.JudgmentLineManager
+  parent: Dremu.Gameplay.Manager
+  href: Dremu.Gameplay.Manager.JudgmentLineManager.html
+  name: JudgmentLineManager
+  nameWithType: JudgmentLineManager
+  fullName: Dremu.Gameplay.Manager.JudgmentLineManager
+- uid: Dremu.Gameplay.Manager.NoteManager
+  commentId: T:Dremu.Gameplay.Manager.NoteManager
+  parent: Dremu.Gameplay.Manager
+  href: Dremu.Gameplay.Manager.NoteManager.html
+  name: NoteManager
+  nameWithType: NoteManager
+  fullName: Dremu.Gameplay.Manager.NoteManager
+- uid: Dremu.Gameplay.Manager.NoteEffectManager
+  commentId: T:Dremu.Gameplay.Manager.NoteEffectManager
+  parent: Dremu.Gameplay.Manager
+  href: Dremu.Gameplay.Manager.NoteEffectManager.html
+  name: NoteEffectManager
+  nameWithType: NoteEffectManager
+  fullName: Dremu.Gameplay.Manager.NoteEffectManager
+- uid: Dremu.Gameplay.Manager.AudioManager
+  commentId: T:Dremu.Gameplay.Manager.AudioManager
+  parent: Dremu.Gameplay.Manager
+  href: Dremu.Gameplay.Manager.AudioManager.html
+  name: AudioManager
+  nameWithType: AudioManager
+  fullName: Dremu.Gameplay.Manager.AudioManager
+- uid: Dremu.Gameplay.Manager
+  commentId: N:Dremu.Gameplay.Manager
+  href: Dremu.html
+  name: Dremu.Gameplay.Manager
+  nameWithType: Dremu.Gameplay.Manager
+  fullName: Dremu.Gameplay.Manager
+  spec.csharp:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.Gameplay
+    name: Gameplay
+    href: Dremu.Gameplay.html
+  - name: .
+  - uid: Dremu.Gameplay.Manager
+    name: Manager
+    href: Dremu.Gameplay.Manager.html
+  spec.vb:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.Gameplay
+    name: Gameplay
+    href: Dremu.Gameplay.html
+  - name: .
+  - uid: Dremu.Gameplay.Manager
+    name: Manager
+    href: Dremu.Gameplay.Manager.html

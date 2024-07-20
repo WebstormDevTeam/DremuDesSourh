@@ -1,0 +1,60 @@
+### YamlMime:ManagedReference
+items:
+- uid: Utils.Helper
+  commentId: N:Utils.Helper
+  id: Utils.Helper
+  children:
+  - Utils.Helper.DoTweenHelper
+  - Utils.Helper.UGUIHelper
+  - Utils.Helper.UnityHelper
+  langs:
+  - csharp
+  - vb
+  name: Utils.Helper
+  nameWithType: Utils.Helper
+  fullName: Utils.Helper
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: Utils.Helper.DoTweenHelper
+  commentId: T:Utils.Helper.DoTweenHelper
+  parent: Utils.Helper
+  href: Utils.Helper.DoTweenHelper.html
+  name: DoTweenHelper
+  nameWithType: DoTweenHelper
+  fullName: Utils.Helper.DoTweenHelper
+- uid: Utils.Helper.UGUIHelper
+  commentId: T:Utils.Helper.UGUIHelper
+  href: Utils.Helper.UGUIHelper.html
+  name: UGUIHelper
+  nameWithType: UGUIHelper
+  fullName: Utils.Helper.UGUIHelper
+- uid: Utils.Helper.UnityHelper
+  commentId: T:Utils.Helper.UnityHelper
+  href: Utils.Helper.UnityHelper.html
+  name: UnityHelper
+  nameWithType: UnityHelper
+  fullName: Utils.Helper.UnityHelper
+- uid: Utils.Helper
+  commentId: N:Utils.Helper
+  href: Utils.html
+  name: Utils.Helper
+  nameWithType: Utils.Helper
+  fullName: Utils.Helper
+  spec.csharp:
+  - uid: Utils
+    name: Utils
+    href: Utils.html
+  - name: .
+  - uid: Utils.Helper
+    name: Helper
+    href: Utils.Helper.html
+  spec.vb:
+  - uid: Utils
+    name: Utils
+    href: Utils.html
+  - name: .
+  - uid: Utils.Helper
+    name: Helper
+    href: Utils.Helper.html

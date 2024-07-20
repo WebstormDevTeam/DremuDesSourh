@@ -1,0 +1,216 @@
+### YamlMime:ManagedReference
+items:
+- uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType
+  commentId: T:Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType
+  id: ChartData.JudgmentLineData.NoteData.NoteType
+  parent: Dremu.Gameplay.Object
+  children:
+  - Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType.Drag
+  - Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType.Hold
+  - Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType.Slide
+  - Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType.Tap
+  langs:
+  - csharp
+  - vb
+  name: ChartData.JudgmentLineData.NoteData.NoteType
+  nameWithType: ChartData.JudgmentLineData.NoteData.NoteType
+  fullName: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType
+  type: Enum
+  source:
+    remote:
+      path: Assets/Scripts/Data/ScriptableObject/ChartData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: NoteType
+    path: ../Assets/Scripts/Data/ScriptableObject/ChartData.cs
+    startLine: 42
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Object
+  syntax:
+    content: >-
+      [Serializable]
+
+      public enum ChartData.JudgmentLineData.NoteData.NoteType
+    content.vb: >-
+      <Serializable>
+
+      Public Enum ChartData.JudgmentLineData.NoteData.NoteType
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType.Tap
+  commentId: F:Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType.Tap
+  id: Tap
+  parent: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType
+  langs:
+  - csharp
+  - vb
+  name: Tap
+  nameWithType: ChartData.JudgmentLineData.NoteData.NoteType.Tap
+  fullName: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType.Tap
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data/ScriptableObject/ChartData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: Tap
+    path: ../Assets/Scripts/Data/ScriptableObject/ChartData.cs
+    startLine: 45
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Object
+  syntax:
+    content: Tap = 0
+    return:
+      type: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType
+- uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType.Slide
+  commentId: F:Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType.Slide
+  id: Slide
+  parent: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType
+  langs:
+  - csharp
+  - vb
+  name: Slide
+  nameWithType: ChartData.JudgmentLineData.NoteData.NoteType.Slide
+  fullName: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType.Slide
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data/ScriptableObject/ChartData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: Slide
+    path: ../Assets/Scripts/Data/ScriptableObject/ChartData.cs
+    startLine: 46
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Object
+  syntax:
+    content: Slide = 1
+    return:
+      type: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType
+- uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType.Hold
+  commentId: F:Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType.Hold
+  id: Hold
+  parent: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType
+  langs:
+  - csharp
+  - vb
+  name: Hold
+  nameWithType: ChartData.JudgmentLineData.NoteData.NoteType.Hold
+  fullName: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType.Hold
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data/ScriptableObject/ChartData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: Hold
+    path: ../Assets/Scripts/Data/ScriptableObject/ChartData.cs
+    startLine: 47
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Object
+  syntax:
+    content: Hold = 2
+    return:
+      type: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType
+- uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType.Drag
+  commentId: F:Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType.Drag
+  id: Drag
+  parent: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType
+  langs:
+  - csharp
+  - vb
+  name: Drag
+  nameWithType: ChartData.JudgmentLineData.NoteData.NoteType.Drag
+  fullName: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType.Drag
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Data/ScriptableObject/ChartData.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: Drag
+    path: ../Assets/Scripts/Data/ScriptableObject/ChartData.cs
+    startLine: 48
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Object
+  syntax:
+    content: Drag = 3
+    return:
+      type: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType
+references:
+- uid: Dremu.Gameplay.Object
+  commentId: N:Dremu.Gameplay.Object
+  href: Dremu.html
+  name: Dremu.Gameplay.Object
+  nameWithType: Dremu.Gameplay.Object
+  fullName: Dremu.Gameplay.Object
+  spec.csharp:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.Gameplay
+    name: Gameplay
+    href: Dremu.Gameplay.html
+  - name: .
+  - uid: Dremu.Gameplay.Object
+    name: Object
+    href: Dremu.Gameplay.Object.html
+  spec.vb:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.Gameplay
+    name: Gameplay
+    href: Dremu.Gameplay.html
+  - name: .
+  - uid: Dremu.Gameplay.Object
+    name: Object
+    href: Dremu.Gameplay.Object.html
+- uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType
+  commentId: T:Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType
+  parent: Dremu.Gameplay.Object
+  href: Dremu.Gameplay.Object.ChartData.html
+  name: ChartData.JudgmentLineData.NoteData.NoteType
+  nameWithType: ChartData.JudgmentLineData.NoteData.NoteType
+  fullName: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType
+  spec.csharp:
+  - uid: Dremu.Gameplay.Object.ChartData
+    name: ChartData
+    href: Dremu.Gameplay.Object.ChartData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData
+    name: JudgmentLineData
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData
+    name: NoteData
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType
+    name: NoteType
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType.html
+  spec.vb:
+  - uid: Dremu.Gameplay.Object.ChartData
+    name: ChartData
+    href: Dremu.Gameplay.Object.ChartData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData
+    name: JudgmentLineData
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData
+    name: NoteData
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.html
+  - name: .
+  - uid: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType
+    name: NoteType
+    href: Dremu.Gameplay.Object.ChartData.JudgmentLineData.NoteData.NoteType.html

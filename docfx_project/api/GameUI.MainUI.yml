@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: GameUI.MainUI
+  commentId: N:GameUI.MainUI
+  id: GameUI.MainUI
+  children:
+  - GameUI.MainUI.MainUIManager
+  langs:
+  - csharp
+  - vb
+  name: GameUI.MainUI
+  nameWithType: GameUI.MainUI
+  fullName: GameUI.MainUI
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: GameUI.MainUI.MainUIManager
+  commentId: T:GameUI.MainUI.MainUIManager
+  href: GameUI.MainUI.MainUIManager.html
+  name: MainUIManager
+  nameWithType: MainUIManager
+  fullName: GameUI.MainUI.MainUIManager

@@ -1,0 +1,162 @@
+### YamlMime:ManagedReference
+items:
+- uid: Dremu.ChartEdit.Envelope
+  commentId: N:Dremu.ChartEdit.Envelope
+  id: Dremu.ChartEdit.Envelope
+  children:
+  - Dremu.ChartEdit.Envelope.CurveTypeContextHelper
+  - Dremu.ChartEdit.Envelope.DummyTrack
+  - Dremu.ChartEdit.Envelope.EditingBase`1
+  - Dremu.ChartEdit.Envelope.EditingEntry
+  - Dremu.ChartEdit.Envelope.EnvelopeTrack
+  - Dremu.ChartEdit.Envelope.EnvelopeTrackHelper
+  - Dremu.ChartEdit.Envelope.IDragEdit
+  - Dremu.ChartEdit.Envelope.LineContainer
+  - Dremu.ChartEdit.Envelope.NodeDragEdit
+  - Dremu.ChartEdit.Envelope.SnipHelper
+  - Dremu.ChartEdit.Envelope.TensionEdit
+  - Dremu.ChartEdit.Envelope.UILine
+  - Dremu.ChartEdit.Envelope.VerticalTrackView
+  langs:
+  - csharp
+  - vb
+  name: Dremu.ChartEdit.Envelope
+  nameWithType: Dremu.ChartEdit.Envelope
+  fullName: Dremu.ChartEdit.Envelope
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: Dremu.ChartEdit.Envelope.VerticalTrackView
+  commentId: T:Dremu.ChartEdit.Envelope.VerticalTrackView
+  parent: Dremu.ChartEdit.Envelope
+  href: Dremu.ChartEdit.Envelope.VerticalTrackView.html
+  name: VerticalTrackView
+  nameWithType: VerticalTrackView
+  fullName: Dremu.ChartEdit.Envelope.VerticalTrackView
+- uid: Dremu.ChartEdit.Envelope.EnvelopeTrackHelper
+  commentId: T:Dremu.ChartEdit.Envelope.EnvelopeTrackHelper
+  parent: Dremu.ChartEdit.Envelope
+  href: Dremu.ChartEdit.Envelope.EnvelopeTrackHelper.html
+  name: EnvelopeTrackHelper
+  nameWithType: EnvelopeTrackHelper
+  fullName: Dremu.ChartEdit.Envelope.EnvelopeTrackHelper
+- uid: Dremu.ChartEdit.Envelope.LineContainer
+  commentId: T:Dremu.ChartEdit.Envelope.LineContainer
+  parent: Dremu.ChartEdit.Envelope
+  href: Dremu.ChartEdit.Envelope.LineContainer.html
+  name: LineContainer
+  nameWithType: LineContainer
+  fullName: Dremu.ChartEdit.Envelope.LineContainer
+- uid: Dremu.ChartEdit.Envelope.CurveTypeContextHelper
+  commentId: T:Dremu.ChartEdit.Envelope.CurveTypeContextHelper
+  href: Dremu.ChartEdit.Envelope.CurveTypeContextHelper.html
+  name: CurveTypeContextHelper
+  nameWithType: CurveTypeContextHelper
+  fullName: Dremu.ChartEdit.Envelope.CurveTypeContextHelper
+- uid: Dremu.ChartEdit.Envelope.IDragEdit
+  commentId: T:Dremu.ChartEdit.Envelope.IDragEdit
+  parent: Dremu.ChartEdit.Envelope
+  href: Dremu.ChartEdit.Envelope.IDragEdit.html
+  name: IDragEdit
+  nameWithType: IDragEdit
+  fullName: Dremu.ChartEdit.Envelope.IDragEdit
+- uid: Dremu.ChartEdit.Envelope.EditingBase`1
+  commentId: T:Dremu.ChartEdit.Envelope.EditingBase`1
+  href: Dremu.ChartEdit.Envelope.EditingBase-1.html
+  name: EditingBase<T>
+  nameWithType: EditingBase<T>
+  fullName: Dremu.ChartEdit.Envelope.EditingBase<T>
+  nameWithType.vb: EditingBase(Of T)
+  fullName.vb: Dremu.ChartEdit.Envelope.EditingBase(Of T)
+  name.vb: EditingBase(Of T)
+  spec.csharp:
+  - uid: Dremu.ChartEdit.Envelope.EditingBase`1
+    name: EditingBase
+    href: Dremu.ChartEdit.Envelope.EditingBase-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Dremu.ChartEdit.Envelope.EditingBase`1
+    name: EditingBase
+    href: Dremu.ChartEdit.Envelope.EditingBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Dremu.ChartEdit.Envelope.NodeDragEdit
+  commentId: T:Dremu.ChartEdit.Envelope.NodeDragEdit
+  href: Dremu.ChartEdit.Envelope.NodeDragEdit.html
+  name: NodeDragEdit
+  nameWithType: NodeDragEdit
+  fullName: Dremu.ChartEdit.Envelope.NodeDragEdit
+- uid: Dremu.ChartEdit.Envelope.TensionEdit
+  commentId: T:Dremu.ChartEdit.Envelope.TensionEdit
+  href: Dremu.ChartEdit.Envelope.TensionEdit.html
+  name: TensionEdit
+  nameWithType: TensionEdit
+  fullName: Dremu.ChartEdit.Envelope.TensionEdit
+- uid: Dremu.ChartEdit.Envelope.SnipHelper
+  commentId: T:Dremu.ChartEdit.Envelope.SnipHelper
+  href: Dremu.ChartEdit.Envelope.SnipHelper.html
+  name: SnipHelper
+  nameWithType: SnipHelper
+  fullName: Dremu.ChartEdit.Envelope.SnipHelper
+- uid: Dremu.ChartEdit.Envelope.UILine
+  commentId: T:Dremu.ChartEdit.Envelope.UILine
+  href: Dremu.ChartEdit.Envelope.UILine.html
+  name: UILine
+  nameWithType: UILine
+  fullName: Dremu.ChartEdit.Envelope.UILine
+- uid: Dremu.ChartEdit.Envelope.DummyTrack
+  commentId: T:Dremu.ChartEdit.Envelope.DummyTrack
+  href: Dremu.ChartEdit.Envelope.DummyTrack.html
+  name: DummyTrack
+  nameWithType: DummyTrack
+  fullName: Dremu.ChartEdit.Envelope.DummyTrack
+- uid: Dremu.ChartEdit.Envelope.EnvelopeTrack
+  commentId: T:Dremu.ChartEdit.Envelope.EnvelopeTrack
+  parent: Dremu.ChartEdit.Envelope
+  href: Dremu.ChartEdit.Envelope.EnvelopeTrack.html
+  name: EnvelopeTrack
+  nameWithType: EnvelopeTrack
+  fullName: Dremu.ChartEdit.Envelope.EnvelopeTrack
+- uid: Dremu.ChartEdit.Envelope.EditingEntry
+  commentId: T:Dremu.ChartEdit.Envelope.EditingEntry
+  parent: Dremu.ChartEdit.Envelope
+  href: Dremu.ChartEdit.Envelope.EditingEntry.html
+  name: EditingEntry
+  nameWithType: EditingEntry
+  fullName: Dremu.ChartEdit.Envelope.EditingEntry
+- uid: Dremu.ChartEdit.Envelope
+  commentId: N:Dremu.ChartEdit.Envelope
+  href: Dremu.html
+  name: Dremu.ChartEdit.Envelope
+  nameWithType: Dremu.ChartEdit.Envelope
+  fullName: Dremu.ChartEdit.Envelope
+  spec.csharp:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.ChartEdit
+    name: ChartEdit
+    href: Dremu.ChartEdit.html
+  - name: .
+  - uid: Dremu.ChartEdit.Envelope
+    name: Envelope
+    href: Dremu.ChartEdit.Envelope.html
+  spec.vb:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.ChartEdit
+    name: ChartEdit
+    href: Dremu.ChartEdit.html
+  - name: .
+  - uid: Dremu.ChartEdit.Envelope
+    name: Envelope
+    href: Dremu.ChartEdit.Envelope.html

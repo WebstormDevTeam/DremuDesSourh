@@ -1,0 +1,402 @@
+### YamlMime:ManagedReference
+items:
+- uid: TMPro.Examples
+  commentId: N:TMPro.Examples
+  id: TMPro.Examples
+  children:
+  - TMPro.Examples.Benchmark01
+  - TMPro.Examples.Benchmark01_UGUI
+  - TMPro.Examples.Benchmark02
+  - TMPro.Examples.Benchmark03
+  - TMPro.Examples.Benchmark03.BenchmarkType
+  - TMPro.Examples.Benchmark04
+  - TMPro.Examples.CameraController
+  - TMPro.Examples.CameraController.CameraModes
+  - TMPro.Examples.ObjectSpin
+  - TMPro.Examples.ObjectSpin.MotionType
+  - TMPro.Examples.ShaderPropAnimator
+  - TMPro.Examples.SimpleScript
+  - TMPro.Examples.SkewTextExample
+  - TMPro.Examples.TMP_ExampleScript_01
+  - TMPro.Examples.TMP_ExampleScript_01.objectType
+  - TMPro.Examples.TMP_FrameRateCounter
+  - TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions
+  - TMPro.Examples.TMP_TextEventCheck
+  - TMPro.Examples.TMP_TextInfoDebugTool
+  - TMPro.Examples.TMP_TextSelector_A
+  - TMPro.Examples.TMP_TextSelector_B
+  - TMPro.Examples.TMP_UiFrameRateCounter
+  - TMPro.Examples.TMP_UiFrameRateCounter.FpsCounterAnchorPositions
+  - TMPro.Examples.TMPro_InstructionOverlay
+  - TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions
+  - TMPro.Examples.TeleType
+  - TMPro.Examples.TextConsoleSimulator
+  - TMPro.Examples.TextMeshProFloatingText
+  - TMPro.Examples.TextMeshSpawner
+  - TMPro.Examples.VertexColorCycler
+  - TMPro.Examples.VertexJitter
+  - TMPro.Examples.VertexShakeA
+  - TMPro.Examples.VertexShakeB
+  - TMPro.Examples.VertexZoom
+  - TMPro.Examples.WarpTextExample
+  langs:
+  - csharp
+  - vb
+  name: TMPro.Examples
+  nameWithType: TMPro.Examples
+  fullName: TMPro.Examples
+  type: Namespace
+  assemblies:
+  - Assembly-CSharp
+references:
+- uid: TMPro.Examples.VertexShakeA
+  commentId: T:TMPro.Examples.VertexShakeA
+  href: TMPro.Examples.VertexShakeA.html
+  name: VertexShakeA
+  nameWithType: VertexShakeA
+  fullName: TMPro.Examples.VertexShakeA
+- uid: TMPro.Examples.TMPro_InstructionOverlay
+  commentId: T:TMPro.Examples.TMPro_InstructionOverlay
+  href: TMPro.Examples.TMPro_InstructionOverlay.html
+  name: TMPro_InstructionOverlay
+  nameWithType: TMPro_InstructionOverlay
+  fullName: TMPro.Examples.TMPro_InstructionOverlay
+- uid: TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions
+  commentId: T:TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions
+  parent: TMPro.Examples
+  href: TMPro.Examples.TMPro_InstructionOverlay.html
+  name: TMPro_InstructionOverlay.FpsCounterAnchorPositions
+  nameWithType: TMPro_InstructionOverlay.FpsCounterAnchorPositions
+  fullName: TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions
+  spec.csharp:
+  - uid: TMPro.Examples.TMPro_InstructionOverlay
+    name: TMPro_InstructionOverlay
+    href: TMPro.Examples.TMPro_InstructionOverlay.html
+  - name: .
+  - uid: TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions
+    name: FpsCounterAnchorPositions
+    href: TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions.html
+  spec.vb:
+  - uid: TMPro.Examples.TMPro_InstructionOverlay
+    name: TMPro_InstructionOverlay
+    href: TMPro.Examples.TMPro_InstructionOverlay.html
+  - name: .
+  - uid: TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions
+    name: FpsCounterAnchorPositions
+    href: TMPro.Examples.TMPro_InstructionOverlay.FpsCounterAnchorPositions.html
+- uid: TMPro.Examples.TMP_ExampleScript_01
+  commentId: T:TMPro.Examples.TMP_ExampleScript_01
+  href: TMPro.Examples.TMP_ExampleScript_01.html
+  name: TMP_ExampleScript_01
+  nameWithType: TMP_ExampleScript_01
+  fullName: TMPro.Examples.TMP_ExampleScript_01
+- uid: TMPro.Examples.TMP_ExampleScript_01.objectType
+  commentId: T:TMPro.Examples.TMP_ExampleScript_01.objectType
+  parent: TMPro.Examples
+  href: TMPro.Examples.TMP_ExampleScript_01.html
+  name: TMP_ExampleScript_01.objectType
+  nameWithType: TMP_ExampleScript_01.objectType
+  fullName: TMPro.Examples.TMP_ExampleScript_01.objectType
+  spec.csharp:
+  - uid: TMPro.Examples.TMP_ExampleScript_01
+    name: TMP_ExampleScript_01
+    href: TMPro.Examples.TMP_ExampleScript_01.html
+  - name: .
+  - uid: TMPro.Examples.TMP_ExampleScript_01.objectType
+    name: objectType
+    href: TMPro.Examples.TMP_ExampleScript_01.objectType.html
+  spec.vb:
+  - uid: TMPro.Examples.TMP_ExampleScript_01
+    name: TMP_ExampleScript_01
+    href: TMPro.Examples.TMP_ExampleScript_01.html
+  - name: .
+  - uid: TMPro.Examples.TMP_ExampleScript_01.objectType
+    name: objectType
+    href: TMPro.Examples.TMP_ExampleScript_01.objectType.html
+- uid: TMPro.Examples.VertexShakeB
+  commentId: T:TMPro.Examples.VertexShakeB
+  href: TMPro.Examples.VertexShakeB.html
+  name: VertexShakeB
+  nameWithType: VertexShakeB
+  fullName: TMPro.Examples.VertexShakeB
+- uid: TMPro.Examples.VertexColorCycler
+  commentId: T:TMPro.Examples.VertexColorCycler
+  href: TMPro.Examples.VertexColorCycler.html
+  name: VertexColorCycler
+  nameWithType: VertexColorCycler
+  fullName: TMPro.Examples.VertexColorCycler
+- uid: TMPro.Examples.TMP_TextSelector_A
+  commentId: T:TMPro.Examples.TMP_TextSelector_A
+  href: TMPro.Examples.TMP_TextSelector_A.html
+  name: TMP_TextSelector_A
+  nameWithType: TMP_TextSelector_A
+  fullName: TMPro.Examples.TMP_TextSelector_A
+- uid: TMPro.Examples.Benchmark01_UGUI
+  commentId: T:TMPro.Examples.Benchmark01_UGUI
+  href: TMPro.Examples.Benchmark01_UGUI.html
+  name: Benchmark01_UGUI
+  nameWithType: Benchmark01_UGUI
+  fullName: TMPro.Examples.Benchmark01_UGUI
+- uid: TMPro.Examples.SimpleScript
+  commentId: T:TMPro.Examples.SimpleScript
+  href: TMPro.Examples.SimpleScript.html
+  name: SimpleScript
+  nameWithType: SimpleScript
+  fullName: TMPro.Examples.SimpleScript
+- uid: TMPro.Examples.Benchmark04
+  commentId: T:TMPro.Examples.Benchmark04
+  href: TMPro.Examples.Benchmark04.html
+  name: Benchmark04
+  nameWithType: Benchmark04
+  fullName: TMPro.Examples.Benchmark04
+- uid: TMPro.Examples.ObjectSpin
+  commentId: T:TMPro.Examples.ObjectSpin
+  href: TMPro.Examples.ObjectSpin.html
+  name: ObjectSpin
+  nameWithType: ObjectSpin
+  fullName: TMPro.Examples.ObjectSpin
+- uid: TMPro.Examples.ObjectSpin.MotionType
+  commentId: T:TMPro.Examples.ObjectSpin.MotionType
+  parent: TMPro.Examples
+  href: TMPro.Examples.ObjectSpin.html
+  name: ObjectSpin.MotionType
+  nameWithType: ObjectSpin.MotionType
+  fullName: TMPro.Examples.ObjectSpin.MotionType
+  spec.csharp:
+  - uid: TMPro.Examples.ObjectSpin
+    name: ObjectSpin
+    href: TMPro.Examples.ObjectSpin.html
+  - name: .
+  - uid: TMPro.Examples.ObjectSpin.MotionType
+    name: MotionType
+    href: TMPro.Examples.ObjectSpin.MotionType.html
+  spec.vb:
+  - uid: TMPro.Examples.ObjectSpin
+    name: ObjectSpin
+    href: TMPro.Examples.ObjectSpin.html
+  - name: .
+  - uid: TMPro.Examples.ObjectSpin.MotionType
+    name: MotionType
+    href: TMPro.Examples.ObjectSpin.MotionType.html
+- uid: TMPro.Examples.VertexJitter
+  commentId: T:TMPro.Examples.VertexJitter
+  href: TMPro.Examples.VertexJitter.html
+  name: VertexJitter
+  nameWithType: VertexJitter
+  fullName: TMPro.Examples.VertexJitter
+- uid: TMPro.Examples.TMP_FrameRateCounter
+  commentId: T:TMPro.Examples.TMP_FrameRateCounter
+  href: TMPro.Examples.TMP_FrameRateCounter.html
+  name: TMP_FrameRateCounter
+  nameWithType: TMP_FrameRateCounter
+  fullName: TMPro.Examples.TMP_FrameRateCounter
+- uid: TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions
+  commentId: T:TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions
+  parent: TMPro.Examples
+  href: TMPro.Examples.TMP_FrameRateCounter.html
+  name: TMP_FrameRateCounter.FpsCounterAnchorPositions
+  nameWithType: TMP_FrameRateCounter.FpsCounterAnchorPositions
+  fullName: TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions
+  spec.csharp:
+  - uid: TMPro.Examples.TMP_FrameRateCounter
+    name: TMP_FrameRateCounter
+    href: TMPro.Examples.TMP_FrameRateCounter.html
+  - name: .
+  - uid: TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions
+    name: FpsCounterAnchorPositions
+    href: TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions.html
+  spec.vb:
+  - uid: TMPro.Examples.TMP_FrameRateCounter
+    name: TMP_FrameRateCounter
+    href: TMPro.Examples.TMP_FrameRateCounter.html
+  - name: .
+  - uid: TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions
+    name: FpsCounterAnchorPositions
+    href: TMPro.Examples.TMP_FrameRateCounter.FpsCounterAnchorPositions.html
+- uid: TMPro.Examples.TextConsoleSimulator
+  commentId: T:TMPro.Examples.TextConsoleSimulator
+  href: TMPro.Examples.TextConsoleSimulator.html
+  name: TextConsoleSimulator
+  nameWithType: TextConsoleSimulator
+  fullName: TMPro.Examples.TextConsoleSimulator
+- uid: TMPro.Examples.TeleType
+  commentId: T:TMPro.Examples.TeleType
+  href: TMPro.Examples.TeleType.html
+  name: TeleType
+  nameWithType: TeleType
+  fullName: TMPro.Examples.TeleType
+- uid: TMPro.Examples.TMP_TextEventCheck
+  commentId: T:TMPro.Examples.TMP_TextEventCheck
+  href: TMPro.Examples.TMP_TextEventCheck.html
+  name: TMP_TextEventCheck
+  nameWithType: TMP_TextEventCheck
+  fullName: TMPro.Examples.TMP_TextEventCheck
+- uid: TMPro.Examples.TMP_UiFrameRateCounter
+  commentId: T:TMPro.Examples.TMP_UiFrameRateCounter
+  href: TMPro.Examples.TMP_UiFrameRateCounter.html
+  name: TMP_UiFrameRateCounter
+  nameWithType: TMP_UiFrameRateCounter
+  fullName: TMPro.Examples.TMP_UiFrameRateCounter
+- uid: TMPro.Examples.TMP_UiFrameRateCounter.FpsCounterAnchorPositions
+  commentId: T:TMPro.Examples.TMP_UiFrameRateCounter.FpsCounterAnchorPositions
+  parent: TMPro.Examples
+  href: TMPro.Examples.TMP_UiFrameRateCounter.html
+  name: TMP_UiFrameRateCounter.FpsCounterAnchorPositions
+  nameWithType: TMP_UiFrameRateCounter.FpsCounterAnchorPositions
+  fullName: TMPro.Examples.TMP_UiFrameRateCounter.FpsCounterAnchorPositions
+  spec.csharp:
+  - uid: TMPro.Examples.TMP_UiFrameRateCounter
+    name: TMP_UiFrameRateCounter
+    href: TMPro.Examples.TMP_UiFrameRateCounter.html
+  - name: .
+  - uid: TMPro.Examples.TMP_UiFrameRateCounter.FpsCounterAnchorPositions
+    name: FpsCounterAnchorPositions
+    href: TMPro.Examples.TMP_UiFrameRateCounter.FpsCounterAnchorPositions.html
+  spec.vb:
+  - uid: TMPro.Examples.TMP_UiFrameRateCounter
+    name: TMP_UiFrameRateCounter
+    href: TMPro.Examples.TMP_UiFrameRateCounter.html
+  - name: .
+  - uid: TMPro.Examples.TMP_UiFrameRateCounter.FpsCounterAnchorPositions
+    name: FpsCounterAnchorPositions
+    href: TMPro.Examples.TMP_UiFrameRateCounter.FpsCounterAnchorPositions.html
+- uid: TMPro.Examples.Benchmark01
+  commentId: T:TMPro.Examples.Benchmark01
+  href: TMPro.Examples.Benchmark01.html
+  name: Benchmark01
+  nameWithType: Benchmark01
+  fullName: TMPro.Examples.Benchmark01
+- uid: TMPro.Examples.TextMeshSpawner
+  commentId: T:TMPro.Examples.TextMeshSpawner
+  href: TMPro.Examples.TextMeshSpawner.html
+  name: TextMeshSpawner
+  nameWithType: TextMeshSpawner
+  fullName: TMPro.Examples.TextMeshSpawner
+- uid: TMPro.Examples.VertexZoom
+  commentId: T:TMPro.Examples.VertexZoom
+  href: TMPro.Examples.VertexZoom.html
+  name: VertexZoom
+  nameWithType: VertexZoom
+  fullName: TMPro.Examples.VertexZoom
+- uid: TMPro.Examples.Benchmark02
+  commentId: T:TMPro.Examples.Benchmark02
+  href: TMPro.Examples.Benchmark02.html
+  name: Benchmark02
+  nameWithType: Benchmark02
+  fullName: TMPro.Examples.Benchmark02
+- uid: TMPro.Examples.TMP_TextSelector_B
+  commentId: T:TMPro.Examples.TMP_TextSelector_B
+  href: TMPro.Examples.TMP_TextSelector_B.html
+  name: TMP_TextSelector_B
+  nameWithType: TMP_TextSelector_B
+  fullName: TMPro.Examples.TMP_TextSelector_B
+- uid: TMPro.Examples.SkewTextExample
+  commentId: T:TMPro.Examples.SkewTextExample
+  href: TMPro.Examples.SkewTextExample.html
+  name: SkewTextExample
+  nameWithType: SkewTextExample
+  fullName: TMPro.Examples.SkewTextExample
+- uid: TMPro.Examples.WarpTextExample
+  commentId: T:TMPro.Examples.WarpTextExample
+  href: TMPro.Examples.WarpTextExample.html
+  name: WarpTextExample
+  nameWithType: WarpTextExample
+  fullName: TMPro.Examples.WarpTextExample
+- uid: TMPro.Examples.TextMeshProFloatingText
+  commentId: T:TMPro.Examples.TextMeshProFloatingText
+  href: TMPro.Examples.TextMeshProFloatingText.html
+  name: TextMeshProFloatingText
+  nameWithType: TextMeshProFloatingText
+  fullName: TMPro.Examples.TextMeshProFloatingText
+- uid: TMPro.Examples.ShaderPropAnimator
+  commentId: T:TMPro.Examples.ShaderPropAnimator
+  href: TMPro.Examples.ShaderPropAnimator.html
+  name: ShaderPropAnimator
+  nameWithType: ShaderPropAnimator
+  fullName: TMPro.Examples.ShaderPropAnimator
+- uid: TMPro.Examples.CameraController
+  commentId: T:TMPro.Examples.CameraController
+  href: TMPro.Examples.CameraController.html
+  name: CameraController
+  nameWithType: CameraController
+  fullName: TMPro.Examples.CameraController
+- uid: TMPro.Examples.CameraController.CameraModes
+  commentId: T:TMPro.Examples.CameraController.CameraModes
+  parent: TMPro.Examples
+  href: TMPro.Examples.CameraController.html
+  name: CameraController.CameraModes
+  nameWithType: CameraController.CameraModes
+  fullName: TMPro.Examples.CameraController.CameraModes
+  spec.csharp:
+  - uid: TMPro.Examples.CameraController
+    name: CameraController
+    href: TMPro.Examples.CameraController.html
+  - name: .
+  - uid: TMPro.Examples.CameraController.CameraModes
+    name: CameraModes
+    href: TMPro.Examples.CameraController.CameraModes.html
+  spec.vb:
+  - uid: TMPro.Examples.CameraController
+    name: CameraController
+    href: TMPro.Examples.CameraController.html
+  - name: .
+  - uid: TMPro.Examples.CameraController.CameraModes
+    name: CameraModes
+    href: TMPro.Examples.CameraController.CameraModes.html
+- uid: TMPro.Examples.Benchmark03
+  commentId: T:TMPro.Examples.Benchmark03
+  href: TMPro.Examples.Benchmark03.html
+  name: Benchmark03
+  nameWithType: Benchmark03
+  fullName: TMPro.Examples.Benchmark03
+- uid: TMPro.Examples.Benchmark03.BenchmarkType
+  commentId: T:TMPro.Examples.Benchmark03.BenchmarkType
+  parent: TMPro.Examples
+  href: TMPro.Examples.Benchmark03.html
+  name: Benchmark03.BenchmarkType
+  nameWithType: Benchmark03.BenchmarkType
+  fullName: TMPro.Examples.Benchmark03.BenchmarkType
+  spec.csharp:
+  - uid: TMPro.Examples.Benchmark03
+    name: Benchmark03
+    href: TMPro.Examples.Benchmark03.html
+  - name: .
+  - uid: TMPro.Examples.Benchmark03.BenchmarkType
+    name: BenchmarkType
+    href: TMPro.Examples.Benchmark03.BenchmarkType.html
+  spec.vb:
+  - uid: TMPro.Examples.Benchmark03
+    name: Benchmark03
+    href: TMPro.Examples.Benchmark03.html
+  - name: .
+  - uid: TMPro.Examples.Benchmark03.BenchmarkType
+    name: BenchmarkType
+    href: TMPro.Examples.Benchmark03.BenchmarkType.html
+- uid: TMPro.Examples.TMP_TextInfoDebugTool
+  commentId: T:TMPro.Examples.TMP_TextInfoDebugTool
+  href: TMPro.Examples.TMP_TextInfoDebugTool.html
+  name: TMP_TextInfoDebugTool
+  nameWithType: TMP_TextInfoDebugTool
+  fullName: TMPro.Examples.TMP_TextInfoDebugTool
+- uid: TMPro.Examples
+  commentId: N:TMPro.Examples
+  href: TMPro.html
+  name: TMPro.Examples
+  nameWithType: TMPro.Examples
+  fullName: TMPro.Examples
+  spec.csharp:
+  - uid: TMPro
+    name: TMPro
+    href: TMPro.html
+  - name: .
+  - uid: TMPro.Examples
+    name: Examples
+    href: TMPro.Examples.html
+  spec.vb:
+  - uid: TMPro
+    name: TMPro
+    href: TMPro.html
+  - name: .
+  - uid: TMPro.Examples
+    name: Examples
+    href: TMPro.Examples.html

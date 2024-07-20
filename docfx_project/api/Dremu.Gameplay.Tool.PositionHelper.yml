@@ -1,0 +1,461 @@
+### YamlMime:ManagedReference
+items:
+- uid: Dremu.Gameplay.Tool.PositionHelper
+  commentId: T:Dremu.Gameplay.Tool.PositionHelper
+  id: PositionHelper
+  parent: Dremu.Gameplay.Tool
+  children:
+  - Dremu.Gameplay.Tool.PositionHelper.AbsoluteCoordToRelativeCoord(UnityEngine.Vector2,UnityEngine.Camera)
+  - Dremu.Gameplay.Tool.PositionHelper.RelativeCoordToAbsoluteCoord(UnityEngine.Vector2,UnityEngine.Camera)
+  - Dremu.Gameplay.Tool.PositionHelper.height
+  - Dremu.Gameplay.Tool.PositionHelper.width
+  langs:
+  - csharp
+  - vb
+  name: PositionHelper
+  nameWithType: PositionHelper
+  fullName: Dremu.Gameplay.Tool.PositionHelper
+  type: Class
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/Tool/PositionHelper.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: PositionHelper
+    path: ../Assets/Scripts/Gameplay/Tool/PositionHelper.cs
+    startLine: 5
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Tool
+  syntax:
+    content: public sealed class PositionHelper
+    content.vb: Public NotInheritable Class PositionHelper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Dremu.Gameplay.Tool.PositionHelper.width
+  commentId: F:Dremu.Gameplay.Tool.PositionHelper.width
+  id: width
+  parent: Dremu.Gameplay.Tool.PositionHelper
+  langs:
+  - csharp
+  - vb
+  name: width
+  nameWithType: PositionHelper.width
+  fullName: Dremu.Gameplay.Tool.PositionHelper.width
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/Tool/PositionHelper.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: width
+    path: ../Assets/Scripts/Gameplay/Tool/PositionHelper.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Tool
+  syntax:
+    content: public static float width
+    return:
+      type: System.Single
+    content.vb: Public Shared width As Single
+- uid: Dremu.Gameplay.Tool.PositionHelper.height
+  commentId: F:Dremu.Gameplay.Tool.PositionHelper.height
+  id: height
+  parent: Dremu.Gameplay.Tool.PositionHelper
+  langs:
+  - csharp
+  - vb
+  name: height
+  nameWithType: PositionHelper.height
+  fullName: Dremu.Gameplay.Tool.PositionHelper.height
+  type: Field
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/Tool/PositionHelper.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: height
+    path: ../Assets/Scripts/Gameplay/Tool/PositionHelper.cs
+    startLine: 6
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Tool
+  syntax:
+    content: public static float height
+    return:
+      type: System.Single
+    content.vb: Public Shared height As Single
+- uid: Dremu.Gameplay.Tool.PositionHelper.RelativeCoordToAbsoluteCoord(UnityEngine.Vector2,UnityEngine.Camera)
+  commentId: M:Dremu.Gameplay.Tool.PositionHelper.RelativeCoordToAbsoluteCoord(UnityEngine.Vector2,UnityEngine.Camera)
+  id: RelativeCoordToAbsoluteCoord(UnityEngine.Vector2,UnityEngine.Camera)
+  parent: Dremu.Gameplay.Tool.PositionHelper
+  langs:
+  - csharp
+  - vb
+  name: RelativeCoordToAbsoluteCoord(Vector2, Camera)
+  nameWithType: PositionHelper.RelativeCoordToAbsoluteCoord(Vector2, Camera)
+  fullName: Dremu.Gameplay.Tool.PositionHelper.RelativeCoordToAbsoluteCoord(UnityEngine.Vector2, UnityEngine.Camera)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/Tool/PositionHelper.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: RelativeCoordToAbsoluteCoord
+    path: ../Assets/Scripts/Gameplay/Tool/PositionHelper.cs
+    startLine: 26
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Tool
+  summary: >-
+    将相对于屏幕宽高的坐标转换为绝对坐标
+
+    （相对坐标的xy在-1~1内时，坐标在屏幕内）
+  example: []
+  syntax:
+    content: public static Vector2 RelativeCoordToAbsoluteCoord(Vector2 Position, Camera Camera = null)
+    parameters:
+    - id: Position
+      type: UnityEngine.Vector2
+      description: 相对坐标
+    - id: Camera
+      type: UnityEngine.Camera
+      description: 相机，如果为null则转换为屏幕坐标
+    return:
+      type: UnityEngine.Vector2
+      description: 绝对坐标
+    content.vb: Public Shared Function RelativeCoordToAbsoluteCoord(Position As Vector2, Camera As Camera = Nothing) As Vector2
+  overload: Dremu.Gameplay.Tool.PositionHelper.RelativeCoordToAbsoluteCoord*
+- uid: Dremu.Gameplay.Tool.PositionHelper.AbsoluteCoordToRelativeCoord(UnityEngine.Vector2,UnityEngine.Camera)
+  commentId: M:Dremu.Gameplay.Tool.PositionHelper.AbsoluteCoordToRelativeCoord(UnityEngine.Vector2,UnityEngine.Camera)
+  id: AbsoluteCoordToRelativeCoord(UnityEngine.Vector2,UnityEngine.Camera)
+  parent: Dremu.Gameplay.Tool.PositionHelper
+  langs:
+  - csharp
+  - vb
+  name: AbsoluteCoordToRelativeCoord(Vector2, Camera)
+  nameWithType: PositionHelper.AbsoluteCoordToRelativeCoord(Vector2, Camera)
+  fullName: Dremu.Gameplay.Tool.PositionHelper.AbsoluteCoordToRelativeCoord(UnityEngine.Vector2, UnityEngine.Camera)
+  type: Method
+  source:
+    remote:
+      path: Assets/Scripts/Gameplay/Tool/PositionHelper.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: AbsoluteCoordToRelativeCoord
+    path: ../Assets/Scripts/Gameplay/Tool/PositionHelper.cs
+    startLine: 45
+  assemblies:
+  - Assembly-CSharp
+  namespace: Dremu.Gameplay.Tool
+  summary: 将绝对坐标转换为相对于屏幕宽高的坐标
+  example: []
+  syntax:
+    content: public static Vector2 AbsoluteCoordToRelativeCoord(Vector2 Position, Camera Camera = null)
+    parameters:
+    - id: Position
+      type: UnityEngine.Vector2
+      description: 绝对坐标
+    - id: Camera
+      type: UnityEngine.Camera
+      description: 相机，如果坐标为屏幕坐标则为null
+    return:
+      type: UnityEngine.Vector2
+      description: 相对坐标
+    content.vb: Public Shared Function AbsoluteCoordToRelativeCoord(Position As Vector2, Camera As Camera = Nothing) As Vector2
+  overload: Dremu.Gameplay.Tool.PositionHelper.AbsoluteCoordToRelativeCoord*
+references:
+- uid: Dremu.Gameplay.Tool
+  commentId: N:Dremu.Gameplay.Tool
+  href: Dremu.html
+  name: Dremu.Gameplay.Tool
+  nameWithType: Dremu.Gameplay.Tool
+  fullName: Dremu.Gameplay.Tool
+  spec.csharp:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.Gameplay
+    name: Gameplay
+    href: Dremu.Gameplay.html
+  - name: .
+  - uid: Dremu.Gameplay.Tool
+    name: Tool
+    href: Dremu.Gameplay.Tool.html
+  spec.vb:
+  - uid: Dremu
+    name: Dremu
+    href: Dremu.html
+  - name: .
+  - uid: Dremu.Gameplay
+    name: Gameplay
+    href: Dremu.Gameplay.html
+  - name: .
+  - uid: Dremu.Gameplay.Tool
+    name: Tool
+    href: Dremu.Gameplay.Tool.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: Dremu.Gameplay.Tool.PositionHelper.RelativeCoordToAbsoluteCoord*
+  commentId: Overload:Dremu.Gameplay.Tool.PositionHelper.RelativeCoordToAbsoluteCoord
+  href: Dremu.Gameplay.Tool.PositionHelper.html#Dremu_Gameplay_Tool_PositionHelper_RelativeCoordToAbsoluteCoord_UnityEngine_Vector2_UnityEngine_Camera_
+  name: RelativeCoordToAbsoluteCoord
+  nameWithType: PositionHelper.RelativeCoordToAbsoluteCoord
+  fullName: Dremu.Gameplay.Tool.PositionHelper.RelativeCoordToAbsoluteCoord
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: UnityEngine.Camera
+  commentId: T:UnityEngine.Camera
+  parent: UnityEngine
+  isExternal: true
+  name: Camera
+  nameWithType: Camera
+  fullName: UnityEngine.Camera
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Dremu.Gameplay.Tool.PositionHelper.AbsoluteCoordToRelativeCoord*
+  commentId: Overload:Dremu.Gameplay.Tool.PositionHelper.AbsoluteCoordToRelativeCoord
+  href: Dremu.Gameplay.Tool.PositionHelper.html#Dremu_Gameplay_Tool_PositionHelper_AbsoluteCoordToRelativeCoord_UnityEngine_Vector2_UnityEngine_Camera_
+  name: AbsoluteCoordToRelativeCoord
+  nameWithType: PositionHelper.AbsoluteCoordToRelativeCoord
+  fullName: Dremu.Gameplay.Tool.PositionHelper.AbsoluteCoordToRelativeCoord

@@ -1,0 +1,128 @@
+### YamlMime:ManagedReference
+items:
+- uid: TMPro.Examples.TMP_ExampleScript_01.objectType
+  commentId: T:TMPro.Examples.TMP_ExampleScript_01.objectType
+  id: TMP_ExampleScript_01.objectType
+  parent: TMPro.Examples
+  children:
+  - TMPro.Examples.TMP_ExampleScript_01.objectType.TextMeshPro
+  - TMPro.Examples.TMP_ExampleScript_01.objectType.TextMeshProUGUI
+  langs:
+  - csharp
+  - vb
+  name: TMP_ExampleScript_01.objectType
+  nameWithType: TMP_ExampleScript_01.objectType
+  fullName: TMPro.Examples.TMP_ExampleScript_01.objectType
+  type: Enum
+  source:
+    remote:
+      path: Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: objectType
+    path: ../Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: TMPro.Examples
+  syntax:
+    content: public enum TMP_ExampleScript_01.objectType
+    content.vb: Public Enum TMP_ExampleScript_01.objectType
+- uid: TMPro.Examples.TMP_ExampleScript_01.objectType.TextMeshPro
+  commentId: F:TMPro.Examples.TMP_ExampleScript_01.objectType.TextMeshPro
+  id: TextMeshPro
+  parent: TMPro.Examples.TMP_ExampleScript_01.objectType
+  langs:
+  - csharp
+  - vb
+  name: TextMeshPro
+  nameWithType: TMP_ExampleScript_01.objectType.TextMeshPro
+  fullName: TMPro.Examples.TMP_ExampleScript_01.objectType.TextMeshPro
+  type: Field
+  source:
+    remote:
+      path: Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: TextMeshPro
+    path: ../Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: TMPro.Examples
+  syntax:
+    content: TextMeshPro = 0
+    return:
+      type: TMPro.Examples.TMP_ExampleScript_01.objectType
+- uid: TMPro.Examples.TMP_ExampleScript_01.objectType.TextMeshProUGUI
+  commentId: F:TMPro.Examples.TMP_ExampleScript_01.objectType.TextMeshProUGUI
+  id: TextMeshProUGUI
+  parent: TMPro.Examples.TMP_ExampleScript_01.objectType
+  langs:
+  - csharp
+  - vb
+  name: TextMeshProUGUI
+  nameWithType: TMP_ExampleScript_01.objectType.TextMeshProUGUI
+  fullName: TMPro.Examples.TMP_ExampleScript_01.objectType.TextMeshProUGUI
+  type: Field
+  source:
+    remote:
+      path: Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs
+      branch: main
+      repo: https://github.com/WebstormDevTeam/DremuUnityVersion.git
+    id: TextMeshProUGUI
+    path: ../Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: TMPro.Examples
+  syntax:
+    content: TextMeshProUGUI = 1
+    return:
+      type: TMPro.Examples.TMP_ExampleScript_01.objectType
+references:
+- uid: TMPro.Examples
+  commentId: N:TMPro.Examples
+  href: TMPro.html
+  name: TMPro.Examples
+  nameWithType: TMPro.Examples
+  fullName: TMPro.Examples
+  spec.csharp:
+  - uid: TMPro
+    name: TMPro
+    href: TMPro.html
+  - name: .
+  - uid: TMPro.Examples
+    name: Examples
+    href: TMPro.Examples.html
+  spec.vb:
+  - uid: TMPro
+    name: TMPro
+    href: TMPro.html
+  - name: .
+  - uid: TMPro.Examples
+    name: Examples
+    href: TMPro.Examples.html
+- uid: TMPro.Examples.TMP_ExampleScript_01.objectType
+  commentId: T:TMPro.Examples.TMP_ExampleScript_01.objectType
+  parent: TMPro.Examples
+  href: TMPro.Examples.TMP_ExampleScript_01.html
+  name: TMP_ExampleScript_01.objectType
+  nameWithType: TMP_ExampleScript_01.objectType
+  fullName: TMPro.Examples.TMP_ExampleScript_01.objectType
+  spec.csharp:
+  - uid: TMPro.Examples.TMP_ExampleScript_01
+    name: TMP_ExampleScript_01
+    href: TMPro.Examples.TMP_ExampleScript_01.html
+  - name: .
+  - uid: TMPro.Examples.TMP_ExampleScript_01.objectType
+    name: objectType
+    href: TMPro.Examples.TMP_ExampleScript_01.objectType.html
+  spec.vb:
+  - uid: TMPro.Examples.TMP_ExampleScript_01
+    name: TMP_ExampleScript_01
+    href: TMPro.Examples.TMP_ExampleScript_01.html
+  - name: .
+  - uid: TMPro.Examples.TMP_ExampleScript_01.objectType
+    name: objectType
+    href: TMPro.Examples.TMP_ExampleScript_01.objectType.html
