@@ -689,7 +689,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _Tap: {fileID: -7212103427819713074, guid: 775104d9109c7ca4e95859499e00cd67, type: 3}
   _Slide: {fileID: 6960479142070352839, guid: 1bf38b45c235c1042aaa4f0e59e89bd7, type: 3}
-  guideLine: {fileID: 9114319003547507520, guid: b3a8976ccebbf314fb965702843185c5, type: 3}
+  guideLine: {fileID: 6891613512741500819, guid: b3a8976ccebbf314fb965702843185c5, type: 3}
   hold: {fileID: 7819619301723630152, guid: 8dce2063c9e760f4b96c388be39cfbf3, type: 3}
 --- !u!4 &1234574052
 Transform:

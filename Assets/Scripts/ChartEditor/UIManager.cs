@@ -22,6 +22,7 @@ namespace Dremu.ChartEdit
         [SerializeField] EditPanel editPanel;
         [SerializeField] VerticalTrackView view;
         [SerializeField] DropDownMenu menu;
+        
         private float ScaleFactor => Screen.width / canvasScaler.referenceResolution.x * (1 - canvasScaler.matchWidthOrHeight) + Screen.height / canvasScaler.referenceResolution.y * canvasScaler.matchWidthOrHeight;
 
         private float _xPerBeat = 100;
