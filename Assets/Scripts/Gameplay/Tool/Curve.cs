@@ -147,15 +147,21 @@ namespace Dremu.Gameplay.Tool {
                     break;
                 case EaseType.EASE_IN_QUAD:
                     for (float i = 0; i <= pointCount; i++)
-                        points_.Add(GetPoint(start + (end - start) * i / pointCount));
+                        points_.Add(GetPoint(start + (end - start) * (1 - Mathf.Pow(1 - i / pointCount, 2f))));
                     break;
                 case EaseType.EASE_OUT_QUAD:
                     for (float i = 0; i <= pointCount; i++)
-                        points_.Add(GetPoint(start + (end - start) * i / pointCount));
+                        points_.Add(GetPoint(start + (end - start) * Mathf.Pow(i / pointCount, 2f)));
                     break;
                 case EaseType.EASE_IN_OUT_QUAD:
-                    for (float i = 0; i <= pointCount; i++)
-                        points_.Add(GetPoint(start + (end - start) * i / pointCount));
+                    int mid = Mathf.CeilToInt(pointCount / 2f);
+                    for (float i = 0; i < mid; i++)
+                        points_.Add(
+                            GetPoint(start + (end - start) * (1 - Mathf.Pow(1 - 2f * i / pointCount, 2f)) / 2f));
+                    for (float i = mid; i <= pointCount; i++)
+                        points_.Add(GetPoint(start + (end - start) *
+                            (1 / 2f) + Mathf.Pow(2f * (i - mid) / pointCount, 2f) / 2f));
+                    //Ice_Soul_: isn't complete yet
                     break;
                 case EaseType.EASE_IN_CUBIC:
                     for (float i = 0; i <= pointCount; i++)

@@ -51,7 +51,7 @@ namespace Dremu.Gameplay.Object {
                 var pointsPerHolding = JudgmentLine.CurrentCurve.SubCurveByStartAndEnd(start, Holding.To);
                 ************************************************/
                 //利用新函数将使得选取的曲线呈现缓动函数形态
-                var pointsPerHolding = JudgmentLine.CurrentCurve.SubCurveByStartAndEnd(start, Holding.To, Curve.EaseType.LINEAR);
+                var pointsPerHolding = JudgmentLine.CurrentCurve.SubCurveByStartAndEnd(start, Holding.To, Curve.EaseType.EASE_IN_OUT_QUAD);
                 //计算每一帧下落的距离（点数）
                 float devide = 1f * (Holding.To - start) / pointsPerHolding.Count;
                 //相对于起点，终点每下落一帧的位置
