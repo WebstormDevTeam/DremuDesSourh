@@ -97,7 +97,7 @@ namespace Dremu.Gameplay.Manager {
         /// <param name="ArrivalTime">到达时间</param>
         /// <param name="HoldNodes">判定节点</param>
         /// <returns></returns>
-        public static GuideLine GetNewHold( JudgmentLine JudgmentLine, float Position, float ArrivalTime, List<GuideLine.GuideNode> HoldNodes ) {
+        public static GuideLine GetNewGuideLine( JudgmentLine JudgmentLine, float Position, float ArrivalTime, List<GuideLine.GuideNode> HoldNodes ) {
             GuideLine guideLine = Instance.HoldPool.GetObject();
             guideLine.SetArrivalTime(ArrivalTime);
             guideLine.SetPosition(Position);

@@ -100,14 +100,17 @@ namespace Dremu.Gameplay.Object {
             if (points.Count > 0) Line.transform.localPosition = -points[0];
             Line.positionCount = points.Count;
             Line.SetPositions(Functions.Vec2ListToVec3List(points).ToArray());
-
+            Line.startColor = new Color(1, 1, 1, 0.8f);
+            Line.endColor = new Color(1, 1, 1, 0.8f);
+            Line.startWidth = 0.08f;
+            Line.endWidth = 0.08f;
             //设置音符位置
             KeyValuePair<Vector2, Vector2> normal = JudgmentLine.CurrentCurve.GetNormal(position);
             transform.localPosition = 
                 PositionHelper.RelativeCoordToAbsoluteCoord(normal.Key, Camera.main) + 
                 (CurrentTime < ArrivalTime ? normal.Value * JudgmentLine.Speed.GetPosition(CurrentTime, ArrivalTime - CurrentTime) : Vector2.zero);
 
-            Renderer.color = Line.startColor = Line.endColor = NoteManager.NoteColor;
+            // Renderer.color = Line.startColor = Line.endColor = NoteManager.NoteColor;
         }
 
         public override void OnInitialize() {
