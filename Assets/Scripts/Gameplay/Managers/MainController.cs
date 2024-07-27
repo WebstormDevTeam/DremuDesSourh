@@ -1,8 +1,11 @@
 using System;
 using System.Collections.Generic;
+using DG.Tweening;
 using Dremu.Gameplay.Object;
 using Dremu.Gameplay.Tool;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 namespace Dremu.Gameplay.Manager
 {
@@ -15,9 +18,47 @@ namespace Dremu.Gameplay.Manager
         });
 
         [SerializeField, Min(0)] float CurrentTime;
-
+        
+        [SerializeField] private Button pauseButton;
+        
         static MainController Instance;
+        
+        public delegate void Callback();
+        private static bool isPaused=false;
+        #nullable enable
+        public static void Stop(Callback? callback)
+        {
+            Time.timeScale = 0;
+            AudioManager.StopMusic();
+            isPaused = true;
+            Debug.Log("Using Pause Button");
+            if (callback!= null)
+            {
+                callback();
+            }
+        }
 
+        public static void ContinueGame(Callback? callback)
+        {
+            Time.timeScale = 1;
+            AudioManager.UnPauseMusic();
+            isPaused = false;
+            Debug.Log("Using Continue Button");
+            if (callback != null)
+            {
+                callback();
+            }
+        }
+        
+        public static void RestartGame(Callback? callback)
+        {
+            SceneManager.LoadScene(0);
+            if (callback != null)
+            {
+                callback();
+            }
+        }
+        
         public static EnvelopeLine BPM
         {
             get => Instance.BPMLine;
@@ -61,6 +102,11 @@ namespace Dremu.Gameplay.Manager
         [Obsolete("Obsolete")]
         private void Start()
         {
+            pauseButton.onClick.AddListener(() =>
+            {
+                RestartGame(null);
+            });
+            
             AudioManager.PlayMusic(clip);
             AudioManager.MusicVolume = 1;
 
@@ -128,7 +174,7 @@ namespace Dremu.Gameplay.Manager
                 });
                 NoteManager.GetNewSlide(line, 0.2f, 21.5f + i * 4);
             }
-
+            
             NoteManager.GetNewGuideLine(line, 0.5f, 17, new List<GuideLine.GuideNode>()
             {
                 new GuideLine.GuideNode(0.7f, 1),
