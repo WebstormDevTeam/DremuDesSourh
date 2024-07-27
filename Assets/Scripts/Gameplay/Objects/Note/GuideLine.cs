@@ -15,6 +15,8 @@ namespace Dremu.Gameplay.Object {
         [System.Serializable]
         //引导线上的节点
         public struct GuideNode {
+            //To:终点位置（相对于判定线）
+            //Time:持续时间
             public float To, Time;
             public GuideNode( float To, float Time ) {
                 this.To = To;
@@ -36,7 +38,7 @@ namespace Dremu.Gameplay.Object {
             
             //points：所有点的集合
             var points = new List<Vector2>();
-            //初始化起点（零点）和终点
+            //初始化起点，以及到达判定线的时间
             float start = this.position;
             float time = ArrivalTime;
             Vector2 StartPoint = Vector2.zero;
@@ -44,8 +46,12 @@ namespace Dremu.Gameplay.Object {
             //对于当前引导线：
             for (int i = 0; i < GuideLineNodes.Count; i++) {
                 GuideNode Holding = GuideLineNodes[i];
-                //选取当前引导线的分曲线，计为pointsPerHolding（按起点与终点选取）
+                /************************************************
+                //选取当前引导线的分曲线，计为pointsPerHolding（按起点控制点与终点控制点选取）
                 var pointsPerHolding = JudgmentLine.CurrentCurve.SubCurveByStartAndEnd(start, Holding.To);
+                ************************************************/
+                //利用新函数将使得选取的曲线呈现缓动函数形态
+                var pointsPerHolding = JudgmentLine.CurrentCurve.SubCurveByStartAndEnd(start, Holding.To, Curve.EaseType.LINEAR);
                 //计算每一帧下落的距离（点数）
                 float devide = 1f * (Holding.To - start) / pointsPerHolding.Count;
                 //相对于起点，终点每下落一帧的位置
@@ -100,8 +106,8 @@ namespace Dremu.Gameplay.Object {
             if (points.Count > 0) Line.transform.localPosition = -points[0];
             Line.positionCount = points.Count;
             Line.SetPositions(Functions.Vec2ListToVec3List(points).ToArray());
-            Line.startColor = new Color(1, 1, 1, 0.8f);
-            Line.endColor = new Color(1, 1, 1, 0.8f);
+            Line.startColor = new Color(0, 0.8f, 0, 0.8f);
+            Line.endColor = new Color(1, 0, 0, 0.8f);
             Line.startWidth = 0.08f;
             Line.endWidth = 0.08f;
             //设置音符位置

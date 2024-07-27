@@ -131,7 +131,7 @@ namespace Dremu.Gameplay.Manager
 
             NoteManager.GetNewGuideLine(line, 0.5f, 17, new List<GuideLine.GuideNode>()
             {
-                new GuideLine.GuideNode(0.7f, 1),
+                new GuideLine.GuideNode(0.7f, 2),
                 new GuideLine.GuideNode(0.3f, 2),
                 new GuideLine.GuideNode(0.7f, 2),
                 new GuideLine.GuideNode(0.3f, 2),
