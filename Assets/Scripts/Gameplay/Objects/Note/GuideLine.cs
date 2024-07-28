@@ -52,9 +52,12 @@ namespace Dremu.Gameplay.Object {
                 ************************************************/
                 //利用新函数将使得选取的曲线呈现缓动函数形态
                 var pointsPerHolding = JudgmentLine.CurrentCurve.SubCurveByStartAndEnd(start, Holding.To, Curve.EaseType.EASE_IN_QUAD);
-                //计算每一帧下落的距离（点数）
+                
+                ////////////////TODO: 对于点下落的计算，目前是线性插值，需要改成曲线插值
+                
+                //计算相对于起点，每个点下落空间位置的微分单位
                 float devide = 1f * (Holding.To - start) / pointsPerHolding.Count;
-                //相对于起点，终点每下落一帧的位置
+                //相对于起点，每个点下落时间位置的微分单位
                 float PerDirection = JudgmentLine.Speed.GetPosition(time, Holding.Time) / pointsPerHolding.Count;
 
                 //如果pointsPerHolding还有剩余的点，移除首个（i.e.下落操作）
@@ -65,12 +68,13 @@ namespace Dremu.Gameplay.Object {
                 for (int j = 0; j < pointsPerHolding.Count; j++) {
                     //取得当前点下落后的法线
                     KeyValuePair<Vector2, Vector2> normalPerPoint = JudgmentLine.CurrentCurve.GetNormal(start + devide * (j + 1));
-                    //计算当前点将要下落的位置，并将当前点更新到那个位置
+                    //计算当前点将要下落的绝对位置，并将当前点更新到那个位置
                     pointsPerHolding[j] = 
                         StartPoint + 
                         PositionHelper.RelativeCoordToAbsoluteCoord(pointsPerHolding[j], Camera.main) + 
                         (j + 1) * PerDirection * normalPerPoint.Value;
                 }
+                ////////////////
 
                 //更新points，(p.s. points就是要渲染的点组)
                 //如果当前时间在当前分段内：
