@@ -54,6 +54,7 @@ namespace Dremu.Gameplay.Object {
                 var pointsPerHolding = JudgmentLine.CurrentCurve.SubCurveByStartAndEnd(start, Holding.To, Curve.EaseType.EASE_IN_QUAD);
                 
                 ////////////////TODO: 对于点下落的计算，目前是线性插值，需要改成曲线插值1919810
+                ////////////////TODO: 对于点下落的计算，目前是线性插值，需要改成曲线插值114514
                 
                 //计算相对于起点，每个点下落空间位置的微分单位
                 float devide = 1f * (Holding.To - start) / pointsPerHolding.Count;
