@@ -112,7 +112,7 @@ namespace Dremu.Gameplay.Object {
             var startCurve = Curves[startIndex];
             var endCurve = Curves[endIndex];
             var progress = (startIndex == endIndex)?  1f:(CurveControler.GetValue(CurrentTime) - endIndex) / (startIndex - endIndex);
-            CurrentCurve = Curve.Lerp(startCurve, endCurve, progress);
+            CurrentCurve = Curve.CurveLerp(startCurve, endCurve, progress);
         }
         
 

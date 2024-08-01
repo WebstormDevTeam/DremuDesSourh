@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 
 namespace Dremu.Gameplay.Tool {
@@ -129,6 +131,7 @@ namespace Dremu.Gameplay.Tool {
             int pointCount = Mathf.Max(Mathf.FloorToInt(Mathf.Abs(end - start) * points.Count), 10);
             switch (easeType)
             {
+                #region EaseTypeEnuming
                 case EaseType.LINEAR:
                     for (float i = 0; i <= pointCount; i++)
                         points_.Add(GetPoint(start + (end - start) * i / pointCount));
@@ -147,11 +150,11 @@ namespace Dremu.Gameplay.Tool {
                     break;
                 case EaseType.EASE_IN_QUAD:
                     for (float i = 0; i <= pointCount; i++)
-                        points_.Add(GetPoint(start + (end - start) * (1 - Mathf.Pow(1 - 1f * i / pointCount, 2f))));
+                        points_.Add(GetPoint(start + (end - start) * Mathf.Pow(1f * i / pointCount, 2f)));
                     break;
                 case EaseType.EASE_OUT_QUAD:
                     for (float i = 0; i <= pointCount; i++)
-                        points_.Add(GetPoint(start + (end - start) * Mathf.Pow(1f * i / pointCount, 2f)));
+                        points_.Add(GetPoint(start + (end - start) * (1 - Mathf.Pow(1f - 1f * i / pointCount, 2f))));
                     break;
                 case EaseType.EASE_IN_OUT_QUAD:
                     int mid = Mathf.CeilToInt(pointCount / 2f);
@@ -261,6 +264,7 @@ namespace Dremu.Gameplay.Tool {
                     break;
                 default:
                     throw new System.Exception("EaseType not found");
+                #endregion
             }
 
             Vector2 startPoint = points_[0];
@@ -344,13 +348,54 @@ namespace Dremu.Gameplay.Tool {
         /// <param name="end">结束曲线</param>
         /// <param name="t"></param>
         /// <returns>插值</returns>
-        public static Curve Lerp(Curve start, Curve end, float t ) {
+        public static Curve CurveLerp(Curve start, Curve end, float t ) {
             List<Vector2> points = new List<Vector2>();
             for (int i = 0; i < PrecisionPerPart; i++)
                 points.Add(Vector2.Lerp(start.points[i], end.points[i], t));
             return new Curve(points);
         }
+        
+        
+        ////尝试性改动：GuideLine的曲线插值计算函数
+        #region R
+        /// <summary>
+        /// 计算GuideLine的曲线插值
+        /// </summary>
+        /// <param name="start">起始点</param>
+        /// <param name="end">终止点</param>
+        /// <param name="pointCount">点数</param>
+        /// <param name="easeType">缓动类型</param>
+        /// <returns>点组</returns>
+        public static List<float> GuidelineDivideCalculate(float start, float end, int pointCount, EaseType easeType)
+        {
+            List<float> divideList = new List<float>();
+            switch (easeType)
+            {
+                case EaseType.LINEAR:
+                    for (int i = 0; i < pointCount; i++)
+                    {
+                        divideList.Add(1f * (end - start) / pointCount);
+                    }
+                    return divideList;
+                case EaseType.EASE_IN_QUAD:
+                    for (int i = 0; i < pointCount; i++)
+                    {
+                        divideList.Add(1f * (end - start) / pointCount);
+                    }
+                    return divideList;
+                case EaseType.EASE_OUT_QUAD:
+                    for (int i = 0; i < pointCount; i++)
+                    {
+                        divideList.Add(1f * (end - start) / pointCount);
+                    }
+                    return divideList;
 
+            }
+
+            return null;
+        }
+
+        #endregion
 
     }
 
