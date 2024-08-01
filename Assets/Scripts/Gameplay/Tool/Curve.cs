@@ -12,40 +12,7 @@ namespace Dremu.Gameplay.Tool {
 
         readonly List<Vector2> points = new List<Vector2>();
 
-        public enum EaseType
-        {
-            LINEAR,
-            EASE_IN_SINE,
-            EASE_OUT_SINE,
-            EASE_IN_OUT_SINE,
-            EASE_IN_QUAD,
-            EASE_OUT_QUAD,
-            EASE_IN_OUT_QUAD,
-            EASE_IN_CUBIC,
-            EASE_OUT_CUBIC,
-            EASE_IN_OUT_CUBIC,
-            EASE_IN_QUART,
-            EASE_OUT_QUART,
-            EASE_IN_OUT_QUART,
-            EASE_IN_QUINT,
-            EASE_OUT_QUINT,
-            EASE_IN_OUT_QUINT,
-            EASE_IN_EXPO,
-            EASE_OUT_EXPO,
-            EASE_IN_OUT_EXPO,
-            EASE_IN_CIRC,
-            EASE_OUT_CIRC,
-            EASE_IN_OUT_CIRC,
-            EASE_IN_ELASTIC,
-            EASE_OUT_ELASTIC,
-            EASE_IN_OUT_ELASTIC,
-            EASE_IN_BACK,
-            EASE_OUT_BACK,
-            EASE_IN_OUT_BACK,
-            EASE_IN_BOUNCE,
-            EASE_OUT_BOUNCE,
-            EASE_IN_OUT_BOUNCE,
-        }
+        
 
         /// <summary>
         /// 初始化曲线
@@ -115,158 +82,12 @@ namespace Dremu.Gameplay.Tool {
         /// <param name="start">起始点（0~1）</param>
         /// <param name="end">终止点（0~1）</param>
         /// <returns>点组</returns> 
-
-        public List<Vector2> SubCurveByStartAndEnd(float start, float end) {
+        public List<Vector2> SubCurveByStartAndEnd(float start, float end, EaseTypeEnumer.EaseType easeType = EaseTypeEnumer.EaseType.LINEAR) {
             List<Vector2> points_ = new List<Vector2>();
             int pointCount = Mathf.Max(Mathf.FloorToInt(Mathf.Abs(end - start) * points.Count), 10);
-            for (float i = 0; i <= pointCount; i++)
-                points_.Add(GetPoint(start + (end - start) * i / pointCount));
-            Vector2 startPoint = points_[0];
-            for (int i = 0; i < points_.Count; i++)
-                points_[i] -= startPoint;
-            return points_;
-        }
-        public List<Vector2> SubCurveByStartAndEnd(float start, float end, EaseType easeType) {
-            List<Vector2> points_ = new List<Vector2>();
-            int pointCount = Mathf.Max(Mathf.FloorToInt(Mathf.Abs(end - start) * points.Count), 10);
-            switch (easeType)
-            {
-                #region EaseTypeEnuming
-                case EaseType.LINEAR:
-                    for (float i = 0; i <= pointCount; i++)
-                        points_.Add(GetPoint(start + (end - start) * i / pointCount));
-                    break;
-                case EaseType.EASE_IN_SINE:
-                    for (float i = 0; i <= pointCount; i++)
-                        points_.Add(GetPoint(start + (end - start) * i / pointCount));
-                    break;
-                case EaseType.EASE_OUT_SINE:
-                    for (float i = 0; i <= pointCount; i++)
-                        points_.Add(GetPoint(start + (end - start) * i / pointCount));
-                    break;
-                case EaseType.EASE_IN_OUT_SINE:
-                    for (float i = 0; i <= pointCount; i++)
-                        points_.Add(GetPoint(start + (end - start) * i / pointCount));
-                    break;
-                case EaseType.EASE_IN_QUAD:
-                    for (float i = 0; i <= pointCount; i++)
-                        points_.Add(GetPoint(start + (end - start) * Mathf.Pow(1f * i / pointCount, 2f)));
-                    break;
-                case EaseType.EASE_OUT_QUAD:
-                    for (float i = 0; i <= pointCount; i++)
-                        points_.Add(GetPoint(start + (end - start) * (1 - Mathf.Pow(1f - 1f * i / pointCount, 2f))));
-                    break;
-                case EaseType.EASE_IN_OUT_QUAD:
-                    int mid = Mathf.CeilToInt(pointCount / 2f);
-                    for (float i = 0; i < mid; i++)
-                        points_.Add(
-                            GetPoint(start + (end - start) * (1 - Mathf.Pow(1 - 2f * i / pointCount, 2f)) / 2f));
-                    for (float i = mid; i <= pointCount; i++)
-                        points_.Add(GetPoint(start + (end - start) *
-                            (1 / 2f) + Mathf.Pow(2f * (i - mid) / pointCount, 2f) / 2f));
-                    //Ice_Soul_: isn't complete yet
-                    break;
-                case EaseType.EASE_IN_CUBIC:
-                    for (float i = 0; i <= pointCount; i++)
-                        points_.Add(GetPoint(start + (end - start) * i / pointCount));
-                    break;
-                case EaseType.EASE_OUT_CUBIC:
-                    for (float i = 0; i <= pointCount; i++)
-                        points_.Add(GetPoint(start + (end - start) * i / pointCount));
-                    break;
-                case EaseType.EASE_IN_OUT_CUBIC:
-                    for (float i = 0; i <= pointCount; i++)
-                        points_.Add(GetPoint(start + (end - start) * i / pointCount));
-                    break;
-                case EaseType.EASE_IN_QUART:
-                    for (float i = 0; i <= pointCount; i++)
-                        points_.Add(GetPoint(start + (end - start) * i / pointCount));
-                    break;
-                case EaseType.EASE_OUT_QUART:
-                    for (float i = 0; i <= pointCount; i++)
-                        points_.Add(GetPoint(start + (end - start) * i / pointCount));
-                    break;
-                case EaseType.EASE_IN_OUT_QUART:
-                    for (float i = 0; i <= pointCount; i++)
-                        points_.Add(GetPoint(start + (end - start) * i / pointCount));
-                    break;
-                case EaseType.EASE_IN_QUINT:
-                    for (float i = 0; i <= pointCount; i++)
-                        points_.Add(GetPoint(start + (end - start) * i / pointCount));
-                    break;
-                case EaseType.EASE_OUT_QUINT:
-                    for (float i = 0; i <= pointCount; i++)
-                        points_.Add(GetPoint(start + (end - start) * i / pointCount));
-                    break;
-                case EaseType.EASE_IN_OUT_QUINT:
-                    for (float i = 0; i <= pointCount; i++)
-                        points_.Add(GetPoint(start + (end - start) * i / pointCount));
-                    break;
-                case EaseType.EASE_IN_EXPO:
-                    for (float i = 0; i <= pointCount; i++)
-                        points_.Add(GetPoint(start + (end - start) * i / pointCount));
-                    break;
-                case EaseType.EASE_OUT_EXPO:
-                    for (float i = 0; i <= pointCount; i++)
-                        points_.Add(GetPoint(start + (end - start) * i / pointCount));
-                    break;
-                case EaseType.EASE_IN_OUT_EXPO:
-                    for (float i = 0; i <= pointCount; i++)
-                        points_.Add(GetPoint(start + (end - start) * i / pointCount));
-                    break;
-                case EaseType.EASE_IN_CIRC:
-                    for (float i = 0; i <= pointCount; i++)
-                        points_.Add(GetPoint(start + (end - start) * i / pointCount));
-                    break;
-                case EaseType.EASE_OUT_CIRC:
-                    for (float i = 0; i <= pointCount; i++)
-                        points_.Add(GetPoint(start + (end - start) * i / pointCount));
-                    break;
-                case EaseType.EASE_IN_OUT_CIRC:
-                    for (float i = 0; i <= pointCount; i++)
-                        points_.Add(GetPoint(start + (end - start) * i / pointCount));
-                    break;
-                case EaseType.EASE_IN_ELASTIC:
-                    for (float i = 0; i <= pointCount; i++)
-                        points_.Add(GetPoint(start + (end - start) * i / pointCount));
-                    break;
-                case EaseType.EASE_OUT_ELASTIC:
-                    for (float i = 0; i <= pointCount; i++)
-                        points_.Add(GetPoint(start + (end - start) * i / pointCount));
-                    break;
-                case EaseType.EASE_IN_OUT_ELASTIC:
-                    for (float i = 0; i <= pointCount; i++)
-                        points_.Add(GetPoint(start + (end - start) * i / pointCount));
-                    break;
-                case EaseType.EASE_IN_BACK:
-                    for (float i = 0; i <= pointCount; i++)
-                        points_.Add(GetPoint(start + (end - start) * i / pointCount));
-                    break;
-                case EaseType.EASE_OUT_BACK:
-                    for (float i = 0; i <= pointCount; i++)
-                        points_.Add(GetPoint(start + (end - start) * i / pointCount));
-                    break;
-                case EaseType.EASE_IN_OUT_BACK:
-                    for (float i = 0; i <= pointCount; i++)
-                        points_.Add(GetPoint(start + (end - start) * i / pointCount));
-                    break;
-                case EaseType.EASE_IN_BOUNCE:
-                    for (float i = 0; i <= pointCount; i++)
-                        points_.Add(GetPoint(start + (end - start) * i / pointCount));
-                    break;
-                case EaseType.EASE_OUT_BOUNCE:
-                    for (float i = 0; i <= pointCount; i++)
-                        points_.Add(GetPoint(start + (end - start) * i / pointCount));
-                    break;
-                case EaseType.EASE_IN_OUT_BOUNCE:
-                    for (float i = 0; i <= pointCount; i++)
-                        points_.Add(GetPoint(start + (end - start) * i / pointCount));
-                    break;
-                default:
-                    throw new System.Exception("EaseType not found");
-                #endregion
-            }
-
+            List<float> easeDistList = EaseTypeEnumer.GetEase(end - start, pointCount, easeType);
+            for (int i = 0; i < pointCount; i++)
+                points_.Add(GetPoint(start + easeDistList[i]));
             Vector2 startPoint = points_[0];
             for (int i = 0; i < points_.Count; i++)
                 points_[i] -= startPoint;
@@ -356,46 +177,6 @@ namespace Dremu.Gameplay.Tool {
         }
         
         
-        ////尝试性改动：GuideLine的曲线插值计算函数
-        #region R
-        /// <summary>
-        /// 计算GuideLine的曲线插值
-        /// </summary>
-        /// <param name="start">起始点</param>
-        /// <param name="end">终止点</param>
-        /// <param name="pointCount">点数</param>
-        /// <param name="easeType">缓动类型</param>
-        /// <returns>点组</returns>
-        public static List<float> GuidelineDivideCalculate(float start, float end, int pointCount, EaseType easeType)
-        {
-            List<float> divideList = new List<float>();
-            switch (easeType)
-            {
-                case EaseType.LINEAR:
-                    for (int i = 0; i < pointCount; i++)
-                    {
-                        divideList.Add(1f * (end - start) / pointCount);
-                    }
-                    return divideList;
-                case EaseType.EASE_IN_QUAD:
-                    for (int i = 0; i < pointCount; i++)
-                    {
-                        divideList.Add(1f * (end - start) / pointCount);
-                    }
-                    return divideList;
-                case EaseType.EASE_OUT_QUAD:
-                    for (int i = 0; i < pointCount; i++)
-                    {
-                        divideList.Add(1f * (end - start) / pointCount);
-                    }
-                    return divideList;
-
-            }
-
-            return null;
-        }
-
-        #endregion
 
     }
 
