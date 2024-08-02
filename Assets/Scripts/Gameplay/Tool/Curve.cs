@@ -85,7 +85,7 @@ namespace Dremu.Gameplay.Tool {
         public List<Vector2> SubCurveByStartAndEnd(float start, float end, EaseTypeEnumer.EaseType easeType = EaseTypeEnumer.EaseType.LINEAR) {
             List<Vector2> points_ = new List<Vector2>();
             int pointCount = Mathf.Max(Mathf.FloorToInt(Mathf.Abs(end - start) * points.Count), 10);
-            List<float> easeDistList = EaseTypeEnumer.GetEase(end - start, pointCount, easeType);
+            List<float> easeDistList = EaseTypeEnumer.GetEaseLine(end - start, pointCount, easeType);
             for (int i = 0; i < pointCount; i++)
                 points_.Add(GetPoint(start + easeDistList[i]));
             Vector2 startPoint = points_[0];
