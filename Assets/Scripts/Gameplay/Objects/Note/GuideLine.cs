@@ -43,7 +43,7 @@ namespace Dremu.Gameplay.Object {
             float time = ArrivalTime;
             Vector2 StartPoint = Vector2.zero;
 
-            EaseTypeEnumer.EaseType nowEaseType = EaseTypeEnumer.EaseType.LINEAR;
+            const EaseTypeEnumer.EaseType nowEaseType = EaseTypeEnumer.EaseType.EASE_IN_OUT_BOUNCE;
             //对于当前引导线：
             for (int i = 0; i < GuideLineNodes.Count; i++) {
                 GuideNode Holding = GuideLineNodes[i];
@@ -97,7 +97,8 @@ namespace Dremu.Gameplay.Object {
                     float progress = (CurrentTime - time) / Holding.Time;
 
                     //现在行进到第几个Points了?
-                    float nowPointPosition = progress * (pointsPerHolding.Count - 1);  //TODO:我想要在这里写一个Ease但是我不知道怎么写啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+                    // float nowPointPosition = progress * (pointsPerHolding.Count - 1);
+                    float nowPointPosition = EaseTypeEnumer.GetEaseValue(progress, nowEaseType);
                     //计算渲染点组起始下标位置
                     int nowPointIndex = Mathf.FloorToInt(nowPointPosition);
                     //计算小数部分

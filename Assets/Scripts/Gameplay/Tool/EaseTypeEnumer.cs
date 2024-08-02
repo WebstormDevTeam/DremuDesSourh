@@ -53,8 +53,6 @@ namespace Dremu.Gameplay.Tool
         {
             switch (easeType)
             {
-                #region EaseTypeEnuming
-
                 case EaseType.LINEAR:
                     return x;
                 case EaseType.EASE_IN_SINE:
@@ -103,8 +101,8 @@ namespace Dremu.Gameplay.Tool
                     return Mathf.Sqrt(1 - Mathf.Pow(x - 1, 2));
                 case EaseType.EASE_IN_OUT_CIRC:
                     return x < 0.5
-                        ? 1 - Mathf.Sqrt(1 - Mathf.Pow(2 * x, 2)) / 2
-                        : Mathf.Sqrt(1 - Mathf.Pow(-2 * x + 2, 2)) / 2;
+                        ? (1 - Mathf.Sqrt(1 - Mathf.Pow(2 * x, 2))) / 2
+                        : (Mathf.Sqrt(1 - Mathf.Pow(-2 * x + 2, 2)) + 1) / 2;
                 case EaseType.EASE_IN_BACK:
                     return 2.70158f * Mathf.Pow(x, 3) - 1.70158f * Mathf.Pow(x, 2);
                 case EaseType.EASE_OUT_BACK:
@@ -129,33 +127,31 @@ namespace Dremu.Gameplay.Tool
                         : Mathf.Pow(2, -20 * x + 10) * Mathf.Sin((x * 20 - 11.125f) * 4 * Mathf.PI / 9) / 2 + 1;
                 case EaseType.EASE_IN_BOUNCE:
                     if ((1 -  x) < 1 / 2.75f) return 1 - (7.5625f * Mathf.Pow((1 -  x), 2));
-                    if ((1 -  x) < 2 / 2.75f) return 1 - (7.5625f * Mathf.Pow((1 -  x) - 1.5f / 7.5625f, 2) + 0.75f);
-                    if ((1 -  x) < 2.5f / 2.75f) return 1 - (7.5625f * Mathf.Pow((1 -  x) - 2.25f / 7.5625f, 2) + 0.9375f);
-                    return 1 - (7.5625f * Mathf.Pow((1 -  x) - 2.625f / 7.5625f, 2) + 0.984375f);
+                    if ((1 -  x) < 2 / 2.75f) return 1 - (7.5625f * Mathf.Pow((1 -  x) - 1.5f / 2.75f, 2) + 0.75f);
+                    if ((1 -  x) < 2.5f / 2.75f) return 1 - (7.5625f * Mathf.Pow((1 -  x) - 2.25f / 2.75f, 2) + 0.9375f);
+                    return 1 - (7.5625f * Mathf.Pow((1 -  x) - 2.625f / 2.75f, 2) + 0.984375f);
                 case EaseType.EASE_OUT_BOUNCE:
                     if (x < 1 / 2.75f) return 7.5625f * Mathf.Pow(x, 2);
-                    if (x < 2 / 2.75f) return 7.5625f * Mathf.Pow(x - 1.5f / 7.5625f, 2) + 0.75f;
-                    if (x < 2.5f / 2.75f) return 7.5625f * Mathf.Pow(x - 2.25f / 7.5625f, 2) + 0.9375f;
-                    return 7.5625f * Mathf.Pow(x - 2.625f / 7.5625f, 2) + 0.984375f;
+                    if (x < 2 / 2.75f) return 7.5625f * Mathf.Pow(x - 1.5f / 2.75f, 2) + 0.75f;
+                    if (x < 2.5f / 2.75f) return 7.5625f * Mathf.Pow(x - 2.25f / 2.75f, 2) + 0.9375f;
+                    return 7.5625f * Mathf.Pow(x - 2.625f / 2.75f, 2) + 0.984375f;
                 case EaseType.EASE_IN_OUT_BOUNCE:
                     if (x < 0.5)
                     {
                         if ((1 - 2 * x) < 1 / 2.75f) return (1 - (7.5625f * Mathf.Pow((1 - 2 * x), 2))) / 2;
-                        if ((1 - 2 * x) < 2 / 2.75f) return (1 - (7.5625f * Mathf.Pow((1 - 2 * x) - 1.5f / 7.5625f, 2) + 0.75f)) / 2;
-                        if ((1 - 2 * x) < 2.5f / 2.75f) return (1 - (7.5625f * Mathf.Pow((1 - 2 * x) - 2.25f / 7.5625f, 2) + 0.9375f)) / 2;
-                        return (1 - (7.5625f * Mathf.Pow((1 - 2 * x) - 2.625f / 7.5625f, 2) + 0.984375f)) / 2;
+                        if ((1 - 2 * x) < 2 / 2.75f) return (1 - (7.5625f * Mathf.Pow((1 - 2 * x) - 1.5f / 2.75f, 2) + 0.75f)) / 2;
+                        if ((1 - 2 * x) < 2.5f / 2.75f) return (1 - (7.5625f * Mathf.Pow((1 - 2 * x) - 2.25f / 2.75f, 2) + 0.9375f)) / 2;
+                        return (1 - (7.5625f * Mathf.Pow((1 - 2 * x) - 2.625f / 2.75f, 2) + 0.984375f)) / 2;
                     }
                     else
                     {
                         if ((2 * x - 1) < 1 / 2.75f) return (1 + (7.5625f * Mathf.Pow((2 * x - 1), 2))) / 2;
-                        if ((2 * x - 1) < 2 / 2.75f) return (1 + (7.5625f * Mathf.Pow((2 * x - 1) - 1.5f / 7.5625f, 2) + 0.75f)) / 2;
-                        if ((2 * x - 1) < 2.5f / 2.75f) return (1 + (7.5625f * Mathf.Pow((2 * x - 1) - 2.25f / 7.5625f, 2) + 0.9375f)) / 2;
-                        return (1 + (7.5625f * Mathf.Pow((2 * x - 1) - 2.625f / 7.5625f, 2) + 0.984375f)) / 2;
+                        if ((2 * x - 1) < 2 / 2.75f) return (1 + (7.5625f * Mathf.Pow((2 * x - 1) - 1.5f / 2.75f, 2) + 0.75f)) / 2;
+                        if ((2 * x - 1) < 2.5f / 2.75f) return (1 + (7.5625f * Mathf.Pow((2 * x - 1) - 2.25f / 2.75f, 2) + 0.9375f)) / 2;
+                        return (1 + (7.5625f * Mathf.Pow((2 * x - 1) - 2.625f / 2.75f, 2) + 0.984375f)) / 2;
                     }
                 default:
                     throw new System.Exception("EaseType not found");
-
-                #endregion
             }
         }
 
@@ -170,7 +166,7 @@ namespace Dremu.Gameplay.Tool
         {
             List<float> numList = new List<float>();
             for (int i = 0; i <= count; i++)
-                numList.Add(length * GetEaseValue(1f * i / count, EaseType.LINEAR));
+                numList.Add(length * GetEaseValue(1f * i / count, easeType));
             return numList;
         }
     }
