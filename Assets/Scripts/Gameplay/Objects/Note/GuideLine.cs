@@ -43,42 +43,26 @@ namespace Dremu.Gameplay.Object {
             float time = ArrivalTime;
             Vector2 StartPoint = Vector2.zero;
 
-            const EaseTypeEnumer.EaseType nowEaseType = EaseTypeEnumer.EaseType.EASE_IN_OUT_BOUNCE;
             //对于当前引导线：
             for (int i = 0; i < GuideLineNodes.Count; i++) {
                 GuideNode Holding = GuideLineNodes[i];
                 //利用新函数将使得选取的曲线呈现缓动函数形态
-                var pointsPerHolding = JudgmentLine.CurrentCurve.SubCurveByStartAndEnd(start, Holding.To, nowEaseType);
+                var pointsPerHolding = JudgmentLine.CurrentCurve.SubCurveByStartAndEnd(start, Holding.To, EaseTypeManager.nowEaseType);
                 
-                ////////////////TODO:对于点下落的计算，目前是线性插值，需要改成曲线插值，目前尚未完善
-                
-                // //计算相对于起点，每个点下落空间位置的微分单位
-                // // float divide = 1f * (Holding.To - start) / pointsPerHolding.Count;
-                // //相对于起点，每个点下落时间位置的微分单位
-                // float perDirection = JudgmentLine.Speed.GetPosition(time, Holding.Time) / pointsPerHolding.Count;
-                
-                ////////尝试性改动：将其设置为曲线插值////////
                 //计算相对于起点，每个点下落空间(横轴)的位置
-                List<float> divide = EaseTypeEnumer.GetEaseLine(Holding.To - start, pointsPerHolding.Count, nowEaseType);
-                //相对于起点，每个点下落时间(纵轴)的位置变化量
+                List<float> divide = EaseTypeManager.GetEaseLine(Holding.To - start, pointsPerHolding.Count, EaseTypeManager.nowEaseType);
+                //相对于起点，每个点下落时间(纵轴)的位置变化量，注意每个点的时间间隔是相同的所以此处不用修改保持线性
                 float perDirection = JudgmentLine.Speed.GetPosition(time, Holding.Time) / pointsPerHolding.Count;
-                // List<float> perDirection = EaseTypeEnumer.GetEase(
-                //     JudgmentLine.Speed.GetPosition(time, Holding.Time),
-                //     pointsPerHolding.Count, nowEaseType);
-                
 
-                // //如果pointsPerHolding还有剩余的点，移除首个（i.e.线性下落操作）
-                // if (points.Count > 0)
-                //     pointsPerHolding.RemoveAt(0);
-                //如果pointsPerHolding还有剩余的点，移除应被移除的（i.e.缓动下落操作）
-                while (points.Count > 0 && points[0].y <= 0) 
+                //如果pointsPerHolding还有剩余的点，移除首个（i.e.下落操作）
+                if (points.Count > 0)
                     pointsPerHolding.RemoveAt(0);
 
                 //对于pointsPerHolding内每一个点：
                 float nowDivide = 0;
                 for (int j = 0; j < pointsPerHolding.Count; j++)
                 {
-                    //取得当前点下落后的法线
+                    //取得当前点下落的方向
                     KeyValuePair<Vector2, Vector2> normalPerPoint =
                         JudgmentLine.CurrentCurve.GetNormal(start + divide[j] - nowDivide);
                     //计算当前点将要下落的绝对位置，并将当前点更新到那个位置
@@ -93,22 +77,26 @@ namespace Dremu.Gameplay.Object {
                 //更新points，(p.s. points就是要渲染的点组)
                 //如果当前时间在当前分段内
                 if (CurrentTime > time && CurrentTime <= time + Holding.Time) {
-                    //当前引导线相对起始时间的行进进度（百分率）（i.e.下落进度）
+                    //当前引导线相对起始时间的行进进度（百分率）（i.e.下落时间进度，必然线性）
                     float progress = (CurrentTime - time) / Holding.Time;
+                    //当前引导线相对起始位置的行进进度（百分率）（i.e.下落空间进度，缓动）
+                    float easedProgress = EaseTypeManager.GetEaseValue(progress, EaseTypeManager.nowEaseType);
 
-                    //现在行进到第几个Points了?
-                    // float nowPointPosition = progress * (pointsPerHolding.Count - 1);
-                    float nowPointPosition = EaseTypeEnumer.GetEaseValue(progress, nowEaseType);
+                    //现在行进到第几个Point?以时间进度计算
+                    float nowPointPosition = progress * (pointsPerHolding.Count - 1);
                     //计算渲染点组起始下标位置
                     int nowPointIndex = Mathf.FloorToInt(nowPointPosition);
                     //计算小数部分
                     float nowPointPositionDigit = nowPointPosition - nowPointIndex;
-                    //线性连接小数部分，使之看起来更平顺
+                    //连接小数部分
+                    //TODO:目前是线性连接，待大佬修改为缓动曲线连接
                     if (pointsPerHolding.Count - 1 > nowPointIndex)
+                    {
                         pointsPerHolding[nowPointIndex] += (pointsPerHolding[nowPointIndex + 1] - pointsPerHolding[nowPointIndex]) * nowPointPositionDigit;
-                    
-                    position = start + (Holding.To - start) * progress;
-                    //将从index起始的pointsPerHolding点组添加到points中
+                    }
+                    //计算在progress处点的位置，并赋值给position
+                    position = start + (Holding.To - start) * easedProgress;
+                    //将从index起始的pointsPerHolding点组添加到pointsPerHolding中
                     points.AddRange(pointsPerHolding.GetRange(nowPointIndex, pointsPerHolding.Count - nowPointIndex));
                 }
                 //如果当前时间在当前分段起始时间之前

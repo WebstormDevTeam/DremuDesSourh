@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Dremu.Gameplay.Object;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
@@ -82,10 +83,10 @@ namespace Dremu.Gameplay.Tool {
         /// <param name="start">起始点（0~1）</param>
         /// <param name="end">终止点（0~1）</param>
         /// <returns>点组</returns> 
-        public List<Vector2> SubCurveByStartAndEnd(float start, float end, EaseTypeEnumer.EaseType easeType = EaseTypeEnumer.EaseType.LINEAR) {
+        public List<Vector2> SubCurveByStartAndEnd(float start, float end, EaseTypeManager.EaseType easeType = EaseTypeManager.EaseType.LINEAR) {
             List<Vector2> points_ = new List<Vector2>();
             int pointCount = Mathf.Max(Mathf.FloorToInt(Mathf.Abs(end - start) * points.Count), 10);
-            List<float> easeDistList = EaseTypeEnumer.GetEaseLine(end - start, pointCount, easeType);
+            List<float> easeDistList = EaseTypeManager.GetEaseLine(end - start, pointCount, easeType);
             for (int i = 0; i < pointCount; i++)
                 points_.Add(GetPoint(start + easeDistList[i]));
             Vector2 startPoint = points_[0];
@@ -138,12 +139,15 @@ namespace Dremu.Gameplay.Tool {
         }
 
         /// <summary>
-        /// 获取法线
+        /// 获取对应位置点坐标及的方向
         /// </summary>
-        /// <param name="at">位置</param>
-        /// <returns>法线（key为原点，value为方向）</returns>
-        public KeyValuePair<Vector2, Vector2> GetNormal( float at ) {
+        /// <param name="at">该点位置在线上的比例(0~1)</param>
+        /// <returns>该点的坐标及方向（key为原点，value为方向(以单位向量表示)）</returns>
+        public KeyValuePair<Vector2, Vector2> GetNormal( float at )
+        {
+            //at位置左右两点的下标
             int left, right;
+            //小数部分
             float pos;
             if (points.Count * at >= points.Count - 1) {
                 left = points.Count - 1;

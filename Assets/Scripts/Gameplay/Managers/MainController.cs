@@ -177,7 +177,7 @@ namespace Dremu.Gameplay.Manager
             
             NoteManager.GetNewGuideLine(line, 0.5f, 17, new List<GuideLine.GuideNode>()
             {
-                new GuideLine.GuideNode(0.7f, 2),
+                new GuideLine.GuideNode(0.7f, 1),
                 new GuideLine.GuideNode(0.3f, 2),
                 new GuideLine.GuideNode(0.7f, 2),
                 new GuideLine.GuideNode(0.3f, 2),
@@ -206,24 +206,48 @@ namespace Dremu.Gameplay.Manager
             });
 
             #region ???????????????????????
-
+            //
+            // NoteManager.GetNewDrag(line, 0.5f, 17, new List<Hold.HoldNode>()
+            // {
+            //     new Hold.HoldNode(0.3f, 1),
+            //     new Hold.HoldNode(0.4f, 2),
+            //     new Hold.HoldNode(0.3f, 2),
+            //     new Hold.HoldNode(0.4f, 2),
+            //     new Hold.HoldNode(0.3f, 2),
+            //     new Hold.HoldNode(0.5f, 2),
+            //     new Hold.HoldNode(0.3f, 2),
+            //     new Hold.HoldNode(0.3f, 2),
+            //     new Hold.HoldNode(0.2f, 2),
+            //     new Hold.HoldNode(0.8f, 2),
+            //     new Hold.HoldNode(0.7f, 2),
+            //     new Hold.HoldNode(0.9f, 2),
+            //     new Hold.HoldNode(0.7f, 2),
+            //     new Hold.HoldNode(0.7f, 2),
+            //     new Hold.HoldNode(0.5f, 2),
+            //     new Hold.HoldNode(0.7f, 2),
+            //     new Hold.HoldNode(0.3f, 2),
+            //     new Hold.HoldNode(0.7f, 2),
+            //     new Hold.HoldNode(0.3f, 2),
+            //     new Hold.HoldNode(0.7f, 2),
+            //     new Hold.HoldNode(0.3f, 2),
+            //     new Hold.HoldNode(0.7f, 2),
+            //     new Hold.HoldNode(0.3f, 2),
+            //     new Hold.HoldNode(0.7f, 2),
+            //     new Hold.HoldNode(0.3f, 2),
+            //     new Hold.HoldNode(0.7f, 2),
+            // });
             NoteManager.GetNewDrag(line, 0.5f, 17, new List<Hold.HoldNode>()
             {
-                new Hold.HoldNode(0.3f, 1),
-                new Hold.HoldNode(0.4f, 2),
+                new Hold.HoldNode(0.7f, 1),
                 new Hold.HoldNode(0.3f, 2),
-                new Hold.HoldNode(0.4f, 2),
-                new Hold.HoldNode(0.3f, 2),
-                new Hold.HoldNode(0.5f, 2),
-                new Hold.HoldNode(0.3f, 2),
-                new Hold.HoldNode(0.3f, 2),
-                new Hold.HoldNode(0.2f, 2),
-                new Hold.HoldNode(0.8f, 2),
                 new Hold.HoldNode(0.7f, 2),
-                new Hold.HoldNode(0.9f, 2),
+                new Hold.HoldNode(0.3f, 2),
                 new Hold.HoldNode(0.7f, 2),
+                new Hold.HoldNode(0.3f, 2),
                 new Hold.HoldNode(0.7f, 2),
-                new Hold.HoldNode(0.5f, 2),
+                new Hold.HoldNode(0.3f, 2),
+                new Hold.HoldNode(0.7f, 2),
+                new Hold.HoldNode(0.3f, 2),
                 new Hold.HoldNode(0.7f, 2),
                 new Hold.HoldNode(0.3f, 2),
                 new Hold.HoldNode(0.7f, 2),
@@ -235,6 +259,11 @@ namespace Dremu.Gameplay.Manager
                 new Hold.HoldNode(0.7f, 2),
                 new Hold.HoldNode(0.3f, 2),
                 new Hold.HoldNode(0.7f, 2),
+                new Hold.HoldNode(0.3f, 2),
+                new Hold.HoldNode(0.7f, 2),
+                new Hold.HoldNode(0.3f, 2),
+                new Hold.HoldNode(0.7f, 2),
+                new Hold.HoldNode(0.3f, 2),
             });
 
             #endregion
