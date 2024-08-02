@@ -46,7 +46,7 @@ namespace Dremu.Gameplay.Object {
             //对于当前引导线：
             for (int i = 0; i < GuideLineNodes.Count; i++) {
                 GuideNode Holding = GuideLineNodes[i];
-                //利用新函数将使得选取的曲线呈现缓动函数形态
+                //利用新函数使选取的曲线呈现缓动函数形态
                 var pointsPerHolding = JudgmentLine.CurrentCurve.SubCurveByStartAndEnd(start, Holding.To, EaseTypeManager.nowEaseType);
                 
                 //计算相对于起点，每个点下落空间(横轴)的位置
@@ -72,7 +72,6 @@ namespace Dremu.Gameplay.Object {
                         perDirection * (j + 1) * normalPerPoint.Value;
                     nowDivide = divide[j];
                 }
-                ////////////////
 
                 //更新points，(p.s. points就是要渲染的点组)
                 //如果当前时间在当前分段内
@@ -96,7 +95,7 @@ namespace Dremu.Gameplay.Object {
                     }
                     //计算在progress处点的位置，并赋值给position
                     position = start + (Holding.To - start) * easedProgress;
-                    //将从index起始的pointsPerHolding点组添加到pointsPerHolding中
+                    //将从index起始的pointsPerHolding点组添加到points中
                     points.AddRange(pointsPerHolding.GetRange(nowPointIndex, pointsPerHolding.Count - nowPointIndex));
                 }
                 //如果当前时间在当前分段起始时间之前
