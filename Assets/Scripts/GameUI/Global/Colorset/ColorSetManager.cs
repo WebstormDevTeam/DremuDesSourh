@@ -63,9 +63,9 @@ namespace GameUI.Global.ColorSet
                 yield return new WaitForSecondsRealtime(waitTime);
 
                 var color = GetRandomColor();
-                StaticGraphics.ForEach(x => x.DOColor(color, duration).SetEase(Ease.OutSine));
-                RuntimeGraphics.ForEach(x => x.DOColor(color, duration).SetEase(Ease.OutSine));
-                RuntimeOutlines.ForEach(x => x.DoColor(color, duration).SetEase(Ease.OutSine));
+                StaticGraphics.ForEach(x => x.DOColor(color, duration).SetEase(DG.Tweening.Ease.OutSine));
+                RuntimeGraphics.ForEach(x => x.DOColor(color, duration).SetEase(DG.Tweening.Ease.OutSine));
+                RuntimeOutlines.ForEach(x => x.DoColor(color, duration).SetEase(DG.Tweening.Ease.OutSine));
             }
         }
 

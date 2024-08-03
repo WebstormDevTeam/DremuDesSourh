@@ -53,12 +53,12 @@ namespace GameUI.Global.Transition
             defaultGroup.SetActiveAndInteractable(true);
             
             defaultImage.color = color;
-            defaultGroup.DoFade(1f, 0.5f).SetEase(Ease.OutSine);
+            defaultGroup.DoFade(1f, 0.5f).SetEase(DG.Tweening.Ease.OutSine);
             
             await Task.Delay(500);
             await GotoScene(sceneDuration);
 
-            defaultGroup.DoFade(0f, 0.5f).SetEase(Ease.OutSine);
+            defaultGroup.DoFade(0f, 0.5f).SetEase(DG.Tweening.Ease.OutSine);
             
             await Task.Delay(500);
             

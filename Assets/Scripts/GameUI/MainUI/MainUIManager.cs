@@ -93,7 +93,7 @@ namespace GameUI.MainUI
                 welcomePage.gameObject.SetActive(true);
                 mainPage.gameObject.SetActive(false);
 
-                whiteMask.DOColor(Color.white.SetAlpha(0f), 0.5f).SetEase(Ease.OutSine).OnComplete(() =>
+                whiteMask.DOColor(Color.white.SetAlpha(0f), 0.5f).SetEase(DG.Tweening.Ease.OutSine).OnComplete(() =>
                 {
                     whiteMask.gameObject.SetActive(false);
 
@@ -106,7 +106,7 @@ namespace GameUI.MainUI
                             titleText.rectTransform.DOAnchorPos(titlePos, 0.5f).SetEase(titleMoveCurve);
                             titleText.rectTransform.DOScale(titleScl, 0.5f).SetEase(titleScaleCurve);
 
-                            welcomePage.DoFade(0f, 0.5f).SetEase(Ease.OutSine).OnComplete(() => welcomePage.gameObject.SetActive(false));
+                            welcomePage.DoFade(0f, 0.5f).SetEase(DG.Tweening.Ease.OutSine).OnComplete(() => welcomePage.gameObject.SetActive(false));
 
                             StartCoroutine(AniFadeInAndMoveUp(0.2f));
                         }
@@ -137,14 +137,14 @@ namespace GameUI.MainUI
 
             mainPage.alpha = 0f;
             mainPage.gameObject.SetActive(true);
-            mainPage.DoFade(1f, 0.5f).SetEase(Ease.OutSine);
+            mainPage.DoFade(1f, 0.5f).SetEase(DG.Tweening.Ease.OutSine);
 
             foreach (Transform child in mainPage.transform)
             {
                 Debug.Log(child.name);
 
-                child.GetComponent<Image>().DOColor(Color.white, 0.5f).SetEase(Ease.OutSine);
-                child.DOMoveY(-15f, 1f).From(true).SetEase(Ease.OutSine);
+                child.GetComponent<Image>().DOColor(Color.white, 0.5f).SetEase(DG.Tweening.Ease.OutSine);
+                child.DOMoveY(-15f, 1f).From(true).SetEase(DG.Tweening.Ease.OutSine);
 
                 yield return new WaitForSeconds(waitTime);
             }  

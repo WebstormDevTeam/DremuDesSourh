@@ -27,7 +27,10 @@ MonoBehaviour:
         Value: 0
         type: 0
     RotateEnvelope:
-      Points: []
+      Points:
+      - Time: 0
+        Value: 0
+        type: 0
     MoveXEnvelope:
       Points: []
     MoveYEnvelope:
