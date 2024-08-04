@@ -34,6 +34,6 @@ public class MouseWheel : ShortcutKeyEventBase
             GlobalData.Refresh();
         }
 
-        Debug.Log($"MousePerformed：{callbackContext.ReadValue<float>()}");
+        // Debug.Log($"MousePerformed：{callbackContext.ReadValue<float>()}");
     }
 }

@@ -115,8 +115,16 @@ namespace Dremu.Gameplay.Object {
             }
             
             //渲染线(根据points)
-            if (points.Count > 0) Line.transform.localPosition = -points[0];
+            // Debug.Log(-points[0]);
+            if (points.Count > 0)
+            {
+                // Line.transform.localPosition.y = -points[0].y;
+                var pos = new Vector3((-points[0]).x, (-points[0]).y);
+                // Debug.Log((-points[0]).x);
+                Line.transform.SetLocalPositionAndRotation(pos, Quaternion.identity);
+            }
             Line.positionCount = points.Count;
+            
             Line.SetPositions(Functions.Vec2ListToVec3List(points).ToArray());
             Line.startColor = new Color(0, 0.8f, 0, 0.8f);
             Line.endColor = new Color(1, 0, 0, 0.8f);
@@ -124,9 +132,11 @@ namespace Dremu.Gameplay.Object {
             Line.endWidth = 0.08f;
             //设置音符位置
             KeyValuePair<Vector2, Vector2> normal = JudgmentLine.CurrentCurve.GetNormal(position);
-            transform.localPosition = 
-                PositionHelper.RelativeCoordToAbsoluteCoord(normal.Key, Camera.main) + 
-                (CurrentTime < ArrivalTime ? normal.Value * JudgmentLine.Speed.GetPosition(CurrentTime, ArrivalTime - CurrentTime) : Vector2.zero);
+            var thisLocalPosition = PositionHelper.RelativeCoordToAbsoluteCoord(normal.Key, Camera.main) + 
+                      (CurrentTime < ArrivalTime ? normal.Value * JudgmentLine.Speed.GetPosition(CurrentTime, ArrivalTime - CurrentTime) : Vector2.zero);
+            Debug.Log(thisLocalPosition.x);//就是这里要设置判定点的位置同引导线与X轴的交点一样
+            transform.localPosition = thisLocalPosition;
+
 
             // Renderer.color = Line.startColor = Line.endColor = NoteManager.NoteColor;
         }

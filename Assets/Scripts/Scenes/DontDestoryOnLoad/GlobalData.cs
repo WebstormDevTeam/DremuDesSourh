@@ -1,3 +1,10 @@
+/*
+ * Copyright (C) 2024 BlophyNovaEdit
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ * 注意，在没有修改的代码我们同样尊重MPL2.0的条款。只不过我们没有特别注明。
+ * */
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -8,7 +15,6 @@ using Data.ChartEdit;
 using Data.Enumerate;
 using Manager;
 using Newtonsoft.Json;
-using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.Serialization;
@@ -27,18 +33,18 @@ namespace Scenes.DontDestoryOnLoad
         public Sprite currentCp;
         [FormerlySerializedAs("currentCPH")]
         public Sprite currentCph;
-        public bool isAutoplay = true;
-        public float offset;
+        [SerializeField]public bool isAutoplay = true;
+        [SerializeField]public float offset;
         public int ScreenWidth => Camera.main.pixelWidth;
         public int ScreenHeight => Camera.main.pixelHeight;
 
-        public Alert alert;
+        [SerializeField]public Alert alert;
 
         public List<LabelWindowContent> labelWindowContents = new();
 
 
-        public LabelItem labelItemPrefab;
-        public LabelWindow labelWindowPrefab;
+        [SerializeField]public LabelItem labelItemPrefab;
+        [SerializeField]public LabelWindow labelWindowPrefab;
 
         public EventEditItem eventEditItem;
 

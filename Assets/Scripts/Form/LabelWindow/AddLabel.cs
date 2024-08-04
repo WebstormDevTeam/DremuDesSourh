@@ -12,6 +12,7 @@ public class AddLabel : MonoBehaviour
     public Transform contentParentTransform;
     public Transform labelParentTransform;
     public LabelWindow labelWindow;
+
     private void Start()
     {
         dropdown.ClearOptions();
@@ -21,13 +22,14 @@ public class AddLabel : MonoBehaviour
         {
             labelWindowNames.Add(item.labelWindowName);
         }
+
         dropdown.AddOptions(labelWindowNames);
 
-        dropdown.onValueChanged.AddListener((index) => 
+        dropdown.onValueChanged.AddListener((index) =>
         {
             foreach (LabelItem item in labelWindow.labels)
             {
-                if(1<<(index-1)  == ((int)item.labelWindowContent.labelWindowContentType))
+                if (1 << (index - 1) == ((int)item.labelWindowContent.labelWindowContentType))
                 {
                     dropdown.SetValueWithoutNotify(0);
                     Alert.EnableAlert("这个窗口已经有一个相同的标签了捏~");
@@ -35,9 +37,10 @@ public class AddLabel : MonoBehaviour
                 }
             }
 
-            LabelItem newItem= Instantiate(GlobalData.Instance.labelItemPrefab, labelParentTransform);
-            newItem.labelName.text = GlobalData.Instance.labelWindowContents[index-1].labelWindowName;
-            LabelWindowContent newContent = Instantiate(GlobalData.Instance.labelWindowContents[index - 1], contentParentTransform);
+            LabelItem newItem = Instantiate(GlobalData.Instance.labelItemPrefab, labelParentTransform);
+            newItem.labelName.text = GlobalData.Instance.labelWindowContents[index - 1].labelWindowName;
+            LabelWindowContent newContent =
+                Instantiate(GlobalData.Instance.labelWindowContents[index - 1], contentParentTransform);
             newContent.labelWindow = labelWindow;
             labelWindow.currentLabelWindow = newContent;
             newItem.labelWindowContent = newContent;
@@ -48,6 +51,7 @@ public class AddLabel : MonoBehaviour
             {
                 item.labelWindowContent.gameObject.SetActive(false);
             }
+
             labelWindow.labels.Add(newItem);
             dropdown.SetValueWithoutNotify(0);
         });
