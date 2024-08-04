@@ -44,7 +44,7 @@ namespace Dremu.Gameplay.Tool
             EASE_IN_OUT_BOUNCE,
         }
         
-        public const EaseType nowEaseType = EaseType.EASE_IN_OUT_BOUNCE;
+        public const EaseType nowEaseType = EaseType.LINEAR;
         
         //缓动函数的计算方式，除非你知道你在干什么否则千万别动
         ///<summary>计算缓动函数值</summary>

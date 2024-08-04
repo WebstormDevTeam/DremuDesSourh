@@ -78,20 +78,19 @@ namespace Dremu.Gameplay.Tool {
         }
         
         /// <summary>
-        /// 获取子曲线（默认直线）
+        /// 获取子曲线
         /// </summary>
         /// <param name="start">起始点（0~1）</param>
         /// <param name="end">终止点（0~1）</param>
+        /// <param name="easeType">缓动函数类型，若不输入则默认线性</param>
         /// <returns>点组</returns> 
         public List<Vector2> SubCurveByStartAndEnd(float start, float end, EaseTypeManager.EaseType easeType = EaseTypeManager.EaseType.LINEAR) {
             List<Vector2> points_ = new List<Vector2>();
             int pointCount = Mathf.Max(Mathf.FloorToInt(Mathf.Abs(end - start) * points.Count), 10);
             List<float> easeDistList = EaseTypeManager.GetEaseLine(end - start, pointCount, easeType);
+            Vector2 startPoint = GetPoint(start+easeDistList[0]);
             for (int i = 0; i < pointCount; i++)
-                points_.Add(GetPoint(start + easeDistList[i]));
-            Vector2 startPoint = points_[0];
-            for (int i = 0; i < points_.Count; i++)
-                points_[i] -= startPoint;
+                points_.Add(GetPoint(start + easeDistList[i])-startPoint);
             return points_;
         }
 

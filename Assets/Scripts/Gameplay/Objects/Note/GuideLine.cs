@@ -51,26 +51,24 @@ namespace Dremu.Gameplay.Object {
                 
                 //计算相对于起点，每个点下落空间(横轴)的位置
                 List<float> divide = EaseTypeManager.GetEaseLine(Holding.To - start, pointsPerHolding.Count, EaseTypeManager.nowEaseType);
-                //相对于起点，每个点下落时间(纵轴)的位置变化量，注意每个点的时间间隔是相同的所以此处不用修改保持线性
+                //每个点下落距离，注意每个点的时间间隔是相同的所以此处不用修改保持线性
                 float perDirection = JudgmentLine.Speed.GetPosition(time, Holding.Time) / pointsPerHolding.Count;
 
-                //如果pointsPerHolding还有剩余的点，移除首个（i.e.下落操作）
+                //如果pointsPerHolding有剩余的点，移除首个
                 if (points.Count > 0)
                     pointsPerHolding.RemoveAt(0);
 
                 //对于pointsPerHolding内每一个点：
-                float nowDivide = 0;
                 for (int j = 0; j < pointsPerHolding.Count; j++)
                 {
                     //取得当前点下落的方向
                     KeyValuePair<Vector2, Vector2> normalPerPoint =
-                        JudgmentLine.CurrentCurve.GetNormal(start + divide[j] - nowDivide);
-                    //计算当前点将要下落的绝对位置，并将当前点更新到那个位置
+                        JudgmentLine.CurrentCurve.GetNormal(start + divide[j]);
+                    //计算当前点将要下落的绝对位置，存储在pointsPerHolding里
                     pointsPerHolding[j] =
                         StartPoint +
                         PositionHelper.RelativeCoordToAbsoluteCoord(pointsPerHolding[j], Camera.main) +
                         perDirection * (j + 1) * normalPerPoint.Value;
-                    nowDivide = divide[j];
                 }
 
                 //更新points，(p.s. points就是要渲染的点组)
