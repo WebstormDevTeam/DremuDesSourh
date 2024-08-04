@@ -134,7 +134,7 @@ namespace Dremu.Gameplay.Object {
             KeyValuePair<Vector2, Vector2> normal = JudgmentLine.CurrentCurve.GetNormal(position);
             var thisLocalPosition = PositionHelper.RelativeCoordToAbsoluteCoord(normal.Key, Camera.main) + 
                       (CurrentTime < ArrivalTime ? normal.Value * JudgmentLine.Speed.GetPosition(CurrentTime, ArrivalTime - CurrentTime) : Vector2.zero);
-            Debug.Log(thisLocalPosition.x);//就是这里要设置判定点的位置同引导线与X轴的交点一样
+            Debug.Log(thisLocalPosition.x);//TODO:就是这里要设置判定点的位置同引导线与X轴的交点一样
             transform.localPosition = thisLocalPosition;
 
 
