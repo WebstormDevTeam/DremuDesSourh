@@ -9,7 +9,7 @@ namespace Dremu.Gameplay.Tool {
 
     public sealed class Curve {
 
-        const int PrecisionPerPart = 300;
+        const int PrecisionPerPart = 600;
 
         readonly List<Vector2> points = new List<Vector2>();
 
@@ -21,6 +21,7 @@ namespace Dremu.Gameplay.Tool {
         /// <param name="Points">端点，数量应为贝塞尔曲线数量+1</param>
         /// <param name="Nodes">各条贝塞尔曲线的节点（非常，非常，非常建议每条贝塞尔曲线的阶数都不要超过10，要不计算能干死你）</param>
         public Curve(List<Vector2> Points, List<List<Vector2>> Nodes) {
+            //Parts是贝塞尔曲线的集合
             List<List<Vector2>> Parts = new List<List<Vector2>>();
             for (int i = 0; i < Points.Count - 1; i++) {
                 List<Vector2> Bessel = new List<Vector2> { Points[i] };
@@ -29,6 +30,7 @@ namespace Dremu.Gameplay.Tool {
                 Parts.Add(Bessel); 
             }
 
+            //绘制精度为PrecisionPerPart的贝塞尔曲线，其点集储存在points中
             int LastPrecision = PrecisionPerPart - 1;
             int perPrecision = Mathf.CeilToInt(1f * (PrecisionPerPart - 1) / Parts.Count);
 
@@ -59,7 +61,7 @@ namespace Dremu.Gameplay.Tool {
                 LastPrecision -= Precision;
             }
 
-            points.Add(Points[Points.Count - 1]);
+            points.Add(Points[^1]);
         }
 
         public Curve(List<Vector2> points)
@@ -87,11 +89,10 @@ namespace Dremu.Gameplay.Tool {
             List<Vector2> points_ = new List<Vector2>();
             int pointCount = Mathf.Max(Mathf.FloorToInt(Mathf.Abs(end - start) * points.Count), 10);
             List<float> easeDistList = EaseTypeManager.GetEaseLine(end - start, pointCount, easeType);
-            for (int i = 0; i < pointCount; i++)
-                points_.Add(GetPoint(start + easeDistList[i]));
+            points_.Add(GetPoint(start + easeDistList[0]));
             Vector2 startPoint = points_[0];
-            for (int i = 0; i < points_.Count; i++)
-                points_[i] -= startPoint;
+            for (int i = 1; i < pointCount; i++)
+                points_.Add(GetPoint(start + easeDistList[i]) - startPoint);
             return points_;
         }
 

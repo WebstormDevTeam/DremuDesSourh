@@ -76,9 +76,9 @@ namespace Dremu.Gameplay.Object {
                 //更新points，(p.s. points就是要渲染的点组)
                 //如果当前时间在当前分段内
                 if (CurrentTime > time && CurrentTime <= time + Holding.Time) {
-                    //当前引导线相对起始时间的行进进度（百分率）（i.e.下落时间进度，必然线性）
+                    //当前引导线相对起始时间的行进进度（百分率）（i.e.下落时间进度）
                     float progress = (CurrentTime - time) / Holding.Time;
-                    //当前引导线相对起始位置的行进进度（百分率）（i.e.下落空间进度，缓动）
+                    //当前引导线相对起始位置的行进位置（i.e.下落空间进度）
                     float easedProgress = EaseTypeManager.GetEaseValue(progress, EaseTypeManager.nowEaseType);
 
                     //现在行进到第几个Point?以时间进度计算
@@ -92,6 +92,7 @@ namespace Dremu.Gameplay.Object {
                     if (pointsPerHolding.Count - 1 > nowPointIndex)
                     {
                         pointsPerHolding[nowPointIndex] += (pointsPerHolding[nowPointIndex + 1] - pointsPerHolding[nowPointIndex]) * nowPointPositionDigit;
+
                     }
                     //计算在progress处点的位置，并赋值给position
                     position = start + (Holding.To - start) * easedProgress;
@@ -115,27 +116,24 @@ namespace Dremu.Gameplay.Object {
             }
             
             //渲染线(根据points)
-            // Debug.Log(-points[0]);
             if (points.Count > 0)
             {
                 // Line.transform.localPosition.y = -points[0].y;
                 var pos = new Vector3((-points[0]).x, (-points[0]).y);
-                // Debug.Log((-points[0]).x);
                 Line.transform.SetLocalPositionAndRotation(pos, Quaternion.identity);
             }
             Line.positionCount = points.Count;
-            
             Line.SetPositions(Functions.Vec2ListToVec3List(points).ToArray());
             Line.startColor = new Color(0, 0.8f, 0, 0.8f);
             Line.endColor = new Color(1, 0, 0, 0.8f);
-            Line.startWidth = 0.08f;
-            Line.endWidth = 0.08f;
+            Line.startWidth = 0.04f;
+            Line.endWidth = 0.12f;
             //设置音符位置
             KeyValuePair<Vector2, Vector2> normal = JudgmentLine.CurrentCurve.GetNormal(position);
-            var thisLocalPosition = PositionHelper.RelativeCoordToAbsoluteCoord(normal.Key, Camera.main) + 
+            //计算判定点相对判定线的位置
+            transform.localPosition = PositionHelper.RelativeCoordToAbsoluteCoord(normal.Key, Camera.main) + 
                       (CurrentTime < ArrivalTime ? normal.Value * JudgmentLine.Speed.GetPosition(CurrentTime, ArrivalTime - CurrentTime) : Vector2.zero);
-            Debug.Log(thisLocalPosition.x);//TODO:就是这里要设置判定点的位置同引导线与X轴的交点一样
-            transform.localPosition = thisLocalPosition;
+            
 
 
             // Renderer.color = Line.startColor = Line.endColor = NoteManager.NoteColor;
