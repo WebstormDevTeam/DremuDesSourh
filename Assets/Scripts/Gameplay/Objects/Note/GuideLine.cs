@@ -126,7 +126,7 @@ namespace Dremu.Gameplay.Object {
             Line.SetPositions(Functions.Vec2ListToVec3List(points).ToArray());
             Line.startColor = new Color(0, 0.8f, 0, 0.8f);
             Line.endColor = new Color(1, 0, 0, 0.8f);
-            Line.startWidth = 0.04f;
+            Line.startWidth = 0.12f;
             Line.endWidth = 0.12f;
             //设置音符位置
             KeyValuePair<Vector2, Vector2> normal = JudgmentLine.CurrentCurve.GetNormal(position);

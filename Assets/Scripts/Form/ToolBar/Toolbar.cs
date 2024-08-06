@@ -20,7 +20,7 @@ public class Toolbar : LabelWindowContent
         Debug.Log("On open file menu clicked");
     }
     
-    // Start is called before the first frame update
+    // Start is called before the first frame update 
     void Start()
     {
         openFileMenu.onClick.AddListener(OnOpenFileMenuClicked);
