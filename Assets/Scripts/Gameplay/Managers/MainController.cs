@@ -163,17 +163,17 @@ namespace Dremu.Gameplay.Manager
 
             for (int i = 0; i < 13; i++)
             {
-                // NoteManager.GetNewGuideLine(line, 0.8f, 18 + i * 4, new List<GuideLine.GuideNode>()
-                // {
-                //     new GuideLine.GuideNode(0.5f, 1.5f),
-                //     new GuideLine.GuideNode(0.6f, 1.5f)
-                // });
+                NoteManager.GetNewGuideLine(line, 0.8f, 18 + i * 4, new List<GuideLine.GuideNode>()
+                {
+                    new GuideLine.GuideNode(0.5f, 1.5f),
+                    new GuideLine.GuideNode(0.6f, 1.5f)
+                });
                 NoteManager.GetNewSlide(line, 0.5f, 19.5f + i * 4);
-                // NoteManager.GetNewGuideLine(line, 0.2f, 20 + i * 4, new List<GuideLine.GuideNode>()
-                // {
-                //     new GuideLine.GuideNode(0.2f, 1.5f),
-                //     new GuideLine.GuideNode(0.6f, 1.5f)
-                // });
+                NoteManager.GetNewGuideLine(line, 0.2f, 20 + i * 4, new List<GuideLine.GuideNode>()
+                {
+                    new GuideLine.GuideNode(0.2f, 1.5f),
+                    new GuideLine.GuideNode(0.6f, 1.5f)
+                });
                 NoteManager.GetNewSlide(line, 0.2f, 21.5f + i * 4);
             }
             
