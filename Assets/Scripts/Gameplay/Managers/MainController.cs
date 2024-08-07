@@ -36,7 +36,10 @@ namespace Dremu.Gameplay.Manager
             {
                 callback();
             }
+            
         }
+
+        
 
         public static void ContinueGame(Callback? callback)
         {
