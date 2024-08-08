@@ -1,0 +1,79 @@
+{
+  "Version":"2024.8.7",
+  "Name":"Hallucination",
+  "Artist":"xy & 139",
+  "Hard":"SP.?",
+  "DefaultBPM": 191,
+  "ChartData":{
+    "BPMList":[
+      {
+        "Time":0,
+        "Value":184,
+        "Tension":0,
+        "CurveType":"Linear"
+      },
+      {
+        "Time":10,
+        "Value":191,
+        "Tension":0,
+        "CurveType":"Const"
+      }
+    ],
+    "JudgementLineList":[
+      {
+        "CurveGroup": [
+          {
+            "Points":[[-0.8,0.0],[0.8,0.0]],
+            "Nodes":[[[0.0,0.0]]]
+          },
+          {
+            "Points":[[-0.8,-1.0],[0.8,-1.0]],
+            "Nodes":[[[-0.5,0.0],[0.5,0.0]]]
+          }
+        ],
+        "EnvelopeLine":{
+          "Controllers":[
+            {
+              "Time": 0,
+              "Value": 0.0,
+              "Tension": 1,
+              "CurveType": "Expo"
+            },
+            {
+              "Time": 20,
+              "Value": 1.0,
+              "Tension": 1,
+              "CurveType": "Const"
+            }
+          ]
+        },
+        "Note":[
+          {
+            "Position":0.5,
+            "Type":"Tap",
+            "ArrivalTime":20
+          },
+          {
+            "Position":0.5,
+            "Type":"Slide",
+            "ArrivalTime":17
+          }
+        ],
+        "GuideLine":[
+          {
+            "Position":0.5,
+            "ArrivalTime":17,
+            "Nodes":[
+              {
+                "To":0.7,
+                "Time":5,
+                "CurveType":"Linear"
+              }
+
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

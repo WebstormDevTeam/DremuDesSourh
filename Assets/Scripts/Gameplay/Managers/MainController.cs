@@ -1,3 +1,7 @@
+#nullable enable
+#define DEBUG
+
+
 using System;
 using System.Collections.Generic;
 using DG.Tweening;
@@ -7,15 +11,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+
+
 namespace Dremu.Gameplay.Manager
 {
     public class MainController : MonoBehaviour
     {
-        EnvelopeLine BPMLine = new EnvelopeLine(new List<ControlNode>()
-        {
-            new ControlNode(0, 184, 0, CurveType.Linear),
-            new ControlNode(10, 184, 0, CurveType.Const)
-        });
+        
 
         [SerializeField, Min(0)] float CurrentTime;
         
@@ -25,7 +27,7 @@ namespace Dremu.Gameplay.Manager
         
         public delegate void Callback();
         private static bool isPaused=false;
-        #nullable enable
+        
         public static void Stop(Callback? callback)
         {
             Time.timeScale = 0;
@@ -61,6 +63,13 @@ namespace Dremu.Gameplay.Manager
                 callback();
             }
         }
+        
+        #if DEBUG
+        EnvelopeLine BPMLine = new EnvelopeLine(new List<ControlNode>()
+        {
+            new ControlNode(0, 184, 0, CurveType.Linear),
+            new ControlNode(10, 191, 0, CurveType.Const)
+        });//BpmList Linear是变化形式，Const是直接把BPM改成对应的数值
         
         public static EnvelopeLine BPM
         {
@@ -101,7 +110,7 @@ namespace Dremu.Gameplay.Manager
             );
 
         JudgmentLine line;
-
+        #endif
         [Obsolete("Obsolete")]
         private void Start()
         {
@@ -112,7 +121,7 @@ namespace Dremu.Gameplay.Manager
             
             AudioManager.PlayMusic(clip);
             AudioManager.MusicVolume = 1;
-
+            #if DEBUG
             line = JudgmentLineManager.GetNewJudgmentLine(curve1, new EnvelopeLine(
                 new List<float[]>()
                 {
@@ -148,7 +157,6 @@ namespace Dremu.Gameplay.Manager
             );
             line.SetCurvesAndEnvelope(curveGroup, ev);
 
-            #region ??????
 
             // for (int i = 0; i < 16; i++)
             // {
@@ -162,7 +170,6 @@ namespace Dremu.Gameplay.Manager
             NoteManager.GetNewTap(line, 0.5f, 20f); 
             NoteManager.GetNewSlide(line, 0.5f, 17);
 
-            #endregion
 
             for (int i = 0; i < 13; i++)
             {
@@ -210,7 +217,6 @@ namespace Dremu.Gameplay.Manager
                 new GuideLine.GuideNode(0.3f, 2),
             });
 
-            #region ???????????????????????
             //
             // NoteManager.GetNewDrag(line, 0.5f, 17, new List<Hold.HoldNode>()
             // {
@@ -271,12 +277,11 @@ namespace Dremu.Gameplay.Manager
                 new Hold.HoldNode(0.3f, 2),
             });
 
-            #endregion
         }
-
+        #endif
         // #endregion
 
-        [SerializeField] float bpm;
+        [SerializeField] float defaultBpm;
 
         public AudioClip clip;
 
