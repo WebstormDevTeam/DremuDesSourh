@@ -7,10 +7,14 @@ using System.Collections.Generic;
 using DG.Tweening;
 using Dremu.Gameplay.Object;
 using Dremu.Gameplay.Tool;
+using Newtonsoft.Json.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
+using Utils.Helper.ChartHelper;
+using Curve = Dremu.Gameplay.Tool.Curve;
+using EnvelopeLine = Dremu.Gameplay.Tool.EnvelopeLine;
+using GuideLine = Dremu.Gameplay.Object.GuideLine;
 
 
 namespace Dremu.Gameplay.Manager
@@ -23,10 +27,14 @@ namespace Dremu.Gameplay.Manager
         
         [SerializeField] private Button pauseButton;
         
+        
         static MainController Instance;
         
         public delegate void Callback();
+        public string jsonPath;
+        
         private static bool isPaused=false;
+        
         
         public static void Stop(Callback? callback)
         {
@@ -118,6 +126,11 @@ namespace Dremu.Gameplay.Manager
             {
                 RestartGame(null);
             });
+            jsonPath = "Assets/Resources/Chart/TestChart_1.json";
+
+            JObject chart = ChartAnalyser.GetChartDataToJObject(jsonPath);
+            
+            
             
             AudioManager.PlayMusic(clip);
             AudioManager.MusicVolume = 1;

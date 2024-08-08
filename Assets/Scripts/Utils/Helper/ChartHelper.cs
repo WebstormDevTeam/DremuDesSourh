@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.IO;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
@@ -13,7 +14,7 @@ namespace Utils.Helper.ChartHelper
         /// <returns>谱面数据，JObject对象格式</returns>
         public static JObject GetChartDataToJObject(string json)
         {
-            string jsonString = json;
+            string jsonString = File.ReadAllText(json);
             JObject chartData = JObject.Parse(jsonString);
             return chartData;
         }
