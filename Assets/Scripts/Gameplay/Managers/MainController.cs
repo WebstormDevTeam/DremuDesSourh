@@ -16,7 +16,7 @@ using Curve = Dremu.Gameplay.Tool.Curve;
 using EnvelopeLine = Dremu.Gameplay.Tool.EnvelopeLine;
 using GuideLine = Dremu.Gameplay.Object.GuideLine;
 
-/*~qwfdhn*/
+
 namespace Dremu.Gameplay.Manager
 {
     public class MainController : MonoBehaviour
