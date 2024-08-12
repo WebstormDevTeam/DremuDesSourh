@@ -2585,16 +2585,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5512336935350916393, guid: 44711f31440e8564f8cfb44aea0d5a1b, type: 3}
+      propertyPath: labelWindow
+      value: 
+      objectReference: {fileID: 1383144357}
+    - target: {fileID: 5512336935350916393, guid: 44711f31440e8564f8cfb44aea0d5a1b, type: 3}
+      propertyPath: labelWindowName
+      value: "\u8C31\u9762\u9884\u89C8\u5668"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 4085081331602142887, guid: 44711f31440e8564f8cfb44aea0d5a1b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 487569283}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4085081331602142886, guid: 44711f31440e8564f8cfb44aea0d5a1b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1349542176}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44711f31440e8564f8cfb44aea0d5a1b, type: 3}
 --- !u!224 &836890685 stripped
 RectTransform:
@@ -4565,28 +4570,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputActionName: MouseWheel
---- !u!1 &1349542173 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4085081331602142886, guid: 44711f31440e8564f8cfb44aea0d5a1b, type: 3}
-  m_PrefabInstance: {fileID: 836890683}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1349542176
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1349542173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac73aeed704243bd88e9a157593b5002, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  labelWindowName: 
-  labelWindow: {fileID: 0}
-  labelWindowContentType: 0
-  minX: 100
-  minY: 100
 --- !u!1001 &1352458339
 PrefabInstance:
   m_ObjectHideFlags: 0

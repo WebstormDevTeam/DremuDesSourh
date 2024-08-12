@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4085081331602142887}
   - component: {fileID: 4085081331602142881}
   - component: {fileID: 4085081331602142880}
+  - component: {fileID: 5512336935350916393}
   m_Layer: 5
   m_Name: ChartPreview
   m_TagString: Untagged
@@ -72,3 +73,20 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
+--- !u!114 &5512336935350916393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4085081331602142886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac73aeed704243bd88e9a157593b5002, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  labelWindowName: "\u8C31\u9762\u9884\u89C8\u5668"
+  labelWindow: {fileID: 0}
+  labelWindowContentType: 2
+  minX: 100
+  minY: 100
