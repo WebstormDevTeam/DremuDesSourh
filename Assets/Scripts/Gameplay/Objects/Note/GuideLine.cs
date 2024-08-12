@@ -18,9 +18,11 @@ namespace Dremu.Gameplay.Object {
             //To:终点位置（相对于判定线）
             //Time:持续时间
             public float To, Time;
-            public GuideNode( float To, float Time ) {
+            public EaseTypeManager.EaseType EaseType;
+            public GuideNode( float To, float Time, EaseTypeManager.EaseType EaseType) {
                 this.To = To;
                 this.Time = Time;
+                this.EaseType = EaseType;
             }
         }
 
@@ -47,10 +49,10 @@ namespace Dremu.Gameplay.Object {
             for (int i = 0; i < GuideLineNodes.Count; i++) {
                 GuideNode Holding = GuideLineNodes[i];
                 //利用新函数使选取的曲线呈现缓动函数形态
-                var pointsPerHolding = JudgmentLine.CurrentCurve.SubCurveByStartAndEnd(start, Holding.To, EaseTypeManager.nowEaseType);
+                var pointsPerHolding = JudgmentLine.CurrentCurve.SubCurveByStartAndEnd(start, Holding.To, Holding.EaseType);
                 
                 //计算相对于起点，每个点下落空间(横轴)的位置
-                List<float> divide = EaseTypeManager.GetEaseLine(Holding.To - start, pointsPerHolding.Count, EaseTypeManager.nowEaseType);
+                List<float> divide = EaseTypeManager.GetEaseLine(Holding.To - start, pointsPerHolding.Count, Holding.EaseType);
                 //相对于起点，每个点下落时间(纵轴)的位置变化量，注意每个点的时间间隔是相同的所以此处不用修改保持线性
                 float perDirection = JudgmentLine.Speed.GetPosition(time, Holding.Time) / pointsPerHolding.Count;
 
@@ -79,7 +81,7 @@ namespace Dremu.Gameplay.Object {
                     //当前引导线相对起始时间的行进进度（百分率）（i.e.下落时间进度）
                     float progress = (CurrentTime - time) / Holding.Time;
                     //当前引导线相对起始位置的行进位置（i.e.下落空间进度）
-                    float easedProgress = EaseTypeManager.GetEaseValue(progress, EaseTypeManager.nowEaseType);
+                    float easedProgress = EaseTypeManager.GetEaseValue(progress, Holding.EaseType);
 
                     //现在行进到第几个Point?以时间进度计算
                     float nowPointPosition = progress * (pointsPerHolding.Count - 1);

@@ -25,18 +25,27 @@ namespace Scenes.DontDestoryOnLoad
 {
     public class GlobalData : MonoBehaviourSingleton<GlobalData>
     {
+        // 当前难度设置
         public string currentHard;
+        // ChartData和ChartEditData分别用于存储和编辑图表数据
         public Data.ChartData.ChartData chartData;
         public Data.ChartEdit.ChartData chartEditData;
+        // 音频剪辑
         public AudioClip clip;
+        // 当前CP和CPH的精灵（Sprite），CP和CPH可能是游戏中的某种元素
         [FormerlySerializedAs("currentCP")]
         public Sprite currentCp;
         [FormerlySerializedAs("currentCPH")]
         public Sprite currentCph;
+        // 是否自动播放
         [SerializeField]public bool isAutoplay = true;
+        // 偏移量
         [SerializeField]public float offset;
+        // 屏幕宽度和高度的属性，使用Camera.main的像素尺寸
         public int ScreenWidth => Camera.main.pixelWidth;
         public int ScreenHeight => Camera.main.pixelHeight;
+        
+        // 其他游戏相关数据和预设
 
         [SerializeField]public Alert alert;
 
@@ -56,21 +65,28 @@ namespace Scenes.DontDestoryOnLoad
         public FullFlickEdit fullFlickEditPrefab;
 
         public List<EaseData> easeData;
+        // 用于刷新游戏内所有需要刷新的接口的静态方法
         public static void Refresh()
         {
+            //调用AssemblySystem的静态方法Exe，执行所有实现了IRefresh接口的类的Refresh方法
             AssemblySystem.Exe(AssemblySystem.FindAllInterfaceByTypes<IRefresh>(), (interfaceMethod) => interfaceMethod.Refresh());
         }
+        // 添加NoteEdit到ChartData的方法
         public void AddNoteEdit2ChartData(Data.ChartEdit.Note noteEdit,int boxID,int lineID)
         {
+            // 通过二分查找找到插入位置，确保按时间顺序排列
             int index_noteEdits = Algorithm.BinarySearch(chartEditData.boxes[boxID].lines[lineID].onlineNotes, m => m.hitBeats.ThisStartBPM < noteEdit.hitBeats.ThisStartBPM, false);
+            // 创建一个新的Note并插入到ChartEditData和ChartData中
             Data.ChartData.Note note = new(noteEdit);
             chartEditData.boxes[boxID].lines[lineID].onlineNotes.Insert(index_noteEdits, noteEdit);
             chartData.boxes[boxID].lines[lineID].onlineNotes.Insert(index_noteEdits,note);
         }
+        // 生命周期方法，确保此游戏对象不会在加载新场景时被销毁
         protected override void OnAwake()
         {
             DontDestroyOnLoad(gameObject);
         }
+        // 读取资源
         public IEnumerator ReadResource()
         {
             UnityWebRequest unityWebRequest = UnityWebRequestMultimedia.GetAudioClip($"file://{Application.streamingAssetsPath}/-1/Music/Music.mp3", AudioType.MPEG);
@@ -85,20 +101,29 @@ namespace Scenes.DontDestoryOnLoad
             Texture2D cp = DownloadHandlerTexture.GetContent(unityWebRequest);
             currentCp = Sprite.Create(cp, new Rect(0, 0, cp.width, cp.height), new Vector2(0.5f, 0.5f));
         }
+        // 在游戏开始时加载资源
         private void Start()
         {
+            // 设置目标帧率为9999，即尽可能高的帧率
             Application.targetFrameRate = 9999;
+            // 从流资源路径读取EaseData配置文件
             easeData = JsonConvert.DeserializeObject<List<EaseData>>(File.ReadAllText($"{Application.streamingAssetsPath}/Config/EaseData.json")); 
+            // 创建新的图表数据
             CreateNewChart();
+            // 将ChartEditData转换为ChartData
             chartData.boxes= ConvertChartEdit2ChartData(chartEditData.boxes);
         }
+        // 创建新图表数据的方法
         public void CreateNewChart()
         {
+            // 初始化ChartEditData
             chartEditData.boxes = new();
 
 
 
+            // 初始化一个新的Box
             Data.ChartEdit.Box chartEditBox = new();
+            // 初始化Box的Lines和BoxEvents
             chartEditBox.lines = new() { new(), new(), new(), new(), new() };
             chartEditBox.boxEvents = new();
             chartEditBox.boxEvents.scaleX = new();
@@ -126,10 +151,13 @@ namespace Scenes.DontDestoryOnLoad
                 chartEditBox.lines[i].speed = new();
                 chartEditBox.lines[i].speed.Add(new() { startBeats = BPM.Zero, endBeats = BPM.One, startValue = 3, endValue = 3, curve = easeData[0] });
             }
+            // 将初始化的Box添加到ChartEditData中
             chartEditData.boxes.Add(chartEditBox);
         }
+        // 将ChartEditData转换为ChartData的方法
         public List<Data.ChartData.Box> ConvertChartEdit2ChartData(List<Data.ChartEdit.Box> boxes)
         {
+            // 转换过程，创建新的ChartData对象并填充数据
             List<Data.ChartData.Box> result = new();
             foreach (Data.ChartEdit.Box box in boxes)
             {
@@ -181,8 +209,10 @@ namespace Scenes.DontDestoryOnLoad
             return result;
         }
 
+        // 遍历BoxEvents并转换的方法
         private static void ForeachBoxEvents(List<Data.ChartEdit.Event> editBoxEvent, List<Data.ChartData.Event> chartDataBoxEvent)
         {
+            // 遍历ChartEdit的事件列表，创建并添加到ChartData的事件列表
             foreach (Data.ChartEdit.Event item in editBoxEvent)
             {
                 chartDataBoxEvent.Add(new() { startTime = item.startBeats.ThisStartBPM, endTime = item.endBeats.ThisStartBPM, startValue = item.startValue, endValue = item.endValue, curve = item.curve.thisCurve });

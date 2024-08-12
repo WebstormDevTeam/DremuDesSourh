@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4085081331602142887}
   - component: {fileID: 4085081331602142881}
   - component: {fileID: 4085081331602142880}
-  - component: {fileID: 2566963274845030458}
   m_Layer: 5
   m_Name: ChartPreview
   m_TagString: Untagged
@@ -32,7 +31,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -74,20 +72,3 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
---- !u!114 &2566963274845030458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4085081331602142886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e394b57eb610cb04596f6cfe609e58f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  labelWindowName: "\u8C31\u9762\u9884\u89C8\u5668"
-  labelWindow: {fileID: 0}
-  labelWindowContentType: 2
-  minX: 192
-  minY: 108

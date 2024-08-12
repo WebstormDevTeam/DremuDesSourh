@@ -188,46 +188,46 @@ namespace Dremu.Gameplay.Manager
             {
                 NoteManager.GetNewGuideLine(line, 0.8f, 18 + i * 4, new List<GuideLine.GuideNode>()
                 {
-                    new GuideLine.GuideNode(0.5f, 1.5f),
-                    new GuideLine.GuideNode(0.6f, 1.5f)
+                    new GuideLine.GuideNode(0.5f, 1.5f, EaseTypeManager.EaseType.LINEAR),
+                    new GuideLine.GuideNode(0.6f, 1.5f, EaseTypeManager.EaseType.LINEAR)
                 });
                 NoteManager.GetNewSlide(line, 0.5f, 19.5f + i * 4);
                 NoteManager.GetNewGuideLine(line, 0.2f, 20 + i * 4, new List<GuideLine.GuideNode>()
                 {
-                    new GuideLine.GuideNode(0.2f, 1.5f),
-                    new GuideLine.GuideNode(0.6f, 1.5f)
+                    new GuideLine.GuideNode(0.2f, 1.5f, EaseTypeManager.EaseType.LINEAR),
+                    new GuideLine.GuideNode(0.6f, 1.5f, EaseTypeManager.EaseType.LINEAR)
                 });
                 NoteManager.GetNewSlide(line, 0.2f, 21.5f + i * 4);
             }
             
             NoteManager.GetNewGuideLine(line, 0.5f, 17, new List<GuideLine.GuideNode>()
             {
-                new GuideLine.GuideNode(0.7f, 5),
-                new GuideLine.GuideNode(0.3f, 2),
-                new GuideLine.GuideNode(0.7f, 2),
-                new GuideLine.GuideNode(0.3f, 2),
-                new GuideLine.GuideNode(0.7f, 2),
-                new GuideLine.GuideNode(0.3f, 2),
-                new GuideLine.GuideNode(0.7f, 2),
-                new GuideLine.GuideNode(0.3f, 2),
-                new GuideLine.GuideNode(0.7f, 2),
-                new GuideLine.GuideNode(0.3f, 2),
-                new GuideLine.GuideNode(0.7f, 2),
-                new GuideLine.GuideNode(0.3f, 2),
-                new GuideLine.GuideNode(0.7f, 2),
-                new GuideLine.GuideNode(0.3f, 2),
-                new GuideLine.GuideNode(0.7f, 2),
-                new GuideLine.GuideNode(0.3f, 2),
-                new GuideLine.GuideNode(0.7f, 2),
-                new GuideLine.GuideNode(0.3f, 2),
-                new GuideLine.GuideNode(0.7f, 2),
-                new GuideLine.GuideNode(0.3f, 2),
-                new GuideLine.GuideNode(0.7f, 2),
-                new GuideLine.GuideNode(0.3f, 2),
-                new GuideLine.GuideNode(0.7f, 2),
-                new GuideLine.GuideNode(0.3f, 2),
-                new GuideLine.GuideNode(0.7f, 2),
-                new GuideLine.GuideNode(0.3f, 2),
+                new GuideLine.GuideNode(0.7f, 1, EaseTypeManager.EaseType.LINEAR),
+                new GuideLine.GuideNode(0.3f, 2, EaseTypeManager.EaseType.EASE_IN_QUAD),
+                new GuideLine.GuideNode(0.7f, 2, EaseTypeManager.EaseType.EASE_IN_CIRC),
+                new GuideLine.GuideNode(0.3f, 2, EaseTypeManager.EaseType.EASE_IN_OUT_SINE),
+                new GuideLine.GuideNode(0.7f, 2, EaseTypeManager.EaseType.EASE_IN_OUT_BOUNCE),
+                new GuideLine.GuideNode(0.3f, 2, EaseTypeManager.EaseType.LINEAR),
+                new GuideLine.GuideNode(0.7f, 2, EaseTypeManager.EaseType.LINEAR),
+                new GuideLine.GuideNode(0.3f, 2, EaseTypeManager.EaseType.LINEAR),
+                new GuideLine.GuideNode(0.7f, 2, EaseTypeManager.EaseType.LINEAR),
+                new GuideLine.GuideNode(0.3f, 2, EaseTypeManager.EaseType.LINEAR),
+                new GuideLine.GuideNode(0.7f, 2, EaseTypeManager.EaseType.LINEAR),
+                new GuideLine.GuideNode(0.3f, 2, EaseTypeManager.EaseType.LINEAR),
+                new GuideLine.GuideNode(0.7f, 2, EaseTypeManager.EaseType.LINEAR),
+                new GuideLine.GuideNode(0.3f, 2, EaseTypeManager.EaseType.LINEAR),
+                new GuideLine.GuideNode(0.7f, 2, EaseTypeManager.EaseType.LINEAR),
+                new GuideLine.GuideNode(0.3f, 2, EaseTypeManager.EaseType.LINEAR),
+                new GuideLine.GuideNode(0.7f, 2, EaseTypeManager.EaseType.LINEAR),
+                new GuideLine.GuideNode(0.3f, 2, EaseTypeManager.EaseType.LINEAR),
+                new GuideLine.GuideNode(0.7f, 2, EaseTypeManager.EaseType.LINEAR),
+                new GuideLine.GuideNode(0.3f, 2, EaseTypeManager.EaseType.LINEAR),
+                new GuideLine.GuideNode(0.7f, 2, EaseTypeManager.EaseType.LINEAR),
+                new GuideLine.GuideNode(0.3f, 2, EaseTypeManager.EaseType.LINEAR),
+                new GuideLine.GuideNode(0.7f, 2, EaseTypeManager.EaseType.LINEAR),
+                new GuideLine.GuideNode(0.3f, 2, EaseTypeManager.EaseType.LINEAR),
+                new GuideLine.GuideNode(0.7f, 2, EaseTypeManager.EaseType.LINEAR),
+                new GuideLine.GuideNode(0.3f, 2, EaseTypeManager.EaseType.LINEAR),
             });
 
             //
@@ -262,8 +262,7 @@ namespace Dremu.Gameplay.Manager
             // });
             NoteManager.GetNewDrag(line, 0.5f, 17, new List<Hold.HoldNode>()
             {
-                new Hold.HoldNode(0.7f, 1),
-                new Hold.HoldNode(0.3f, 2),
+                new Hold.HoldNode(0.3f, 1),
                 new Hold.HoldNode(0.7f, 2),
                 new Hold.HoldNode(0.3f, 2),
                 new Hold.HoldNode(0.7f, 2),
@@ -288,6 +287,7 @@ namespace Dremu.Gameplay.Manager
                 new Hold.HoldNode(0.3f, 2),
                 new Hold.HoldNode(0.7f, 2),
                 new Hold.HoldNode(0.3f, 2),
+                new Hold.HoldNode(0.7f, 2),
             });
 
         }
