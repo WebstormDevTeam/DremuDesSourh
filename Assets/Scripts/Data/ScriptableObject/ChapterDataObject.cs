@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Data.ScriptableObject
 {
-    [CreateAssetMenu(menuName = "Simple SO/Chapter Data", fileName = "New Chapter Data")]
+    [CreateAssetMenu(menuName = "Dremu SO/Chapter Data", fileName = "New Chapter Data")]
     public class ChapterDataObject : UnityEngine.ScriptableObject
     {
         [SerializeField, LabelText("章节ID (资源文件夹名)")] private string identifier;
