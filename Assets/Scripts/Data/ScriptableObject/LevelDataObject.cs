@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Data.ScriptableObject
 {
-    [CreateAssetMenu(menuName = "Simple SO/Level Data", fileName = "New Level Data")]
+    [CreateAssetMenu(menuName = "Dremu SO/Level Data", fileName = "New Level Data")]
     public class LevelDataObject : UnityEngine.ScriptableObject
     {
         [SerializeField, LabelText("关卡数据")] private LevelData levelData;
