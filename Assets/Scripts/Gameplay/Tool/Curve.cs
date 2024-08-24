@@ -89,8 +89,8 @@ namespace Dremu.Gameplay.Tool {
             List<Vector2> points_ = new List<Vector2>();
             int pointCount = Mathf.Max(Mathf.FloorToInt(Mathf.Abs(end - start) * points.Count), 10);
             List<float> easeDistList = EaseTypeManager.GetEaseLine(end - start, pointCount, easeType);
-            points_.Add(Vector2.zero);
             Vector2 startPoint = GetPoint(start + easeDistList[0]);
+            points_.Add(Vector2.zero);
             for (int i = 1; i < pointCount; i++)
                 points_.Add(GetPoint(start + easeDistList[i]) - startPoint);
             return points_;
