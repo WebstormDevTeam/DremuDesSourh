@@ -281,7 +281,7 @@ namespace Dremu.Gameplay.Tool
         {
             List<float> numList = new List<float>();
             for (int i = 0; i < count; i++)
-                numList.Add(length * GetEaseValue(1f * i / count, easeType));
+                numList.Add(length * GetEaseValue(1f * i / (count - 1), easeType));
             return numList;
         }
     }

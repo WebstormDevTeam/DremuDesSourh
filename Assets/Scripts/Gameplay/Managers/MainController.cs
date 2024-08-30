@@ -186,17 +186,17 @@ namespace Dremu.Gameplay.Manager
 
             for (int i = 0; i < 13; i++)
             {
-                NoteManager.GetNewGuideLine(line, 0.8f, 18 + i * 4, new List<GuideLine.GuideNode>()
-                {
-                    new GuideLine.GuideNode(0.5f, 1.5f, EaseTypeManager.EaseType.LINEAR),
-                    new GuideLine.GuideNode(0.6f, 1.5f, EaseTypeManager.EaseType.LINEAR)
-                });
-                NoteManager.GetNewSlide(line, 0.5f, 19.5f + i * 4);
-                NoteManager.GetNewGuideLine(line, 0.2f, 20 + i * 4, new List<GuideLine.GuideNode>()
-                {
-                    new GuideLine.GuideNode(0.2f, 1.5f, EaseTypeManager.EaseType.LINEAR),
-                    new GuideLine.GuideNode(0.6f, 1.5f, EaseTypeManager.EaseType.LINEAR)
-                });
+                // NoteManager.GetNewGuideLine(line, 0.8f, 18 + i * 4, new List<GuideLine.GuideNode>()
+                // {
+                //     new GuideLine.GuideNode(0.5f, 1.5f, EaseTypeManager.EaseType.LINEAR),
+                //     new GuideLine.GuideNode(0.6f, 1.5f, EaseTypeManager.EaseType.LINEAR)
+                // });
+                // NoteManager.GetNewSlide(line, 0.5f, 19.5f + i * 4);
+                // NoteManager.GetNewGuideLine(line, 0.2f, 20 + i * 4, new List<GuideLine.GuideNode>()
+                // {
+                //     new GuideLine.GuideNode(0.2f, 1.5f, EaseTypeManager.EaseType.LINEAR),
+                //     new GuideLine.GuideNode(0.6f, 1.5f, EaseTypeManager.EaseType.LINEAR)
+                // });
                 NoteManager.GetNewSlide(line, 0.2f, 21.5f + i * 4);
             }
             
@@ -207,7 +207,7 @@ namespace Dremu.Gameplay.Manager
                 new GuideLine.GuideNode(0.7f, 2, EaseTypeManager.EaseType.EASE_IN_CIRC),
                 new GuideLine.GuideNode(0.3f, 2, EaseTypeManager.EaseType.EASE_IN_OUT_SINE),
                 new GuideLine.GuideNode(0.7f, 2, EaseTypeManager.EaseType.EASE_IN_OUT_BOUNCE),
-                new GuideLine.GuideNode(0.3f, 2, EaseTypeManager.EaseType.LINEAR),
+                new GuideLine.GuideNode(0.3f, 2, EaseTypeManager.EaseType.EASE_IN_CIRC),
                 new GuideLine.GuideNode(0.7f, 2, EaseTypeManager.EaseType.LINEAR),
                 new GuideLine.GuideNode(0.3f, 2, EaseTypeManager.EaseType.LINEAR),
                 new GuideLine.GuideNode(0.7f, 2, EaseTypeManager.EaseType.LINEAR),

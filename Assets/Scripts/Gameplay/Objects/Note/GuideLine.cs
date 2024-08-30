@@ -98,6 +98,7 @@ namespace Dremu.Gameplay.Object {
                     }
                     //计算在progress处点的位置，并赋值给position
                     position = start + (Holding.To - start) * easedProgress;
+                    Debug.Log($"{position}");
                     //将从index起始的pointsPerHolding点组添加到points中
                     points.AddRange(pointsPerHolding.GetRange(nowPointIndex, pointsPerHolding.Count - nowPointIndex));
                 }
