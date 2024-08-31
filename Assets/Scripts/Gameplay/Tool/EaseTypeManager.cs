@@ -284,5 +284,17 @@ namespace Dremu.Gameplay.Tool
                 numList.Add(length * GetEaseValue(1f * i / (count - 1), easeType));
             return numList;
         }
+
+        public static CurveType StringToCurveType(string easeType)
+        {
+            Dictionary<string, CurveType> dict = new Dictionary<string, CurveType>()
+            {
+                { "Linear", CurveType.Linear },
+                { "Expo", CurveType.Expo },
+                { "Sine", CurveType.Sine },
+                { "Const", CurveType.Const }
+            };
+            return dict[easeType];
+        }
     }
 }
