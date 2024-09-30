@@ -1,0 +1,4 @@
+.mylabel {
+    -unity-text-align: upper-center;
+    -unity-font: url("project://database/Assets/Font/AaKeAiRiXiZhongWen%EF%BC%88JianFan%EF%BC%89-2.ttf?fileID=12800000&guid=cfecf3a4dfbc04ddd99ab065174c16c1&type=3#AaKeAiRiXiZhongWen（JianFan）-2");
+}

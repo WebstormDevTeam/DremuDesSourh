@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/ChartCreator/Style/MainUI.uss?fileID=7433441132597879392&amp;guid=a2f802d638d5b4ef0ac3b432bc950c78&amp;type=3#MainUI" />
+    <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 255, 255);">
+        <ui:ScrollView />
+        <ui:Label tabindex="-1" text="Hello World&#10;" parse-escape-sequences="true" display-tooltip-when-elided="true" class="mylabel" style="height: 75px; width: 216px; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; background-color: rgba(0, 0, 0, 0);" />
+    </ui:VisualElement>
+</ui:UXML>
