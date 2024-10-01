@@ -30,7 +30,6 @@
     border-right-width: 0;
     border-bottom-width: 0;
     border-left-width: 0;
-
 }
 
 .tool-bar-button-text {
@@ -42,11 +41,14 @@
     white-space: normal;
     flex-wrap: nowrap;
 }
-#NewChartButton
-{
+
+#NewChartButton {
     background-image: url("project://database/Assets/Images/Editor/file-add.png?fileID=2800000&guid=32c7d6969f5e24544905de4c13905b71&type=3#file-add");
 }
-#CloseChartButton
-{
-    background-image: url("project://database/Assets/Images/Editor/file-close.png");
+
+#CloseChartButton {
+    background-image: url("project://database/Assets/Images/Editor/file-close.png?fileID=21300000&guid=3a91f80247afb4cfa8136332aea12d10&type=3#file-close");
+}
+
+.timeline-class {
 }

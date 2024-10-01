@@ -1,12 +1,12 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="Timeline" src="project://database/Assets/ChartCreator/UI/Compoments/Timeline.uxml?fileID=9197481963319205126&amp;guid=bf4a22b413112403681df150d57ebc14&amp;type=3#Timeline" />
     <Style src="project://database/Assets/ChartCreator/Style/MainUI.uss?fileID=7433441132597879392&amp;guid=a2f802d638d5b4ef0ac3b432bc950c78&amp;type=3#MainUI" />
     <ui:VisualElement name="Background" style="flex-grow: 1; background-color: rgb(255, 255, 255);">
         <ui:Label tabindex="-1" text="Dremu谱面编辑器" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Title" style="margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px; justify-content: flex-start; position: relative; top: auto; bottom: 1px; -unity-text-align: upper-left; font-size: 10px;" />
         <ui:VisualElement name="MainElement" style="flex-grow: 1;">
             <ui:VisualElement name="ToolBar" class="tool-bar-default" style="flex-grow: 1; height: auto; transform-origin: top;">
-                <!-- 添加一个用于水平布局的视觉元素 -->
                 <ui:VisualElement style="display: flex; flex-direction: row; align-items: center;">
-                    <ui:VisualElement name="CreateButton" style="flex-grow: 0; margin-right: 8px;"> <!-- 添加margin-right以提供水平间隔 -->
+                    <ui:VisualElement name="CreateButton" style="flex-grow: 0; margin-right: 8px;">
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="NewChartButton" enable-rich-text="true" focusable="true" class="tool-bar-button" style="-unity-text-align: lower-center; height: 90px; width: 64px; transform-origin: center; -unity-background-scale-mode: scale-to-fit; white-space: nowrap; text-overflow: clip;" />
                         <ui:Label tabindex="-1" text="创建新谱面" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="tool-bar-button-text" style="overflow: visible; visibility: visible; height: auto; width: auto; display: flex; align-items: flex-start; justify-content: flex-start; align-self: flex-start;" />
                     </ui:VisualElement>
@@ -16,7 +16,9 @@
                     </ui:VisualElement>
                 </ui:VisualElement>
             </ui:VisualElement>
-            <ui:VisualElement name="WorkSpace" class="work-space-default" style="flex-grow: 1;" />
+            <ui:VisualElement name="WorkSpace" class="work-space-default" style="flex-grow: 1;">
+                <ui:Instance template="Timeline" name="Timeline" class="timeline-class" />
+            </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
