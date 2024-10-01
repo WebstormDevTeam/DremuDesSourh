@@ -17,20 +17,31 @@ namespace ChartCreator.Scripts
             Instance = this;
         }
 
-        public Button createButton;
+        private Button _createButton;
+        private Button _closeButton;
 
-        private void getElements()
+        /// <summary>
+        /// 用来设定组件的代码
+        /// </summary>
+        private void SetGetElements()
         {
-            createButton = ElementTools.GetElementById<Button>(ref uiDocument, "NewChartButton");
-            createButton.clicked += () =>
+            //获取代码组件的方法
+            _createButton = ElementTools.GetElementById<Button>(ref uiDocument, "NewChartButton");
+            _createButton.clicked += () =>
             {
                 Debug.Log("OnClick");
+            };
+            _closeButton = ElementTools.GetElementById<Button>(ref uiDocument,"CloseChartButton");
+            _closeButton.clicked += () =>
+            {
+                //这里释放读写文件的
+                Debug.Log("close this ChartFile");
             };
         }
         
         private void Start()
         {
-            getElements();
+            SetGetElements();
         }
     }
 }

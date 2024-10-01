@@ -4,9 +4,16 @@
         <ui:Label tabindex="-1" text="Dremu谱面编辑器" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Title" style="margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px; justify-content: flex-start; position: relative; top: auto; bottom: 1px; -unity-text-align: upper-left; font-size: 10px;" />
         <ui:VisualElement name="MainElement" style="flex-grow: 1;">
             <ui:VisualElement name="ToolBar" class="tool-bar-default" style="flex-grow: 1; height: auto; transform-origin: top;">
-                <ui:VisualElement name="CreateButton" style="flex-grow: 1;">
-                    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="NewChartButton" enable-rich-text="true" focusable="true" class="tool-bar-button" style="-unity-text-align: lower-center; height: 90px; width: 64px; transform-origin: center; -unity-background-scale-mode: scale-to-fit; white-space: nowrap; text-overflow: clip;" />
-                    <ui:Label tabindex="-1" text="创建新谱面" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="tool-bar-button-text" style="overflow: visible; visibility: visible; height: auto; width: auto; display: flex; align-items: flex-start; justify-content: flex-start; align-self: flex-start;" />
+                <!-- 添加一个用于水平布局的视觉元素 -->
+                <ui:VisualElement style="display: flex; flex-direction: row; align-items: center;">
+                    <ui:VisualElement name="CreateButton" style="flex-grow: 0; margin-right: 8px;"> <!-- 添加margin-right以提供水平间隔 -->
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="NewChartButton" enable-rich-text="true" focusable="true" class="tool-bar-button" style="-unity-text-align: lower-center; height: 90px; width: 64px; transform-origin: center; -unity-background-scale-mode: scale-to-fit; white-space: nowrap; text-overflow: clip;" />
+                        <ui:Label tabindex="-1" text="创建新谱面" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="tool-bar-button-text" style="overflow: visible; visibility: visible; height: auto; width: auto; display: flex; align-items: flex-start; justify-content: flex-start; align-self: flex-start;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="CloseButton" style="flex-grow: 0;">
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="CloseChartButton" enable-rich-text="true" focusable="true" class="tool-bar-button" style="-unity-text-align: lower-center; height: 90px; width: 64px; transform-origin: center; -unity-background-scale-mode: scale-to-fit; white-space: nowrap; text-overflow: clip;" />
+                        <ui:Label tabindex="-1" text="关闭谱面" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="tool-bar-button-text" style="overflow: visible; visibility: visible; height: auto; width: auto; display: flex; align-items: flex-start; justify-content: flex-start; align-self: flex-start;" />
+                    </ui:VisualElement>
                 </ui:VisualElement>
             </ui:VisualElement>
             <ui:VisualElement name="WorkSpace" class="work-space-default" style="flex-grow: 1;" />
