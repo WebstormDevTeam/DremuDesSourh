@@ -1,9 +1,11 @@
 using System;
+using System.Drawing;
 using ChartCreator.Scripts.Tools;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.XR;
+using Color = UnityEngine.Color;
 
 namespace ChartCreator.Scripts
 {
@@ -35,7 +37,8 @@ namespace ChartCreator.Scripts
             //获取代码组件
             _createButton = ElementTools.GetElementById<Button>(ref uiDocument, "NewChartButton");
             _closeButton = ElementTools.GetElementById<Button>(ref uiDocument,"CloseChartButton");
-            var timeline = ElementTools.GetElementByClass<VisualElement>(ref uiDocument, "timeline-class");
+            VisualElement timeline = ElementTools.GetElementByClass<VisualElement>(ref uiDocument, "timeline-class");
+            _scrollView = ElementTools.GetElementById<ScrollView>(ref timeline, "ScrollView");
         }
 
         private void SetElementsState()
@@ -49,6 +52,30 @@ namespace ChartCreator.Scripts
                 //这里释放读写文件的
                 Debug.Log("close this ChartFile");
             };
+            VisualElement beatLine = new VisualElement
+            {
+                style =
+                {
+                    width = 2,
+                    height = 100,
+                    backgroundColor = new StyleColor(Color.black)
+                }
+            };
+            VisualElement space = new VisualElement
+            {
+                style =
+                {
+                    width = 10,
+                    height = new StyleLength(StyleKeyword.Auto)
+                }
+            };
+            for (int i = 0; i < 10; i++)
+            {
+                _scrollView.Add(beatLine);
+                _scrollView.Add(space);
+                Debug.Log($"Now is creating num:{i}");
+            }
+
         }
 
         private void Start()
