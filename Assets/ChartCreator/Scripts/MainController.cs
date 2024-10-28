@@ -20,6 +20,7 @@ namespace ChartCreator.Scripts
         public static Maincontroller Instance;
         private Button _createButton;
         private Button _closeButton;
+        private Button _WTFButton;
         private ScrollView _scrollView;
 
 
@@ -37,6 +38,7 @@ namespace ChartCreator.Scripts
             //获取代码组件
             _createButton = ElementTools.GetElementById<Button>(ref uiDocument, "NewChartButton");
             _closeButton = ElementTools.GetElementById<Button>(ref uiDocument,"CloseChartButton");
+            _WTFButton = ElementTools.GetElementById<Button>(ref uiDocument,"WTFButton");
             VisualElement timeline = ElementTools.GetElementByClass<VisualElement>(ref uiDocument, "timeline-class");
             _scrollView = ElementTools.GetElementById<ScrollView>(ref timeline, "ScrollView");
         }
@@ -51,6 +53,15 @@ namespace ChartCreator.Scripts
             {
                 //这里释放读写文件的
                 Debug.Log("close this ChartFile");
+            };
+            _WTFButton.clicked += () =>
+            {
+                for(int i=0;i<=10;i++)
+                {
+                    Debug.Log("W");
+                    Debug.Log("T");
+                    Debug.Log("F");
+                }
             };
             VisualElement beatLine = new VisualElement
             {

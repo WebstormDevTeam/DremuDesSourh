@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="Timeline" src="project://database/Assets/ChartCreator/UI/Compoments/Timeline.uxml?fileID=9197481963319205126&amp;guid=bf4a22b413112403681df150d57ebc14&amp;type=3#Timeline" />
+    <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+        <ui:VisualElement style="flex-grow: 1; background-color: rgb(194, 120, 31); flex-direction: column; width: 20%; height: 100%;">
+            <ui:Label tabindex="-1" text="About" parse-escape-sequences="true" display-tooltip-when-elided="true" style="font-size: 36%; -unity-font-style: bold; -unity-text-align: upper-left; text-overflow: clip; flex-direction: column;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; background-color: rgb(18, 88, 24); flex-direction: column; width: 80%; height: 100%; align-items: auto; align-self: auto; justify-content: center;">
+            <ui:Instance template="Timeline" name="Timeline" style="flex-direction: column; width: 90%; height: 90%; align-items: auto; align-self: center; justify-content: space-around;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
