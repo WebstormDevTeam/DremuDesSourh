@@ -125,39 +125,42 @@ namespace Dremu.Gameplay.Manager
             pauseButton.onClick.AddListener(() => { RestartGame(null); });
             jsonPath = "Assets/Resources/Chart/TestChart_1.json";
 
-            JObject chart = ChartAnalyser.GetChartDataToJObject(jsonPath);
+            // JObject chart = ChartAnalyser.GetChartDataToJObject(jsonPath);
+            var chart = ChartAnalyser.GetChartDataToRoot(jsonPath);
+
+            if (chart == null) throw new NullReferenceException();
 
             //谱面头部信息
-            if (chart["Version"].ToString() != "2024.8.7" || chart["Version"] == null)
+            if (chart.Version != "2024.8.7" || chart.Version == null)
             {
                 throw new Exception("版本不匹配");
                 Application.Quit();
             }
 
-            songName.text = chart["Name"].ToString();
-            hard.text = chart["Hard"].ToString();
+            songName.text = chart.Name;
+            hard.text = chart.Hard;
 
-            #region SetDefaultBPM
-
-            if (chart["ChartData"]["BPMList"] == null)
-            {
-                BPM = new EnvelopeLine(new List<ControlNode>()
-                {
-                    new ControlNode(0, (int)chart["DefaultBPM"], 0, CurveType.Linear),
-                });
-            }
-            else
-            {
-                List<ControlNode> bpmList = new List<ControlNode>();
-                foreach (JObject bpm in chart["ChartData"]["BPMList"].ToArray())
-                {
-                    Debug.Log(bpm["Time"]);
-                    bpmList.Add(new ControlNode((int)bpm["Time"], (int)bpm["Value"], (int)bpm["Tension"], EaseTypeManager.StringToCurveType(bpm["CurveType"].ToString())));
-                }
-                BPM = new EnvelopeLine(bpmList);
-            }
-
-            #endregion
+            // #region SetDefaultBPM
+            //
+            // if (chart.ChartData.BPMList == null)
+            // {
+            //     BPM = new EnvelopeLine(new List<ControlNode>()
+            //     {
+            //         new ControlNode(0, chart.DefaultBPM, 0, CurveType.Linear),
+            //     });
+            // }
+            // else
+            // {
+            //     List<ControlNode> bpmList = new List<ControlNode>();
+            //     foreach (var bpm in chart.ChartData.BPMList)
+            //     {
+            //         Debug.Log(bpm.Time);
+            //         bpmList.Add(new ControlNode(bpm.Time, bpm.Value, bpm.Tension, EaseTypeManager.StringToCurveType(bpm.CurveType)));
+            //     }
+            //     BPM = new EnvelopeLine(bpmList);
+            // }
+            //
+            // #endregion
 
             AudioManager.PlayMusic(clip);
             AudioManager.MusicVolume = 1;
