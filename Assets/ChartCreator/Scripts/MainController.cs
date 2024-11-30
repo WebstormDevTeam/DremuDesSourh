@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.XR;
 using Color = UnityEngine.Color;
+using StyleLength = UnityEngine.UIElements.StyleLength;
 
 namespace ChartCreator.Scripts
 {
@@ -22,6 +23,9 @@ namespace ChartCreator.Scripts
         private Button _closeButton;
         private Button _WTFButton;
         private ScrollView _scrollView;
+        private VisualElement _timerView;
+        private VisualElement _timeline;
+        private ScrollView _timelineScroll;
 
 
         private void Awake()
@@ -39,8 +43,9 @@ namespace ChartCreator.Scripts
             _createButton = ElementTools.GetElementById<Button>(ref uiDocument, "NewChartButton");
             _closeButton = ElementTools.GetElementById<Button>(ref uiDocument,"CloseChartButton");
             _WTFButton = ElementTools.GetElementById<Button>(ref uiDocument,"WTFButton");
-            VisualElement timeline = ElementTools.GetElementByClass<VisualElement>(ref uiDocument, "timeline-class");
-            _scrollView = ElementTools.GetElementById<ScrollView>(ref timeline, "ScrollView");
+            _timerView = ElementTools.GetElementById<VisualElement>(ref uiDocument, "Timer");
+            _timeline = ElementTools.GetElementByClass<VisualElement>(ref _timerView, "theTimeline");
+            _timelineScroll = ElementTools.GetElementById<ScrollView>(ref _timeline, "ScrollView");
         }
 
         private void SetElementsState()
@@ -56,37 +61,23 @@ namespace ChartCreator.Scripts
             };
             _WTFButton.clicked += () =>
             {
-                for(int i=0;i<=10;i++)
-                {
-                    Debug.Log("W");
-                    Debug.Log("T");
-                    Debug.Log("F");
-                }
+                Debug.Log("W");
+                Debug.Log("T");
+                Debug.Log("F");
             };
-            VisualElement beatLine = new VisualElement
+            for (int i = 0; i < 80; i++)
             {
-                style =
+                _timelineScroll.Add(new VisualElement()
                 {
-                    width = 2,
-                    height = 100,
-                    backgroundColor = new StyleColor(Color.black)
-                }
-            };
-            VisualElement space = new VisualElement
-            {
-                style =
-                {
-                    width = 10,
-                    height = new StyleLength(StyleKeyword.Auto)
-                }
-            };
-            for (int i = 0; i < 10; i++)
-            {
-                _scrollView.Add(beatLine);
-                _scrollView.Add(space);
-                Debug.Log($"Now is creating num:{i}");
+                    style =
+                    {
+                        width = 2,
+                        height = 100,
+                        backgroundColor = new StyleColor(Color.black),
+                        marginLeft = 18,
+                    }
+                });
             }
-
         }
 
         private void Start()

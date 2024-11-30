@@ -2,8 +2,7 @@
     <ui:Template name="Displayer" src="project://database/Assets/ChartCreator/UI/Compoments/Parts/Displayer.uxml?fileID=9197481963319205126&amp;guid=ef5e4c0b477360b47a26e348186e8b8a&amp;type=3#Displayer" />
     <ui:Template name="Attribute" src="project://database/Assets/ChartCreator/UI/Compoments/Parts/Attribute.uxml?fileID=9197481963319205126&amp;guid=dc28b0509af3be74c8511326a2ab022f&amp;type=3#Attribute" />
     <ui:Template name="Others" src="project://database/Assets/ChartCreator/UI/Compoments/Parts/Others.uxml?fileID=9197481963319205126&amp;guid=9d589943472366c43a6ed4b8f4c0b8c6&amp;type=3#Others" />
-    <ui:Template name="Timer" src="project://database/Assets/ChartCreator/UI/Compoments/Parts/NewUXMLTemplate.uxml?fileID=9197481963319205126&amp;guid=bf1992a4d537c0c4683c1a145da24a6f&amp;type=3#NewUXMLTemplate" />
-    <ui:Template name="Timeline" src="project://database/Assets/ChartCreator/UI/Compoments/Timeline.uxml?fileID=9197481963319205126&amp;guid=bf4a22b413112403681df150d57ebc14&amp;type=3#Timeline" />
+    <ui:Template name="Timer" src="project://database/Assets/ChartCreator/UI/Compoments/Parts/Times.uxml?fileID=9197481963319205126&amp;guid=bf1992a4d537c0c4683c1a145da24a6f&amp;type=3#Times" />
     <Style src="project://database/Assets/ChartCreator/Style/MainUI.uss?fileID=7433441132597879392&amp;guid=a2f802d638d5b4ef0ac3b432bc950c78&amp;type=3#MainUI" />
     <ui:VisualElement name="Background" style="flex-grow: 1; background-color: rgb(255, 255, 255);">
         <ui:Label tabindex="-1" text="Dremu谱面编辑器" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Title" style="margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px; justify-content: flex-start; position: relative; top: auto; bottom: 1px; -unity-text-align: upper-center; font-size: 10px; width: 100%; text-overflow: clip; height: 2.5%;" />
@@ -36,5 +35,4 @@
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
-    <ui:Instance template="Timeline" name="Timeline" class="timeline-class" style="width: 100%; height: 2.5%;" />
 </ui:UXML>
