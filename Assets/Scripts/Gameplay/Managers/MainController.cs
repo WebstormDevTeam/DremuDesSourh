@@ -73,6 +73,7 @@ namespace Dremu.Gameplay.Manager
         }
 
 #if DEBUG
+        //设置默认的Bpm
         EnvelopeLine BPMLine=new EnvelopeLine(new List<ControlNode>()
         {
             new ControlNode(0, 120, 0, CurveType.Linear)
@@ -84,7 +85,6 @@ namespace Dremu.Gameplay.Manager
             set { Instance.BPMLine = value; }
         }
 
-        // #region test
 
 
         Curve curve1 = new Curve(
@@ -140,27 +140,32 @@ namespace Dremu.Gameplay.Manager
             songName.text = chart.Name;
             hard.text = chart.Hard;
 
-            // #region SetDefaultBPM
-            //
-            // if (chart.ChartData.BPMList == null)
-            // {
-            //     BPM = new EnvelopeLine(new List<ControlNode>()
-            //     {
-            //         new ControlNode(0, chart.DefaultBPM, 0, CurveType.Linear),
-            //     });
-            // }
-            // else
-            // {
-            //     List<ControlNode> bpmList = new List<ControlNode>();
-            //     foreach (var bpm in chart.ChartData.BPMList)
-            //     {
-            //         Debug.Log(bpm.Time);
-            //         bpmList.Add(new ControlNode(bpm.Time, bpm.Value, bpm.Tension, EaseTypeManager.StringToCurveType(bpm.CurveType)));
-            //     }
-            //     BPM = new EnvelopeLine(bpmList);
-            // }
-            //
-            // #endregion
+            #region SetDefaultBPM
+
+            if (chart.ChartData.BPMList == null)
+            {
+                BPM = new EnvelopeLine(new List<ControlNode>()
+                {
+                    new ControlNode(0, chart.DefaultBPM, 0, CurveType.Linear),
+                });
+            }
+            else
+            {
+                List<ControlNode> bpmList = new List<ControlNode>();
+                foreach (var bpm in chart.ChartData.BPMList)
+                {
+                    Debug.Log(bpm.Time);
+                    bpmList.Add(new ControlNode(bpm.Time, bpm.Value, bpm.Tension, EaseTypeManager.StringToCurveType(bpm.CurveType)));
+                }
+                BPM = new EnvelopeLine(bpmList);
+            }
+
+            #endregion
+
+            foreach (JudgementLine judgementLine in chart.ChartData.JudgementLineList)
+            {
+
+            }
 
             AudioManager.PlayMusic(clip);
             AudioManager.MusicVolume = 1;
