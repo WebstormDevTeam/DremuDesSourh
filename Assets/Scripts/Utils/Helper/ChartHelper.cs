@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
@@ -25,6 +26,7 @@ namespace Utils.Helper.ChartHelper
             string jsonString = File.ReadAllText(json);
             Debug.Log(jsonString);
             Root chartData = JsonConvert.DeserializeObject<Root>(jsonString);
+
             return chartData;
         }
 
