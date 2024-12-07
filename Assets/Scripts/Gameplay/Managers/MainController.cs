@@ -202,12 +202,13 @@ namespace Dremu.Gameplay.Manager
                         20, 1, 1, CurveType.Const
                     )
                 }
-            );
+            );//TODO:chart.ChartData.JudgementLineList[0].EnvelopeLine;
             line.SetCurvesAndEnvelope(curveGroup, ev);
 
 
-            for (int i = 0; i < 16; i++)
+            for (int i = 0; i < chart.ChartData.JudgementLineList[0].Note.Count; i++)
             {
+                //TODO:var t = chart.ChartData.JudgementLineList[0].Note[i];
                 NoteManager.GetNewTap(line, 0.2f, 15f + i * 2);
                 NoteManager.GetNewSlide(line, 0.4f, 15.5f + i * 2);
                 NoteManager.GetNewTap(line, 0.6f, 16f + i * 2);

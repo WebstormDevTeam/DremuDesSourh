@@ -1,8 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Utils.Helper.ChartHelper
@@ -25,9 +27,7 @@ namespace Utils.Helper.ChartHelper
         {
             string jsonString = File.ReadAllText(json);
             Debug.Log(jsonString);
-            Root chartData = JsonConvert.DeserializeObject<Root>(jsonString);
-
-
+            Root chartData = JsonConvert.DeserializeObject<Root>(jsonString,new TestScript.Vec2Conv());
 
             return chartData;
         }
@@ -74,7 +74,7 @@ namespace Utils.Helper.ChartHelper
     public class Curve
     {
         public List<Vector2> Points;
-        public List<List<List<float>>> Nodes;
+        public List<List<Vector2>> Nodes;
     }
 
     public class EnvelopeLine
