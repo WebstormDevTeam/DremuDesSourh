@@ -27,11 +27,17 @@ namespace Utils.Helper.ChartHelper
             Debug.Log(jsonString);
             Root chartData = JsonConvert.DeserializeObject<Root>(jsonString);
 
+
+
             return chartData;
         }
 
 
     }
+
+
+
+
 
     public class Root
     {
@@ -67,7 +73,7 @@ namespace Utils.Helper.ChartHelper
 
     public class Curve
     {
-        public List<List<float>> Points;
+        public List<Vector2> Points;
         public List<List<List<float>>> Nodes;
     }
 
