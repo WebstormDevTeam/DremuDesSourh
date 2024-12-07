@@ -72,7 +72,7 @@ namespace ChartCreator.Scripts
                     style =
                     {
                         width = 2,
-                        height = 100,
+                        height = new StyleLength(new Length(100,LengthUnit.Percent)),
                         backgroundColor = new StyleColor(Color.black),
                         marginLeft = 18,
                     }
