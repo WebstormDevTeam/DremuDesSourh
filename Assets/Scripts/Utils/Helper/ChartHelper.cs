@@ -92,9 +92,9 @@ namespace Utils.Helper.ChartHelper
 
     public class Note
     {
-        public int Time;
+        public float Position;
         public string Type;
-        public float Value;
+        public int ArrivalTime;
     }
 
     public class GuideLine

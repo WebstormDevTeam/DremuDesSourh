@@ -6,7 +6,7 @@ using UnityEngine;
 using Utils.Helper;
 
 namespace Dremu.Gameplay.Object {
-    public class JudgmentLine : MonoBehaviour, RecyclableObject {
+    public class JudgementLine : MonoBehaviour, RecyclableObject {
 
         [SerializeField] LineRenderer line;
         

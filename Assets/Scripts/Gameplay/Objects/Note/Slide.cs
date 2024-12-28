@@ -22,8 +22,8 @@ namespace Dremu.Gameplay.Object {
             // Line.SetPositions(Functions.Vec2ListToVec3List(points).ToArray());
 
             //设置音符位置
-            KeyValuePair<Vector2, Vector2> normal = JudgmentLine.CurrentCurve.GetNormal(position);
-            transform.localPosition = PositionHelper.RelativeCoordToAbsoluteCoord(normal.Key, Camera.main) + normal.Value * JudgmentLine.Speed.GetPosition(CurrentTime, ArrivalTime - CurrentTime);
+            KeyValuePair<Vector2, Vector2> normal = JudgementLine.CurrentCurve.GetNormal(position);
+            transform.localPosition = PositionHelper.RelativeCoordToAbsoluteCoord(normal.Key, Camera.main) + normal.Value * JudgementLine.Speed.GetPosition(CurrentTime, ArrivalTime - CurrentTime);
 
             if (CurrentTime > ArrivalTime) //淡出
                 Line.startColor = Line.endColor = UGUIHelper.SetAlpha(NoteManager.NoteColor, 1 - (CurrentTime - ArrivalTime)*2);

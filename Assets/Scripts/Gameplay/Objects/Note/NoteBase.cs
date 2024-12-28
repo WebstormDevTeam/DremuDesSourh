@@ -5,16 +5,16 @@ namespace Dremu.Gameplay.Object {
     public abstract class NoteBase : MonoBehaviour, RecyclableObject {
 
         public float ArrivalTime;
-        public JudgmentLine JudgmentLine { get; private set; }
+        public JudgementLine JudgementLine { get; private set; }
         [Range(0.1f, 0.9f)] public float position;
 
         /// <summary>
         /// 将音符绑定到所属判定线上
         /// </summary>
-        /// <param name="JudgmentLine">所属判定线</param>
-        public void Bind( JudgmentLine JudgmentLine ) {
-            transform.SetParent(JudgmentLine.transform);
-            this.JudgmentLine = JudgmentLine;
+        /// <param name="judgementLine">所属判定线</param>
+        public void Bind( JudgementLine judgementLine ) {
+            transform.SetParent(judgementLine.transform);
+            this.JudgementLine = judgementLine;
         }
 
         /// <summary>
