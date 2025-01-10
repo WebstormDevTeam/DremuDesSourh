@@ -1,0 +1,38 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="Displayer" src="project://database/Assets/ChartCreator/UI/Compoments/Parts/Displayer.uxml?fileID=9197481963319205126&amp;guid=ef5e4c0b477360b47a26e348186e8b8a&amp;type=3#Displayer" />
+    <ui:Template name="Attribute" src="project://database/Assets/ChartCreator/UI/Compoments/Parts/Attribute.uxml?fileID=9197481963319205126&amp;guid=dc28b0509af3be74c8511326a2ab022f&amp;type=3#Attribute" />
+    <ui:Template name="Others" src="project://database/Assets/ChartCreator/UI/Compoments/Parts/Others.uxml?fileID=9197481963319205126&amp;guid=9d589943472366c43a6ed4b8f4c0b8c6&amp;type=3#Others" />
+    <ui:Template name="Timer" src="project://database/Assets/ChartCreator/UI/Compoments/Parts/Times.uxml?fileID=9197481963319205126&amp;guid=bf1992a4d537c0c4683c1a145da24a6f&amp;type=3#Times" />
+    <Style src="project://database/Assets/ChartCreator/Style/MainUI.uss?fileID=7433441132597879392&amp;guid=a2f802d638d5b4ef0ac3b432bc950c78&amp;type=3#MainUI" />
+    <ui:VisualElement name="Background" style="flex-grow: 1; background-color: rgb(255, 255, 255);">
+        <ui:Label tabindex="-1" text="Dremu谱面编辑器" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Title" style="margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px; justify-content: flex-start; position: relative; top: auto; bottom: 1px; -unity-text-align: upper-center; font-size: 10px; width: 100%; text-overflow: clip; height: 2.5%;" />
+        <ui:VisualElement name="MainElement" style="flex-grow: 1; width: 100%; height: 95%;">
+            <ui:VisualElement name="ToolBar" class="tool-bar-default" style="flex-grow: 1; height: 10%; transform-origin: top; min-height: auto; max-height: none; min-width: auto;">
+                <ui:VisualElement style="display: flex; flex-direction: row; align-items: center; margin-top: 0.5%; margin-bottom: 0.5%; height: 100%; width: 100%; align-self: auto;">
+                    <ui:VisualElement name="CreateButton" style="flex-grow: 0; margin-right: 0.25%; width: 8%; height: 90%; margin-left: 0.5%; -unity-slice-scale: 1px; align-self: auto;">
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="NewChartButton" enable-rich-text="true" focusable="true" class="tool-bar-button" style="-unity-text-align: lower-center; height: 80%; width: 100%; transform-origin: center; -unity-background-scale-mode: scale-to-fit; white-space: nowrap; text-overflow: clip; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+                        <ui:Label tabindex="-1" text="创建新谱面" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="tool-bar-button-text" style="overflow: visible; visibility: visible; height: 20%; width: 100%; display: flex; align-items: flex-start; justify-content: flex-start; align-self: flex-start; -unity-text-align: upper-center; top: auto; margin-top: 0; margin-right: 0; margin-bottom: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-left: 0; font-size: 14%;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="CloseButton" style="flex-grow: 0; width: 7%; height: 90%; margin-right: 0.25%; margin-left: 0.25%; align-self: auto;">
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="CloseChartButton" enable-rich-text="true" focusable="true" class="tool-bar-button" style="-unity-text-align: lower-center; height: 80%; width: 100%; transform-origin: center; -unity-background-scale-mode: scale-to-fit; white-space: nowrap; text-overflow: clip; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;" />
+                        <ui:Label tabindex="-1" text="关闭谱面" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="tool-bar-button-text" style="overflow: visible; visibility: visible; height: 20%; width: 100%; display: flex; align-items: flex-start; justify-content: flex-start; align-self: flex-start; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; -unity-text-align: upper-center; top: auto; font-size: 14%;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="DoNotTouchButton" style="flex-grow: 0; margin-right: 0.25%; margin-left: 0.25%; width: 7%; height: 90%; align-self: auto;">
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="WTFButton" class="tool-bar-button" style="width: 100%; height: 80%; background-color: rgba(255, 255, 255, 0); background-image: url(&quot;project://database/Assets/Plugins/IngameDebugConsole/Sprites/Unused/IconInfoHighRes.psd?fileID=21300000&amp;guid=bcdedee4360362b4bab026d6cd74f714&amp;type=3#IconInfoHighRes&quot;); -unity-background-scale-mode: scale-to-fit; align-items: auto; flex-direction: row; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+                        <ui:Label tabindex="-1" text="WTF?!" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="tool-bar-button-text" style="top: auto; flex-direction: column; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; width: 100%; height: 20%; -unity-text-align: upper-center; font-size: 14%;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="WorkSpace" class="work-space-default" style="flex-grow: 1; height: 90%; width: 100%;">
+                <ui:VisualElement style="flex-grow: 1; width: 100%; height: 75%; flex-direction: row;">
+                    <ui:Instance template="Displayer" name="Displayer" style="width: 75%; height: 100%; flex-direction: column; padding-top: 0.25%; padding-right: 0.25%; padding-bottom: 0.25%; padding-left: 0.25%; background-color: rgba(0, 0, 0, 0); -unity-background-image-tint-color: rgb(0, 0, 0); align-self: auto;" />
+                    <ui:Instance template="Attribute" name="Attribute" style="width: 40%; height: 100%; flex-direction: column; padding-top: 0.25%; padding-right: 0.25%; padding-bottom: 0.25%; padding-left: 0.25%; align-self: auto;" />
+                </ui:VisualElement>
+                <ui:VisualElement style="flex-grow: 1; flex-direction: row; width: 100%; height: 50%;">
+                    <ui:Instance template="Others" name="Others" style="width: 25%; height: 100%; padding-top: 0.25%; padding-right: 0.25%; padding-bottom: 0.25%; padding-left: 0.25%;" />
+                    <ui:Instance template="Timer" name="Timer" style="width: 75%; height: 100%; align-self: auto; padding-top: 0.25%; padding-right: 0.25%; padding-bottom: 0.25%; padding-left: 0.25%;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

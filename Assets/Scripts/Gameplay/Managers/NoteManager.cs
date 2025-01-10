@@ -57,16 +57,16 @@ namespace Dremu.Gameplay.Manager {
         /// <summary>
         /// 创建一个新的Tap音符
         /// </summary>
-        /// <param name="JudgmentLine">判定线</param>
+        /// <param name="judgementLine">判定线</param>
         /// <param name="Position">相对位置</param>
         /// <param name="ArrivalTime">到达时间</param>
         /// <returns></returns>
-        public static Tap GetNewTap( JudgmentLine JudgmentLine, float Position, float ArrivalTime ) {
+        public static Tap GetNewTap( JudgementLine judgementLine, float Position, float ArrivalTime ) {
             Tap tap = Instance.TapPool.GetObject();
             tap.SetArrivalTime(ArrivalTime);
             tap.SetPosition(Position);
-            tap.SetWidth(JudgmentLine.NoteWidth);
-            JudgmentLine.AddNote(tap);
+            tap.SetWidth(judgementLine.NoteWidth);
+            judgementLine.AddNote(tap);
             Instance.ActiveTaps.Add(tap);
             return tap;
         }
@@ -75,16 +75,16 @@ namespace Dremu.Gameplay.Manager {
         /// <summary>
         /// 创建一个新的Slide音符
         /// </summary>
-        /// <param name="JudgmentLine">判定线</param>
+        /// <param name="judgementLine">判定线</param>
         /// <param name="Position">相对位置</param>
         /// <param name="ArrivalTime">到达时间</param>
         /// <returns></returns>
-        public static Slide GetNewSlide( JudgmentLine JudgmentLine, float Position, float ArrivalTime ) {
+        public static Slide GetNewSlide( JudgementLine judgementLine, float Position, float ArrivalTime ) {
             Slide slide = Instance.SlidePool.GetObject();
             slide.SetArrivalTime(ArrivalTime);
             slide.SetPosition(Position);
-            slide.SetWidth(JudgmentLine.NoteWidth);
-            JudgmentLine.AddNote(slide);
+            slide.SetWidth(judgementLine.NoteWidth);
+            judgementLine.AddNote(slide);
             Instance.ActiveSlides.Add(slide);
             return slide;
         }
@@ -92,17 +92,17 @@ namespace Dremu.Gameplay.Manager {
         /// <summary>
         /// 创建一个新的Hold音符
         /// </summary>
-        /// <param name="JudgmentLine">判定线</param>
+        /// <param name="judgementLine">判定线</param>
         /// <param name="Position">相对位置</param>
         /// <param name="ArrivalTime">到达时间</param>
         /// <param name="HoldNodes">判定节点</param>
         /// <returns></returns>
-        public static GuideLine GetNewGuideLine( JudgmentLine JudgmentLine, float Position, float ArrivalTime, List<GuideLine.GuideNode> HoldNodes ) {
+        public static GuideLine GetNewGuideLine( JudgementLine judgementLine, float Position, float ArrivalTime, List<GuideLine.GuideNode> HoldNodes ) {
             GuideLine guideLine = Instance.HoldPool.GetObject();
             guideLine.SetArrivalTime(ArrivalTime);
             guideLine.SetPosition(Position);
             guideLine.SetGuideLineNodes(HoldNodes);
-            JudgmentLine.AddNote(guideLine);
+            judgementLine.AddNote(guideLine);
             Instance.ActiveHolds.Add(guideLine);
             return guideLine;
         }
@@ -110,17 +110,17 @@ namespace Dremu.Gameplay.Manager {
         /// <summary>
         /// 创建一个新的Drag音符
         /// </summary>
-        /// <param name="JudgmentLine">判定线</param>
+        /// <param name="judgementLine">判定线</param>
         /// <param name="Position">相对位置</param>
         /// <param name="ArrivalTime">到达时间</param>
         /// <param name="DragNodes">判定节点</param>
         /// <returns></returns>
-        public static Hold GetNewDrag( JudgmentLine JudgmentLine, float Position, float ArrivalTime, List<Hold.HoldNode> DragNodes ) {
+        public static Hold GetNewDrag( JudgementLine judgementLine, float Position, float ArrivalTime, List<Hold.HoldNode> DragNodes ) {
             Hold hold = Instance.DragPool.GetObject();
             hold.SetArrivalTime(ArrivalTime);
             hold.SetPosition(Position);
             hold.SetHoldNodes(DragNodes);
-            JudgmentLine.AddNote(hold);
+            judgementLine.AddNote(hold);
             Instance.ActiveDrags.Add(hold);
             return hold;
         }

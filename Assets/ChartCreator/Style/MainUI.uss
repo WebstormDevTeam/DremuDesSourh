@@ -1,0 +1,58 @@
+.tool-bar-default {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(233, 233, 233);
+    min-width: 100%;
+    min-height: 20%;
+    max-height: 30%;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.work-space-default {
+    width: 95%;
+    align-self: center;
+    height: 50%;
+}
+
+.tool-bar-button {
+    width: 50px;
+    height: 90px;
+    align-self: auto;
+    justify-content: flex-start;
+    align-items: auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    -unity-text-align: upper-center;
+    white-space: nowrap;
+    background-color: rgba(255, 255, 255, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+
+.tool-bar-button-text {
+    align-self: center;
+    justify-content: flex-end;
+    align-items: center;
+    top: -20px;
+    text-overflow: clip;
+    white-space: normal;
+    flex-wrap: nowrap;
+}
+
+#NewChartButton {
+    background-image: url("project://database/Assets/Images/Editor/file-add.png?fileID=2800000&guid=32c7d6969f5e24544905de4c13905b71&type=3#file-add");
+}
+
+#CloseChartButton {
+    background-image: url("project://database/Assets/Images/Editor/file-close.png?fileID=21300000&guid=3a91f80247afb4cfa8136332aea12d10&type=3#file-close");
+}
+
+#WTFButton {
+    background-image: url("project://database/Assets/Plugins/IngameDebugConsole/Sprites/Unused/IconInfoHighRes.psd?fileID=21300000&guid=bcdedee4360362b4bab026d6cd74f714&type=3#IconInfoHighRes");
+}
+
+.timeline-class {
+}

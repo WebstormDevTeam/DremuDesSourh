@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; width: 100%; height: 100px; background-color: rgb(78, 79, 154); -unity-background-image-tint-color: rgb(0, 0, 0);">
+        <ui:Label tabindex="-1" text="Displaying Part" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: auto; height: auto; left: auto; top: auto; position: relative; font-size: 36px; -unity-font-style: bold;" />
+    </ui:VisualElement>
+</ui:UXML>

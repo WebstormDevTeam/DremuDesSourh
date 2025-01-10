@@ -3,23 +3,24 @@ using System.Collections.Generic;
 using Dremu.Gameplay.Object;
 using Dremu.Gameplay.Tool;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Dremu.Gameplay.Manager {
     public sealed class JudgmentLineManager : MonoBehaviour {
 
-        [SerializeField] JudgmentLine _JudgmentLine;
+        [FormerlySerializedAs("_JudgmentLine")] [SerializeField] JudgementLine judgementLine;
 
-        private StandardObjectPool<JudgmentLine> JudgmentLinePool;
+        private StandardObjectPool<JudgementLine> JudgmentLinePool;
         public static JudgmentLineManager Instance { get; private set; }
 
-        readonly List<JudgmentLine> ActiveLines = new List<JudgmentLine>();
+        readonly List<JudgementLine> ActiveLines = new List<JudgementLine>();
 
         public static Color JudgmentLineColor { get; private set; }
 
         private void Awake() {
             Instance = this;
 
-            JudgmentLinePool = new StandardObjectPool<JudgmentLine>(_JudgmentLine, 4);
+            JudgmentLinePool = new StandardObjectPool<JudgementLine>(judgementLine, 4);
             JudgmentLineColor = Color.black;
         }
 
@@ -31,8 +32,8 @@ namespace Dremu.Gameplay.Manager {
         /// <param name="AlphaGroup">透明度组</param>
         /// <param name="NoteWidth">音符宽度</param>
         /// <returns>一条判定线</returns>
-        public static JudgmentLine GetNewJudgmentLine(Curve InitialCurve, EnvelopeLine SpeedGroup, EnvelopeLine AlphaGroup, float NoteWidth) {
-            JudgmentLine line = Instance.JudgmentLinePool.GetObject();
+        public static JudgementLine GetNewJudgmentLine(Curve InitialCurve, EnvelopeLine SpeedGroup, EnvelopeLine AlphaGroup, float NoteWidth) {
+            JudgementLine line = Instance.JudgmentLinePool.GetObject();
             line.SetCurvesAndEnvelope(
                 new List<Curve> { InitialCurve },
                 new EnvelopeLine(
@@ -51,9 +52,9 @@ namespace Dremu.Gameplay.Manager {
         /// <summary>
         /// 归还一条判定线
         /// </summary>
-        /// <param name="JudgmentLine"> 判定线对象 </param>
-        public static void ReturnJudgmentLine(JudgmentLine JudgmentLine ) {
-            Instance.JudgmentLinePool.ReturnObject(JudgmentLine);
+        /// <param name="judgementLine"> 判定线对象 </param>
+        public static void ReturnJudgmentLine(JudgementLine judgementLine ) {
+            Instance.JudgmentLinePool.ReturnObject(judgementLine);
         }
 
         /// <summary>

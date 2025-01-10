@@ -1,3 +1,4 @@
+using System;
 using Dremu.Gameplay.Object;
 using System.Collections;
 using System.Collections.Generic;
@@ -33,15 +34,15 @@ namespace Dremu.Gameplay.Object {
             for (int i = 0; i < HoldNodes.Count; i++) {
                 HoldNode Holding = HoldNodes[i];
 
-                var pointsPerHolding = JudgmentLine.CurrentCurve.SubCurveByStartAndEnd(start, Holding.To);
+                var pointsPerHolding = JudgementLine.CurrentCurve.SubCurveByStartAndEnd(start, Holding.To);
                 float devide = 1f * (Holding.To - start) / pointsPerHolding.Count;
-                float PerDirection = JudgmentLine.Speed.GetPosition(time, Holding.Time) / pointsPerHolding.Count;
+                float PerDirection = JudgementLine.Speed.GetPosition(time, Holding.Time) / pointsPerHolding.Count;
 
                 if (points.Count > 0)
                     pointsPerHolding.RemoveAt(0);
 
                 for (int j = 0; j < pointsPerHolding.Count; j++) {
-                    KeyValuePair<Vector2, Vector2> normalPerPoint = JudgmentLine.CurrentCurve.GetNormal(start + devide * (j + 1));
+                    KeyValuePair<Vector2, Vector2> normalPerPoint = JudgementLine.CurrentCurve.GetNormal(start + devide * (j + 1));
                     pointsPerHolding[j] = 
                         StartPoint + 
                         PositionHelper.RelativeCoordToAbsoluteCoord(pointsPerHolding[j], Camera.main) + 
@@ -73,10 +74,10 @@ namespace Dremu.Gameplay.Object {
             Line.SetPositions(Functions.Vec2ListToVec3List(points).ToArray());
 
             //设置音符位置
-            KeyValuePair<Vector2, Vector2> normal = JudgmentLine.CurrentCurve.GetNormal(position);
+            KeyValuePair<Vector2, Vector2> normal = JudgementLine.CurrentCurve.GetNormal(position);
             transform.localPosition = 
                 PositionHelper.RelativeCoordToAbsoluteCoord(normal.Key, Camera.main) + 
-                (CurrentTime < ArrivalTime ? normal.Value * JudgmentLine.Speed.GetPosition(CurrentTime, ArrivalTime - CurrentTime) : Vector2.zero);
+                (CurrentTime < ArrivalTime ? normal.Value * JudgementLine.Speed.GetPosition(CurrentTime, ArrivalTime - CurrentTime) : Vector2.zero);
 
             Line.startColor = Line.endColor = NoteManager.NoteColor;
         }

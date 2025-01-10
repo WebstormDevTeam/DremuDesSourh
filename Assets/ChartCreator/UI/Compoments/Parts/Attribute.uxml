@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; background-color: rgb(135, 70, 151);">
+        <ui:Label tabindex="-1" text="Attribute&#10;Modifier" parse-escape-sequences="true" display-tooltip-when-elided="true" style="font-size: 36px; -unity-font-style: bold;" />
+    </ui:VisualElement>
+</ui:UXML>
