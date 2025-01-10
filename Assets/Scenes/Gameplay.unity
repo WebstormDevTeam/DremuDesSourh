@@ -714,7 +714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8f8b7241b060564ab57411f24a330c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _JudgmentLine: {fileID: -3934344866297148194, guid: 74496cd1f7eeb0041a8fd7f7bb60d2a2, type: 3}
+  judgementLine: {fileID: -3934344866297148194, guid: 74496cd1f7eeb0041a8fd7f7bb60d2a2, type: 3}
 --- !u!114 &1234574051
 MonoBehaviour:
   m_ObjectHideFlags: 0

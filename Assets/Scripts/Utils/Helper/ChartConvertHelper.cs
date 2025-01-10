@@ -136,7 +136,7 @@ namespace Utils.Helper.ChartConvertHelper
             foreach (var chartNode in chartNodes)
             {
                 t.Add(new Dremu.Gameplay.Object.GuideLine.GuideNode(chartNode.To, chartNode.Time, EaseTypeManager.EaseType.LINEAR));
-                //TODO:缓动类型我真的不想再switch了！！！！！！！
+                //TODO:缓动类型待修改
             }
             return t;
         }
