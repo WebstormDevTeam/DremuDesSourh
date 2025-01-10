@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using Dremu.Gameplay.Object;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Unity.VisualScripting;
@@ -67,8 +68,10 @@ namespace Utils.Helper.ChartHelper
     {
         public List<Curve> CurveGroup;
         public EnvelopeLine EnvelopeLine;
-        public List<Note> Note;
-        public List<GuideLine> GuideLine;
+        public EnvelopeLine EnvelopeSpeed;
+        public EnvelopeLine EnvelopeAlpha;
+        public Notes Notes;
+        public List<GuideLine> GuideLines;
     }
 
     public class Curve
@@ -90,10 +93,22 @@ namespace Utils.Helper.ChartHelper
         public string CurveType;
     }
 
-    public class Note
+    public class Notes
+    {
+        public List<Tap> Taps;
+        public List<Slide> Slides;
+        //暂缺Flick和Hold
+    }
+
+    public class Tap
     {
         public float Position;
-        public string Type;
+        public int ArrivalTime;
+    }
+    
+    public class Slide
+    {
+        public float Position;
         public int ArrivalTime;
     }
 

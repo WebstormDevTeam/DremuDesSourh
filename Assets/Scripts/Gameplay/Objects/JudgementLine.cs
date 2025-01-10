@@ -21,7 +21,7 @@ namespace Dremu.Gameplay.Object {
         /// <summary>
         /// 曲线控制组
         /// </summary>
-        public EnvelopeLine CurveControler {get; private set; }
+        public EnvelopeLine CurveController {get; private set; }
         /// <summary>
         /// 流速控制组
         /// </summary>
@@ -86,7 +86,7 @@ namespace Dremu.Gameplay.Object {
         /// <param name="envelopeLine">控制组</param>
         public void SetCurvesAndEnvelope( List<Curve> curves, EnvelopeLine envelopeLine ) {
             Curves = curves;
-            CurveControler = envelopeLine;
+            CurveController = envelopeLine;
             CurrentCurve = curves[0];
         }
 
@@ -97,21 +97,21 @@ namespace Dremu.Gameplay.Object {
         /// <exception cref="Exception">曲线控制组为空</exception>
         private void UpdateCurve(float CurrentTime)
         {
-            int curveIndex = EnvelopeLine.GetControlerIndex(CurveControler.Controllers, CurrentTime);
+            int curveIndex = EnvelopeLine.GetControlerIndex(CurveController.Controllers, CurrentTime);
             if (curveIndex == -1)
             {
                 throw new System.Exception("Error when search the time, is the list empty?");
             }
-            if (curveIndex == CurveControler.Controllers.Count - 1)
+            if (curveIndex == CurveController.Controllers.Count - 1)
             {
                 // 不对curve做出变化
                 return;
             }
-            var startIndex = Mathf.FloorToInt(CurveControler.Controllers[curveIndex].Value);
-            var endIndex = Mathf.FloorToInt(CurveControler.Controllers[curveIndex + 1].Value);
+            var startIndex = Mathf.FloorToInt(CurveController.Controllers[curveIndex].Value);
+            var endIndex = Mathf.FloorToInt(CurveController.Controllers[curveIndex + 1].Value);
             var startCurve = Curves[startIndex];
             var endCurve = Curves[endIndex];
-            var progress = (startIndex == endIndex)?  1f:(CurveControler.GetValue(CurrentTime) - endIndex) / (startIndex - endIndex);
+            var progress = (startIndex == endIndex)?  1f:(CurveController.GetValue(CurrentTime) - endIndex) / (startIndex - endIndex);
             CurrentCurve = Curve.CurveLerp(startCurve, endCurve, progress);
         }
         

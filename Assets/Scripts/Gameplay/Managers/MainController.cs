@@ -19,6 +19,7 @@ using Curve = Dremu.Gameplay.Tool.Curve;
 using EnvelopeLine = Dremu.Gameplay.Tool.EnvelopeLine;
 using GuideLine = Dremu.Gameplay.Object.GuideLine;
 using JudgementLine = Dremu.Gameplay.Object.JudgementLine;
+using Utils.Helper.ChartConvertHelper;
 
 
 /*~qwfdhn*/
@@ -38,7 +39,7 @@ namespace Dremu.Gameplay.Manager
 
         public string jsonPath;
         private static bool isPaused = false;
-        public Utils.Helper.ChartHelper.Root chart;
+        public Utils.Helper.ChartConvertHelper.Chart chart;
 
 
         public static void Stop(Callback? callback)
@@ -76,96 +77,38 @@ namespace Dremu.Gameplay.Manager
         }
         
         
-        private static Curve CurveFromChart(Utils.Helper.ChartHelper.Curve chartCurve)
+        
+        public static void CreateNotes(JudgementLine chartLine, Utils.Helper.ChartHelper.Notes chartNotes)
         {
-            return new Curve(
-                chartCurve.Points,
-                chartCurve.Nodes
-            );
+            foreach (var tap in chartNotes.Taps)
+            {
+                NoteManager.GetNewTap(chartLine, tap.Position, tap.ArrivalTime);
+            }
+            foreach (var slide in chartNotes.Slides)
+            {
+                NoteManager.GetNewSlide(chartLine, slide.Position, slide.ArrivalTime);
+            }
         }
         
-        private static JudgementLine LineFromChart(Curve currentCurve, Utils.Helper.ChartHelper.JudgementLine chartLine)
-        {
-            return JudgmentLineManager.GetNewJudgmentLine(currentCurve, new EnvelopeLine(
-                   new List<float[]>()
-                   {
-                       new float[]
-                       {
-                           0, 5
-                       }
-                   }
-                   ), new EnvelopeLine(
-                   new List<float[]>()
-                   {
-                       new float[]
-                       {
-                           0, 1
-                       }
-                   }
-                   ), 0.15f);
-            //TODO:这个0，5是个啥
-        }
-        
-        public static CurveType getCurveType(string curveType)
-        {
-            return curveType switch
-            {
-                "Const" => CurveType.Const,
-                "Linear" => CurveType.Linear,
-                "Expo" => CurveType.Expo,
-                "Sine" => CurveType.Sine,
-                _ => CurveType.Const
-            };
-        }
-        private static ControlNode ConvertController(Utils.Helper.ChartHelper.Controller chartController)
-        {
-            return new ControlNode(chartController.Time, chartController.Value, chartController.Tension, getCurveType(chartController.CurveType) );
-        }
-        private static EnvelopeLine EnvelopeLineFromChart(Utils.Helper.ChartHelper.EnvelopeLine chartEnvelopeLine)
-        {
-            var t = new EnvelopeLine(new List<ControlNode> { });
-            foreach (var c in chartEnvelopeLine.Controllers)
-            {
-                t.Controllers.Add(ConvertController(c));
-            }
-            return t;
-        }
-
-        private static void createNote(JudgementLine chartLine, Utils.Helper.ChartHelper.Note chartNote)
-        {
-            switch (chartNote.Type)
-            {
-                case "Tap": NoteManager.GetNewTap(chartLine, chartNote.Position, chartNote.ArrivalTime); break;
-                case "Slide": NoteManager.GetNewSlide(chartLine, chartNote.Position, chartNote.ArrivalTime); break;
-                case "Hold": throw new NotImplementedException("Hold"); break;
-                case "Drag": throw new NotImplementedException("Drag"); break;
-                default: throw new Exception("Note类型不正确！");
-            };
-        }
-
-        private static List<GuideLine.GuideNode> convertNodes(Utils.Helper.ChartHelper.GuideLine chartGuide)
-        {
-            List<GuideLine.GuideNode> t = new List<GuideLine.GuideNode>();
-            foreach (var chartNode in chartGuide.Nodes)
-            {
-                t.Add(new GuideLine.GuideNode(chartNode.To, chartNode.Time, EaseTypeManager.EaseType.LINEAR));
-                //TODO:缓动类型我真的不想再switch了！！！！！！！
-            }
-            return t;
-        }
-        private static void createGuideLine(JudgementLine chartLine,Utils.Helper.ChartHelper.GuideLine chartGuide)
+        public static void CreateGuideLine(JudgementLine chartLine,Utils.Helper.ChartConvertHelper.GuideLine chartGuide)
         {
             NoteManager.GetNewGuideLine(chartLine, chartGuide.Position, chartGuide.ArrivalTime,
-                convertNodes(chartGuide));
+                ChartConvertHelper.ConvertNodes(chartGuide.Nodes));
 
         }
-        //TODO:能改到ChartHelper里就改
+        
+        private static JudgementLine LineFromChart(Curve currentCurve, Utils.Helper.ChartConvertHelper.JudgementLine chartLine)
+        {
+            return JudgmentLineManager.GetNewJudgmentLine(currentCurve, chartLine.Speed, chartLine.Alpha, 0.15f);
+            //TODO:这个0，5是个啥
+        }
+        //?
         
 #if DEBUG
         //设置默认的Bpm
-        EnvelopeLine BPMLine=new EnvelopeLine(new List<ControlNode>()
+        EnvelopeLine BPMLine=new EnvelopeLine(new List<ControllNode>()
         {
-            new ControlNode(0, 120, 0, CurveType.Linear)
+            new ControllNode(0, 120, 0, CurveType.Linear)
         }); //BpmList Linear是变化形式，Const是直接把BPM改成对应的数值
 
         public static EnvelopeLine BPM
@@ -184,9 +127,7 @@ namespace Dremu.Gameplay.Manager
             jsonPath = "Assets/Resources/Chart/TestChart_1.json";
 
             // JObject chart = ChartAnalyser.GetChartDataToJObject(jsonPath);
-            chart = Utils.Helper.ChartHelper.ChartAnalyser.GetChartDataToRoot(jsonPath);
-
-            if (chart == null) throw new NullReferenceException();
+            chart = ChartConvertHelper.ConvertChartFromRoot(Utils.Helper.ChartHelper.ChartAnalyser.GetChartDataToRoot(jsonPath));
 
             //谱面头部信息
             if (chart.Version != "2024.8.7" || chart.Version == null)
@@ -202,25 +143,25 @@ namespace Dremu.Gameplay.Manager
 
             if (chart.ChartData.BPMList == null)
             {
-                BPM = new EnvelopeLine(new List<ControlNode>()
+                BPM = new EnvelopeLine(new List<ControllNode>()
                 {
-                    new ControlNode(0, chart.DefaultBPM, 0, CurveType.Linear),
+                    new ControllNode(0, chart.DefaultBPM, 0, CurveType.Linear),
                 });
             }
             else
             {
-                List<ControlNode> bpmList = new List<ControlNode>();
+                List<ControllNode> bpmList = new List<ControllNode>();
                 foreach (var bpm in chart.ChartData.BPMList)
                 {
                     Debug.Log(bpm.Time);
-                    bpmList.Add(new ControlNode(bpm.Time, bpm.Value, bpm.Tension, EaseTypeManager.StringToCurveType(bpm.CurveType)));
+                    bpmList.Add(new ControllNode(bpm.Time, bpm.Value, bpm.Tension, EaseTypeManager.StringToCurveType(bpm.CurveType)));
                 }
                 BPM = new EnvelopeLine(bpmList);
             }
 
             #endregion
 
-            foreach (Utils.Helper.ChartHelper.JudgementLine judgementLine in chart.ChartData.JudgementLineList)
+            foreach (Utils.Helper.ChartConvertHelper.JudgementLine judgementLine in chart.ChartData.JudgementLineList)
             {
                 //TODO:对复杂谱面多个判定线的遍历，下次再处理这个
             }
@@ -229,22 +170,21 @@ namespace Dremu.Gameplay.Manager
             AudioManager.MusicVolume = 1;
 #if DEBUG
 
-            Curve curve1 = CurveFromChart(chart.ChartData.JudgementLineList[0].CurveGroup[0]);
-            Curve curve2 = CurveFromChart(chart.ChartData.JudgementLineList[0].CurveGroup[1]);
+            Curve curve1 = chart.ChartData.JudgementLineList[0].Curves[0];
+            Curve curve2 = chart.ChartData.JudgementLineList[0].Curves[1];
             line = LineFromChart(curve1, chart.ChartData.JudgementLineList[0]);
             var curveGroup = new List<Curve>
             {
                 curve1,
                 curve2
             };
-            var ev = EnvelopeLineFromChart(chart.ChartData.JudgementLineList[0].EnvelopeLine);
+            var ev = chart.ChartData.JudgementLineList[0].CurveController;
             line.SetCurvesAndEnvelope(curveGroup, ev);
 
 
-            createNote(line,chart.ChartData.JudgementLineList[0].Note[0]);
-            createNote(line,chart.ChartData.JudgementLineList[0].Note[1]);
+            CreateNotes(line,chart.ChartData.JudgementLineList[0].Notes);
             
-            createGuideLine(line,chart.ChartData.JudgementLineList[0].GuideLine[0]);
+            CreateGuideLine(line,chart.ChartData.JudgementLineList[0].GuideLines[0]);
             
             NoteManager.GetNewDrag(line, 0.5f, 17, new List<Hold.HoldNode>()
             {

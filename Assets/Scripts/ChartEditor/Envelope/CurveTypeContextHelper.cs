@@ -8,7 +8,7 @@ namespace Dremu.ChartEdit.Envelope
 {
     public static class CurveTypeContextHelper
     {
-        public static List<ContextMenuItem> CurveTypeGen(System.Type type, ControlNode targetNode, UnityAction dirtyCall)
+        public static List<ContextMenuItem> CurveTypeGen(System.Type type, ControllNode targetNode, UnityAction dirtyCall)
         {
             List<ContextMenuItem> list = new List<ContextMenuItem>();
             var fields = type.GetFields();

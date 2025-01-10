@@ -19,7 +19,7 @@ namespace Dremu.Gameplay.Tool
     /// </summary>
     public sealed class EnvelopeLine
     {
-        public List<ControlNode> Controllers;
+        public List<ControllNode> Controllers;
 
         /// <summary>
         /// 构造函数, 传入音符数据
@@ -37,11 +37,11 @@ namespace Dremu.Gameplay.Tool
         [Obsolete]
         public EnvelopeLine(List<float[]> Points)
         {
-            Controllers = new List<ControlNode>();
+            Controllers = new List<ControllNode>();
             foreach(var point in Points)
             {
                 // 0: time 1: value
-                Controllers.Add(new ControlNode(point[0], point[1], 0,CurveType.Linear));
+                Controllers.Add(new ControllNode(point[0], point[1], 0,CurveType.Linear));
             }
         }
         /// <summary>
@@ -55,7 +55,7 @@ namespace Dremu.Gameplay.Tool
         /// ]
         /// </summary>
         /// <param name="Controllers"> 音符数据 </param>
-        public EnvelopeLine(List<ControlNode> Controllers)
+        public EnvelopeLine(List<ControllNode> Controllers)
         {
             this.Controllers = Controllers;
         }
@@ -76,13 +76,13 @@ namespace Dremu.Gameplay.Tool
             int currentControlerPos = GetControlerIndex(this.Controllers, Time);
             if (currentControlerPos == -1)
                 throw new System.Exception("找不到这个时间啊, 不是从0开始的罢");
-            ControlNode controler = Controllers[currentControlerPos];
+            ControllNode controler = Controllers[currentControlerPos];
             if (currentControlerPos == this.Controllers.Count - 1)
             {
                 // 谱面结束力! 卡住不动就行了
                 return controler.Value;
             }
-            ControlNode nextControler = Controllers[currentControlerPos + 1];
+            ControllNode nextControler = Controllers[currentControlerPos + 1];
             var value = GetSingle(controler,nextControler,Time);
             return value;
         }
@@ -95,7 +95,7 @@ namespace Dremu.Gameplay.Tool
         /// <param name="Time"> 时间 </param>
         /// <returns> Node在Time处的值 </returns>
         /// <exception cref="ArgumentOutOfRangeException"> Time不在Start和End之间 </exception>
-        public float GetSingle(ControlNode Start,ControlNode End,float Time)
+        public float GetSingle(ControllNode Start,ControllNode End,float Time)
         {
             // 似乎这俩相等的时候,这个Node里没包含任何点, 为兼容这种情况使用下面的if
             // 在edit的时候优先考虑后面的Node
@@ -127,7 +127,7 @@ namespace Dremu.Gameplay.Tool
         /// <param name="Low"> 搜索范围下界 </param>
         /// <param name="High"> 搜索范围上界 </param>
         /// <returns>找到的位置, 未找到返回-1</returns>
-        public static int GetControlerIndex(List<ControlNode> controlerList, float Time, int Low = 0, int High = -1)
+        public static int GetControlerIndex(List<ControllNode> controlerList, float Time, int Low = 0, int High = -1)
         {
             if (High == -1)
             {
@@ -169,17 +169,17 @@ namespace Dremu.Gameplay.Tool
             if (Controllers.Count == 0)
                 return -114514; //没有控制点可是会受到惩罚的哦（意味深）
             for (int i = 0; i < Controllers.Count - 1; i++) {
-                ControlNode currentController = Controllers[i], nextControler = Controllers[i + 1];
+                ControllNode currentController = Controllers[i], nextControler = Controllers[i + 1];
                 if (currentController.Time < StartTime) continue;
                 else if (currentController.Time < StartTime && nextControler.Time > StartTime) {
                     float time = nextControler.Time - StartTime;
-                    result += ControlNode.GetArea(currentController, nextControler, 1) -
-                              ControlNode.GetArea(currentController, nextControler, 1 - time / (nextControler.Time - currentController.Time));
+                    result += ControllNode.GetArea(currentController, nextControler, 1) -
+                              ControllNode.GetArea(currentController, nextControler, 1 - time / (nextControler.Time - currentController.Time));
                     Duration -= time;
                 }
                 else {
                     float time = Mathf.Min(Duration, nextControler.Time - currentController.Time);
-                    result += ControlNode.GetArea(currentController, nextControler, time / (nextControler.Time - currentController.Time));
+                    result += ControllNode.GetArea(currentController, nextControler, time / (nextControler.Time - currentController.Time));
                     Duration -= time;
                 }
             }
@@ -207,11 +207,11 @@ namespace Dremu.Gameplay.Tool
                 var timeDelta = nextCtrl.Time - ctrl.Time;
                 if (ctrl.Time <= second && nextCtrl.Time > second)
                 {
-                    return fullBeatUpToNow + ControlNode.GetArea(ctrl, nextCtrl, (second - ctrl.Time) / timeDelta)/60f;
+                    return fullBeatUpToNow + ControllNode.GetArea(ctrl, nextCtrl, (second - ctrl.Time) / timeDelta)/60f;
                 }
                 else
                 {
-                    fullBeatUpToNow += ControlNode.GetArea(ctrl, nextCtrl, 1)/60f;
+                    fullBeatUpToNow += ControllNode.GetArea(ctrl, nextCtrl, 1)/60f;
                 }
             }
             // 如果一直没找到
@@ -234,10 +234,10 @@ namespace Dremu.Gameplay.Tool
                 var nextCtrl = Controllers[i + 1];
                 // 以后可以考虑把fullBeatUpToNow 记录在每个事件中, 这部分运行时不需要改变
                 var timeDelta = nextCtrl.Time - ctrl.Time;
-                var changedBeat = ControlNode.GetArea(ctrl, nextCtrl, 1)/60f;
+                var changedBeat = ControllNode.GetArea(ctrl, nextCtrl, 1)/60f;
                 if (fullBeatUpToNow + changedBeat > beat)
                 {
-                    var percent =  ControlNode.GetPercent(ctrl, nextCtrl, (beat - fullBeatUpToNow) * 60f);
+                    var percent =  ControllNode.GetPercent(ctrl, nextCtrl, (beat - fullBeatUpToNow) * 60f);
                     Debug.Assert(percent <= 1 && percent >= 0, "Error in find area, 请让液氦check the code");
                     return percent * timeDelta + ctrl.Time;
                 }
@@ -264,7 +264,7 @@ namespace Dremu.Gameplay.Tool
     /// 包含一个static方法GetArea(ControlNode Start,ControlNode End,float Percent), 用于计算两个控制点之间缓动曲线与x轴围成的图形的面积（近似）
     /// 包含一个static方法GetPercent(ControlNode Start,ControlNode End,float TargetValue,float Low = 0,float High = 1), 用于二分搜索找到何时经过了指定的面积
     /// </summary>
-    public class ControlNode
+    public class ControllNode
     {
         
         public float Time { get; set; }
@@ -300,7 +300,7 @@ namespace Dremu.Gameplay.Tool
         /// <param name="Value"> 值 </param>
         /// <param name="Tension"> Tension </param>
         /// <param name="CurveType"> 曲线类型 </param>
-        public ControlNode(float Time, float Value, float Tension, CurveType CurveType)
+        public ControllNode(float Time, float Value, float Tension, CurveType CurveType)
         {
             this.Time = Time;
             this.Value = Value;
@@ -364,7 +364,7 @@ namespace Dremu.Gameplay.Tool
         /// <param name="Percent">完整度</param>
         /// <returns> 面积 </returns>
         /// <exception cref="ArgumentException">开始时间大于结束时间时抛出</exception>
-        public static float GetArea(ControlNode Start, ControlNode End, float Percent ) {
+        public static float GetArea(ControllNode Start, ControllNode End, float Percent ) {
             if (Start.Time > End.Time)
                 throw new ArgumentException("Start is larger than End！Start:" + Start.Time + " End:" + End.Time); //开始时间比结束时间大了十倍甚至九倍（悲）
             if (Start.Time == End.Time)
@@ -395,7 +395,7 @@ namespace Dremu.Gameplay.Tool
         /// <param name="Low"> 搜索范围下界 </param>
         /// <param name="High"> 搜索范围上界 </param>
         /// <returns>从0-1间的一个值, 为GetArea函数的percent参数</returns>
-        public static float GetPercent(ControlNode Start, ControlNode End, float TargetValue, float Low = 0, float High = 1)
+        public static float GetPercent(ControllNode Start, ControllNode End, float TargetValue, float Low = 0, float High = 1)
         {
             float precision = GetArea(Start,End,1) / 1000;
             precision = Math.Max(0.001f, precision);

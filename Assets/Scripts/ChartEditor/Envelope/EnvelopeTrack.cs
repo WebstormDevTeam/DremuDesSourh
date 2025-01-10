@@ -165,7 +165,7 @@ namespace Dremu.ChartEdit.Envelope
             LineContainer lineContainer = containers[ContainerIndex];
             // 兄弟, 你前面那人已经跑路了, 不在这个Container了
             Debug.Assert(lineContainer.Contains(previousNodeIndex));
-            Line.Controllers.Insert(previousNodeIndex + 1, new ControlNode(time, value, 0.5f, CurveType.Expo));
+            Line.Controllers.Insert(previousNodeIndex + 1, new ControllNode(time, value, 0.5f, CurveType.Expo));
             // 增加一个位置
             lineContainer.SetNodeRange(lineContainer.StartIndex, lineContainer.EndIndex + 1);
             // 我脏了! 呜呜呜~

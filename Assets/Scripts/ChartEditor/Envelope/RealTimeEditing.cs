@@ -72,7 +72,7 @@ namespace Dremu.ChartEdit.Envelope
         public override void UpdateEdit(Vector2 currentPos)
         {
             Debug.Assert(_inEditing, "Try update when not in editing");
-            ControlNode editNode = _envelopeLine.Controllers[_editIndex];
+            ControllNode editNode = _envelopeLine.Controllers[_editIndex];
             var maxAllowedTime = _editIndex != _envelopeLine.Controllers.Count - 1 ? _envelopeLine.Controllers[_editIndex + 1].Time : float.MaxValue;
             var minAllowedTime = 0f;
             if (_editIndex == 0)

@@ -21,7 +21,7 @@
     ],
     "JudgementLineList":[
       {
-        "CurveGroup": [
+        "CurveGroup":[
           {
             "Points":[[-0.8,0.0],[0.8,0.0]],
             "Nodes":[[[0.0,0.0]]]
@@ -47,19 +47,41 @@
             }
           ]
         },
-        "Note":[
-          {
-            "Position":0.5,
-            "Type":"Tap",
-            "ArrivalTime":20
-          },
-          {
-            "Position":0.5,
-            "Type":"Slide",
-            "ArrivalTime":17
-          }
-        ],
-        "GuideLine":[
+        "EnvelopeSpeed":{
+          "Controllers":[
+            {
+              "Time": 0,
+              "Value": 5.0,
+              "Tension": 1,
+              "CurveType": "Const"
+            }
+          ]
+        },
+        "EnvelopeAlpha":{
+          "Controllers":[
+            {
+              "Time": 0,
+              "Value": 1.0,
+              "Tension": 1,
+              "CurveType": "Const"
+            }
+          ]
+        },
+        "Notes":{
+          "Taps": [
+            {
+              "Position": 0.5,
+              "ArrivalTime": 20
+            }
+          ],
+          "Slides": [
+            {
+              "Position": 0.5,
+              "ArrivalTime": 17
+            }
+          ]
+        },
+        "GuideLines":[
           {
             "Position":0.5,
             "ArrivalTime":17,

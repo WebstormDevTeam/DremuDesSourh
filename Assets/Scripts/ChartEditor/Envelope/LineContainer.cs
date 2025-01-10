@@ -167,7 +167,7 @@ namespace Dremu.ChartEdit.Envelope
             containsUILine.sizeDelta = new Vector2(_width, _height);
         }
 
-        private void SyncOneNode(ControlNode node, int globalIndex, float endValue, float duration = 1f)
+        private void SyncOneNode(ControllNode node, int globalIndex, float endValue, float duration = 1f)
         {
             Debug.Assert(this.Contains(globalIndex), "找不到那么多 Node 捏 (" + globalIndex + ")");
             var index = globalIndex - this.StartIndex;

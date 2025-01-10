@@ -37,8 +37,8 @@ namespace Dremu.Gameplay.Manager {
             line.SetCurvesAndEnvelope(
                 new List<Curve> { InitialCurve },
                 new EnvelopeLine(
-                    new List<ControlNode> {
-                        new ControlNode(
+                    new List<ControllNode> {
+                        new ControllNode(
                             0,0,1,CurveType.Sine
                         )
                     }

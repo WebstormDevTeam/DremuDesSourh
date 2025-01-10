@@ -84,27 +84,27 @@ namespace Dremu.ChartEdit
             PositionHelper.width = 1920;
             PositionHelper.height = 1080;
             view.InitEnvelopes(new List<EnvelopeLine>{new EnvelopeLine(
-                    new List<ControlNode> {
-                        new ControlNode(
+                    new List<ControllNode> {
+                        new ControllNode(
                             0,1,0.7f,CurveType.Expo
                         ),
-                        new ControlNode(
+                        new ControllNode(
                           1,0,0.7f,CurveType.Sine
                         ),
-                        new ControlNode(
+                        new ControllNode(
                             2,2,1,CurveType.Const
                         )
 
                     }
                 ),new EnvelopeLine(
-                    new List<ControlNode> {
-                        new ControlNode(
+                    new List<ControllNode> {
+                        new ControllNode(
                             0,1,0.7f,CurveType.Expo
                         ),
-                        new ControlNode(
+                        new ControllNode(
                           1,0,0.7f,CurveType.Sine
                         ),
-                        new ControlNode(
+                        new ControllNode(
                             2,2,1,CurveType.Const
                         )
 
