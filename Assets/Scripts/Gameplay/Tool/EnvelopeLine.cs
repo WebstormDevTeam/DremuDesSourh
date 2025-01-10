@@ -283,7 +283,7 @@ namespace Dremu.Gameplay.Tool
         /// </summary>
         public CurveType ControlType;
         
-        
+        //TODO:如果有可能，把这段及有关内容修改到 EaseTypeManager 里
         static float EaseInExpo(float x) => 1 - Mathf.Pow(2f, -10 * x);
         static float Sine(float x) => Mathf.Sin(Mathf.PI * x / 2);
         
