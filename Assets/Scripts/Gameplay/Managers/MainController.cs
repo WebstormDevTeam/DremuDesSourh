@@ -100,7 +100,6 @@ namespace Dremu.Gameplay.Manager
         private static JudgementLine LineFromChart(Curve currentCurve, Utils.Helper.ChartConvertHelper.JudgementLine chartLine)
         {
             return JudgmentLineManager.GetNewJudgmentLine(currentCurve, chartLine.Speed, chartLine.Alpha, 0.15f);
-            //TODO:这个0，5是个啥
         }
         //?
         
